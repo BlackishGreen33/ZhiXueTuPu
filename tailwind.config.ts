@@ -9,6 +9,7 @@ const config: Config = {
         sans: ['var(--jakartaSans-font)'],
         sora: ['var(--soraSans-font)'],
         code: ['var(--firaCode-font)'],
+        open: ['var(--openSans-font)'],
         zheng: ['var(--maShanZheng-font)'],
         emoji: ['Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'],
       },
@@ -87,6 +88,6 @@ const config: Config = {
   daisyui: {
     themes: ['light'],
   },
-  plugins: [require('tailwind-scrollbar-hide'), require('daisyui')],
+  plugins: [require('tailwind-scrollbar-hide')],
 };
 export default config;

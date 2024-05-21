@@ -1,6 +1,7 @@
 import {
   Fira_Code,
   Ma_Shan_Zheng,
+  Open_Sans,
   Plus_Jakarta_Sans,
   Sora,
 } from 'next/font/google';
@@ -16,6 +17,13 @@ export const firaCode = Fira_Code({
   variable: '--font-fira-code',
   subsets: ['latin'],
   display: 'swap',
+});
+
+export const openSans = Open_Sans({
+  variable: '--openSans-font',
+  subsets: ['latin'],
+  display: 'swap',
+  weight: ['400', '500', '600', '700'],
 });
 
 export const soraSans = Sora({
