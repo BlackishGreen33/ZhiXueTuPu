@@ -1,11 +1,11 @@
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
+import { ThemeProvider } from 'next-themes';
 
-// import { ThemeProvider } from 'next-themes';
 import '@/common/styles/globals.scss';
 
 // import ProgressBar from '@/common/components/elements/ProgressBar';
-// import Layout from '@/common/components/layouts';
+import Layout from '@/common/components/layouts';
 // import { ModalProvider } from '@/common/components/providers/modal-provider';
 import StyledComponentsRegistry from '@/common/libs/registry';
 import GlobalStyles from '@/common/styles/GlobalStyles';
@@ -27,13 +27,13 @@ export default function RootLayout({
       <body className={inter.className}>
         <StyledComponentsRegistry>
           <GlobalStyles />
-          {/* <ThemeProvider attribute="class" defaultTheme="light">
-            <ModalProvider />
-            <Layout> */}
+          <ThemeProvider attribute="class" defaultTheme="light">
+            {/* <ModalProvider /> */}
+            <Layout>
               {children}
-              {/* <ProgressBar />
+              {/* <ProgressBar /> */}
             </Layout>
-          </ThemeProvider> */}
+          </ThemeProvider>
         </StyledComponentsRegistry>
       </body>
     </html>
