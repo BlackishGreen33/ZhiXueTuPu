@@ -31,9 +31,6 @@ const config: Config = {
         lightBlue: '#EFF6FF',
         mdDarkGrayText: '#8D8D8D',
         darkGray: '#C7C7C7',
-        brown: '#B79D9D',
-        orange: '#E58934',
-        darkRed: '#841710',
       },
       maxWidth: {
         '1/2': '50%',
@@ -82,11 +79,37 @@ const config: Config = {
         '4/5vh': '80vh',
         '3/4vh': '75vh',
         '86vh': '86vh',
+        80: '80px',
+      },
+      backgroundColor: {
+        'main-bg': '#FAFBFB',
+        'main-dark-bg': '#20232A',
+        'secondary-dark-bg': '#33373E',
+        'light-gray': '#F7F7F7',
+        'half-transparent': 'rgba(0, 0, 0, 0.5)',
+      },
+      borderWidth: {
+        1: '1px',
+      },
+      borderColor: {
+        color: 'rgba(0, 0, 0, 0.1)',
+      },
+      width: {
+        400: '400px',
+        760: '760px',
+        780: '780px',
+        800: '800px',
+        1000: '1000px',
+        1200: '1200px',
+        1400: '1400px',
+      },
+      minHeight: {
+        590: '590px',
+      },
+      backgroundImage: {
+        'hero-pattern': "url('https://i.ibb.co/MkvLDfb/Rectangle-4389.png')",
       },
     },
-  },
-  daisyui: {
-    themes: ['light'],
   },
   plugins: [require('tailwind-scrollbar-hide')],
 };
