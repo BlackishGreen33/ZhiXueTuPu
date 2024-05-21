@@ -1,0 +1,114 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-dark: #121212;
+  --color-light: #fafafa;
+}
+
+html {
+  scroll-behavior: smooth;
+  letter-spacing: 0.3px;
+}
+
+input,
+textarea,
+button,
+select,
+div,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: 0.5em;
+  font-weight: normal;
+}
+
+h1 {
+  font-size: 2em;
+  color: #333;
+  padding-bottom: 0.3em;
+  border-bottom: 2px solid #eaeaea;
+}
+
+h2 {
+  font-size: 1.75em;
+  padding-bottom: 0.25em;
+  border-bottom: 1px solid #eaeaea;
+}
+
+h3 {
+  font-size: 1.5em;
+}
+
+h4 {
+  font-size: 1.25em;
+}
+
+h5 {
+  font-size: 1em;
+}
+
+h6 {
+  font-size: 0.75em;
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+  h2 {
+    font-size: 1.25rem;
+  }
+  h3 {
+    font-size: 1rem;
+  }
+  h4 {
+    font-size: 0.75rem;
+  }
+  h5 {
+    font-size: 0.5rem;
+  }
+  h6 {
+    font-size: 0.25rem;
+  }
+}
+.dark {
+  background-color: var(--color-dark);
+  color: var(--color-light);
+}
+
+.light {
+  background-color: var(--color-light);
+  color: var(--color-dark);
+}
+
+#nprogress .bar {
+  background: #8c7f69 !important;
+  height: 2px !important;
+  z-index: 9999999 !important;
+}
+
+#nprogress .bar {
+  position: fixed !important;
+}
+
+::-webkit-scrollbar {
+  @apply w-1;
+}
+
+::-webkit-scrollbar-track {
+  @apply rounded-[3px] bg-transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply rounded-[3px] border-2 border-neutral-300 bg-neutral-600 dark:bg-neutral-400;
+}
