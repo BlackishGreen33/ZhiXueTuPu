@@ -35,7 +35,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
       <div
       // className={currentMode === 'Dark' ? 'dark' : ''}
       >
-        <div className="dark:bg-main-dark-bg relative flex">
+        <div className="relative flex dark:bg-main-dark-bg">
           <div className="fixed bottom-4 right-4" style={{ zIndex: '1000' }}>
             <TooltipComponent content="Settings">
               <button
@@ -46,19 +46,19 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
                   background: 'blue',
                   borderRadius: '50%',
                 }}
-                className="hover:bg-light-gray p-3 text-3xl text-white hover:drop-shadow-xl"
+                className="p-3 text-3xl text-white hover:bg-light-gray hover:drop-shadow-xl"
               >
                 <FiSettings />
               </button>
             </TooltipComponent>
           </div>
           {activeMenu ? (
-            <div className="sidebar dark:bg-secondary-dark-bg fixed w-72 bg-white ">
+            <div className="sidebar fixed w-72 bg-white dark:bg-secondary-dark-bg ">
               {/* <Sidebar /> */}
               Sidebar
             </div>
           ) : (
-            <div className="dark:bg-secondary-dark-bg w-0">
+            <div className="w-0 dark:bg-secondary-dark-bg">
               {/* <Sidebar /> */}
               Sidebar
             </div>
@@ -66,11 +66,11 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
           <div
             className={
               activeMenu
-                ? 'dark:bg-main-dark-bg  bg-main-bg min-h-screen w-full md:ml-72  '
-                : 'bg-main-bg dark:bg-main-dark-bg  flex-2 min-h-screen w-full '
+                ? 'min-h-screen  w-full bg-main-bg dark:bg-main-dark-bg md:ml-72  '
+                : 'flex-2 min-h-screen  w-full bg-main-bg dark:bg-main-dark-bg '
             }
           >
-            <div className="bg-main-bg dark:bg-main-dark-bg navbar fixed w-full md:static ">
+            <div className="navbar fixed w-full bg-main-bg dark:bg-main-dark-bg md:static ">
               {/* <Navbar /> */}
               Navbar
             </div>
