@@ -7,7 +7,9 @@ import { FiSettings } from 'react-icons/fi';
 
 import useStore from '@/common/hooks/useStore';
 
-import { Footer, Navbar, Sidebar, ThemeSettings } from '../elements';
+import { Footer, ThemeSettings } from '../elements';
+import Navbar from '../navbar/Navbar';
+import Sidebar from '../sidebar/Sidebar';
 
 interface LayoutProps {
   children: React.ReactNode;
@@ -38,9 +40,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
 
   return (
     <>
-      <div
-      className={currentMode === 'Dark' ? 'dark' : ''}
-      >
+      <div className={currentMode === 'Dark' ? 'dark' : ''}>
         <div className="relative flex dark:bg-main-dark-bg">
           <div className="fixed bottom-4 right-4" style={{ zIndex: '1000' }}>
             <TooltipComponent content="Settings">

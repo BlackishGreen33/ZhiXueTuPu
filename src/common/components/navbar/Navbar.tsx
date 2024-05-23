@@ -1,6 +1,6 @@
 import { TooltipComponent } from '@syncfusion/ej2-react-popups';
 import Image from 'next/image';
-import { useEffect } from 'react';
+import { useCallback, useEffect } from 'react';
 import { AiOutlineMenu } from 'react-icons/ai';
 import { BsChatLeft } from 'react-icons/bs';
 import { FiShoppingCart } from 'react-icons/fi';
@@ -8,44 +8,15 @@ import { MdKeyboardArrowDown } from 'react-icons/md';
 import { RiNotification3Line } from 'react-icons/ri';
 
 import avatar from '@/common/assets/avatar.jpg';
-import useStore from '@/common/hooks/useStore';
-
 import {
-  // Cart, Chat,
+  Cart,
+  Chat,
   Notification,
   UserProfile,
-} from '../elements';
+} from '@/common/components/elements';
+import useStore from '@/common/hooks/useStore';
 
-interface NavButtonProps {
-  title: string;
-  customFunc: () => void;
-  icon: React.ReactNode;
-  color: string;
-  dotColor?: string;
-}
-
-const NavButton: React.FC<NavButtonProps> = ({
-  title,
-  customFunc,
-  icon,
-  color,
-  dotColor,
-}) => (
-  <TooltipComponent content={title} position="BottomCenter">
-    <button
-      type="button"
-      onClick={() => customFunc()}
-      style={{ color }}
-      className="relative rounded-full p-3 text-xl hover:bg-light-gray"
-    >
-      <span
-        style={{ background: dotColor }}
-        className="absolute right-2 top-2 inline-flex h-2 w-2 rounded-full"
-      />
-      {icon}
-    </button>
-  </TooltipComponent>
-);
+import NavButton from './NavButton';
 
 const Navbar: React.FC = () => {
   const {
@@ -58,15 +29,16 @@ const Navbar: React.FC = () => {
     screenSize,
   } = useStore();
 
+  const handleResize = useCallback(() => {
+    setScreenSize(window.innerWidth);
+  }, [setScreenSize]);
+
   useEffect(() => {
-    const handleResize = () => setScreenSize(window.innerWidth);
-
     window.addEventListener('resize', handleResize);
-
     handleResize();
 
     return () => window.removeEventListener('resize', handleResize);
-  }, [setScreenSize]);
+  }, [handleResize]);
 
   useEffect(() => {
     if (screenSize! <= 900) {
@@ -76,7 +48,10 @@ const Navbar: React.FC = () => {
     }
   }, [screenSize, setActiveMenu]);
 
-  const handleActiveMenu = () => setActiveMenu(!activeMenu);
+  const handleActiveMenu = useCallback(
+    () => setActiveMenu(!activeMenu),
+    [activeMenu, setActiveMenu]
+  );
 
   return (
     <div className="relative flex justify-between p-2 md:ml-6 md:mr-6">
@@ -126,9 +101,8 @@ const Navbar: React.FC = () => {
             <MdKeyboardArrowDown className="text-14 text-gray-400" />
           </div>
         </TooltipComponent>
-
-        {/* {isClicked.cart && <Cart />}
-        {isClicked.chat && <Chat />} */}
+        {isClicked.cart && <Cart />}
+        {isClicked.chat && <Chat />}
         {isClicked.notification && <Notification />}
         {isClicked.userProfile && <UserProfile />}
       </div>
