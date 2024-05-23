@@ -1,5 +1,5 @@
 /** @type {import('next').NextConfig} */
-import MillionLint from "@million/lint";
+import MillionLint from '@million/lint';
 
 const nextConfig = {
   reactStrictMode: true,
@@ -27,4 +27,9 @@ const nextConfig = {
   },
 };
 
-export default MillionLint.next({ rsc: true })(nextConfig);
+export default MillionLint.next({
+  rsc: true,
+  filter: {
+    include: '**/src/*.{mtsx,mjsx,tsx,jsx}',
+  },
+})(nextConfig);
