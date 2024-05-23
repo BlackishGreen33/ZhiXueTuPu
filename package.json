@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "@emotion/styled": "^11.11.5",
+    "@million/lint": "1.0.0-rc.1",
     "@syncfusion/ej2": "^19.4.48",
     "@syncfusion/ej2-react-calendars": "^19.4.48",
     "@syncfusion/ej2-react-charts": "^19.4.50",
