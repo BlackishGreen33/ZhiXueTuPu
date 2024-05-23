@@ -1,7 +1,13 @@
 import { NextPage } from 'next';
 
+import Ecommerce from '@/modules/Ecommerce';
+
 const Page: NextPage = () => {
-  return <>Hello World!</>;
+  return (
+    <>
+      <Ecommerce />
+    </>
+  );
 };
 
 export default Page;

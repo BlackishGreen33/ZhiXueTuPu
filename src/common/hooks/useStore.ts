@@ -16,9 +16,22 @@ interface State {
   setCurrentColor: (color: string) => void;
   setCurrentMode: (mode: 'Light' | 'Dark') => void;
   setActiveMenu: (active: boolean) => void;
-  setIsClicked: (clicked: keyof State['isClicked']) => void;
+  setIsClicked: (clicked: {
+    chat: boolean;
+    cart: boolean;
+    userProfile: boolean;
+    notification: boolean;
+  }) => void;
   setThemeSettings: (settings: boolean) => void;
+  handleClick: (clicked: keyof State['isClicked']) => void;
 }
+
+export const initialState = {
+  chat: false,
+  cart: false,
+  userProfile: false,
+  notification: false,
+};
 
 const useStore = create<State>((set) => ({
   screenSize: undefined,
@@ -26,12 +39,7 @@ const useStore = create<State>((set) => ({
   currentMode: 'Light',
   themeSettings: false,
   activeMenu: true,
-  isClicked: {
-    chat: false,
-    cart: false,
-    userProfile: false,
-    notification: false,
-  },
+  isClicked: initialState,
 
   setScreenSize: (size) => set({ screenSize: size }),
   setCurrentColor: (color) => {
@@ -44,6 +52,10 @@ const useStore = create<State>((set) => ({
   },
   setActiveMenu: (active) => set({ activeMenu: active }),
   setIsClicked: (clicked) => {
+    set({ isClicked: clicked });
+  },
+  setThemeSettings: (settings) => set({ themeSettings: settings }),
+  handleClick: (clicked) => {
     set((state) => ({
       isClicked: {
         ...state.isClicked,
@@ -51,7 +63,6 @@ const useStore = create<State>((set) => ({
       },
     }));
   },
-  setThemeSettings: (settings) => set({ themeSettings: settings }),
 }));
 
 export default useStore;
