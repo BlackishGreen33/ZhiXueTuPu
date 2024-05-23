@@ -5,8 +5,9 @@ import { useTheme } from 'next-themes';
 import { useEffect } from 'react';
 import { FiSettings } from 'react-icons/fi';
 
+import useStore from '@/common/hooks/useStore';
+
 import { Footer, Navbar, Sidebar, ThemeSettings } from '../elements';
-// import { useStateContext } from './contexts/ContextProvider';
 
 interface LayoutProps {
   children: React.ReactNode;
@@ -16,33 +17,38 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
   const { resolvedTheme, setTheme } = useTheme();
   setTheme(resolvedTheme!);
 
-  // const { setCurrentColor, setCurrentMode, currentMode, activeMenu, currentColor, themeSettings, setThemeSettings } = useStateContext();
+  const {
+    setCurrentColor,
+    setCurrentMode,
+    currentMode,
+    activeMenu,
+    currentColor,
+    themeSettings,
+    setThemeSettings,
+  } = useStore();
 
   useEffect(() => {
     const currentThemeColor = localStorage.getItem('colorMode');
     const currentThemeMode = localStorage.getItem('themeMode');
     if (currentThemeColor && currentThemeMode) {
-      // setCurrentColor(currentThemeColor);
+      setCurrentColor(currentThemeColor);
       // setCurrentMode(currentThemeMode);
     }
-  }, []);
-
-  const activeMenu = true;
+  }, [setCurrentColor, setCurrentMode]);
 
   return (
     <>
       <div
-      // className={currentMode === 'Dark' ? 'dark' : ''}
+      className={currentMode === 'Dark' ? 'dark' : ''}
       >
         <div className="relative flex dark:bg-main-dark-bg">
           <div className="fixed bottom-4 right-4" style={{ zIndex: '1000' }}>
             <TooltipComponent content="Settings">
               <button
                 type="button"
-                // onClick={() => setThemeSettings(true)}
+                onClick={() => setThemeSettings(true)}
                 style={{
-                  // background: currentColor,
-                  background: 'blue',
+                  background: currentColor,
                   borderRadius: '50%',
                 }}
                 className="p-3 text-3xl text-white hover:bg-light-gray hover:drop-shadow-xl"
@@ -71,9 +77,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
               <Navbar />
             </div>
             <div>
-              {/* {themeSettings &&  */}
-              <ThemeSettings />
-              {/* } */}
+              {themeSettings && <ThemeSettings />}
               {children}
             </div>
             <Footer />
