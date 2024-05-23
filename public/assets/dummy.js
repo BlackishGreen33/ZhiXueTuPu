@@ -30,6 +30,7 @@ import { IoMdContacts } from 'react-icons/io';
 import { MdOutlineSupervisorAccount } from 'react-icons/md';
 import { RiContactsLine, RiStockLine } from 'react-icons/ri';
 import { TiTick } from 'react-icons/ti';
+
 import avatar from './avatar.jpg';
 import avatar2 from './avatar2.jpg';
 import avatar3 from './avatar3.png';
