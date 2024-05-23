@@ -5,9 +5,8 @@ import { useTheme } from 'next-themes';
 import { useEffect } from 'react';
 import { FiSettings } from 'react-icons/fi';
 
-// import { Footer, Navbar, Sidebar, ThemeSettings } from './components';
+import { Footer, Navbar, Sidebar, ThemeSettings } from '../elements';
 // import { useStateContext } from './contexts/ContextProvider';
-// import { Area, Bar, Calendar, ColorMapping, ColorPicker, Customers, Ecommerce, Editor,Employees, Financial, Kanban, Line, Orders, Pie, Pyramid, Stacked } from './pages';
 
 interface LayoutProps {
   children: React.ReactNode;
@@ -54,13 +53,11 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
           </div>
           {activeMenu ? (
             <div className="sidebar fixed w-72 bg-white dark:bg-secondary-dark-bg ">
-              {/* <Sidebar /> */}
-              Sidebar
+              <Sidebar />
             </div>
           ) : (
             <div className="w-0 dark:bg-secondary-dark-bg">
-              {/* <Sidebar /> */}
-              Sidebar
+              <Sidebar />
             </div>
           )}
           <div
@@ -71,14 +68,16 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
             }
           >
             <div className="navbar fixed w-full bg-main-bg dark:bg-main-dark-bg md:static ">
-              {/* <Navbar /> */}
+              <Navbar />
               Navbar
             </div>
             <div>
-              {/* {themeSettings && <ThemeSettings />} */}
+              {/* {themeSettings &&  */}
+              <ThemeSettings />
+              {/* } */}
               {children}
             </div>
-            {/* <Footer /> */}
+            <Footer />
           </div>
         </div>
       </div>
