@@ -882,15 +882,15 @@ export const themeColors = [
 export const userProfileData = [
   {
     icon: <BsCurrencyDollar />,
-    title: 'My Profile',
-    desc: 'Account Settings',
+    title: '我的档案',
+    desc: '账户设定',
     iconColor: '#03C9D7',
     iconBg: '#E5FAFB',
   },
   {
     icon: <BsShield />,
-    title: 'My Inbox',
-    desc: 'Messages & Emails',
+    title: '收件箱',
+    desc: '信息 & 邮件',
     iconColor: 'rgb(0, 194, 146)',
     iconBg: 'rgb(235, 250, 242)',
   },
