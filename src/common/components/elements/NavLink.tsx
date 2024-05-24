@@ -1,10 +1,6 @@
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 
-NavLink.defaultProps = {
-  exact: false,
-};
-
 const activeLink =
   'flex items-center gap-5 pl-4 pt-3 pb-2.5 rounded-lg text-white text-md m-2';
 const normalLink =
@@ -20,13 +16,13 @@ interface NavLinkProps {
   onClick?: (event: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => void;
 }
 
-function NavLink({
+const NavLink = ({
   href,
-  exact,
+  exact = false,
   children,
   currentColor,
   ...props
-}: NavLinkProps) {
+}: NavLinkProps) => {
   const pathname = usePathname();
   const isActive = exact ? pathname === href : pathname.startsWith(href);
 
@@ -41,6 +37,6 @@ function NavLink({
       {children}
     </Link>
   );
-}
+};
 
-export default NavLink ;
+export default NavLink;
