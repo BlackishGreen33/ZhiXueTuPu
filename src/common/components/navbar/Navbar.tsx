@@ -1,3 +1,5 @@
+'use client';
+
 import { TooltipComponent } from '@syncfusion/ej2-react-popups';
 import Image from 'next/image';
 import React, { useCallback, useEffect } from 'react';

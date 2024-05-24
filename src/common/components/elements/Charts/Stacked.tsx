@@ -1,3 +1,5 @@
+'use client';
+
 import {
   Category,
   ChartComponent,

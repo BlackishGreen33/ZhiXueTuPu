@@ -1,3 +1,5 @@
+'use client';
+
 import { TooltipComponent } from '@syncfusion/ej2-react-popups';
 import React from 'react';
 import { BsCheck } from 'react-icons/bs';

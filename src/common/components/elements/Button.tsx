@@ -1,3 +1,5 @@
+'use client';
+
 import useStore, { initialState } from '@/common/hooks/useStore';
 import React from 'react';
 

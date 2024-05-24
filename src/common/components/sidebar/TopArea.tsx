@@ -1,3 +1,5 @@
+'use client';
+
 import { TooltipComponent } from '@syncfusion/ej2-react-popups';
 import React from 'react';
 import { MdOutlineCancel } from 'react-icons/md';
