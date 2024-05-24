@@ -8,6 +8,7 @@ import {
   SeriesDirective,
   Tooltip,
 } from '@syncfusion/ej2-react-charts';
+import React from 'react';
 
 import {
   lineCustomSeries,
@@ -16,7 +17,7 @@ import {
 } from '@/common/assets/dummy';
 import useStore from '@/common/hooks/useStore';
 
-const LineChart = () => {
+const LineChart: React.FC = React.memo(() => {
   const { currentMode } = useStore();
 
   return (
@@ -41,6 +42,6 @@ const LineChart = () => {
       </SeriesCollectionDirective>
     </ChartComponent>
   );
-};
+});
 
 export default LineChart;

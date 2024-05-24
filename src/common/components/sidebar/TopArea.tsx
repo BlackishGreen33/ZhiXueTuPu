@@ -1,11 +1,12 @@
 import { TooltipComponent } from '@syncfusion/ej2-react-popups';
+import React from 'react';
 import { MdOutlineCancel } from 'react-icons/md';
 
 import useStore from '@/common/hooks/useStore';
 
 import Logo from './Logo';
 
-const TopArea: React.FC = () => {
+const TopArea: React.FC = React.memo(() => {
   const { currentColor, activeMenu, setActiveMenu } = useStore();
 
   return (
@@ -23,5 +24,6 @@ const TopArea: React.FC = () => {
       </TooltipComponent>
     </div>
   );
-};
+});
+
 export default TopArea;

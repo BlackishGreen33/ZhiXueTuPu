@@ -14,6 +14,7 @@ import {
   Resize,
   Sort,
 } from '@syncfusion/ej2-react-grids';
+import React from 'react';
 
 import {
   contextMenuItems,
@@ -22,7 +23,7 @@ import {
 } from '@/common/assets/dummy';
 import Header from '@/common/components/elements/Header';
 
-const Orders: React.FC = () => {
+const Orders: React.FC = React.memo(() => {
   const editing = { allowDeleting: true, allowEditing: true };
 
   return (
@@ -60,5 +61,6 @@ const Orders: React.FC = () => {
       </GridComponent>
     </div>
   );
-};
+});
+
 export default Orders;

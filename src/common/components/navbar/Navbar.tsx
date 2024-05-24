@@ -1,6 +1,6 @@
 import { TooltipComponent } from '@syncfusion/ej2-react-popups';
 import Image from 'next/image';
-import { useCallback, useEffect } from 'react';
+import React, { useCallback, useEffect } from 'react';
 import { AiOutlineMenu } from 'react-icons/ai';
 import { BsChatLeft } from 'react-icons/bs';
 import { FiShoppingCart } from 'react-icons/fi';
@@ -18,7 +18,7 @@ import useStore from '@/common/hooks/useStore';
 
 import NavButton from './NavButton';
 
-const Navbar: React.FC = () => {
+const Navbar: React.FC = React.memo(() => {
   const {
     currentColor,
     activeMenu,
@@ -26,7 +26,7 @@ const Navbar: React.FC = () => {
     isClicked,
     setScreenSize,
     screenSize,
-    handleClick
+    handleClick,
   } = useStore();
 
   const handleResize = useCallback(() => {
@@ -109,6 +109,6 @@ const Navbar: React.FC = () => {
       </div>
     </div>
   );
-};
+});
 
 export default Navbar;

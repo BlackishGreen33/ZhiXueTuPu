@@ -1,9 +1,11 @@
+import React from 'react';
+
 import Earnings from './Earnings';
 import Periodically from './Periodically';
 import Revenue from './Revenue';
 import Transactions from './Transactions';
 
-const Ecommerce: React.FC = () => {
+const Ecommerce: React.FC = React.memo(() => {
   return (
     <div className="mt-24">
       <Earnings />
@@ -12,6 +14,6 @@ const Ecommerce: React.FC = () => {
       <Periodically />
     </div>
   );
-};
+});
 
 export default Ecommerce;

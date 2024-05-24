@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
+import React from 'react';
 
 const activeLink =
   'flex items-center gap-5 pl-4 pt-3 pb-2.5 rounded-lg text-white text-md m-2';
@@ -16,27 +17,23 @@ interface NavLinkProps {
   onClick?: (event: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => void;
 }
 
-const NavLink: React.FC<NavLinkProps> = ({
-  href,
-  exact = false,
-  children,
-  currentColor,
-  ...props
-}) => {
-  const pathname = usePathname();
-  const isActive = exact ? pathname === href : pathname.startsWith(href);
+const NavLink: React.FC<NavLinkProps> = React.memo(
+  ({ href, exact = false, children, currentColor, ...props }) => {
+    const pathname = usePathname();
+    const isActive = exact ? pathname === href : pathname.startsWith(href);
 
-  const newProps = {
-    ...props,
-    className: isActive ? `${activeLink} active` : normalLink,
-    style: { backgroundColor: isActive ? currentColor : '' },
-  };
+    const newProps = {
+      ...props,
+      className: isActive ? `${activeLink} active` : normalLink,
+      style: { backgroundColor: isActive ? currentColor : '' },
+    };
 
-  return (
-    <Link href={href} {...newProps}>
-      {children}
-    </Link>
-  );
-};
+    return (
+      <Link href={href} {...newProps}>
+        {children}
+      </Link>
+    );
+  }
+);
 
 export default NavLink;

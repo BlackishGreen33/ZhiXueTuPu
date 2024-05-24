@@ -1,11 +1,12 @@
 import { TooltipComponent } from '@syncfusion/ej2-react-popups';
+import React from 'react';
 import { BsCheck } from 'react-icons/bs';
 import { MdOutlineCancel } from 'react-icons/md';
 
 import { themeColors } from '@/common/assets/dummy';
 import useStore from '@/common/hooks/useStore';
 
-const ThemeSettings = () => {
+const ThemeSettings = React.memo(() => {
   const {
     setCurrentColor,
     setCurrentMode,
@@ -53,7 +54,9 @@ const ThemeSettings = () => {
               id="dark"
               name="theme"
               value="Dark"
-              onChange={(e) => setCurrentMode(e.target.value === 'Light' ? 'Light' : 'Dark')}
+              onChange={(e) =>
+                setCurrentMode(e.target.value === 'Light' ? 'Light' : 'Dark')
+              }
               className="cursor-pointer"
               checked={currentMode === 'Dark'}
             />
@@ -94,6 +97,6 @@ const ThemeSettings = () => {
       </div>
     </div>
   );
-};
+});
 
 export default ThemeSettings;

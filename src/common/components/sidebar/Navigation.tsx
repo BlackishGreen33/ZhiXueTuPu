@@ -1,9 +1,11 @@
+import React from 'react';
+
 import { links } from '@/common/assets/dummy';
 import useStore from '@/common/hooks/useStore';
 
 import NavLink from '../elements/NavLink';
 
-const Navigation: React.FC = () => {
+const Navigation: React.FC = React.memo(() => {
   const { currentColor, activeMenu, setActiveMenu, screenSize } = useStore();
 
   const handleCloseSideBar = () => {
@@ -34,5 +36,6 @@ const Navigation: React.FC = () => {
       ))}
     </div>
   );
-};
+});
+
 export default Navigation;

@@ -8,6 +8,7 @@ import {
   StackingColumnSeries,
   Tooltip,
 } from '@syncfusion/ej2-react-charts';
+import React from 'react';
 
 import {
   stackedCustomSeries,
@@ -21,7 +22,7 @@ interface StackedProps {
   height: string;
 }
 
-const Stacked: React.FC<StackedProps> = ({ width, height }) => {
+const Stacked: React.FC<StackedProps> = React.memo(({ width, height }) => {
   const { currentMode } = useStore();
 
   return (
@@ -46,6 +47,6 @@ const Stacked: React.FC<StackedProps> = ({ width, height }) => {
       </SeriesCollectionDirective>
     </ChartComponent>
   );
-};
+});
 
 export default Stacked;

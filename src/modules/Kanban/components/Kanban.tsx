@@ -5,11 +5,12 @@ import {
   ColumnsDirective,
   KanbanComponent,
 } from '@syncfusion/ej2-react-kanban';
+import React from 'react';
 
 import { kanbanData, kanbanGrid } from '@/common/assets/dummy';
 import Header from '@/common/components/elements/Header';
 
-const Kanban: React.FC = () => (
+const Kanban: React.FC = React.memo(() => (
   <div className="m-2 mt-24 rounded-3xl bg-white p-2 md:m-10 md:p-10">
     <Header category="App" title="Kanban" />
     <KanbanComponent
@@ -26,6 +27,6 @@ const Kanban: React.FC = () => (
       </ColumnsDirective>
     </KanbanComponent>
   </div>
-);
+));
 
 export default Kanban;

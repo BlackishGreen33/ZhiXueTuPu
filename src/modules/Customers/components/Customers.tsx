@@ -12,11 +12,12 @@ import {
   Sort,
   Toolbar,
 } from '@syncfusion/ej2-react-grids';
+import React from 'react';
 
 import { customersData, customersGrid } from '@/common/assets/dummy';
 import Header from '@/common/components/elements/Header';
 
-const Customers: React.FC = () => {
+const Customers: React.FC = React.memo(() => {
   const selectionsettings = { persistSelection: true };
   const toolbarOptions = ['Delete'];
   const editing = { allowDeleting: true, allowEditing: true };
@@ -44,6 +45,6 @@ const Customers: React.FC = () => {
       </GridComponent>
     </div>
   );
-};
+});
 
 export default Customers;

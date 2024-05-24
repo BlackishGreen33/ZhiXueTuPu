@@ -1,7 +1,7 @@
 'use client';
 
 import { TooltipComponent } from '@syncfusion/ej2-react-popups';
-import { useEffect } from 'react';
+import React, { useEffect } from 'react';
 import { FiSettings } from 'react-icons/fi';
 
 import useStore from '@/common/hooks/useStore';
@@ -14,7 +14,7 @@ interface LayoutProps {
   children: React.ReactNode;
 }
 
-const Layout: React.FC<LayoutProps> = ({ children }) => {
+const Layout: React.FC<LayoutProps> = React.memo(({ children }) => {
   const {
     setCurrentColor,
     setCurrentMode,
@@ -54,19 +54,15 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
               </button>
             </TooltipComponent>
           </div>
-          {activeMenu ? (
-            <div className="sidebar fixed w-72 bg-white dark:bg-secondary-dark-bg ">
-              <Sidebar />
-            </div>
-          ) : (
-            <div className="w-0 dark:bg-secondary-dark-bg">
-              <Sidebar />
-            </div>
-          )}
+          <div
+            className={`dark:bg-secondary-dark-bg ${activeMenu ? 'sidebar fixed w-72 bg-white' : 'w-0'}`}
+          >
+            <Sidebar />
+          </div>
           <div
             className={
               activeMenu
-                ? 'min-h-screen  w-full bg-main-bg dark:bg-main-dark-bg md:ml-72  '
+                ? 'min-h-screen w-full bg-main-bg dark:bg-main-dark-bg md:ml-72  '
                 : 'flex-2 min-h-screen  w-full bg-main-bg dark:bg-main-dark-bg '
             }
           >
@@ -83,6 +79,6 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
       </div>
     </>
   );
-};
+});
 
 export default Layout;

@@ -14,7 +14,7 @@ import {
   Week,
   WorkWeek,
 } from '@syncfusion/ej2-react-schedule';
-import { useState } from 'react';
+import React, { useState } from 'react';
 
 import { scheduleData } from '@/common/assets/dummy';
 import Header from '@/common/components/elements/Header';
@@ -24,7 +24,7 @@ type CalendarProps = {};
 // @ts-ignore eslint-disable-next-line react/destructuring-assignment
 const PropertyPane = (props) => <div className="mt-5">{props.children}</div>;
 
-const Calendar: React.FC<CalendarProps> = () => {
+const Calendar: React.FC<CalendarProps> = React.memo(() => {
   const [scheduleObj, setScheduleObj] = useState();
   // @ts-ignore
   const change = (args) => {
@@ -80,6 +80,6 @@ const Calendar: React.FC<CalendarProps> = () => {
       </PropertyPane>
     </div>
   );
-};
+});
 
 export default Calendar;
