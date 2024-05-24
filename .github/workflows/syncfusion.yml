@@ -22,3 +22,8 @@ jobs:
       run: npx syncfusion-license activate
       env:
         SYNCFUSION_LICENSE: ${{ secrets.SYNCFUSION_LICENSE }}
+    - name: Deploy to Vercel
+      env:
+        VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+        VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
+      run: vercel --prod --token $VERCEL_TOKEN --projectId $VERCEL_PROJECT_ID
