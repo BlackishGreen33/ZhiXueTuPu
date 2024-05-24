@@ -31,10 +31,11 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
 
   useEffect(() => {
     const currentThemeColor = localStorage.getItem('colorMode');
-    const currentThemeMode = localStorage.getItem('themeMode');
+    const currentThemeMode =
+      localStorage.getItem('themeMode') === 'Light' ? 'Light' : 'Dark';
     if (currentThemeColor && currentThemeMode) {
       setCurrentColor(currentThemeColor);
-      // setCurrentMode(currentThemeMode);
+      setCurrentMode(currentThemeMode);
     }
   }, [setCurrentColor, setCurrentMode]);
 
