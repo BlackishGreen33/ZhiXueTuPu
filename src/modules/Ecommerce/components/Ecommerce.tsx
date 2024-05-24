@@ -23,6 +23,7 @@ import {
 } from '@/common/components/elements';
 import useStore from '@/common/hooks/useStore';
 
+import Earnings from './Earnings';
 import product9 from '../data/product9.jpg';
 
 // const DropDown = ({ currentMode }: { currentMode: string }) => (
@@ -44,56 +45,8 @@ const Ecommerce: React.FC = () => {
 
   return (
     <div className="mt-24">
-      <div className="flex flex-wrap justify-center lg:flex-nowrap ">
-        <div className="m-3 h-44 w-full rounded-xl bg-white bg-hero-pattern bg-cover bg-center bg-no-repeat p-8 pt-9 dark:bg-secondary-dark-bg dark:text-gray-200 lg:w-80">
-          <div className="flex items-center justify-between">
-            <div>
-              <p className="font-bold text-gray-400">Earnings</p>
-              <p className="text-2xl">$63,448.78</p>
-            </div>
-            <button
-              type="button"
-              style={{ backgroundColor: currentColor }}
-              className="opacity-0.9 rounded-full p-4 text-2xl text-white  hover:drop-shadow-xl"
-            >
-              <BsCurrencyDollar />
-            </button>
-          </div>
-          <div className="mt-6">
-            <Button
-              color="white"
-              bgColor={currentColor}
-              text="Download"
-              borderRadius="10px"
-            />
-          </div>
-        </div>
-        <div className="m-3 flex flex-wrap items-center justify-center gap-1">
-          {earningData.map((item) => (
-            <div
-              key={item.title}
-              className="h-44 rounded-2xl bg-white p-4 pt-9  dark:bg-secondary-dark-bg dark:text-gray-200 md:w-56 "
-            >
-              <button
-                type="button"
-                style={{ color: item.iconColor, backgroundColor: item.iconBg }}
-                className="opacity-0.9 rounded-full p-4  text-2xl hover:drop-shadow-xl"
-              >
-                {item.icon}
-              </button>
-              <p className="mt-3">
-                <span className="text-lg font-semibold">{item.amount}</span>
-                <span className={`text-sm text-${item.pcColor} ml-2`}>
-                  {item.percentage}
-                </span>
-              </p>
-              <p className="mt-1 text-sm  text-gray-400">{item.title}</p>
-            </div>
-          ))}
-        </div>
-      </div>
-
-      {/* <div className="flex flex-wrap justify-center gap-10">
+      <Earnings/>
+      <div className="flex flex-wrap justify-center gap-10">
         <div className="m-3 rounded-2xl bg-white p-4 dark:bg-secondary-dark-bg dark:text-gray-200 md:w-780  ">
           <div className="flex justify-between">
             <p className="text-xl font-semibold">Revenue Updates</p>
@@ -150,7 +103,7 @@ const Ecommerce: React.FC = () => {
               </div>
             </div>
             <div>
-              <Stacked currentMode={currentMode} width="320px" height="360px" />
+              <Stacked width="320px" height="360px" />
             </div>
           </div>
         </div>
@@ -190,16 +143,16 @@ const Ecommerce: React.FC = () => {
             </div>
 
             <div className="w-40">
-              <Pie
+              {/* <Pie
                 id="pie-chart"
                 data={ecomPieChartData}
                 legendVisiblity={false}
                 height="160px"
-              />
+              /> */}
             </div>
           </div>
         </div>
-      </div> */}
+      </div>
 
       {/* <div className="m-4 flex flex-wrap justify-center gap-10">
         <div className="rounded-2xl bg-white p-6 dark:bg-secondary-dark-bg dark:text-gray-200">
