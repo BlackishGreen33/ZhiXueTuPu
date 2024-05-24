@@ -27,7 +27,6 @@ const Stacked: React.FC<StackedProps> = ({ width, height }) => {
   return (
     <ChartComponent
       id="charts"
-      // eslint-disable-next-line @typescript-eslint/ban-ts-comment
       // @ts-ignore
       primaryXAxis={stackedPrimaryXAxis}
       primaryYAxis={stackedPrimaryYAxis}
