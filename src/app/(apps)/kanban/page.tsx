@@ -1,7 +1,13 @@
 import { NextPage } from 'next';
 
+import Kanban from '@/modules/Kanban';
+
 const Page: NextPage = () => {
-  return <>Hello World!</>;
+  return (
+    <>
+      <Kanban />
+    </>
+  );
 };
 
 export default Page;
