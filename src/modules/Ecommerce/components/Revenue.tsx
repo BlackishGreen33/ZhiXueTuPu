@@ -117,4 +117,5 @@ const Revenue: React.FC = () => {
     </section>
   );
 };
+
 export default Revenue;
