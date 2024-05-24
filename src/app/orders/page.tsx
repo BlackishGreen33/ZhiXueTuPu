@@ -1,7 +1,13 @@
 import { NextPage } from 'next';
 
+import Orders from '@/modules/Orders.tsx';
+
 const Page: NextPage = () => {
-  return <>Hello World!</>;
+  return (
+    <>
+      <Orders />
+    </>
+  );
 };
 
 export default Page;

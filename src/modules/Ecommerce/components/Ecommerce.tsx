@@ -1,5 +1,3 @@
-import React from 'react';
-
 import Earnings from './Earnings';
 import Periodically from './Periodically';
 import Revenue from './Revenue';

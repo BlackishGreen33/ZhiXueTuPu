@@ -91,6 +91,7 @@ const Navbar: React.FC = () => {
               className="h-8 w-8 rounded-full"
               src={avatar}
               alt="user-profile"
+              loading="lazy"
             />
             <p>
               <span className="text-14 text-gray-400">您好,</span>{' '}

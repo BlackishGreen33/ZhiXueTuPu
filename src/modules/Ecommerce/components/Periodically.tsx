@@ -101,6 +101,7 @@ const Periodically: React.FC = () => {
                 className="h-8 w-8 rounded-full"
                 src={item.image}
                 alt=""
+                loading="lazy"
               />
             ))}
           </div>
@@ -125,7 +126,12 @@ const Periodically: React.FC = () => {
           </button>
         </div>
         <div className="mt-10">
-          <Image className="h-50 md:w-96 " src={product9} alt="" />
+          <Image
+            className="h-50 md:w-96 "
+            src={product9}
+            alt=""
+            loading="lazy"
+          />
           <div className="mt-8">
             <p className="text-lg font-semibold">React 18 coming soon!</p>
             <p className="text-gray-400 ">By Johnathan Doe</p>

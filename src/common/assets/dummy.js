@@ -31,6 +31,7 @@ import { MdOutlineSupervisorAccount } from 'react-icons/md';
 import { RiContactsLine, RiStockLine } from 'react-icons/ri';
 import { TiTick } from 'react-icons/ti';
 
+import Image from 'next/image';
 import avatar from './avatar.jpg';
 import avatar2 from './avatar2.jpg';
 import avatar3 from './avatar3.png';
@@ -45,10 +46,13 @@ import product7 from './product7.jpg';
 
 export const gridOrderImage = (props) => (
   <div>
-    <img
+    <Image
       className="h-20 rounded-xl md:ml-3"
       src={props.ProductImage}
       alt="order-item"
+      width={200}
+      height={200}
+      loading="lazy"
     />
   </div>
 );
@@ -79,10 +83,13 @@ export const kanbanGrid = [
 ];
 const gridEmployeeProfile = (props) => (
   <div className="flex items-center gap-2">
-    <img
+    <Image
       className="h-10 w-10 rounded-full"
       src={props.EmployeeImage}
       alt="employee"
+      width={200}
+      height={200}
+      loading="lazy"
     />
     <p>{props.Name}</p>
   </div>
@@ -142,10 +149,13 @@ export const EditorData = () => (
 );
 const customerGridImage = (props) => (
   <div className="image flex gap-4">
-    <img
+    <Image
       className="h-10 w-10 rounded-full"
       src={props.CustomerImage}
       alt="employee"
+      width={200}
+      height={200}
+      loading="lazy"
     />
     <div>
       <p>{props.CustomerName}</p>
