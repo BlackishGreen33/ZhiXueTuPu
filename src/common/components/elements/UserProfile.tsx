@@ -33,14 +33,8 @@ const UserProfile: React.FC = React.memo(() => {
           loading="lazy"
         />
         <div>
-          <p className="text-xl font-semibold dark:text-gray-200">
-            {' '}
-            李泽群{' '}
-          </p>
-          <p className="text-sm text-gray-500 dark:text-gray-400">
-            {' '}
-            管理员{' '}
-          </p>
+          <p className="text-xl font-semibold dark:text-gray-200"> 李泽群 </p>
+          <p className="text-sm text-gray-500 dark:text-gray-400"> 管理员 </p>
           <p className="text-sm font-semibold text-gray-500 dark:text-gray-400">
             {' '}
             lzq@ccnu.com{' '}
