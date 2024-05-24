@@ -1,7 +1,6 @@
 'use client';
 
 import { TooltipComponent } from '@syncfusion/ej2-react-popups';
-import { useTheme } from 'next-themes';
 import { useEffect } from 'react';
 import { FiSettings } from 'react-icons/fi';
 
@@ -16,9 +15,6 @@ interface LayoutProps {
 }
 
 const Layout: React.FC<LayoutProps> = ({ children }) => {
-  const { resolvedTheme, setTheme } = useTheme();
-  setTheme(resolvedTheme!);
-
   const {
     setCurrentColor,
     setCurrentMode,
