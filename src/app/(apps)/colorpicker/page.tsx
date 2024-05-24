@@ -1,7 +1,13 @@
 import { NextPage } from 'next';
 
+import ColorPicker from '@/modules/ColorPicker';
+
 const Page: NextPage = () => {
-  return <>Hello World!</>;
+  return (
+    <>
+      <ColorPicker />
+    </>
+  );
 };
 
 export default Page;
