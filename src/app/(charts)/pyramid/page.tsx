@@ -1,7 +1,13 @@
 import { NextPage } from 'next';
 
+import Pyramid from '@/modules/charts/Pyramid';
+
 const Page: NextPage = () => {
-  return <>Hello World!</>;
+  return (
+    <>
+      <Pyramid />
+    </>
+  );
 };
 
 export default Page;

@@ -20,8 +20,8 @@ import {
 import useStore from '@/common/hooks/useStore';
 
 interface StackedProps {
-  width: string;
-  height: string;
+  width?: string;
+  height?: string;
 }
 
 const Stacked: React.FC<StackedProps> = React.memo(({ width, height }) => {

@@ -1,7 +1,13 @@
 import { NextPage } from 'next';
 
+import Area from '@/modules/charts/Area';
+
 const Page: NextPage = () => {
-  return <>Hello World!</>;
+  return (
+    <>
+      <Area />
+    </>
+  );
 };
 
 export default Page;

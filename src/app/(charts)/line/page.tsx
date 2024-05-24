@@ -1,7 +1,13 @@
 import { NextPage } from 'next';
 
+import Line from '@/modules/charts/Line';
+
 const Page: NextPage = () => {
-  return <>Hello World!</>;
+  return (
+    <>
+      <Line />
+    </>
+  );
 };
 
 export default Page;

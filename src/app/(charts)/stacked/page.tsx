@@ -1,7 +1,13 @@
 import { NextPage } from 'next';
 
+import Stacked from '@/modules/charts/Stacked';
+
 const Page: NextPage = () => {
-  return <>Hello World!</>;
+  return (
+    <>
+      <Stacked />
+    </>
+  );
 };
 
 export default Page;

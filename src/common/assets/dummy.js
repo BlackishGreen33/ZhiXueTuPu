@@ -592,7 +592,7 @@ export const links = [
         icon: <RiStockLine />,
       },
       {
-        name: 'color-mapping',
+        name: 'colormapping',
         icon: <BsBarChart />,
       },
       {

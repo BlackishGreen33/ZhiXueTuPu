@@ -1,7 +1,13 @@
 import { NextPage } from 'next';
 
+import Pie from '@/modules/charts/Pie';
+
 const Page: NextPage = () => {
-  return <>Hello World!</>;
+  return (
+    <>
+      <Pie />
+    </>
+  );
 };
 
 export default Page;
