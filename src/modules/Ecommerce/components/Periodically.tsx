@@ -12,7 +12,7 @@ import useStore from '@/common/hooks/useStore';
 import product9 from '@/common/assets/product9.jpg';
 
 const Periodically: React.FC = () => {
-  const { currentColor, currentMode } = useStore();
+  const { currentColor } = useStore();
 
   return (
     <div className="flex flex-wrap justify-center">
