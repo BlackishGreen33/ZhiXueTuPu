@@ -16,13 +16,13 @@ interface NavLinkProps {
   onClick?: (event: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => void;
 }
 
-const NavLink = ({
+const NavLink: React.FC<NavLinkProps> = ({
   href,
   exact = false,
   children,
   currentColor,
   ...props
-}: NavLinkProps) => {
+}) => {
   const pathname = usePathname();
   const isActive = exact ? pathname === href : pathname.startsWith(href);
 
