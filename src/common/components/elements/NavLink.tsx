@@ -1,11 +1,5 @@
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import PropTypes from 'prop-types';
-
-NavLink.propTypes = {
-  href: PropTypes.string.isRequired,
-  exact: PropTypes.bool,
-};
 
 NavLink.defaultProps = {
   exact: false,
