@@ -1,3 +1,5 @@
+'use client';
+
 import { GoDotFill } from 'react-icons/go';
 
 import { ecomPieChartData, SparklineAreaData } from '@/common/assets/dummy';

@@ -1,3 +1,5 @@
+'use client';
+
 import { BsCurrencyDollar } from 'react-icons/bs';
 
 import { earningData } from '@/common/assets/dummy';

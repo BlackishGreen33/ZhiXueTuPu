@@ -1,3 +1,5 @@
+'use client';
+
 import { recentTransactions } from '@/common/assets/dummy';
 import { Button, LineChart } from '@/common/components/elements';
 import useStore from '@/common/hooks/useStore';
