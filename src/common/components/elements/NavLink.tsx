@@ -8,7 +8,7 @@ const normalLink =
 
 interface NavLinkProps {
   href: string;
-  exact: boolean;
+  exact?: boolean;
   children: React.ReactNode;
   currentColor: string;
   className?: string;
