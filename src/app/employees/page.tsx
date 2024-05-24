@@ -1,7 +1,13 @@
 import { NextPage } from 'next';
 
+import Employees from '@/modules/Employees';
+
 const Page: NextPage = () => {
-  return <>Hello World!</>;
+  return (
+    <>
+      <Employees />
+    </>
+  );
 };
 
 export default Page;

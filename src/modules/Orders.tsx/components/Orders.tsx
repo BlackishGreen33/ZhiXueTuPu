@@ -24,6 +24,7 @@ import Header from '@/common/components/elements/Header';
 
 const Orders: React.FC = () => {
   const editing = { allowDeleting: true, allowEditing: true };
+
   return (
     <div className="m-2 mt-24 rounded-3xl bg-white p-2 md:m-10 md:p-10">
       <Header category="Page" title="Orders" />
