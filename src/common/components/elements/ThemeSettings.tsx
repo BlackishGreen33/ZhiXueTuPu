@@ -6,7 +6,7 @@ import React from 'react';
 import { BsCheck } from 'react-icons/bs';
 import { MdOutlineCancel } from 'react-icons/md';
 
-import { themeColors } from '@/common/assets/dummy';
+import { themeColors } from '@/common/dummy/dummy';
 import useStore from '@/common/hooks/useStore';
 
 const ThemeSettings = React.memo(() => {

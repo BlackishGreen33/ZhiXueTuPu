@@ -2,8 +2,8 @@
 
 import { BsCurrencyDollar } from 'react-icons/bs';
 
-import { earningData } from '@/common/assets/dummy';
 import { Button } from '@/common/components/elements';
+import { earningData } from '@/common/dummy/dummy';
 import useStore from '@/common/hooks/useStore';
 
 const Earnings: React.FC = () => {

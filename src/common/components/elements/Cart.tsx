@@ -5,7 +5,7 @@ import React from 'react';
 import { AiOutlineMinus, AiOutlinePlus } from 'react-icons/ai';
 import { MdOutlineCancel } from 'react-icons/md';
 
-import { cartData } from '@/common/assets/dummy';
+import { cartData } from '@/common/dummy/dummy';
 import useStore from '@/common/hooks/useStore';
 
 import { Button } from '.';
@@ -35,6 +35,8 @@ const Cart: React.FC = React.memo(() => {
                   src={item.image}
                   alt=""
                   loading="lazy"
+                  width={200}
+                  height={200}
                 />
                 <div>
                   <p className="font-semibold ">{item.name}</p>

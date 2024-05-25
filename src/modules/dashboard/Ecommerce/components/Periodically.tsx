@@ -3,18 +3,17 @@
 import Image from 'next/image';
 import { IoIosMore } from 'react-icons/io';
 
-import {
-  medicalproBranding,
-  SparklineAreaData,
-  weeklyStats,
-} from '@/common/assets/dummy';
 import { Button, SparkLine } from '@/common/components/elements';
+import {
+  SparklineAreaData,
+  medicalproBranding,
+  weeklyStats,
+} from '@/common/dummy/dummy';
 import useStore from '@/common/hooks/useStore';
-
-import product9 from '@/common/assets/product9.jpg';
 
 const Periodically: React.FC = () => {
   const { currentColor } = useStore();
+  const product9 = './assets/product9.jpg';
 
   return (
     <div className="flex flex-wrap justify-center">
@@ -102,6 +101,8 @@ const Periodically: React.FC = () => {
                 src={item.image}
                 alt=""
                 loading="lazy"
+                width={200}
+                height={200}
               />
             ))}
           </div>
@@ -131,6 +132,8 @@ const Periodically: React.FC = () => {
             src={product9}
             alt=""
             loading="lazy"
+            width={200}
+            height={200}
           />
           <div className="mt-8">
             <p className="text-lg font-semibold">React 18 coming soon!</p>

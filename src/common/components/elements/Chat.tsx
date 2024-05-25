@@ -2,7 +2,7 @@ import Image from 'next/image';
 import React from 'react';
 import { MdOutlineCancel } from 'react-icons/md';
 
-import { chatData } from '@/common/assets/dummy';
+import { chatData } from '@/common/dummy/dummy';
 import useStore from '@/common/hooks/useStore';
 
 import { Button } from '.';
@@ -42,6 +42,8 @@ const Chat: React.FC = React.memo(() => {
                 src={item.image}
                 alt={item.message}
                 loading="lazy"
+                width={200}
+                height={200}
               />
               <span
                 // @ts-ignore

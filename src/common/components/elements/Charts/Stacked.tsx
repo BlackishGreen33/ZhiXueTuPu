@@ -17,7 +17,7 @@ import {
   stackedCustomSeries,
   stackedPrimaryXAxis,
   stackedPrimaryYAxis,
-} from '@/common/assets/dummy';
+} from '@/common/dummy/dummy';
 
 interface StackedProps {
   width?: string;

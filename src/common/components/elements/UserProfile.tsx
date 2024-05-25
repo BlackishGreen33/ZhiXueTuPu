@@ -4,14 +4,14 @@ import Image from 'next/image';
 import React from 'react';
 import { MdOutlineCancel } from 'react-icons/md';
 
-import avatar from '@/common/assets/avatar.jpg';
-import { userProfileData } from '@/common/assets/dummy';
+import { userProfileData } from '@/common/dummy/dummy';
 import useStore from '@/common/hooks/useStore';
 
 import { Button } from '.';
 
 const UserProfile: React.FC = React.memo(() => {
   const { currentColor } = useStore();
+  const avatar = './assets/avatar.jpg';
 
   return (
     <div className="nav-item absolute right-1 top-16 w-96 rounded-lg bg-white p-8 dark:bg-[#42464D]">
@@ -31,6 +31,8 @@ const UserProfile: React.FC = React.memo(() => {
           src={avatar}
           alt="user-profile"
           loading="lazy"
+          width={200}
+          height={200}
         />
         <div>
           <p className="text-xl font-semibold dark:text-gray-200"> 李泽群 </p>

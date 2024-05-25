@@ -11,17 +11,17 @@ import {
   SeriesCollectionDirective,
   SeriesDirective,
   Tooltip,
-} from '@syncfusion/ej2-react-charts';import { useTheme } from 'next-themes';
+} from '@syncfusion/ej2-react-charts';
+import { useTheme } from 'next-themes';
 import React from 'react';
 
+import { ChartsHeader } from '@/common/components/elements';
 import {
   colorMappingData,
   ColorMappingPrimaryXAxis,
   ColorMappingPrimaryYAxis,
   rangeColorMapping,
-} from '@/common/assets/dummy';
-import { ChartsHeader } from '@/common/components/elements';
-import useStore from '@/common/hooks/useStore';
+} from '@/common/dummy/dummy';
 
 const ColorMapping: React.FC = React.memo(() => {
   const { theme } = useTheme();

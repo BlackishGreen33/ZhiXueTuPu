@@ -9,7 +9,6 @@ import { FiShoppingCart } from 'react-icons/fi';
 import { MdKeyboardArrowDown } from 'react-icons/md';
 import { RiNotification3Line } from 'react-icons/ri';
 
-import avatar from '@/common/assets/avatar.jpg';
 import {
   Cart,
   Chat,
@@ -30,6 +29,7 @@ const Navbar: React.FC = React.memo(() => {
     screenSize,
     handleClick,
   } = useStore();
+  const avatar = './assets/avatar.jpg';
 
   const handleResize = useCallback(() => {
     setScreenSize(window.innerWidth);
@@ -94,6 +94,8 @@ const Navbar: React.FC = React.memo(() => {
               src={avatar}
               alt="user-profile"
               loading="lazy"
+              width={200}
+              height={200}
             />
             <p>
               <span className="text-14 text-gray-400">您好,</span>{' '}

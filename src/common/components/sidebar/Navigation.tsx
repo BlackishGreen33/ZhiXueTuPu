@@ -2,7 +2,7 @@
 
 import React from 'react';
 
-import { links } from '@/common/assets/dummy';
+import { links } from '@/common/dummy/dummy';
 import useStore from '@/common/hooks/useStore';
 
 import NavLink from '../elements/NavLink';
