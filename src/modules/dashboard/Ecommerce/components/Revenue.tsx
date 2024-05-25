@@ -3,7 +3,7 @@
 import { GoDotFill } from 'react-icons/go';
 
 import { Button, Pie, SparkLine, Stacked } from '@/common/components/elements';
-import { ecomPieChartData, SparklineAreaData } from '@/common/dummy/dummy';
+import { SparklineAreaData, ecomPieChartData } from '@/common/dummy/dummy';
 import useStore from '@/common/hooks/useStore';
 
 const Revenue: React.FC = () => {
