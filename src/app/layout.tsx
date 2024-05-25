@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { ThemeProvider } from 'next-themes';
 import { Inter } from 'next/font/google';
 
 import '@/common/styles/globals.scss';
@@ -26,11 +27,13 @@ export default function RootLayout({
       <body className={inter.className}>
         <StyledComponentsRegistry>
           <GlobalStyles />
-          {/* <ModalProvider /> */}
-          <Layout>
-            {children}
-            {/* <ProgressBar /> */}
-          </Layout>
+          <ThemeProvider attribute="class" defaultTheme="light">
+            {/* <ModalProvider /> */}
+            <Layout>
+              {children}
+              {/* <ProgressBar /> */}
+            </Layout>
+          </ThemeProvider>
         </StyledComponentsRegistry>
       </body>
     </html>
