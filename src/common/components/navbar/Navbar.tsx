@@ -58,27 +58,27 @@ const Navbar: React.FC = React.memo(() => {
   return (
     <div className="relative flex justify-between p-2 md:ml-6 md:mr-6">
       <NavButton
-        title="Menu"
+        title="菜单"
         customFunc={handleActiveMenu}
         color={currentColor}
         icon={<AiOutlineMenu />}
       />
       <div className="flex">
         <NavButton
-          title="Cart"
+          title="购物车"
           customFunc={() => handleClick('cart')}
           color={currentColor}
           icon={<FiShoppingCart />}
         />
         <NavButton
-          title="Chat"
+          title="信息"
           dotColor="#03C9D7"
           customFunc={() => handleClick('chat')}
           color={currentColor}
           icon={<BsChatLeft />}
         />
         <NavButton
-          title="Notification"
+          title="个人档案"
           dotColor="rgb(254, 201, 15)"
           customFunc={() => handleClick('notification')}
           color={currentColor}

@@ -896,8 +896,8 @@ export const userProfileData = [
   },
   {
     icon: <FiCreditCard />,
-    title: 'My Tasks',
-    desc: 'To-do and Daily Tasks',
+    title: '我的任务',
+    desc: '待办事项和日常任务',
     iconColor: 'rgb(255, 244, 229)',
     iconBg: 'rgb(254, 201, 15)',
   },
