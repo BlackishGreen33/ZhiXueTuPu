@@ -15,7 +15,7 @@ const SignInButton: React.FC<SignInButtonProps> = React.memo(({ text }) => {
     <Button
       style={{ backgroundColor: currentColor }}
       onClick={() => {
-        signIn('github');
+        signIn('github', { redirect: false });
       }}
     >
       {text}
