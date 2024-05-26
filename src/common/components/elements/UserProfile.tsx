@@ -1,3 +1,6 @@
+'use client';
+
+import { signOut, useSession } from 'next-auth/react';
 import Image from 'next/image';
 import React from 'react';
 import { MdOutlineCancel } from 'react-icons/md';
@@ -7,6 +10,7 @@ import { userProfileData } from '@/common/dummy/dummy';
 import { Button } from '.';
 
 const UserProfile: React.FC = React.memo(() => {
+  const { data: session } = useSession();
   const avatar = './assets/avatar.jpg';
 
   return (
@@ -24,18 +28,22 @@ const UserProfile: React.FC = React.memo(() => {
       <div className="mt-6 flex items-center gap-5 border-b-1 border-color pb-6">
         <Image
           className="h-24 w-24 rounded-full"
-          src={avatar}
+          // @ts-ignore
+          src={session?.user.image}
           alt="user-profile"
           loading="lazy"
           width={200}
           height={200}
         />
         <div>
-          <p className="text-xl font-semibold dark:text-gray-200"> 李泽群 </p>
+          <p className="text-xl font-semibold dark:text-gray-200">
+            {' '}
+            {session?.user.name}{' '}
+          </p>
           <p className="text-sm text-gray-500 dark:text-gray-400"> 管理员 </p>
           <p className="text-sm font-semibold text-gray-500 dark:text-gray-400">
             {' '}
-            lzq@ccnu.com{' '}
+            {session?.user.email}{' '}
           </p>
         </div>
       </div>
@@ -67,9 +75,10 @@ const UserProfile: React.FC = React.memo(() => {
         <Button
           color="white"
           bgColor={'#FF0000'}
-          text="Logout"
+          text="登出"
           borderRadius="10px"
           width="full"
+          onClick={()=>signOut()}
         />
       </div>
     </div>

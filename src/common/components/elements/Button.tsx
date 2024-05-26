@@ -12,16 +12,30 @@ interface ButtonProps {
   text?: string;
   borderRadius?: string;
   width?: string;
+  onClick?: () => void;
 }
 
 const Button: React.FC<ButtonProps> = React.memo(
-  ({ icon, bgColor, color, bgHoverColor, size, text, borderRadius, width }) => {
+  ({
+    icon,
+    bgColor,
+    color,
+    bgHoverColor,
+    size,
+    text,
+    borderRadius,
+    width,
+    onClick,
+  }) => {
     const { setIsClicked } = useStore();
 
     return (
       <button
         type="button"
-        onClick={() => setIsClicked(initialState)}
+        onClick={() => {
+          setIsClicked(initialState);
+          onClick!();
+        }}
         style={{ backgroundColor: bgColor, color, borderRadius }}
         className={` text-${size} p-3 w-${width} hover:drop-shadow-xl hover:bg-${bgHoverColor}`}
       >
