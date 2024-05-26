@@ -5,7 +5,7 @@ import SignInButton from './SignInButton';
 import UserAccountNav from './UserAccountNav';
 
 const NavAuth: React.FC = React.memo(() => {
-  const session = useSession();
+  const {data: session} = useSession();
   console.log(session);
 
   return (
