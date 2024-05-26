@@ -1,14 +1,9 @@
 import type { Metadata } from 'next';
-import { ThemeProvider } from 'next-themes';
 import { Inter } from 'next/font/google';
 
 import '@/common/styles/globals.scss';
 
-// import ProgressBar from '@/common/components/elements/ProgressBar';
-import Layout from '@/common/components/layouts';
-// import { ModalProvider } from '@/common/components/providers/modal-provider';
-import StyledComponentsRegistry from '@/common/libs/registry';
-import GlobalStyles from '@/common/styles/GlobalStyles';
+import Providers from '@/common/components/providers/Providers';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -25,16 +20,7 @@ export default function RootLayout({
   return (
     <html lang="zh-CN">
       <body className={inter.className}>
-        <StyledComponentsRegistry>
-          <GlobalStyles />
-          <ThemeProvider attribute="class" defaultTheme="light">
-            {/* <ModalProvider /> */}
-            <Layout>
-              {children}
-              {/* <ProgressBar /> */}
-            </Layout>
-          </ThemeProvider>
-        </StyledComponentsRegistry>
+        <Providers>{children}</Providers>
       </body>
     </html>
   );
