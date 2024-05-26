@@ -67,7 +67,7 @@ const Layout: React.FC<LayoutProps> = React.memo(({ children }) => {
             }
           >
             <div className="navbar fixed w-full bg-main-bg dark:bg-main-dark-bg md:static ">
-              <Navbar/>
+              <Navbar />
             </div>
             <div>
               {themeSettings && <ThemeSettings />}

@@ -14,12 +14,7 @@ interface NavButtonProps {
 
 const NavButton: React.FC<NavButtonProps> = React.memo(
   ({ title, custom, icon, dotColor }) => {
-    const {
-      currentColor,
-      activeMenu,
-      setActiveMenu,
-      handleClick,
-    } = useStore();
+    const { currentColor, activeMenu, setActiveMenu, handleClick } = useStore();
 
     const handleActiveMenu = useCallback(
       () => setActiveMenu(!activeMenu),
