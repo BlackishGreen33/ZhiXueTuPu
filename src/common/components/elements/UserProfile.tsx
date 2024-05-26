@@ -11,7 +11,6 @@ import { Button } from '.';
 
 const UserProfile: React.FC = React.memo(() => {
   const { data: session } = useSession();
-  const avatar = './assets/avatar.jpg';
 
   return (
     <div className="nav-item absolute right-1 top-16 w-96 rounded-lg bg-white p-8 dark:bg-[#42464D]">
@@ -29,7 +28,7 @@ const UserProfile: React.FC = React.memo(() => {
         <Image
           className="h-24 w-24 rounded-full"
           // @ts-ignore
-          src={session?.user.image}
+          src={session?.user.image as String}
           alt="user-profile"
           loading="lazy"
           width={200}

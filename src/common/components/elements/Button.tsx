@@ -34,7 +34,9 @@ const Button: React.FC<ButtonProps> = React.memo(
         type="button"
         onClick={() => {
           setIsClicked(initialState);
-          onClick!();
+          if (typeof onClick === 'function') {
+            onClick();
+          }
         }}
         style={{ backgroundColor: bgColor, color, borderRadius }}
         className={` text-${size} p-3 w-${width} hover:drop-shadow-xl hover:bg-${bgHoverColor}`}

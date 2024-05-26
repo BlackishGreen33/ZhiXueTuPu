@@ -5,11 +5,17 @@ import SignInButton from './SignInButton';
 import UserAccountNav from './UserAccountNav';
 
 const NavAuth: React.FC = React.memo(() => {
-  const {data: session} = useSession();
+  const { data: session } = useSession();
   console.log(session);
 
   return (
-    <>{session?.user ? <UserAccountNav /> : <SignInButton text={'登录'} />}</>
+    <>
+      {session?.user ? (
+        <UserAccountNav user={session?.user} />
+      ) : (
+        <SignInButton text={'登录'} />
+      )}
+    </>
   );
 });
 
