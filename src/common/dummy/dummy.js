@@ -27,7 +27,7 @@ import { GiLouvrePyramid } from 'react-icons/gi';
 import { GrLocation } from 'react-icons/gr';
 import { HiOutlineRefresh } from 'react-icons/hi';
 import { IoMdContacts } from 'react-icons/io';
-import { MdOutlineSupervisorAccount } from 'react-icons/md';
+import { MdOutlineSupervisorAccount, MdQuiz } from 'react-icons/md';
 import { RiContactsLine, RiStockLine } from 'react-icons/ri';
 import { TiTick } from 'react-icons/ti';
 
@@ -520,87 +520,106 @@ export const employeesGrid = [
 
 export const links = [
   {
-    title: 'Dashboard',
+    title: '仪表盘',
     links: [
       {
-        name: 'ecommerce',
+        name: '电子商务',
+        nav: 'ecommerce',
         icon: <FiShoppingBag />,
       },
     ],
   },
-
   {
-    title: 'Pages',
+    title: '页面',
     links: [
       {
-        name: 'orders',
+        name: '能力测验',
+        nav: 'quiz',
+        icon: <MdQuiz />,
+      },
+      {
+        name: '订单',
+        nav: 'orders',
         icon: <AiOutlineShoppingCart />,
       },
       {
-        name: 'employees',
+        name: '员工',
+        nav: 'employees',
         icon: <IoMdContacts />,
       },
       {
-        name: 'customers',
+        name: '客户',
+        nav: 'customers',
         icon: <RiContactsLine />,
       },
     ],
   },
   {
-    title: 'Apps',
+    title: '应用',
     links: [
       {
-        name: 'calendar',
+        name: '日历',
+        nav: 'calendar',
         icon: <AiOutlineCalendar />,
       },
       {
-        name: 'kanban',
+        name: '看板',
+        nav: 'kanban',
         icon: <BsKanban />,
       },
       {
-        name: 'editor',
+        name: '编辑器',
+        nav: 'editor',
         icon: <FiEdit />,
       },
       {
-        name: 'colorpicker',
+        name: '颜色选择器',
+        nav: 'colorpicker',
         icon: <BiColorFill />,
       },
     ],
   },
   {
-    title: 'Charts',
+    title: '图表',
     links: [
       {
-        name: 'line',
+        name: '折线图',
+        nav: 'line',
         icon: <AiOutlineStock />,
       },
       {
-        name: 'area',
+        name: '区域图',
+        nav: 'area',
         icon: <AiOutlineAreaChart />,
       },
-
       {
-        name: 'bar',
+        name: '条形图',
+        nav: 'bar',
         icon: <AiOutlineBarChart />,
       },
       {
-        name: 'pie',
+        name: '饼图',
+        nav: 'pie',
         icon: <FiPieChart />,
       },
       {
-        name: 'financial',
+        name: '财务图',
+        nav: 'financial',
         icon: <RiStockLine />,
       },
       {
-        name: 'colormapping',
+        name: '颜色映射',
+        nav: 'colormapping',
         icon: <BsBarChart />,
       },
       {
-        name: 'pyramid',
+        name: '金字塔图',
+        nav: 'pyramid',
         icon: <GiLouvrePyramid />,
       },
       {
-        name: 'stacked',
+        name: '堆栈图',
+        nav: 'stacked',
         icon: <AiOutlineBarChart />,
       },
     ],
