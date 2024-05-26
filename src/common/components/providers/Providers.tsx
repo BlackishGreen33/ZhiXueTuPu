@@ -20,16 +20,17 @@ import GlobalStyles from '@/common/styles/GlobalStyles';
 
 type Props = {
   children: React.ReactNode;
+  session: any;
 };
 
-const Providers: React.FC<Props> = React.memo(({ children }) => {
+const Providers: React.FC<Props> = React.memo(({ children, session }) => {
   return (
     <StyledComponentsRegistry>
       <GlobalStyles />
       {/* <QueryClientProvider client={queryClient}> */}
       <NextThemesProvider attribute="class" defaultTheme="light">
         {/* <ModalProvider /> */}
-        <SessionProvider>
+        <SessionProvider session={session}>
           <Layout>{children}</Layout>
         </SessionProvider>
       </NextThemesProvider>

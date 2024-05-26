@@ -11,11 +11,12 @@ type SignInButtonProps = { text: string };
 
 const SignInButton: React.FC<SignInButtonProps> = React.memo(({ text }) => {
   const { currentColor } = useStore();
+
   return (
     <Button
       style={{ backgroundColor: currentColor }}
       onClick={() => {
-        signIn('github', { redirect: false });
+        signIn('google');
       }}
     >
       {text}
