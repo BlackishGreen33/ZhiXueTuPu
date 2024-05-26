@@ -11,12 +11,10 @@ import {
   CardTitle,
 } from '@/common/components/ui/card';
 
-interface QuizProps {}
-
-const Quiz: React.FC<QuizProps> = React.memo(async () => {
+const Quiz: React.FC = React.memo(async () => {
   const session = await getServerSession();
-  if (!session?.user) {
-    redirect('/');
+  if (session?.user) {
+    redirect('/quiz/dashboard');
   }
 
   return (
