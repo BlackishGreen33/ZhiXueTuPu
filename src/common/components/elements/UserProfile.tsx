@@ -1,16 +1,12 @@
-'use client';
-
 import Image from 'next/image';
 import React from 'react';
 import { MdOutlineCancel } from 'react-icons/md';
 
 import { userProfileData } from '@/common/dummy/dummy';
-import useStore from '@/common/hooks/useStore';
 
 import { Button } from '.';
 
 const UserProfile: React.FC = React.memo(() => {
-  const { currentColor } = useStore();
   const avatar = './assets/avatar.jpg';
 
   return (
@@ -70,7 +66,7 @@ const UserProfile: React.FC = React.memo(() => {
       <div className="mt-5">
         <Button
           color="white"
-          bgColor={currentColor}
+          bgColor={'#FF0000'}
           text="Logout"
           borderRadius="10px"
           width="full"

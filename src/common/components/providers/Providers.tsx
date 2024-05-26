@@ -29,9 +29,9 @@ const Providers: React.FC<Props> = React.memo(({ children }) => {
       {/* <QueryClientProvider client={queryClient}> */}
       <NextThemesProvider attribute="class" defaultTheme="system" enableSystem>
         {/* <ModalProvider /> */}
-        <Layout>
-          <SessionProvider>{children}</SessionProvider>
-        </Layout>
+        <SessionProvider>
+          <Layout>{children}</Layout>
+        </SessionProvider>
       </NextThemesProvider>
       {/* </QueryClientProvider> */}
     </StyledComponentsRegistry>
