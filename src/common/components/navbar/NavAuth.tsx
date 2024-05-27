@@ -6,7 +6,6 @@ import UserAccountNav from './UserAccountNav';
 
 const NavAuth: React.FC = React.memo(() => {
   const { data: session } = useSession();
-  console.log(session);
 
   return (
     <>
