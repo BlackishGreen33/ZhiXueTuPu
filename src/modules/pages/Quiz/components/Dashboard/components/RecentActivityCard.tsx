@@ -12,7 +12,7 @@ import {
 import { prisma } from '@/common/utils/db';
 import { getAuthSession } from '@/common/utils/nextauth';
 
-import HistoryComponent from './HistoryComponent';
+import HistoryComponent from '../../../../../../common/components/elements/HistoryComponent';
 
 const RecentActivityCard: React.FC = React.memo(async () => {
   const session = await getAuthSession();
