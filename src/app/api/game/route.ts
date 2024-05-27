@@ -59,8 +59,7 @@ export async function POST(req: Request, res: Response) {
         option2: string;
         option3: string;
       };
-
-      const manyData = data.questions.map((question: mcqQuestion) => {
+      const manyData = data.questions.questions.map((question: mcqQuestion) => {
         // mix up the options lol
         const options = [
           question.option1,
@@ -86,7 +85,7 @@ export async function POST(req: Request, res: Response) {
         answer: string;
       };
       await prisma.question.createMany({
-        data: data.questions.map((question: openQuestion) => {
+        data: data.questions.questions.map((question: openQuestion) => {
           return {
             question: question.question,
             answer: question.answer,
@@ -116,6 +115,7 @@ export async function POST(req: Request, res: Response) {
     }
   }
 }
+
 export async function GET(req: Request, res: Response) {
   try {
     const session = await getAuthSession();
