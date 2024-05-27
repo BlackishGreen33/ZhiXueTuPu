@@ -117,11 +117,10 @@ const OpenEndedModules: React.FC<OpenEndedModulesProps> = React.memo(
         <div className="flex h-[50vh] w-full items-center justify-center">
           <div className="flex flex-col justify-center">
             <div className="mt-2 whitespace-nowrap rounded-md bg-green-500 px-4 py-2 font-semibold text-white">
-              你在 {formatTimeDelta(differenceInSeconds(now, game.timeStarted))}{' '}
-              完成
+              你在{' '}{formatTimeDelta(differenceInSeconds(now, game.timeStarted))}{' '}完成本次测试
             </div>
             <Link
-              href={`/statistics/${game.id}`}
+              href={`/quiz/statistics/${game.id}`}
               className={cn(buttonVariants({ size: 'lg' }), 'mt-2')}
             >
               查看统计

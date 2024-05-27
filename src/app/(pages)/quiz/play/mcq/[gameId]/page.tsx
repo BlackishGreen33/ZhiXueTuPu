@@ -1,11 +1,17 @@
 import { NextPage } from 'next';
 
-import Quiz from '@/modules/pages/Quiz';
+import MCQ from '@/modules/pages/Quiz/components/Play/MCQ';
 
-const Page: NextPage = () => {
+interface PageProps {
+  params: {
+    gameId: string;
+  };
+}
+
+const Page: NextPage<PageProps> = async ({ params: { gameId } }) => {
   return (
     <>
-      <Quiz />
+      <MCQ gameId={gameId} />
     </>
   );
 };

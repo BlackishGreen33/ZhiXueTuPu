@@ -1,3 +1,3 @@
-import Creation from './components/Creation';
+import MCQ from './components/MCQ';
 
-export default Creation;
+export default MCQ;

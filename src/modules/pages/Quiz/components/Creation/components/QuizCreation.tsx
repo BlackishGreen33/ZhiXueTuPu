@@ -156,7 +156,7 @@ const QuizCreation = ({ topic: topicParam }: Props) => {
                   }}
                   type="button"
                 >
-                  <LuCopyCheck className="mr-2 h-4 w-4" /> 多选题
+                  <LuCopyCheck className="mr-2 h-4 w-4" /> 选择题
                 </Button>
                 <Separator orientation="vertical" />
                 <Button
@@ -169,7 +169,7 @@ const QuizCreation = ({ topic: topicParam }: Props) => {
                   onClick={() => form.setValue('type', 'open_ended')}
                   type="button"
                 >
-                  <LuBookOpen className="mr-2 h-4 w-4" /> 主观题
+                  <LuBookOpen className="mr-2 h-4 w-4" /> 填空题
                 </Button>
               </div>
               <Button disabled={isLoading} type="submit">
