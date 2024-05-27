@@ -1,11 +1,12 @@
 import { NextResponse } from 'next/server';
 import { ZodError } from 'zod';
 
+import { MCQQuestions, OpenEndedQuestions } from '@/common/dummy';
 import { getQuestionsSchema } from '@/common/schemas/questions';
 import { getAuthSession } from '@/common/utils/nextauth';
 
-// export const runtime = 'nodejs';
-// export const maxDuration = 500;
+export const runtime = 'nodejs';
+export const maxDuration = 500;
 
 export async function POST(req: Request, res: Response) {
   try {
@@ -32,34 +33,7 @@ export async function POST(req: Request, res: Response) {
       //     answer: 'answer with max length of 15 words',
       //   }
       // );
-      questions = {
-        questions: [
-          {
-            question:
-              'What are some advanced techniques front-end developers can use to optimize website performance?',
-            answer:
-              'Minify code, lazy loading, optimize images, reduce HTTP requests.',
-          },
-          {
-            question:
-              'How can front-end developers ensure a responsive design that works well across devices?',
-            answer:
-              'Use media queries, flexible grids, viewport meta tag, test on various devices.',
-          },
-          {
-            question:
-              'What are some key skills or tools front-end developers should master to stay current in the field?',
-            answer:
-              'HTML, CSS, JavaScript, responsive design, version control (Git), front-end frameworks.',
-          },
-          {
-            question:
-              'How can front-end developers improve accessibility on websites for users with disabilities?',
-            answer:
-              'Use semantic HTML, ARIA attributes, provide text alternatives, test with screen readers.',
-          },
-        ],
-      };
+      questions = OpenEndedQuestions;
     } else if (type === 'mcq') {
       // questions = await strict_output(
       //   'You are a helpful AI that is able to generate mcq questions and answers, the length of each answer should not be more than 15 words, store all answers and questions and options in a JSON array',
@@ -74,18 +48,7 @@ export async function POST(req: Request, res: Response) {
       //     option3: 'option3 with max length of 15 words',
       //   }
       // );
-      questions = {
-        questions: [
-          {
-            question:
-              'What common design pattern is used in front-end development?',
-            answer: 'Model-View-Controller (MVC)',
-            option1: 'Singleton',
-            option2: 'Observer',
-            option3: 'Adapter',
-          },
-        ],
-      };
+      questions = MCQQuestions;
     }
     return NextResponse.json(
       {
