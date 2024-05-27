@@ -39,7 +39,7 @@ const Layout: React.FC<LayoutProps> = React.memo(({ children }) => {
     <>
       <div className={theme === 'Dark' ? 'dark' : ''}>
         <div className="relative flex dark:bg-main-dark-bg">
-          <div className="fixed bottom-4 right-4" style={{ zIndex: '1000' }}>
+          {/* <div className="fixed bottom-4 right-4" style={{ zIndex: '1000' }}>
             <TooltipComponent content="Settings">
               <button
                 type="button"
@@ -53,7 +53,7 @@ const Layout: React.FC<LayoutProps> = React.memo(({ children }) => {
                 <FiSettings />
               </button>
             </TooltipComponent>
-          </div>
+          </div> */}
           <div
             className={`dark:bg-secondary-dark-bg ${activeMenu ? 'sidebar fixed w-72 bg-white' : 'w-0'}`}
           >

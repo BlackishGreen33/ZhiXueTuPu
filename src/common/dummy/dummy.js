@@ -14,11 +14,13 @@ import {
   BsKanban,
   BsShield,
 } from 'react-icons/bs';
+import { FaUserCircle } from 'react-icons/fa';
 import {
   FiBarChart,
   FiCreditCard,
   FiEdit,
   FiPieChart,
+  FiSettings,
   FiShoppingBag,
   FiShoppingCart,
   FiStar,
@@ -27,7 +29,12 @@ import { GiLouvrePyramid } from 'react-icons/gi';
 import { GrLocation } from 'react-icons/gr';
 import { HiOutlineRefresh } from 'react-icons/hi';
 import { IoMdContacts } from 'react-icons/io';
-import { MdOutlineSupervisorAccount, MdQuiz } from 'react-icons/md';
+import {
+  MdDashboardCustomize,
+  MdOutlineSupervisorAccount,
+  MdQuiz,
+  MdSource,
+} from 'react-icons/md';
 import { RiContactsLine, RiStockLine } from 'react-icons/ri';
 import { TiTick } from 'react-icons/ti';
 
@@ -523,19 +530,49 @@ export const links = [
     title: '仪表盘',
     links: [
       {
-        name: '电子商务',
-        nav: 'ecommerce',
-        icon: <FiShoppingBag />,
+        name: '综合仪表盘',
+        nav: 'dashboard',
+        icon: <MdDashboardCustomize />,
       },
     ],
   },
   {
-    title: '页面',
+    title: '应用',
     links: [
       {
         name: '能力测验',
         nav: 'quiz',
         icon: <MdQuiz />,
+      },
+      {
+        name: '资源管理',
+        nav: 'sources',
+        icon: <MdSource />,
+      },
+    ],
+  },
+  {
+    title: '账户',
+    links: [
+      {
+        name: '个人中心',
+        nav: 'profile',
+        icon: <FaUserCircle />,
+      },
+      {
+        name: '系统设置',
+        nav: 'settings',
+        icon: <FiSettings />,
+      },
+    ],
+  },
+  {
+    title: '其它',
+    links: [
+      {
+        name: '电子商务',
+        nav: 'ecommerce',
+        icon: <FiShoppingBag />,
       },
       {
         name: '订单',
@@ -552,11 +589,6 @@ export const links = [
         nav: 'customers',
         icon: <RiContactsLine />,
       },
-    ],
-  },
-  {
-    title: '应用',
-    links: [
       {
         name: '日历',
         nav: 'calendar',
@@ -577,11 +609,6 @@ export const links = [
         nav: 'colorpicker',
         icon: <BiColorFill />,
       },
-    ],
-  },
-  {
-    title: '图表',
-    links: [
       {
         name: '折线图',
         nav: 'line',
