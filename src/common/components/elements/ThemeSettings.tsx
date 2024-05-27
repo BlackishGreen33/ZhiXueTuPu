@@ -1,17 +1,47 @@
 'use client';
 
 import { TooltipComponent } from '@syncfusion/ej2-react-popups';
+import axios from 'axios';
+import { useSession } from 'next-auth/react';
 import { useTheme } from 'next-themes';
-import React from 'react';
+import React, { useState } from 'react';
 import { BsCheck } from 'react-icons/bs';
 import { MdOutlineCancel } from 'react-icons/md';
 
 import { themeColors } from '@/common/dummy/dummy';
 import useStore from '@/common/hooks/useStore';
 
+import { Button } from '../ui/button';
+import { Input } from '../ui/input';
+import { useToast } from '../ui/use-toast';
+
 const ThemeSettings = React.memo(() => {
   const { setCurrentColor, currentColor, setThemeSettings } = useStore();
   const { setTheme, theme } = useTheme();
+  const { data: session } = useSession();
+  const { toast } = useToast();
+  const [apiKey, setapiKey] = useState('');
+
+  const handleClick = async () => {
+    const res = await axios.post('/api/apiKey', {
+      apiKey: apiKey,
+      email: session?.user.email,
+    });
+    if (res.status === 200) {
+      toast({
+        title: '成功',
+        description: '您的 API 密钥已保存。',
+        // @ts-ignore
+        variant: 'success',
+      });
+    } else {
+      toast({
+        title: '错误',
+        description: '发生了一些错误。请稍后再试。',
+        variant: 'destructive',
+      });
+    }
+  };
 
   return (
     <div className="nav-item fixed right-0 top-0 w-screen bg-half-transparent">
@@ -90,6 +120,25 @@ const ThemeSettings = React.memo(() => {
                 </div>
               </TooltipComponent>
             ))}
+          </div>
+        </div>
+        <div className="ml-4 border-t-1 border-color p-4">
+          <p className="text-xl font-semibold">你的 Openai 秘钥</p>
+          <p className="text-sm">
+            如果您有 Openai 秘钥，可以解锁 AI 出题测验功能。
+          </p>
+          <div className="mt-2 flex gap-3">
+            <Input
+              value={apiKey}
+              onChange={(e) => setapiKey(e.target.value)}
+              type="password"
+            />
+            <Button
+              style={{ backgroundColor: currentColor }}
+              onClick={handleClick}
+            >
+              提交
+            </Button>
           </div>
         </div>
       </div>

@@ -43,6 +43,7 @@ model User {
   email         String?   @unique
   emailVerified DateTime?
   image         String?
+  apiKey        String?   @db.Text
   games         Game[]
   accounts      Account[]
   sessions      Session[]

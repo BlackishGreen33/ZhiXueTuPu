@@ -1,10 +1,5 @@
 import OpenAI from 'openai';
 
-const openai = new OpenAI({
-  apiKey: process.env.OPENAI_API_KEY,
-  baseURL: process.env.OPENAI_API_BASE_URL,
-});
-
 interface OutputFormat {
   [key: string]: string | string[] | OutputFormat;
 }
@@ -13,6 +8,7 @@ export async function strict_output(
   system_prompt: string,
   user_prompt: string | string[],
   output_format: OutputFormat,
+  apiKey: string,
   default_category: string = '',
   output_value_only: boolean = false,
   model: string = 'gpt-3.5-turbo',
@@ -25,6 +21,9 @@ export async function strict_output(
     answer: string;
   }[]
 > {
+  const openai = new OpenAI({
+    apiKey: apiKey,
+  });
   // if the user input is in a list, we also process the output as a list of json
   const list_input: boolean = Array.isArray(user_prompt);
   // if the output format contains dynamic elements of < or >, then add to the prompt to handle dynamic elements

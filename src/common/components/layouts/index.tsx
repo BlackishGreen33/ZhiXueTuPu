@@ -1,9 +1,7 @@
 'use client';
 
-import { TooltipComponent } from '@syncfusion/ej2-react-popups';
 import { useTheme } from 'next-themes';
 import React, { useEffect } from 'react';
-import { FiSettings } from 'react-icons/fi';
 
 import useStore from '@/common/hooks/useStore';
 
@@ -19,9 +17,7 @@ const Layout: React.FC<LayoutProps> = React.memo(({ children }) => {
   const {
     setCurrentColor,
     activeMenu,
-    currentColor,
     themeSettings,
-    setThemeSettings,
   } = useStore();
   const { setTheme, theme } = useTheme();
 
