@@ -2,6 +2,7 @@ import { getServerSession } from 'next-auth';
 import { redirect } from 'next/navigation';
 import React from 'react';
 
+import DetailsDialog from './DetailsDialog';
 import HistoryCard from './HistoryCard';
 import HotTopicsCard from './HotTopicsCard';
 import QuizMeCard from './QuizMeCard';
@@ -20,7 +21,7 @@ const Dashboard: React.FC<DashboardProps> = React.memo(async () => {
       <div className="mx-auto max-w-7xl p-8">
         <div className="flex items-center">
           <h2 className="mr-2 text-3xl font-bold tracking-tight">仪表盘</h2>
-          {/* <DetailsDialog /> */}
+          <DetailsDialog />
         </div>
 
         <div className="mt-4 grid gap-4 md:grid-cols-2">
