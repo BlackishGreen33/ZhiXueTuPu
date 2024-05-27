@@ -6,7 +6,7 @@ import { getQuestionsSchema } from '@/common/schemas/questions';
 import { getAuthSession } from '@/common/utils/nextauth';
 
 export const runtime = 'nodejs';
-export const maxDuration = 500;
+export const maxDuration = 60;
 
 export async function POST(req: Request, res: Response) {
   try {
