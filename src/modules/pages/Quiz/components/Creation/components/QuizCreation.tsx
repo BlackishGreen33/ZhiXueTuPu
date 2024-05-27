@@ -1,7 +1,8 @@
 'use client';
 
 import { zodResolver } from '@hookform/resolvers/zod';
-// import { useMutation } from '@tanstack/react-query';
+import { useMutation } from '@tanstack/react-query';
+import axios, { AxiosError } from 'axios';
 import { useRouter } from 'next/navigation';
 import React from 'react';
 import { useForm } from 'react-hook-form';
@@ -33,7 +34,7 @@ import { quizCreationSchema } from '@/common/schemas/forms/quiz';
 import LoadingQuestions from './LoadingQuestions';
 
 type Props = {
-  topic?: string;
+  topic: string;
 };
 
 type Input = z.infer<typeof quizCreationSchema>;
@@ -43,12 +44,13 @@ const QuizCreation = ({ topic: topicParam }: Props) => {
   const [showLoader, setShowLoader] = React.useState(false);
   const [finishedLoading, setFinishedLoading] = React.useState(false);
   const { toast } = useToast();
-  // const { mutate: getQuestions, isLoading } = useMutation({
-  //   mutationFn: async ({ amount, topic, type }: Input) => {
-  //     const response = await axios.post('/api/game', { amount, topic, type });
-  //     return response.data;
-  //   },
-  // });
+  // @ts-ignore
+  const { mutate: getQuestions, isLoading } = useMutation({
+    mutationFn: async ({ amount, topic, type }: Input) => {
+      const response = await axios.post('/api/game', { amount, topic, type });
+      return response.data;
+    },
+  });
 
   const form = useForm<Input>({
     resolver: zodResolver(quizCreationSchema),
@@ -61,30 +63,30 @@ const QuizCreation = ({ topic: topicParam }: Props) => {
 
   const onSubmit = async (data: Input) => {
     setShowLoader(true);
-    // getQuestions(data, {
-    //   onError: (error) => {
-    //     setShowLoader(false);
-    //     if (error instanceof AxiosError) {
-    //       if (error.response?.status === 500) {
-    //         toast({
-    //           title: '错误',
-    //           description: '发生了一些错误。请稍后再试。',
-    //           variant: 'destructive',
-    //         });
-    //       }
-    //     }
-    //   },
-    //   onSuccess: ({ gameId }: { gameId: string }) => {
-    //     setFinishedLoading(true);
-    //     setTimeout(() => {
-    //       if (form.getValues('type') === 'mcq') {
-    //         router.push(`/play/mcq/${gameId}`);
-    //       } else if (form.getValues('type') === 'open_ended') {
-    //         router.push(`/play/open-ended/${gameId}`);
-    //       }
-    //     }, 2000);
-    //   },
-    // });
+    getQuestions(data, {
+      onError: (error) => {
+        setShowLoader(false);
+        if (error instanceof AxiosError) {
+          if (error.response?.status === 500) {
+            toast({
+              title: '错误',
+              description: '发生了一些错误。请稍后再试。',
+              variant: 'destructive',
+            });
+          }
+        }
+      },
+      onSuccess: ({ gameId }: { gameId: string }) => {
+        setFinishedLoading(true);
+        setTimeout(() => {
+          if (form.getValues('type') === 'mcq') {
+            router.push(`/quiz/play/mcq/${gameId}`);
+          } else if (form.getValues('type') === 'open_ended') {
+            router.push(`/quiz/play/open-ended/${gameId}`);
+          }
+        }, 2000);
+      },
+    });
   };
   form.watch();
 
@@ -93,7 +95,6 @@ const QuizCreation = ({ topic: topicParam }: Props) => {
   }
 
   return (
-    <div>
       <Card>
         <CardHeader>
           <CardTitle className="text-2xl font-bold">创建测验</CardTitle>
@@ -109,7 +110,7 @@ const QuizCreation = ({ topic: topicParam }: Props) => {
                   <FormItem>
                     <FormLabel>主题</FormLabel>
                     <FormControl>
-                      <Input placeholder="Enter a topic" {...field} />
+                      <Input placeholder="填入主题" {...field} />
                     </FormControl>
                     <FormDescription>
                       请在此处提供您想被测验的主题。
@@ -171,17 +172,13 @@ const QuizCreation = ({ topic: topicParam }: Props) => {
                   <LuBookOpen className="mr-2 h-4 w-4" /> 主观题
                 </Button>
               </div>
-              <Button
-                // disabled={isLoading}
-                type="submit"
-              >
+              <Button disabled={isLoading} type="submit">
                 送出
               </Button>
             </form>
           </Form>
         </CardContent>
       </Card>
-    </div>
   );
 };
 

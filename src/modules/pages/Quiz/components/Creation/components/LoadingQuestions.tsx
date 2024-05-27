@@ -41,7 +41,7 @@ const LoadingQuestions = ({ finished }: Props) => {
   }, [finished]);
 
   return (
-    <div className="absolute left-1/2 top-1/2 flex w-[70vw] -translate-x-1/2 -translate-y-1/2 flex-col items-center md:w-[60vw]">
+    <div className="flex flex-col items-center md:w-[60vw]">
       <Image
         src={'/assets/loading.gif'}
         width={400}

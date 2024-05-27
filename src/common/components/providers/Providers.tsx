@@ -11,12 +11,9 @@ import StyledComponentsRegistry from '@/common/libs/registry';
 import GlobalStyles from '@/common/styles/GlobalStyles';
 
 // import { type ThemeProviderProps } from "next-themes/dist/types";
-// import {
-//   QueryClient,
-//   QueryClientProvider,
-//   useQuery,
-// } from "@tanstack/react-query";
-// const queryClient = new QueryClient();
+import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
+
+const queryClient = new QueryClient();
 
 type Props = {
   children: React.ReactNode;
@@ -27,14 +24,14 @@ const Providers: React.FC<Props> = React.memo(({ children, session }) => {
   return (
     <StyledComponentsRegistry>
       <GlobalStyles />
-      {/* <QueryClientProvider client={queryClient}> */}
-      <NextThemesProvider attribute="class" defaultTheme="light">
-        {/* <ModalProvider /> */}
-        <SessionProvider session={session}>
-          <Layout>{children}</Layout>
-        </SessionProvider>
-      </NextThemesProvider>
-      {/* </QueryClientProvider> */}
+      <QueryClientProvider client={queryClient}>
+        <NextThemesProvider attribute="class" defaultTheme="light">
+          {/* <ModalProvider /> */}
+          <SessionProvider session={session}>
+            <Layout>{children}</Layout>
+          </SessionProvider>
+        </NextThemesProvider>
+      </QueryClientProvider>
     </StyledComponentsRegistry>
   );
 });

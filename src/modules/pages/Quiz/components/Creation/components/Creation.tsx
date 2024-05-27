@@ -6,7 +6,7 @@ import { redirect } from 'next/navigation';
 import QuizCreation from './QuizCreation';
 
 type CreationProps = {
-  searchParams?: {
+  searchParams: {
     topic?: string;
   };
 };
@@ -19,10 +19,8 @@ const Creation: React.FC<CreationProps> = React.memo(
     }
 
     return (
-      <main className="m-2 mt-24 h-auto p-2 md:m-10 md:p-10 flex justify-center items-center">
-        <QuizCreation 
-        // topic={searchParams.topic ?? ''}
-        />
+      <main className="m-2 mt-24 flex h-auto items-center justify-center p-2 md:m-10 md:p-10">
+        <QuizCreation topic={searchParams.topic ?? ''} />
       </main>
     );
   }
