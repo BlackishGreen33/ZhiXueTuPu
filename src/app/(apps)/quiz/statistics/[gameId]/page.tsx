@@ -1,6 +1,6 @@
 import { NextPage } from 'next';
 
-import Statistics from '@/modules/pages/Quiz/components/Statistics';
+import Statistics from '@/modules/apps/Quiz/components/Statistics';
 
 interface PageProps {
   params: {

@@ -1,6 +1,6 @@
 import { NextPage } from 'next';
 
-import Pyramid from '@/modules/charts/Pyramid';
+import Pyramid from '@/modules/others/Pyramid';
 
 const Page: NextPage = () => {
   return (

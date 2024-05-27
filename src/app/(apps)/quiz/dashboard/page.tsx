@@ -1,6 +1,6 @@
 import { NextPage } from 'next';
 
-import Dashboard from '@/modules/pages/Quiz/components/Dashboard';
+import Dashboard from '@/modules/apps/Quiz/components/Dashboard';
 
 const Page: NextPage = () => {
   return (

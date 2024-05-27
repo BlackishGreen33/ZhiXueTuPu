@@ -1,6 +1,6 @@
 import { NextPage } from 'next';
 
-import MCQ from '@/modules/pages/Quiz/components/Play/MCQ';
+import MCQ from '@/modules/apps/Quiz/components/Play/MCQ';
 
 interface PageProps {
   params: {

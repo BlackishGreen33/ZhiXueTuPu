@@ -1,6 +1,6 @@
 import { NextPage } from 'next';
 
-import Customers from '@/modules/pages/Customers';
+import Customers from '@/modules/others/Customers';
 
 const Page: NextPage = () => {
   return (

@@ -1,6 +1,6 @@
 import { NextPage } from 'next';
 
-import Bar from '@/modules/charts/Bar';
+import Bar from '@/modules/others/Bar';
 
 const Page: NextPage = () => {
   return (

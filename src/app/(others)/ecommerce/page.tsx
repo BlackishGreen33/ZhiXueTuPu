@@ -1,6 +1,6 @@
 import { NextPage } from 'next';
 
-import Ecommerce from '@/modules/dashboard/Ecommerce';
+import Ecommerce from '@/modules/others/Ecommerce';
 
 const Page: NextPage = () => {
   return (

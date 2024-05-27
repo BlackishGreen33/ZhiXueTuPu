@@ -1,6 +1,6 @@
 import { NextPage } from 'next';
 
-import Employees from '@/modules/pages/Employees';
+import Employees from '@/modules/others/Employees';
 
 const Page: NextPage = () => {
   return (

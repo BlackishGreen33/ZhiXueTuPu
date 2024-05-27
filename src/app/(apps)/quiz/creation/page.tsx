@@ -1,6 +1,6 @@
 import { NextPage } from 'next';
 
-import Creation from '@/modules/pages/Quiz/components/Creation';
+import Creation from '@/modules/apps/Quiz/components/Creation';
 
 interface PageProps {
   searchParams: {

@@ -1,6 +1,6 @@
 import { NextPage } from 'next';
 
-import History from '@/modules/pages/Quiz/components/History';
+import History from '@/modules/apps/Quiz/components/History';
 
 const Page: NextPage = () => {
   return (

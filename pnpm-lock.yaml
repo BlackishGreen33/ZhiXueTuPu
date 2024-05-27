@@ -65,6 +65,9 @@ importers:
       '@syncfusion/ej2-react-kanban':
         specifier: ^25.2.3
         version: 25.2.3
+      '@syncfusion/ej2-react-navigations':
+        specifier: ^25.2.4
+        version: 25.2.4
       '@syncfusion/ej2-react-popups':
         specifier: ^25.2.4
         version: 25.2.4
@@ -849,6 +852,9 @@ packages:
 
   '@syncfusion/ej2-react-kanban@25.2.3':
     resolution: {integrity: sha512-x0SWu6wIXTr+9J7ofFHm5udvJzCEkmN3CXQGyDnY3Zv4ceku7kG5/wli/0Jerwiadug3OhvWL/KBacm31QUEYA==}
+
+  '@syncfusion/ej2-react-navigations@25.2.4':
+    resolution: {integrity: sha512-AUR2/NzdOf1mSPAkfTRpKOOUAipChaikJ/Uczg3R7gdKT7MGY3+/wtPsR1xZ6P/xxrEsPiiWn/GY7puVOBmHGw==}
 
   '@syncfusion/ej2-react-popups@25.2.4':
     resolution: {integrity: sha512-W5EB3TGs3HMGQvrn8LdM9inngOJWle4s4HQ8Ili4hTxjQ83uNaJIvGLZvMozaujTkhV95V84tEMFyuQTo1pneg==}
@@ -3762,6 +3768,12 @@ snapshots:
     dependencies:
       '@syncfusion/ej2-base': 25.2.5
       '@syncfusion/ej2-kanban': 25.2.3
+      '@syncfusion/ej2-react-base': 25.2.3
+
+  '@syncfusion/ej2-react-navigations@25.2.4':
+    dependencies:
+      '@syncfusion/ej2-base': 25.2.5
+      '@syncfusion/ej2-navigations': 25.2.4
       '@syncfusion/ej2-react-base': 25.2.3
 
   '@syncfusion/ej2-react-popups@25.2.4':

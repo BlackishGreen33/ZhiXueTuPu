@@ -1,6 +1,6 @@
 import { NextPage } from 'next';
 
-import Calendar from '@/modules/apps/Calendar';
+import Calendar from '@/modules/others/Calendar';
 
 const Page: NextPage = () => {
   return (

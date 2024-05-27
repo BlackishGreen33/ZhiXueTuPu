@@ -1,6 +1,6 @@
 import { NextPage } from 'next';
 
-import ColorPicker from '@/modules/apps/ColorPicker';
+import ColorPicker from '@/modules/others/ColorPicker';
 
 const Page: NextPage = () => {
   return (

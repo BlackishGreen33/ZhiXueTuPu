@@ -1,6 +1,6 @@
 import { NextPage } from 'next';
 
-import Orders from '@/modules/pages/Orders.tsx';
+import Orders from '@/modules/others/Orders.tsx';
 
 const Page: NextPage = () => {
   return (

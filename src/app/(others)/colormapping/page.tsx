@@ -1,6 +1,6 @@
 import { NextPage } from 'next';
 
-import ColorMapping from '@/modules/charts/ColorMapping';
+import ColorMapping from '@/modules/others/ColorMapping';
 
 const Page: NextPage = () => {
   return (

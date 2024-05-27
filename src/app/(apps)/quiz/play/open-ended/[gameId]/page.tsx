@@ -1,6 +1,6 @@
 import { NextPage } from 'next';
 
-import OpenEnded from '@/modules/pages/Quiz/components/Play/OpenEnded';
+import OpenEnded from '@/modules/apps/Quiz/components/Play/OpenEnded';
 
 interface PageProps {
   params: {

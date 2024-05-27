@@ -237,3 +237,28 @@ h6 {
     @apply bg-background text-foreground;
   }
 }
+
+#treeview {
+  max-width: 500px;
+  margin: auto;
+  border-radius: 3px;
+}
+#treeview.e-treeview .e-list-img {
+  width: 25px;
+  height: 25px;
+}
+#treeview.e-treeview .e-list-icon {
+  background-repeat: no-repeat;
+  // background-image: url(/assets/avatar.png);
+  height: 20px;
+}
+#treeview.e-treeview .e-list-icon.folder { background-position: -10px -552px }
+.e-bigger #treeview.e-treeview .e-list-icon.folder { background-position: -10px -550px; }
+#treeview.e-treeview .e-list-icon.docx { background-position: -10px -20px }
+#treeview.e-treeview .e-list-icon.ppt { background-position: -10px -48px }
+#treeview.e-treeview .e-list-icon.pdf { background-position: -10px -104px }
+#treeview.e-treeview .e-list-icon.images { background-position: -10px -132px }
+#treeview.e-treeview .e-list-icon.zip { background-position: -10px -188px }
+#treeview.e-treeview .e-list-icon.audio { background-position: -10px -244px }
+#treeview.e-treeview .e-list-icon.video { background-position: -10px -272px }
+#treeview.e-treeview .e-list-icon.exe { background-position: -10px -412px }

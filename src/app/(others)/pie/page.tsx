@@ -1,6 +1,6 @@
 import { NextPage } from 'next';
 
-import Pie from '@/modules/charts/Pie';
+import Pie from '@/modules/others/Pie';
 
 const Page: NextPage = () => {
   return (

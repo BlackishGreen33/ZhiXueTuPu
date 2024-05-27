@@ -1,6 +1,6 @@
 import { NextPage } from 'next';
 
-import Stacked from '@/modules/charts/Stacked';
+import Stacked from '@/modules/others/Stacked';
 
 const Page: NextPage = () => {
   return (

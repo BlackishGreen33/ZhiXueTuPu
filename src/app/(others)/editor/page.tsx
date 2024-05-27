@@ -1,6 +1,6 @@
 import { NextPage } from 'next';
 
-import Editor from '@/modules/apps/Editor';
+import Editor from '@/modules/others/Editor';
 
 const Page: NextPage = () => {
   return (

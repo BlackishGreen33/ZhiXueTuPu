@@ -1,11 +1,11 @@
 import { NextPage } from 'next';
 
-import Area from '@/modules/charts/Area';
+import Sources from '@/modules/apps/Sources';
 
 const Page: NextPage = () => {
   return (
     <>
-      <Area />
+      <Sources />
     </>
   );
 };

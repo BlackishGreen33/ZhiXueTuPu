@@ -1,6 +1,6 @@
 import { NextPage } from 'next';
 
-import Quiz from '@/modules/pages/Quiz';
+import Quiz from '@/modules/apps/Quiz';
 
 const Page: NextPage = () => {
   return (
