@@ -54,8 +54,8 @@ dependencies:
     specifier: ^25.2.5
     version: 25.2.5
   '@syncfusion/ej2-react-charts':
-    specifier: ^25.2.5
-    version: 25.2.5
+    specifier: ^25.2.6
+    version: 25.2.6
   '@syncfusion/ej2-react-dropdowns':
     specifier: ^25.2.5
     version: 25.2.5
@@ -1350,6 +1350,12 @@ packages:
       '@syncfusion/ej2-base': 25.2.5
     dev: false
 
+  /@syncfusion/ej2-buttons@25.2.6:
+    resolution: {integrity: sha512-gOiOchI4ASfi+NSqRwzt530LWBN981O8DksoLpIrk8bvDWe7RrPVPBc1qAhIH7VQLepLLbkp8SXS3IzhXbunLA==}
+    dependencies:
+      '@syncfusion/ej2-base': 25.2.5
+    dev: false
+
   /@syncfusion/ej2-calendars@25.2.5:
     resolution: {integrity: sha512-PKHzoJ/0J36LDVaW6X7Vupwas5kDcpd3Ez5dwpOvu/tmSnit5OfYpZQydxH1Fi7MEXQKUYBS0dIYVWM4sZy6fg==}
     dependencies:
@@ -1368,6 +1374,18 @@ packages:
       '@syncfusion/ej2-data': 25.2.3
       '@syncfusion/ej2-excel-export': 25.2.3
       '@syncfusion/ej2-navigations': 25.2.4
+      '@syncfusion/ej2-pdf-export': 25.2.3
+      '@syncfusion/ej2-svg-base': 25.2.5
+    dev: false
+
+  /@syncfusion/ej2-charts@25.2.6:
+    resolution: {integrity: sha512-G8xUF85BuXK1NYnPoS4SMa7oxHbMdr384cHkLZ8CMtAzgyh+9qQeyV5EJPqvSeaz4b8FY2h4/FC/tWaXNQTv4w==}
+    dependencies:
+      '@syncfusion/ej2-base': 25.2.5
+      '@syncfusion/ej2-calendars': 25.2.5
+      '@syncfusion/ej2-data': 25.2.3
+      '@syncfusion/ej2-excel-export': 25.2.3
+      '@syncfusion/ej2-navigations': 25.2.6
       '@syncfusion/ej2-pdf-export': 25.2.3
       '@syncfusion/ej2-svg-base': 25.2.5
     dev: false
@@ -1557,6 +1575,15 @@ packages:
       '@syncfusion/ej2-splitbuttons': 25.2.4
     dev: false
 
+  /@syncfusion/ej2-inputs@25.2.6:
+    resolution: {integrity: sha512-DjhOU6ZH55JA92zb2PORSRPui6xBrx4VKQFO0Pkb2kVNixFK2AvmeeGMG33i+GdECLBFI5Vevl/qaQ+kttBwkg==}
+    dependencies:
+      '@syncfusion/ej2-base': 25.2.5
+      '@syncfusion/ej2-buttons': 25.2.6
+      '@syncfusion/ej2-popups': 25.2.6
+      '@syncfusion/ej2-splitbuttons': 25.2.4
+    dev: false
+
   /@syncfusion/ej2-kanban@25.2.3:
     resolution: {integrity: sha512-NCNrycBN878c8OMozm7cAfnT+7U+ozKQQzVWUwFVo4nukzinKyBbiZBViHwbGL6qxNCQ/WsjMhDT69k50adiTA==}
     dependencies:
@@ -1615,6 +1642,17 @@ packages:
       '@syncfusion/ej2-inputs': 25.2.5
       '@syncfusion/ej2-lists': 25.2.3
       '@syncfusion/ej2-popups': 25.2.4
+    dev: false
+
+  /@syncfusion/ej2-navigations@25.2.6:
+    resolution: {integrity: sha512-tTDrGdbEAsk26BdEzj2ufGGpeNXwNfy3exrDIZs9cyUpX8YdUASRoCJBuUkwrHIs2NQe1Ds6M/AIQrZKv7SBBw==}
+    dependencies:
+      '@syncfusion/ej2-base': 25.2.5
+      '@syncfusion/ej2-buttons': 25.2.6
+      '@syncfusion/ej2-data': 25.2.3
+      '@syncfusion/ej2-inputs': 25.2.6
+      '@syncfusion/ej2-lists': 25.2.3
+      '@syncfusion/ej2-popups': 25.2.6
     dev: false
 
   /@syncfusion/ej2-notifications@25.2.3:
@@ -1690,6 +1728,13 @@ packages:
       '@syncfusion/ej2-buttons': 25.2.4
     dev: false
 
+  /@syncfusion/ej2-popups@25.2.6:
+    resolution: {integrity: sha512-S3ATcdPMOzJkwHcL1J7SVyap581WE4MoW8g2tRy1BISrBkUQcUE0voZwuf+eW4XWHc8SgXgs9zfihHi8y460LQ==}
+    dependencies:
+      '@syncfusion/ej2-base': 25.2.5
+      '@syncfusion/ej2-buttons': 25.2.6
+    dev: false
+
   /@syncfusion/ej2-progressbar@25.2.3:
     resolution: {integrity: sha512-qmkUbtmSbyXHgHMlTvmcV9EE2DhZWUa+PVQzPgV8slskcCgPrJACQqN0BDtpsfYL/BfVkNgX5RDIy00yWnV7Dw==}
     dependencies:
@@ -1715,6 +1760,12 @@ packages:
       '@syncfusion/ej2-base': 25.2.5
     dev: false
 
+  /@syncfusion/ej2-react-base@25.2.6:
+    resolution: {integrity: sha512-Mltemrof6wIGAFaBg9JsGFrWzM8Df2src9DsMSnvW36HG4rgcfVFGJI5Satu/ewbBAXzdvxYvo3qtBzl1xf2yA==}
+    dependencies:
+      '@syncfusion/ej2-base': 25.2.5
+    dev: false
+
   /@syncfusion/ej2-react-calendars@25.2.5:
     resolution: {integrity: sha512-EXvzor6vWD7NFVKfcTxFdAzjQdclXIM1sZ1Br9T2t++gNGstf9pyZ/ilDXulu37RcjUrnBKgJUcmUSSZJLpbiQ==}
     dependencies:
@@ -1723,12 +1774,12 @@ packages:
       '@syncfusion/ej2-react-base': 25.2.3
     dev: false
 
-  /@syncfusion/ej2-react-charts@25.2.5:
-    resolution: {integrity: sha512-19lzU4MaWdnRGhBhizlGUyxqsePH98WIRWKMNXZDyTf2iqPLHxZEt5kHNllE6V3i8odNc/bRIJFYnGJ6Ru3epw==}
+  /@syncfusion/ej2-react-charts@25.2.6:
+    resolution: {integrity: sha512-/IiQzAYAunLTuLpQCDNK74G0TO01ZiI7BECYe2C6pNunqc1eFaMmpR6/BvLrTqeDlHdLiaRtpl2V6soLFgSjVw==}
     dependencies:
       '@syncfusion/ej2-base': 25.2.5
-      '@syncfusion/ej2-charts': 25.2.5
-      '@syncfusion/ej2-react-base': 25.2.3
+      '@syncfusion/ej2-charts': 25.2.6
+      '@syncfusion/ej2-react-base': 25.2.6
     dev: false
 
   /@syncfusion/ej2-react-dropdowns@25.2.5:
