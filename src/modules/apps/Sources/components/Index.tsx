@@ -2,8 +2,10 @@ import React from 'react';
 
 import { Card } from '@/common/components/ui/card';
 
-const Index: React.FC = React.memo(() => {
-  return <Card className="w-full bg-white">123</Card>;
+type IndexProps = {};
+
+const Index: React.FC<IndexProps> = React.memo(() => {
+  return <Card className="w-full bg-white">Have a good coding</Card>;
 });
 
 export default Index;
