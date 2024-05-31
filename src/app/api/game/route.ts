@@ -11,12 +11,13 @@ export async function POST(req: Request, res: Response) {
     const session = await getAuthSession();
     if (!session?.user) {
       return NextResponse.json(
-        { error: 'You must be logged in to create a game.' },
+        { error: session?.user },
         {
           status: 401,
         }
       );
     }
+    const email = session.user.email;
     const body = await req.json();
     const { topic, type, amount } = quizCreationSchema.parse(body);
     const game = await prisma.game.create({
@@ -48,6 +49,7 @@ export async function POST(req: Request, res: Response) {
         amount,
         topic,
         type,
+        email
       }
     );
 

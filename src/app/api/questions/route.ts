@@ -5,27 +5,17 @@ import { MCQQuestions, OpenEndedQuestions } from '@/common/dummy';
 import { getQuestionsSchema } from '@/common/schemas/questions';
 import { prisma } from '@/common/utils/db';
 import { strict_output } from '@/common/utils/gpt';
-import { getAuthSession } from '@/common/utils/nextauth';
 
 export const runtime = 'nodejs';
 export const maxDuration = 60;
 
 export async function POST(req: Request, res: Response) {
   try {
-    const session = await getAuthSession();
-    if (!session?.user) {
-      return NextResponse.json(
-        { error: 'You must be logged in to create a game.' },
-        {
-          status: 401,
-        }
-      );
-    }
-    const user = await prisma.user.findUnique({
-      where: { email: session?.user.email as string },
-    });
     const body = await req.json();
-    const { amount, topic, type } = getQuestionsSchema.parse(body);
+    const { amount, topic, type, email } = getQuestionsSchema.parse(body);
+    const user = await prisma.user.findUnique({
+      where: { email: email },
+    });
     let questions: any;
     if (type === 'open_ended') {
       if (user?.apiKey !== '' && user?.apiKey) {
