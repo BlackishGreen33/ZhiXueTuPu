@@ -66,7 +66,7 @@ dependencies:
     specifier: ^25.2.6
     version: 25.2.6
   '@syncfusion/ej2-react-kanban':
-    specifier: ^25.2.3
+    specifier: ^25.2.6
     version: 25.2.6
   '@syncfusion/ej2-react-navigations':
     specifier: ^25.2.6
