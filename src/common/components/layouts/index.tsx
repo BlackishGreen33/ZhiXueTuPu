@@ -51,7 +51,7 @@ const Layout: React.FC<LayoutProps> = React.memo(({ children }) => {
             </TooltipComponent>
           </div> */}
           <div
-            className={`dark:bg-secondary-dark-bg ${activeMenu ? 'sidebar fixed w-72 bg-white' : 'w-0'}`}
+            className={`dark:bg-secondary-dark-bg z-[100] ${activeMenu ? 'sidebar fixed w-72 bg-white' : 'w-0'}`}
           >
             <Sidebar />
           </div>

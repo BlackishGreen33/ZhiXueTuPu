@@ -81,7 +81,8 @@ const Recommend: React.FC = React.memo(() => {
             height={1000}
             className="h-32 w-56 rounded-lg object-cover"
             src="./assets/game.jpg"
-            alt=""
+            alt="note cover"
+            loading="lazy"
           />
           <p className="my-3 text-sm">3D Games in Reactjs</p>
           <button className="h-7 w-full rounded-md bg-[#696969] p-1 text-xs text-neutral-50">

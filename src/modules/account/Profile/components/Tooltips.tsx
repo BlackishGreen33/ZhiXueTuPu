@@ -65,7 +65,7 @@ const Tooltips: React.FC = React.memo(() => {
 
   return (
     <div className="flex cursor-pointer flex-row items-center gap-x-9">
-      {people.map((testimonial, idx) => (
+      {people.map((testimonial) => (
         <div
           className="group relative -mr-4"
           key={testimonial.name}

@@ -62,7 +62,8 @@ const Info: React.FC = React.memo(() => {
                 height={1000}
                 className="h-28 w-28 rounded-full object-cover"
                 src={session?.user ? (session.user.image as string) : ''}
-                alt=""
+                alt="avatar"
+                loading="lazy"
               />
               <div
                 onClick={() => setOpen(!open)}
