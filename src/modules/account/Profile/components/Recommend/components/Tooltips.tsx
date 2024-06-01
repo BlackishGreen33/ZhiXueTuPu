@@ -34,31 +34,31 @@ const Tooltips: React.FC = React.memo(() => {
     {
       id: 1,
       name: 'Our Feeds',
-      position: 'www.feed.com',
+      position: 'https://github.com/BlackishGreen33/ZhiXueTuPu',
       image: <SlFeed />,
     },
     {
       id: 2,
       name: 'Instagram',
-      position: 'www.feed.com',
+      position: 'https://github.com/BlackishGreen33/ZhiXueTuPu',
       image: <PiInstagramLogoThin />,
     },
     {
       id: 3,
       name: 'Instagram',
-      position: 'www.instagram.com',
+      position: 'https://github.com/BlackishGreen33/ZhiXueTuPu',
       image: <LuBox />,
     },
     {
       id: 4,
       name: 'Youtube',
-      position: 'www.youtube.com/joscript',
+      position: 'https://github.com/BlackishGreen33/ZhiXueTuPu',
       image: <PiYoutubeLogoThin />,
     },
     {
       id: 5,
       name: 'LinkedIn',
-      position: 'www.Linkedin.com/joscript',
+      position: 'https://github.com/BlackishGreen33/ZhiXueTuPu',
       image: <PiLinkedinLogoThin />,
     },
   ];
