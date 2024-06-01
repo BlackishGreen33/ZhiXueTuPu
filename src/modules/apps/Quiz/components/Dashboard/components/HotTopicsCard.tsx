@@ -8,7 +8,7 @@ import {
   CardHeader,
   CardTitle,
 } from '@/common/components/ui/card';
-import { prisma } from "@/common/utils/db";
+import { prisma } from '@/common/utils/db';
 
 const HotTopicsCard: React.FC = React.memo(async () => {
   const topics = await prisma.topic_count.findMany({});

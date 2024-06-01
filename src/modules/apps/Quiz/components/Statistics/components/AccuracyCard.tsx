@@ -19,7 +19,7 @@ const AccuracyCard: React.FC<AccuracyCardProps> = React.memo(({ accuracy }) => {
     <Card className="md:col-span-3">
       <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
         <CardTitle className="text-2xl font-bold">平均准确率</CardTitle>
-        <LuTarget className="text-3xl"/>
+        <LuTarget className="text-3xl" />
       </CardHeader>
       <CardContent>
         <div className="text-sm font-medium">{accuracy.toString() + '%'}</div>

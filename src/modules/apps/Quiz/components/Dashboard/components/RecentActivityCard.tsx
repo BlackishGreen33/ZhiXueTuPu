@@ -31,9 +31,7 @@ const RecentActivityCard: React.FC = React.memo(async () => {
         <CardTitle className="text-2xl font-bold">
           <Link href="/quiz/history">近期活动</Link>
         </CardTitle>
-        <CardDescription>
-          你总共进行了 {games_count} 场测验。
-        </CardDescription>
+        <CardDescription>你总共进行了 {games_count} 场测验。</CardDescription>
       </CardHeader>
       <CardContent className="max-h-[580px] overflow-scroll">
         <HistoryComponent limit={10} userId={session.user.id} />

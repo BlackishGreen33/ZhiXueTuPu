@@ -77,7 +77,7 @@ const UserProfile: React.FC = React.memo(() => {
           text="登出"
           borderRadius="10px"
           width="full"
-          onClick={()=>signOut()}
+          onClick={() => signOut()}
         />
       </div>
     </div>

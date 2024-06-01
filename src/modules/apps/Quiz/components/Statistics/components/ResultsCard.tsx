@@ -1,7 +1,12 @@
-import { LuAward, LuTrophy } from 'react-icons/lu';
 import React from 'react';
+import { LuAward, LuTrophy } from 'react-icons/lu';
 
-import { Card, CardContent, CardHeader, CardTitle } from '@/common/components/ui/card';
+import {
+  Card,
+  CardContent,
+  CardHeader,
+  CardTitle,
+} from '@/common/components/ui/card';
 
 interface ResultsCardProps {
   accuracy: number;
@@ -12,7 +17,7 @@ const ResultsCard: React.FC<ResultsCardProps> = React.memo(({ accuracy }) => {
     <Card className="md:col-span-7">
       <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-7">
         <CardTitle className="text-2xl font-bold">结果</CardTitle>
-        <LuAward className="text-3xl"/>
+        <LuAward className="text-3xl" />
       </CardHeader>
       <CardContent className="flex h-3/5 flex-col items-center justify-center">
         {accuracy > 75 ? (

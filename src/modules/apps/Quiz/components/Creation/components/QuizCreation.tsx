@@ -95,90 +95,90 @@ const QuizCreation = ({ topic: topicParam }: Props) => {
   }
 
   return (
-      <Card>
-        <CardHeader>
-          <CardTitle className="text-2xl font-bold">创建测验</CardTitle>
-          <CardDescription>选择一个主题</CardDescription>
-        </CardHeader>
-        <CardContent>
-          <Form {...form}>
-            <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
-              <FormField
-                control={form.control}
-                name="topic"
-                render={({ field }) => (
-                  <FormItem>
-                    <FormLabel>主题</FormLabel>
-                    <FormControl>
-                      <Input placeholder="填入主题" {...field} />
-                    </FormControl>
-                    <FormDescription>
-                      请在此处提供您想被测验的主题。
-                    </FormDescription>
-                    <FormMessage />
-                  </FormItem>
-                )}
-              />
-              <FormField
-                control={form.control}
-                name="amount"
-                render={({ field }) => (
-                  <FormItem>
-                    <FormLabel>题目数量</FormLabel>
-                    <FormControl>
-                      <Input
-                        placeholder="How many questions?"
-                        type="number"
-                        {...field}
-                        onChange={(e) => {
-                          form.setValue('amount', parseInt(e.target.value));
-                        }}
-                        min={1}
-                        max={10}
-                      />
-                    </FormControl>
-                    <FormDescription>
-                      你可以选择你想被测验的题目数量。
-                    </FormDescription>
-                    <FormMessage />
-                  </FormItem>
-                )}
-              />
+    <Card>
+      <CardHeader>
+        <CardTitle className="text-2xl font-bold">创建测验</CardTitle>
+        <CardDescription>选择一个主题</CardDescription>
+      </CardHeader>
+      <CardContent>
+        <Form {...form}>
+          <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
+            <FormField
+              control={form.control}
+              name="topic"
+              render={({ field }) => (
+                <FormItem>
+                  <FormLabel>主题</FormLabel>
+                  <FormControl>
+                    <Input placeholder="填入主题" {...field} />
+                  </FormControl>
+                  <FormDescription>
+                    请在此处提供您想被测验的主题。
+                  </FormDescription>
+                  <FormMessage />
+                </FormItem>
+              )}
+            />
+            <FormField
+              control={form.control}
+              name="amount"
+              render={({ field }) => (
+                <FormItem>
+                  <FormLabel>题目数量</FormLabel>
+                  <FormControl>
+                    <Input
+                      placeholder="How many questions?"
+                      type="number"
+                      {...field}
+                      onChange={(e) => {
+                        form.setValue('amount', parseInt(e.target.value));
+                      }}
+                      min={1}
+                      max={10}
+                    />
+                  </FormControl>
+                  <FormDescription>
+                    你可以选择你想被测验的题目数量。
+                  </FormDescription>
+                  <FormMessage />
+                </FormItem>
+              )}
+            />
 
-              <div className="flex justify-between">
-                <Button
-                  variant={
-                    form.getValues('type') === 'mcq' ? 'default' : 'secondary'
-                  }
-                  className="w-1/2 rounded-none rounded-l-lg"
-                  onClick={() => {
-                    form.setValue('type', 'mcq');
-                  }}
-                  type="button"
-                >
-                  <LuCopyCheck className="mr-2 h-4 w-4" /> 选择题
-                </Button>
-                <Separator orientation="vertical" />
-                <Button
-                  variant={
-                    form.getValues('type') === 'open_ended'
-                      ? 'default'
-                      : 'secondary'
-                  }
-                  className="w-1/2 rounded-none rounded-r-lg"
-                  onClick={() => form.setValue('type', 'open_ended')}
-                  type="button"
-                >
-                  <LuBookOpen className="mr-2 h-4 w-4" /> 填空题
-                </Button>
-              </div>
-              <Button disabled={isLoading} type="submit">
-                送出
+            <div className="flex justify-between">
+              <Button
+                variant={
+                  form.getValues('type') === 'mcq' ? 'default' : 'secondary'
+                }
+                className="w-1/2 rounded-none rounded-l-lg"
+                onClick={() => {
+                  form.setValue('type', 'mcq');
+                }}
+                type="button"
+              >
+                <LuCopyCheck className="mr-2 h-4 w-4" /> 选择题
               </Button>
-            </form>
-          </Form>
-        </CardContent>
-      </Card>
+              <Separator orientation="vertical" />
+              <Button
+                variant={
+                  form.getValues('type') === 'open_ended'
+                    ? 'default'
+                    : 'secondary'
+                }
+                className="w-1/2 rounded-none rounded-r-lg"
+                onClick={() => form.setValue('type', 'open_ended')}
+                type="button"
+              >
+                <LuBookOpen className="mr-2 h-4 w-4" /> 填空题
+              </Button>
+            </div>
+            <Button disabled={isLoading} type="submit">
+              送出
+            </Button>
+          </form>
+        </Form>
+      </CardContent>
+    </Card>
   );
 };
 

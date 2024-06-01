@@ -4,4 +4,3 @@ export const apiKeySchema = z.object({
   apiKey: z.string(),
   email: z.string(),
 });
-

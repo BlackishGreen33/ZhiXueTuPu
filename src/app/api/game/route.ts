@@ -49,7 +49,7 @@ export async function POST(req: Request, res: Response) {
         amount,
         topic,
         type,
-        email
+        email,
       }
     );
 

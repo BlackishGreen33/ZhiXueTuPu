@@ -18,7 +18,7 @@ const Quiz: React.FC = React.memo(async () => {
   }
 
   return (
-    <div className="m-2 mt-24 flex h-[70vh] items-center justify-center bg-white rounded-xl p-2 md:m-10 md:p-10">
+    <div className="m-2 mt-24 flex h-[70vh] items-center justify-center rounded-xl bg-white p-2 md:m-10 md:p-10">
       <Card className="w-[300px]">
         <CardHeader>
           <CardTitle>欢迎进入测验平台 🔥!</CardTitle>
