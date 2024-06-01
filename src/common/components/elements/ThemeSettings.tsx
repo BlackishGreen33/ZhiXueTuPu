@@ -33,8 +33,7 @@ const ThemeSettings = React.memo(() => {
       toast({
         title: '成功',
         description: '您的 API 密钥已保存。',
-        // @ts-ignore
-        variant: 'success',
+        variant: 'default',
       });
     } else {
       toast({
