@@ -1,11 +1,12 @@
 'use client';
+
+import { motion } from 'framer-motion';
+import Image from 'next/image';
 import React from 'react';
 import { PiGithubLogoLight } from 'react-icons/pi';
 import { SiCss3, SiFramer } from 'react-icons/si';
 
-// import TestimonialTooltip from "@/app/TestimonialTooltip/page";
-import { motion } from 'framer-motion';
-import Image from 'next/image';
+import Tooltips from './Tooltips';
 
 const Recommend: React.FC = React.memo(() => {
   return (
@@ -68,13 +69,13 @@ const Recommend: React.FC = React.memo(() => {
               <div className="my-5 border border-neutral-700" />
 
               <div className="flex items-center justify-center gap-x-2">
-                {/* <TestimonialTooltip /> */}
+                <Tooltips />
               </div>
             </div>
           </div>
         </div>
 
-        <div className="mt-3 w-full text-nowrap rounded-2xl border border-neutral-200 bg-white p-4 text-neutral-950 dark:text-neutral-50 dark:border-neutral-800 dark:bg-[#1C1C1C] md:w-fit">
+        <div className="mt-3 w-full text-nowrap rounded-2xl border border-neutral-200 bg-white p-4 text-neutral-950 dark:border-neutral-800 dark:bg-[#1C1C1C] dark:text-neutral-50 md:w-fit">
           <Image
             width={1000}
             height={1000}

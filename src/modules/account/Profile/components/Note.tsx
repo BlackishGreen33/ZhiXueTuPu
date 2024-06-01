@@ -22,7 +22,7 @@ const Note: React.FC = React.memo(() => {
           stiffness: 200,
         },
       }}
-      className="w-full lg:w-fit"
+      className="w-full lg:w-fit text-nowrap"
     >
       <div className="rounded-2xl">
         <div className="flex gap-x-6 rounded-lg border border-neutral-200 bg-white p-3 dark:border-neutral-800 dark:bg-[#1C1C1C]">
