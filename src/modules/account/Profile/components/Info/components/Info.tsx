@@ -3,6 +3,7 @@
 import { motion } from 'framer-motion';
 import React from 'react';
 
+import Border from '@/common/components/elements/Border';
 import { Card } from '@/common/components/ui/card';
 
 import Activity from './Activity';
@@ -31,7 +32,7 @@ const Info: React.FC = React.memo(() => {
           <Follow />
           <div className="w-full text-neutral-700 dark:text-neutral-300">
             <Introduction />
-            <div className="my-6 border border-[#282828]" />
+            <Border className="my-6" />
             <Activity />
           </div>
         </Card>
