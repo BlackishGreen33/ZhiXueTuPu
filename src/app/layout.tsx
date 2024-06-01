@@ -9,7 +9,7 @@ import { getAuthSession } from '@/common/utils/nextauth';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: '智慧图谱',
+  title: '智学图谱',
   description: '学习分析系统',
 };
 

@@ -1,11 +1,11 @@
 import { NextPage } from 'next';
 
-import Area from '@/modules/others/Area';
+import Profile from '@/modules/account/Profile';
 
 const Page: NextPage = () => {
   return (
     <>
-      <Area />
+      <Profile />
     </>
   );
 };
