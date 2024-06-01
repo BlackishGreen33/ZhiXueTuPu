@@ -1,5 +1,6 @@
 'use client';
 
+import { motion } from 'framer-motion';
 import React from 'react';
 
 import { links } from '@/common/dummy/dummy';
@@ -37,7 +38,9 @@ const Navigation: React.FC = React.memo(() => {
           </p>
           {item.links.map((link) =>
             link.nav === 'settings' ? (
-              <div
+              <motion.div
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.9 }}
                 className={
                   themeSettings ? `${activeSettings} active` : normalSettings
                 }
@@ -48,7 +51,7 @@ const Navigation: React.FC = React.memo(() => {
               >
                 {link.icon}
                 <span className="capitalize ">{link.name}</span>
-              </div>
+              </motion.div>
             ) : (
               <NavLink
                 href={`/${link.nav}`}

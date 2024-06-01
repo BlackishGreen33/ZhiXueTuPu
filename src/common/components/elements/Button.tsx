@@ -1,6 +1,7 @@
 'use client';
 
 import useStore, { initialState } from '@/common/hooks/useStore';
+import { motion } from 'framer-motion';
 import React from 'react';
 
 interface ButtonProps {
@@ -30,7 +31,9 @@ const Button: React.FC<ButtonProps> = React.memo(
     const { setIsClicked } = useStore();
 
     return (
-      <button
+      <motion.button
+        whileHover={{ scale: 1.05 }}
+        whileTap={{ scale: 0.9 }}
         type="button"
         onClick={() => {
           setIsClicked(initialState);
@@ -42,7 +45,7 @@ const Button: React.FC<ButtonProps> = React.memo(
         className={` text-${size} p-3 w-${width} hover:drop-shadow-xl hover:bg-${bgHoverColor}`}
       >
         {icon} {text}
-      </button>
+      </motion.button>
     );
   }
 );

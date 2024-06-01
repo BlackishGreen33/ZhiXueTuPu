@@ -1,6 +1,7 @@
 'use client';
 
 import { TooltipComponent } from '@syncfusion/ej2-react-popups';
+import { motion } from 'framer-motion';
 import React from 'react';
 import { MdOutlineCancel } from 'react-icons/md';
 
@@ -12,7 +13,11 @@ const TopArea: React.FC = React.memo(() => {
   const { currentColor, activeMenu, setActiveMenu } = useStore();
 
   return (
-    <div className="flex items-center justify-between">
+    <motion.div
+      whileHover={{ scale: 1.05 }}
+      whileTap={{ scale: 0.9 }}
+      className="flex items-center justify-between"
+    >
       <Logo />
       <TooltipComponent content="Menu" position="BottomCenter">
         <button
@@ -24,7 +29,7 @@ const TopArea: React.FC = React.memo(() => {
           <MdOutlineCancel />
         </button>
       </TooltipComponent>
-    </div>
+    </motion.div>
   );
 });
 

@@ -17,7 +17,7 @@ const Dashboard: React.FC<DashboardProps> = React.memo(async () => {
   }
 
   return (
-    <main className="m-2 mt-24 h-auto rounded-xl bg-white p-2 md:m-10 md:p-10 dark:bg-black">
+    <main className="m-2 mt-24 h-auto rounded-x p-2 md:m-10 md:p-10 dark:bg-black">
       <div className="mx-auto max-w-7xl p-8">
         <div className="flex items-center">
           <h2 className="mr-2 text-3xl font-bold tracking-tight">仪表盘</h2>

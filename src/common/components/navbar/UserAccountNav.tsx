@@ -1,6 +1,7 @@
 'use client';
 
 import { TooltipComponent } from '@syncfusion/ej2-react-popups';
+import { motion } from 'framer-motion';
 import type { User } from 'next-auth';
 import Image from 'next/image';
 import React from 'react';
@@ -17,7 +18,9 @@ const UserAccountNav: React.FC<UserAccountNavProps> = React.memo(({ user }) => {
 
   return (
     <TooltipComponent content="个人档案" position="BottomCenter">
-      <div
+      <motion.div
+        whileHover={{ scale: 1.05 }}
+        whileTap={{ scale: 0.9 }}
         className="flex cursor-pointer items-center gap-2 rounded-lg p-1 hover:bg-light-gray"
         onClick={() => handleClick('userProfile')}
       >
@@ -37,7 +40,7 @@ const UserAccountNav: React.FC<UserAccountNavProps> = React.memo(({ user }) => {
           </span>
         </p>
         <MdKeyboardArrowDown className="text-14 text-gray-400" />
-      </div>
+      </motion.div>
     </TooltipComponent>
   );
 });

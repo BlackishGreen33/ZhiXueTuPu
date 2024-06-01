@@ -2,6 +2,7 @@
 
 import { TooltipComponent } from '@syncfusion/ej2-react-popups';
 import axios from 'axios';
+import { motion } from 'framer-motion';
 import { useSession } from 'next-auth/react';
 import { useTheme } from 'next-themes';
 import React, { useState } from 'react';
@@ -44,8 +45,19 @@ const ThemeSettings = React.memo(() => {
   };
 
   return (
-    <div className="nav-item fixed right-0 top-0 w-screen bg-half-transparent">
-      <div className="float-right h-screen w-400  bg-white dark:bg-[#484B52] dark:text-gray-200">
+    <div className="nav-item fixed right-0 top-0 z-[1000] w-screen bg-half-transparent">
+      <motion.div
+        className="float-right h-screen w-400 bg-white dark:bg-[#484B52] dark:text-gray-200"
+        initial={{ x: 100, opacity: 0 }}
+        animate={{
+          x: 0,
+          opacity: 1,
+          transition: {
+            duration: 0.3,
+            stiffness: 200,
+          },
+        }}
+      >
         <div className="ml-4 flex items-center justify-between p-4">
           <p className="text-lg font-semibold">设定</p>
           <button
@@ -71,7 +83,6 @@ const ThemeSettings = React.memo(() => {
               }
               checked={theme === 'light'}
             />
-            {/* eslint-disable-next-line jsx-a11y/label-has-associated-control */}
             <label htmlFor="light" className="text-md ml-2 cursor-pointer">
               浅色模式
             </label>
@@ -88,7 +99,6 @@ const ThemeSettings = React.memo(() => {
               className="cursor-pointer"
               checked={theme === 'dark'}
             />
-            {/* eslint-disable-next-line jsx-a11y/label-has-associated-control */}
             <label htmlFor="dark" className="text-md ml-2 cursor-pointer">
               深色模式
             </label>
@@ -141,7 +151,7 @@ const ThemeSettings = React.memo(() => {
             </Button>
           </div>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 });

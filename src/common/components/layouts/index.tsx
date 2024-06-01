@@ -1,5 +1,6 @@
 'use client';
 
+import { motion } from 'framer-motion';
 import { useTheme } from 'next-themes';
 import React, { useEffect } from 'react';
 
@@ -14,11 +15,7 @@ interface LayoutProps {
 }
 
 const Layout: React.FC<LayoutProps> = React.memo(({ children }) => {
-  const {
-    setCurrentColor,
-    activeMenu,
-    themeSettings,
-  } = useStore();
+  const { setCurrentColor, activeMenu, themeSettings } = useStore();
   const { setTheme, theme } = useTheme();
 
   useEffect(() => {
@@ -50,11 +47,23 @@ const Layout: React.FC<LayoutProps> = React.memo(({ children }) => {
               </button>
             </TooltipComponent>
           </div> */}
-          <div
-            className={`dark:bg-secondary-dark-bg z-[100] ${activeMenu ? 'sidebar fixed w-72 bg-white' : 'w-0'}`}
-          >
-            <Sidebar />
-          </div>
+          {activeMenu && (
+            <motion.div
+              className={`z-[100] dark:bg-secondary-dark-bg ${activeMenu && 'sidebar fixed w-72 bg-white'}`}
+              initial={{ x: -100, opacity: 0 }}
+              animate={{
+                x: 0,
+                opacity: 1,
+                transition: {
+                  duration: 0.8,
+                  type: 'fade',
+                  stiffness: 200,
+                },
+              }}
+            >
+              <Sidebar />
+            </motion.div>
+          )}
           <div
             className={
               activeMenu

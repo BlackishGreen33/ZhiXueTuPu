@@ -1,6 +1,7 @@
 'use client';
 
 import { TooltipComponent } from '@syncfusion/ej2-react-popups';
+import { motion } from 'framer-motion';
 import React, { useCallback } from 'react';
 
 import useStore from '@/common/hooks/useStore';
@@ -23,7 +24,9 @@ const NavButton: React.FC<NavButtonProps> = React.memo(
 
     return (
       <TooltipComponent content={title} position="BottomCenter">
-        <button
+        <motion.button
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.9 }}
           type="button"
           onClick={custom ? () => handleClick(custom) : handleActiveMenu}
           style={{ color: currentColor }}
@@ -34,7 +37,7 @@ const NavButton: React.FC<NavButtonProps> = React.memo(
             className="absolute right-2 top-2 inline-flex h-2 w-2 rounded-full"
           />
           {icon}
-        </button>
+        </motion.button>
       </TooltipComponent>
     );
   }

@@ -1,5 +1,6 @@
 'use client';
 
+import { motion } from 'framer-motion';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import React from 'react';
@@ -35,9 +36,11 @@ const NavLink: React.FC<NavLinkProps> = React.memo(
     };
 
     return (
-      <Link href={href} {...newProps}>
-        {children}
-      </Link>
+      <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.9 }}>
+        <Link href={href} {...newProps}>
+          {children}
+        </Link>
+      </motion.div>
     );
   }
 );
