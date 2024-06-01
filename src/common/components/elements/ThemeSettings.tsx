@@ -17,7 +17,8 @@ import { Input } from '../ui/input';
 import { useToast } from '../ui/use-toast';
 
 const ThemeSettings = React.memo(() => {
-  const { setCurrentColor, currentColor, setThemeSettings } = useStore();
+  const { setCurrentColor, currentColor, setThemeSettings, themeSettings } =
+    useStore();
   const { setTheme, theme } = useTheme();
   const { data: session } = useSession();
   const { toast } = useToast();
@@ -45,13 +46,22 @@ const ThemeSettings = React.memo(() => {
   };
 
   return (
-    <div className="nav-item fixed right-0 top-0 z-[1000] w-screen bg-half-transparent">
+    <motion.div
+      className="nav-item fixed right-0 top-0 z-[1000] w-screen bg-half-transparent"
+      animate={{
+        display: themeSettings ? 'block' : 'none',
+        opacity: themeSettings ? 1 : 0,
+        transition: {
+          duration: 0.3,
+          stiffness: 200,
+        },
+      }}
+    >
       <motion.div
         className="float-right h-screen w-400 bg-white dark:bg-[#484B52] dark:text-gray-200"
-        initial={{ x: 100, opacity: 0 }}
         animate={{
-          x: 0,
-          opacity: 1,
+          x: themeSettings ? 0 : 100,
+          opacity: themeSettings ? 1 : 0,
           transition: {
             duration: 0.3,
             stiffness: 200,
@@ -152,7 +162,7 @@ const ThemeSettings = React.memo(() => {
           </div>
         </div>
       </motion.div>
-    </div>
+    </motion.div>
   );
 });
 

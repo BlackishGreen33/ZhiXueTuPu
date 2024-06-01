@@ -50,7 +50,7 @@ const Navigation: React.FC = React.memo(() => {
                 }}
               >
                 {link.icon}
-                <span className="capitalize ">{link.name}</span>
+                <span className="capitalize">{link.name}</span>
               </motion.div>
             ) : (
               <NavLink
@@ -60,7 +60,7 @@ const Navigation: React.FC = React.memo(() => {
                 currentColor={currentColor}
               >
                 {link.icon}
-                <span className="capitalize ">{link.name}</span>
+                <span className="capitalize">{link.name}</span>
               </NavLink>
             )
           )}

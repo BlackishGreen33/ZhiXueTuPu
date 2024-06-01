@@ -1,5 +1,6 @@
 'use client';
 
+import { useMediaQuery } from '@react-hook/media-query';
 import { motion } from 'framer-motion';
 import { useTheme } from 'next-themes';
 import React, { useEffect } from 'react';
@@ -17,6 +18,7 @@ interface LayoutProps {
 const Layout: React.FC<LayoutProps> = React.memo(({ children }) => {
   const { setCurrentColor, activeMenu, themeSettings } = useStore();
   const { setTheme, theme } = useTheme();
+  const isMDScreen = useMediaQuery('(min-width: 768px)');
 
   useEffect(() => {
     const currentThemeColor = localStorage.getItem('colorMode');
@@ -32,54 +34,45 @@ const Layout: React.FC<LayoutProps> = React.memo(({ children }) => {
     <>
       <div className={theme === 'Dark' ? 'dark' : ''}>
         <div className="relative flex dark:bg-main-dark-bg">
-          {/* <div className="fixed bottom-4 right-4" style={{ zIndex: '1000' }}>
-            <TooltipComponent content="Settings">
-              <button
-                type="button"
-                onClick={() => setThemeSettings(true)}
-                style={{
-                  background: currentColor,
-                  borderRadius: '50%',
-                }}
-                className="p-3 text-3xl text-white hover:bg-light-gray hover:drop-shadow-xl"
-              >
-                <FiSettings />
-              </button>
-            </TooltipComponent>
-          </div> */}
-          {activeMenu && (
-            <motion.div
-              className={`z-[100] dark:bg-secondary-dark-bg ${activeMenu && 'sidebar fixed w-72 bg-white'}`}
-              initial={{ x: -100, opacity: 0 }}
-              animate={{
-                x: 0,
-                opacity: 1,
-                transition: {
-                  duration: 0.8,
-                  type: 'fade',
-                  stiffness: 200,
-                },
-              }}
-            >
-              <Sidebar />
-            </motion.div>
-          )}
-          <div
+          <motion.div
+            className={`z-[100] dark:bg-secondary-dark-bg ${activeMenu && 'sidebar fixed w-72 bg-white'}`}
+            animate={{
+              x: activeMenu ? 0 : -100,
+              opacity: activeMenu ? 1 : 0,
+              transition: {
+                duration: 0.5,
+                delay: 0.1,
+                type: 'tween',
+                stiffness: 200,
+              },
+            }}
+          >
+            <Sidebar />
+          </motion.div>
+          <motion.div
             className={
               activeMenu
-                ? 'min-h-screen w-full bg-main-bg dark:bg-main-dark-bg md:ml-72  '
-                : 'flex-2 min-h-screen  w-full bg-main-bg dark:bg-main-dark-bg '
+                ? 'min-h-screen w-full bg-main-bg dark:bg-main-dark-bg md:pl-72'
+                : 'flex-2 min-h-screen w-full bg-main-bg dark:bg-main-dark-bg'
             }
+            animate={{
+              padding: activeMenu && isMDScreen ? '0 0 0 288px' : '0',
+              transition: {
+                duration: 0.5,
+                type: 'tween',
+                stiffness: 200,
+              },
+            }}
           >
             <div className="navbar fixed w-full bg-main-bg dark:bg-main-dark-bg md:static ">
               <Navbar />
             </div>
             <div>
-              {themeSettings && <ThemeSettings />}
+              <ThemeSettings />
               {children}
             </div>
             <Footer />
-          </div>
+          </motion.div>
         </div>
       </div>
     </>
