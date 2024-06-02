@@ -17,9 +17,24 @@ interface LayoutProps {
 }
 
 const Layout: React.FC<LayoutProps> = React.memo(({ children }) => {
-  const { setCurrentColor, activeMenu, themeSettings } = useStore();
+  const { setCurrentColor, activeMenu } = useStore();
   const { setTheme, theme } = useTheme();
   const isMDScreen = useMediaQuery('(min-width: 768px)');
+
+  const chatbotScript = `
+  <script>
+window.embeddedChatbotConfig = {
+chatbotId: "WWELx6VqHYeHPfUGO8a2J",
+domain: "www.chatbase.co"
+}
+</script>
+<script
+src="https://www.chatbase.co/embed.min.js"
+chatbotId="WWELx6VqHYeHPfUGO8a2J"
+domain="www.chatbase.co"
+defer>
+</script>
+`;
 
   useEffect(() => {
     const currentThemeColor = localStorage.getItem('colorMode');
@@ -72,11 +87,12 @@ const Layout: React.FC<LayoutProps> = React.memo(({ children }) => {
               <ThemeSettings />
               {children}
             </div>
+            <div dangerouslySetInnerHTML={{ __html: chatbotScript }} />
             <Footer />
+            <Toaster />
           </motion.div>
         </div>
       </div>
-      <Toaster/>
     </>
   );
 });
