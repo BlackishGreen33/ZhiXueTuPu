@@ -27,7 +27,7 @@ const Quiz: React.FC = React.memo(async () => {
           </CardDescription>
         </CardHeader>
         <CardContent>
-          <SignInButton text="使用 Google 账号登陆" />
+          <SignInButton text="使用 GitHub 账号登陆" />
         </CardContent>
       </Card>
     </div>
