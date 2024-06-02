@@ -19,12 +19,10 @@ import React, { useState } from 'react';
 import Header from '@/common/components/elements/Header';
 import { scheduleData } from '@/common/dummy/dummy';
 
-type CalendarProps = {};
-
-// @ts-ignore eslint-disable-next-line react/destructuring-assignment
+// @ts-ignore
 const PropertyPane = (props) => <div className="mt-5">{props.children}</div>;
 
-const Calendar: React.FC<CalendarProps> = React.memo(() => {
+const Calendar: React.FC = React.memo(() => {
   const [scheduleObj, setScheduleObj] = useState();
   // @ts-ignore
   const change = (args) => {
@@ -36,18 +34,17 @@ const Calendar: React.FC<CalendarProps> = React.memo(() => {
 
   // @ts-ignore
   const onDragStart = (arg) => {
-    // eslint-disable-next-line no-param-reassign
     arg.navigation.enable = true;
   };
 
   return (
     <div className="m-2 mt-24 rounded-3xl bg-white p-2 md:m-10 md:p-10">
-      <Header category="App" title="Calendar" />
+      <Header category="应用" title="学习日程管理" />
       <ScheduleComponent
         height="650px"
         // @ts-ignore
         ref={(schedule) => setScheduleObj(schedule)}
-        selectedDate={new Date(2021, 0, 10)}
+        selectedDate={new Date(2024, 0, 6)}
         eventSettings={{ dataSource: scheduleData }}
         dragStart={onDragStart}
       >
@@ -67,9 +64,9 @@ const Calendar: React.FC<CalendarProps> = React.memo(() => {
             <tr style={{ height: '50px' }}>
               <td style={{ width: '100%' }}>
                 <DatePickerComponent
-                  value={new Date(2021, 0, 10)}
+                  value={new Date(2024, 0, 6)}
                   showClearButton={false}
-                  placeholder="Current Date"
+                  placeholder="当前时间"
                   floatLabelType="Always"
                   change={change}
                 />
