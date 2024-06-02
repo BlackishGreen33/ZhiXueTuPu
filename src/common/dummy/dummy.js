@@ -1,19 +1,5 @@
-import {
-  AiOutlineAreaChart,
-  AiOutlineBarChart,
-  AiOutlineCalendar,
-  AiOutlineShoppingCart,
-  AiOutlineStock,
-} from 'react-icons/ai';
-import { BiColorFill } from 'react-icons/bi';
-import {
-  BsBarChart,
-  BsBoxSeam,
-  BsChatLeft,
-  BsCurrencyDollar,
-  BsKanban,
-  BsShield,
-} from 'react-icons/bs';
+import { AiOutlineCalendar } from 'react-icons/ai';
+import { BsBoxSeam, BsChatLeft, BsShield } from 'react-icons/bs';
 import {
   FaDatabase,
   FaProjectDiagram,
@@ -23,24 +9,19 @@ import {
 import {
   FiBarChart,
   FiCreditCard,
-  FiEdit,
-  FiPieChart,
   FiSettings,
-  FiShoppingBag,
   FiShoppingCart,
   FiStar,
 } from 'react-icons/fi';
-import { GiLouvrePyramid } from 'react-icons/gi';
 import { GrCloudSoftware, GrLocation } from 'react-icons/gr';
 import { HiOutlineRefresh } from 'react-icons/hi';
-import { IoIosPaper, IoMdContacts } from 'react-icons/io';
+import { IoIosPaper } from 'react-icons/io';
 import {
   MdDashboardCustomize,
   MdOutlineSupervisorAccount,
   MdQuiz,
   MdSource,
 } from 'react-icons/md';
-import { RiContactsLine, RiStockLine } from 'react-icons/ri';
 
 import Image from 'next/image';
 const avatar = './assets/avatar.jpg';
@@ -555,86 +536,86 @@ export const links = [
       },
     ],
   },
-  {
-    title: '其它',
-    links: [
-      {
-        name: '电子商务',
-        nav: 'ecommerce',
-        icon: <FiShoppingBag />,
-      },
-      {
-        name: '订单',
-        nav: 'orders',
-        icon: <AiOutlineShoppingCart />,
-      },
-      {
-        name: '员工',
-        nav: 'employees',
-        icon: <IoMdContacts />,
-      },
-      {
-        name: '客户',
-        nav: 'customers',
-        icon: <RiContactsLine />,
-      },
-      {
-        name: '看板',
-        nav: 'kanban',
-        icon: <BsKanban />,
-      },
-      {
-        name: '编辑器',
-        nav: 'editor',
-        icon: <FiEdit />,
-      },
-      {
-        name: '颜色选择器',
-        nav: 'colorpicker',
-        icon: <BiColorFill />,
-      },
-      {
-        name: '折线图',
-        nav: 'line',
-        icon: <AiOutlineStock />,
-      },
-      {
-        name: '区域图',
-        nav: 'area',
-        icon: <AiOutlineAreaChart />,
-      },
-      {
-        name: '条形图',
-        nav: 'bar',
-        icon: <AiOutlineBarChart />,
-      },
-      {
-        name: '饼图',
-        nav: 'pie',
-        icon: <FiPieChart />,
-      },
-      {
-        name: '财务图',
-        nav: 'financial',
-        icon: <RiStockLine />,
-      },
-      {
-        name: '颜色映射',
-        nav: 'colormapping',
-        icon: <BsBarChart />,
-      },
-      {
-        name: '金字塔图',
-        nav: 'pyramid',
-        icon: <GiLouvrePyramid />,
-      },
-      {
-        name: '堆栈图',
-        nav: 'stacked',
-        icon: <AiOutlineBarChart />,
-      },
-    ],
-  },
+  // {
+  //   title: '其它',
+  //   links: [
+  //     {
+  //       name: '电子商务',
+  //       nav: 'ecommerce',
+  //       icon: <FiShoppingBag />,
+  //     },
+  //     {
+  //       name: '订单',
+  //       nav: 'orders',
+  //       icon: <AiOutlineShoppingCart />,
+  //     },
+  //     {
+  //       name: '员工',
+  //       nav: 'employees',
+  //       icon: <IoMdContacts />,
+  //     },
+  //     {
+  //       name: '客户',
+  //       nav: 'customers',
+  //       icon: <RiContactsLine />,
+  //     },
+  //     {
+  //       name: '看板',
+  //       nav: 'kanban',
+  //       icon: <BsKanban />,
+  //     },
+  //     {
+  //       name: '编辑器',
+  //       nav: 'editor',
+  //       icon: <FiEdit />,
+  //     },
+  //     {
+  //       name: '颜色选择器',
+  //       nav: 'colorpicker',
+  //       icon: <BiColorFill />,
+  //     },
+  //     {
+  //       name: '折线图',
+  //       nav: 'line',
+  //       icon: <AiOutlineStock />,
+  //     },
+  //     {
+  //       name: '区域图',
+  //       nav: 'area',
+  //       icon: <AiOutlineAreaChart />,
+  //     },
+  //     {
+  //       name: '条形图',
+  //       nav: 'bar',
+  //       icon: <AiOutlineBarChart />,
+  //     },
+  //     {
+  //       name: '饼图',
+  //       nav: 'pie',
+  //       icon: <FiPieChart />,
+  //     },
+  //     {
+  //       name: '财务图',
+  //       nav: 'financial',
+  //       icon: <RiStockLine />,
+  //     },
+  //     {
+  //       name: '颜色映射',
+  //       nav: 'colormapping',
+  //       icon: <BsBarChart />,
+  //     },
+  //     {
+  //       name: '金字塔图',
+  //       nav: 'pyramid',
+  //       icon: <GiLouvrePyramid />,
+  //     },
+  //     {
+  //       name: '堆栈图',
+  //       nav: 'stacked',
+  //       icon: <AiOutlineBarChart />,
+  //     },
+  //   ],
+  // },
 ];
 
 export const cartData = [
@@ -660,27 +641,27 @@ export const cartData = [
 
 export const chatData = [
   {
-    image: avatar2,
-    message: 'Roman Joined the Team!',
-    desc: 'Congratulate him',
+    image: avatar3,
+    message: '李泽群加入了你的班级',
+    desc: '计算机组成原理',
     time: '9:08 AM',
   },
   {
-    image: avatar3,
-    message: 'New message received',
-    desc: 'Salma sent you new message',
+    image: avatar2,
+    message: '教师批改了你的作业',
+    desc: '数据结构',
     time: '11:56 AM',
   },
   {
     image: avatar4,
-    message: 'New Payment received',
-    desc: 'Check your earnings',
+    message: '教师发布了新的测验',
+    desc: '软件工程导论',
     time: '4:39 AM',
   },
   {
     image: avatar,
-    message: 'Jolly completed tasks',
-    desc: 'Assign her new tasks',
+    message: '你已加入班级',
+    desc: '数据库原理',
     time: '1:12 AM',
   },
 ];
@@ -909,25 +890,28 @@ export const themeColors = [
 
 export const userProfileData = [
   {
-    icon: <BsCurrencyDollar />,
+    icon: <BsShield />,
     title: '我的档案',
-    desc: '账户设定',
+    desc: '账户设定与学习资源',
     iconColor: '#03C9D7',
     iconBg: '#E5FAFB',
+    herf: '/profile',
   },
   {
-    icon: <BsShield />,
-    title: '收件箱',
-    desc: '信息 & 邮件',
+    icon: <MdQuiz />,
+    title: '我的测验',
+    desc: '测验平台内容',
     iconColor: 'rgb(0, 194, 146)',
     iconBg: 'rgb(235, 250, 242)',
+    herf: '/quiz',
   },
   {
     icon: <FiCreditCard />,
-    title: '我的任务',
+    title: '我的日程',
     desc: '待办事项和日常任务',
     iconColor: 'rgb(255, 244, 229)',
     iconBg: 'rgb(254, 201, 15)',
+    herf: '/calendar',
   },
 ];
 

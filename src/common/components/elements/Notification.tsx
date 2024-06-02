@@ -17,14 +17,14 @@ const Notification: React.FC = React.memo(() => {
       <div className="flex items-center justify-between">
         <div className="flex gap-3">
           <p className="text-lg font-semibold dark:text-gray-200">
-            Notifications
+            通知
           </p>
           <button
             type="button"
-            className="bg-orange-theme rounded p-1 px-2 text-xs text-white "
+            className="bg-orange-theme rounded p-1 px-2 text-xs text-black "
           >
             {' '}
-            5 New
+            4 则新通知
           </button>
         </div>
         <Button

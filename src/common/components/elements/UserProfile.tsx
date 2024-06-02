@@ -7,6 +7,7 @@ import { MdOutlineCancel } from 'react-icons/md';
 
 import { userProfileData } from '@/common/dummy/dummy';
 
+import Link from 'next/link';
 import { Button } from '.';
 
 const UserProfile: React.FC = React.memo(() => {
@@ -48,26 +49,30 @@ const UserProfile: React.FC = React.memo(() => {
       </div>
       <div>
         {userProfileData.map((item, index) => (
-          <div
-            key={index}
-            className="flex cursor-pointer gap-5 border-b-1 border-color p-4 hover:bg-light-gray  dark:hover:bg-[#42464D]"
-          >
-            <button
-              type="button"
-              style={{ color: item.iconColor, backgroundColor: item.iconBg }}
-              className=" rounded-lg p-3 text-xl hover:bg-light-gray"
+          <Link href={item.herf}>
+            <div
+              key={index}
+              className="flex cursor-pointer gap-5 border-b-1 border-color p-4 hover:bg-light-gray  dark:hover:bg-[#42464D]"
             >
-              {item.icon}
-            </button>
+              <button
+                type="button"
+                style={{ color: item.iconColor, backgroundColor: item.iconBg }}
+                className=" rounded-lg p-3 text-xl hover:bg-light-gray"
+              >
+                {item.icon}
+              </button>
 
-            <div>
-              <p className="font-semibold dark:text-gray-200 ">{item.title}</p>
-              <p className="text-sm text-gray-500 dark:text-gray-400">
-                {' '}
-                {item.desc}{' '}
-              </p>
+              <div>
+                <p className="font-semibold dark:text-gray-200 ">
+                  {item.title}
+                </p>
+                <p className="text-sm text-gray-500 dark:text-gray-400">
+                  {' '}
+                  {item.desc}{' '}
+                </p>
+              </div>
             </div>
-          </div>
+          </Link>
         ))}
       </div>
       <div className="mt-5">

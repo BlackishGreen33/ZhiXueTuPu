@@ -21,7 +21,7 @@ const Employees: React.FC = React.memo(() => {
 
   return (
     <div className="m-2 mt-24 rounded-3xl bg-white p-2 md:m-10 md:p-10">
-      <Header category="Page" title="Employees" />
+      <Header category="班级" title="班级同学" />
       <GridComponent
         dataSource={employeesData}
         width="auto"
