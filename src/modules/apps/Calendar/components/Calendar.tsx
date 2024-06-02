@@ -17,7 +17,7 @@ import {
 import React, { useState } from 'react';
 
 import Header from '@/common/components/elements/Header';
-import { scheduleData } from '@/common/dummy/dummy';
+import { ScheduleData } from '@/common/dummy';
 
 // @ts-ignore
 const PropertyPane = (props) => <div className="mt-5">{props.children}</div>;
@@ -45,7 +45,7 @@ const Calendar: React.FC = React.memo(() => {
         // @ts-ignore
         ref={(schedule) => setScheduleObj(schedule)}
         selectedDate={new Date(2024, 0, 6)}
-        eventSettings={{ dataSource: scheduleData }}
+        eventSettings={{ dataSource: ScheduleData }}
         dragStart={onDragStart}
       >
         <ViewsDirective>
