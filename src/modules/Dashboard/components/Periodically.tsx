@@ -4,58 +4,50 @@ import Image from 'next/image';
 import { useRouter } from 'next/navigation';
 import { IoIosMore } from 'react-icons/io';
 
-import { Button, SparkLine } from '@/common/components/elements';
-import {
-  SparklineAreaData,
-  medicalproBranding,
-  weeklyStats,
-} from '@/common/dummy/dummy';
+import { Button } from '@/common/components/elements';
+import Radar from '@/common/components/elements/Charts/Radar';
+import { medicalproBranding } from '@/common/dummy/dummy';
 import useStore from '@/common/hooks/useStore';
+import { useEffect, useRef } from 'react';
 
 const Periodically: React.FC = () => {
   const router = useRouter();
-  const { currentColor } = useStore();
+  const { currentColor, isVisible, setIsVisible } = useStore();
   const product9 = './assets/product9.png';
+
+  const componentRef = useRef<HTMLDivElement | null>(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true);
+        } else {
+          setIsVisible(false);
+        }
+      },
+      { threshold: 0.1 }
+    );
+    if (componentRef.current) {
+      observer.observe(componentRef.current);
+    }
+    return () => {
+      observer.disconnect();
+    };
+  }, []);
 
   return (
     <div className="flex flex-wrap justify-center">
       <div className="m-3 rounded-2xl bg-white p-6 dark:bg-secondary-dark-bg dark:text-gray-200 md:w-400">
         <div className="flex justify-between">
-          <p className="text-xl font-semibold">Weekly Stats</p>
+          <p className="text-xl font-semibold">成绩变化雷达图</p>
           <button type="button" className="text-xl font-semibold text-gray-500">
             <IoIosMore />
           </button>
         </div>
         <div className="mt-10 ">
-          {weeklyStats.map((item) => (
-            <div key={item.title} className="mt-4 flex w-full justify-between">
-              <div className="flex gap-4">
-                <button
-                  type="button"
-                  style={{ background: item.iconBg }}
-                  className="rounded-full p-3 text-2xl text-white hover:drop-shadow-xl"
-                >
-                  {item.icon}
-                </button>
-                <div>
-                  <p className="text-md font-semibold">{item.title}</p>
-                  <p className="text-sm text-gray-400">{item.desc}</p>
-                </div>
-              </div>
-
-              <p className={`text-${item.pcColor}`}>{item.amount}</p>
-            </div>
-          ))}
-          <div className="mt-4">
-            <SparkLine
-              currentColor={currentColor}
-              id="area-sparkLine"
-              height="160px"
-              type="Area"
-              data={SparklineAreaData}
-              width="320"
-              color="rgb(242, 252, 253)"
-            />
+          <div className="mt-4" ref={componentRef}>
+            {isVisible && <Radar />}
           </div>
         </div>
       </div>
@@ -66,7 +58,7 @@ const Periodically: React.FC = () => {
             <IoIosMore />
           </button>
         </div>
-        <p className="mt-10 w-32 cursor-pointer rounded-lg bg-orange-400 px-2 py-0.5 text-xs font-semibold text-gray-200 hover:drop-shadow-xl text-nowrap">
+        <p className="mt-10 w-32 cursor-pointer text-nowrap rounded-lg bg-orange-400 px-2 py-0.5 text-xs font-semibold text-gray-200 hover:drop-shadow-xl">
           2024 年 6 月 10 日
         </p>
 
@@ -80,7 +72,7 @@ const Periodically: React.FC = () => {
         </div>
         <div className="mt-2 border-b-1 border-color pb-4">
           <p className="text-md mb-2 font-semibold">主题</p>
-          <p className="text-sm mb-2">非关系型数据库的设计与实现</p>
+          <p className="mb-2 text-sm">非关系型数据库的设计与实现</p>
           <div className="flex gap-4">
             {medicalproBranding.teams.map((item) => (
               <p

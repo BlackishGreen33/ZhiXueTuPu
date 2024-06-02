@@ -6,9 +6,31 @@ import { Button, Pie, SparkLine, Stacked } from '@/common/components/elements';
 import { PieChartData } from '@/common/dummy';
 import { SparklineAreaData } from '@/common/dummy/dummy';
 import useStore from '@/common/hooks/useStore';
+import { useEffect, useRef } from 'react';
 
 const Revenue: React.FC = () => {
-  const { currentColor } = useStore();
+  const { currentColor, isVisible, setIsVisible } = useStore();
+
+  const componentRef2 = useRef<HTMLDivElement | null>(null);
+
+  useEffect(() => {
+    const observer2 = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsVisible(false);
+        } else {
+          setIsVisible(true);
+        }
+      },
+      { threshold: 0.1 }
+    );
+    if (componentRef2.current) {
+      observer2.observe(componentRef2.current);
+    }
+    return () => {
+      observer2.disconnect();
+    };
+  }, [isVisible]);
 
   return (
     <section className="flex flex-wrap justify-center gap-10">
@@ -46,16 +68,18 @@ const Revenue: React.FC = () => {
 
               <p className="mt-1 text-gray-500">在线平均时长</p>
             </div>
-            <div className="mt-5">
-              <SparkLine
-                currentColor={currentColor}
-                id="line-sparkLine"
-                type="Line"
-                height="80px"
-                width="250px"
-                data={SparklineAreaData}
-                color={currentColor}
-              />
+            <div className="mt-5" ref={componentRef2}>
+              {!isVisible && (
+                <SparkLine
+                  currentColor={currentColor}
+                  id="line-sparkLine"
+                  type="Line"
+                  height="80px"
+                  width="250px"
+                  data={SparklineAreaData}
+                  color={currentColor}
+                />
+              )}
             </div>
             <div className="mt-10">
               <Button
@@ -103,7 +127,6 @@ const Revenue: React.FC = () => {
             <p className="text-2xl font-semibold">时间分配</p>
             <p className="text-gray-400">各科学领域的学习时间分布</p>
           </div>
-
           <div className="w-40">
             <Pie
               id="pie-chart"
