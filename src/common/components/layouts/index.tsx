@@ -51,7 +51,7 @@ defer>
       <div className={theme === 'Dark' ? 'dark' : ''}>
         <div className="relative flex dark:bg-main-dark-bg">
           <motion.div
-            className={`z-[100] dark:bg-secondary-dark-bg ${activeMenu && 'sidebar fixed w-72 bg-white'}`}
+            className={`z-[10] dark:bg-secondary-dark-bg ${activeMenu && 'sidebar fixed w-72 bg-white'}`}
             animate={{
               x: activeMenu ? 0 : -100,
               opacity: activeMenu ? 1 : 0,
@@ -87,7 +87,10 @@ defer>
               <ThemeSettings />
               {children}
             </div>
-            <div dangerouslySetInnerHTML={{ __html: chatbotScript }} />
+            <div
+              dangerouslySetInnerHTML={{ __html: chatbotScript }}
+              className="z-[1000]"
+            />
             <Footer />
             <Toaster />
           </motion.div>
