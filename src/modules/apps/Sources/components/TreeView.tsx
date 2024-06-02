@@ -19,7 +19,7 @@ const TreeView: React.FC = React.memo(() => {
 
   return (
     <motion.div
-      initial={{ y: 10, opacity: 0 }}
+      initial={{ y: 50, opacity: 0 }}
       animate={{
         y: 0,
         opacity: 1,

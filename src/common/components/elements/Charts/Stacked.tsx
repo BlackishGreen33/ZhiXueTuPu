@@ -14,10 +14,10 @@ import { useTheme } from 'next-themes';
 import React from 'react';
 
 import {
-  stackedCustomSeries,
-  stackedPrimaryXAxis,
-  stackedPrimaryYAxis,
-} from '@/common/dummy/dummy';
+  StackedCustomSeries,
+  StackedPrimaryXAxis,
+  StackedPrimaryYAxis,
+} from '@/common/dummy';
 
 interface StackedProps {
   width?: string;
@@ -31,8 +31,8 @@ const Stacked: React.FC<StackedProps> = React.memo(({ width, height }) => {
     <ChartComponent
       id="charts"
       // @ts-ignore
-      primaryXAxis={stackedPrimaryXAxis}
-      primaryYAxis={stackedPrimaryYAxis}
+      primaryXAxis={StackedPrimaryXAxis}
+      primaryYAxis={StackedPrimaryYAxis}
       width={width}
       height={height}
       chartArea={{ border: { width: 0 } }}
@@ -43,7 +43,7 @@ const Stacked: React.FC<StackedProps> = React.memo(({ width, height }) => {
       <Inject services={[StackingColumnSeries, Category, Legend, Tooltip]} />
       <SeriesCollectionDirective>
         {/* eslint-disable-next-line react/jsx-props-no-spreading */}
-        {stackedCustomSeries.map((item, index) => (
+        {StackedCustomSeries.map((item, index) => (
           <SeriesDirective key={index} {...item} />
         ))}
       </SeriesCollectionDirective>

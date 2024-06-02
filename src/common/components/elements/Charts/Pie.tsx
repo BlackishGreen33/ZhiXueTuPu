@@ -42,7 +42,7 @@ const Pie: React.FC<PieProps> = React.memo(
         />
         <AccumulationSeriesCollectionDirective>
           <AccumulationSeriesDirective
-            name="Sale"
+            name="科目"
             dataSource={data}
             xName="x"
             yName="y"

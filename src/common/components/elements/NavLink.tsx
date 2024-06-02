@@ -27,7 +27,10 @@ const NavLink: React.FC<NavLinkProps> = React.memo(
     const { themeSettings } = useStore();
     const pathname = usePathname();
     const isActive =
-      (exact ? pathname === href : pathname.startsWith(href)) && !themeSettings;
+      pathname === '/' && href === '/dashboard'
+        ? true
+        : (exact ? pathname === href : pathname.startsWith(href)) &&
+          !themeSettings;
 
     const newProps = {
       ...props,

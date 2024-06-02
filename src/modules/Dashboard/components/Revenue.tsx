@@ -3,7 +3,8 @@
 import { GoDotFill } from 'react-icons/go';
 
 import { Button, Pie, SparkLine, Stacked } from '@/common/components/elements';
-import { SparklineAreaData, ecomPieChartData } from '@/common/dummy/dummy';
+import { PieChartData } from '@/common/dummy';
+import { SparklineAreaData } from '@/common/dummy/dummy';
 import useStore from '@/common/hooks/useStore';
 
 const Revenue: React.FC = () => {
@@ -13,19 +14,19 @@ const Revenue: React.FC = () => {
     <section className="flex flex-wrap justify-center gap-10">
       <div className="m-3 rounded-2xl bg-white p-4 dark:bg-secondary-dark-bg dark:text-gray-200 md:w-780  ">
         <div className="flex justify-between">
-          <p className="text-xl font-semibold">Revenue Updates</p>
+          <p className="ml-5 mt-3 text-2xl font-semibold">学习频率分析图</p>
           <div className="flex items-center gap-4">
-            <p className="flex items-center gap-2 text-gray-600 hover:drop-shadow-xl">
-              <span>
-                <GoDotFill />
-              </span>
-              <span>Expense</span>
-            </p>
             <p className="flex items-center gap-2 text-green-400 hover:drop-shadow-xl">
               <span>
                 <GoDotFill />
               </span>
-              <span>Budget</span>
+              <span>学习时长</span>
+            </p>
+            <p className="flex items-center gap-2 text-gray-600 hover:drop-shadow-xl">
+              <span>
+                <GoDotFill />
+              </span>
+              <span>闲置时长</span>
             </p>
           </div>
         </div>
@@ -33,19 +34,18 @@ const Revenue: React.FC = () => {
           <div className=" m-4 border-r-1 border-color pr-10">
             <div>
               <p>
-                <span className="text-3xl font-semibold">$93,438</span>
+                <span className="text-3xl font-semibold">25,565 秒</span>
                 <span className="ml-3 cursor-pointer rounded-full bg-green-400 p-1.5 text-xs text-white hover:drop-shadow-xl">
-                  23%
+                  52.7%
                 </span>
               </p>
-              <p className="mt-1 text-gray-500">Budget</p>
+              <p className="mt-1 text-gray-500">学习平均时长</p>
             </div>
             <div className="mt-8">
-              <p className="text-3xl font-semibold">$48,487</p>
+              <p className="text-3xl font-semibold">48,487 秒</p>
 
-              <p className="mt-1 text-gray-500">Expense</p>
+              <p className="mt-1 text-gray-500">在线平均时长</p>
             </div>
-
             <div className="mt-5">
               <SparkLine
                 currentColor={currentColor}
@@ -61,7 +61,7 @@ const Revenue: React.FC = () => {
               <Button
                 color="white"
                 bgColor={currentColor}
-                text="Download Report"
+                text="下载学习报表"
                 borderRadius="10px"
               />
             </div>
@@ -77,16 +77,15 @@ const Revenue: React.FC = () => {
           style={{ backgroundColor: currentColor }}
         >
           <div className="flex items-center justify-between ">
-            <p className="text-2xl font-semibold text-white">Earnings</p>
+            <p className="text-2xl font-semibold text-white">学习频率分布</p>
 
             <div>
               <p className="mt-8 text-2xl font-semibold text-white">
-                $63,448.78
+                18,846 秒
               </p>
-              <p className="text-gray-200">Monthly revenue</p>
+              <p className="text-gray-200">每月平均</p>
             </div>
           </div>
-
           <div className="mt-4">
             <SparkLine
               currentColor={currentColor}
@@ -99,17 +98,16 @@ const Revenue: React.FC = () => {
             />
           </div>
         </div>
-
         <div className="m-3 flex items-center justify-center gap-10 rounded-2xl bg-white p-8 dark:bg-secondary-dark-bg dark:text-gray-200 md:w-400">
           <div>
-            <p className="text-2xl font-semibold ">$43,246</p>
-            <p className="text-gray-400">Yearly sales</p>
+            <p className="text-2xl font-semibold">时间分配</p>
+            <p className="text-gray-400">各科学领域的学习时间分布</p>
           </div>
 
           <div className="w-40">
             <Pie
               id="pie-chart"
-              data={ecomPieChartData}
+              data={PieChartData}
               legendVisiblity={false}
               height="160px"
             />

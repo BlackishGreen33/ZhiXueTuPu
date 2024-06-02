@@ -31,7 +31,7 @@ const SparkLine: React.FC<SparkLineProps> = React.memo(
         tooltipSettings={{
           visible: true,
           // eslint-disable-next-line no-template-curly-in-string
-          format: '${x} : data ${yval}',
+          format: '${x} 月',
           trackLineSettings: {
             visible: true,
           },

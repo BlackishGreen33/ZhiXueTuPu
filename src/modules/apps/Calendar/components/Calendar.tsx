@@ -14,6 +14,7 @@ import {
   Week,
   WorkWeek,
 } from '@syncfusion/ej2-react-schedule';
+import { motion } from 'framer-motion';
 import React, { useState } from 'react';
 
 import Header from '@/common/components/elements/Header';
@@ -38,7 +39,15 @@ const Calendar: React.FC = React.memo(() => {
   };
 
   return (
-    <div className="m-2 mt-24 rounded-3xl bg-white p-2 md:m-10 md:p-10">
+    <motion.div
+      initial={{ y: 50, opacity: 0 }}
+      animate={{
+        y: 0,
+        opacity: 1,
+        transition: { duration: 0.3, type: 'spring', stiffness: 200 },
+      }}
+      className="m-2 mt-24 rounded-3xl bg-white p-2 md:m-10 md:p-10"
+    >
       <Header category="应用" title="学习日程管理" />
       <ScheduleComponent
         height="650px"
@@ -75,7 +84,7 @@ const Calendar: React.FC = React.memo(() => {
           </tbody>
         </table>
       </PropertyPane>
-    </div>
+    </motion.div>
   );
 });
 
