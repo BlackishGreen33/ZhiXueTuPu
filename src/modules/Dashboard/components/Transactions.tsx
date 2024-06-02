@@ -3,7 +3,7 @@
 import { useTheme } from 'next-themes';
 
 import { Button, LineChart } from '@/common/components/elements';
-import { recentTransactions } from '@/common/dummy/dummy';
+import { RecentTodos } from '@/common/dummy/dummy';
 import useStore from '@/common/hooks/useStore';
 
 import DropDown from './DropDown';
@@ -16,11 +16,11 @@ const Transactions: React.FC = () => {
     <div className="m-4 flex flex-wrap justify-center gap-10">
       <div className="rounded-2xl bg-white p-6 dark:bg-secondary-dark-bg dark:text-gray-200">
         <div className="flex items-center justify-between gap-2">
-          <p className="text-xl font-semibold">Recent Transactions</p>
+          <p className="text-xl font-semibold">代办事项</p>
           <DropDown theme={theme!} />
         </div>
         <div className="mt-10 w-72 md:w-400">
-          {recentTransactions.map((item) => (
+          {RecentTodos.map((item) => (
             <div key={item.title} className="mt-4 flex justify-between">
               <div className="flex gap-4">
                 <button
@@ -47,17 +47,16 @@ const Transactions: React.FC = () => {
             <Button
               color="white"
               bgColor={currentColor}
-              text="Add"
+              text="新增代办"
               borderRadius="10px"
             />
           </div>
-
-          <p className="text-sm text-gray-400">36 Recent Transactions</p>
+          <p className="text-sm text-gray-400">36 笔近期代办</p>
         </div>
       </div>
       <div className="w-96 rounded-2xl bg-white p-6 dark:bg-secondary-dark-bg dark:text-gray-200 md:w-760">
         <div className="mb-10 flex items-center justify-between gap-2">
-          <p className="text-xl font-semibold">Sales Overview</p>
+          <p className="text-xl font-semibold">成绩变化图</p>
           <DropDown theme={theme!} />
         </div>
         <div className="overflow-auto md:w-full">

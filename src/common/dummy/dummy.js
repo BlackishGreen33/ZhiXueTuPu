@@ -14,7 +14,12 @@ import {
   BsKanban,
   BsShield,
 } from 'react-icons/bs';
-import { FaUserCircle } from 'react-icons/fa';
+import {
+  FaDatabase,
+  FaProjectDiagram,
+  FaPython,
+  FaUserCircle,
+} from 'react-icons/fa';
 import {
   FiBarChart,
   FiCreditCard,
@@ -26,9 +31,9 @@ import {
   FiStar,
 } from 'react-icons/fi';
 import { GiLouvrePyramid } from 'react-icons/gi';
-import { GrLocation } from 'react-icons/gr';
+import { GrCloudSoftware, GrLocation } from 'react-icons/gr';
 import { HiOutlineRefresh } from 'react-icons/hi';
-import { IoMdContacts } from 'react-icons/io';
+import { IoIosPaper, IoMdContacts } from 'react-icons/io';
 import {
   MdDashboardCustomize,
   MdOutlineSupervisorAccount,
@@ -36,7 +41,6 @@ import {
   MdSource,
 } from 'react-icons/md';
 import { RiContactsLine, RiStockLine } from 'react-icons/ri';
-import { TiTick } from 'react-icons/ti';
 
 import Image from 'next/image';
 const avatar = './assets/avatar.jpg';
@@ -409,26 +413,6 @@ export const FinancialPrimaryYAxis = {
   majorTickLines: { width: 0 },
 };
 
-export const LinePrimaryXAxis = {
-  valueType: 'DateTime',
-  labelFormat: 'y',
-  intervalType: 'Years',
-  edgeLabelPlacement: 'Shift',
-  majorGridLines: { width: 0 },
-  background: 'white',
-};
-
-export const LinePrimaryYAxis = {
-  labelFormat: '{value}%',
-  rangePadding: 'None',
-  minimum: 0,
-  maximum: 100,
-  interval: 20,
-  lineStyle: { width: 0 },
-  majorTickLines: { width: 0 },
-  minorTickLines: { width: 0 },
-};
-
 export const customersGrid = [
   { type: 'checkbox', width: '50' },
   {
@@ -741,51 +725,49 @@ export const EnterData = [
   },
 ];
 
-export const recentTransactions = [
+export const RecentTodos = [
   {
-    icon: <BsCurrencyDollar />,
-    amount: '+$350',
-    title: 'Paypal Transfer',
-    desc: 'Money Added',
+    icon: <GrCloudSoftware />,
+    amount: '06/02',
+    title: '软件工程导论大作业',
+    desc: '小组项目',
     iconColor: '#03C9D7',
     iconBg: '#E5FAFB',
     pcColor: 'green-600',
   },
   {
-    icon: <BsShield />,
-    amount: '-$560',
-    desc: 'Bill Payment',
-    title: 'Wallet',
+    icon: <FaDatabase />,
+    amount: '05/30',
+    title: '数据库实验大作业',
+    desc: '小组项目',
     iconColor: 'rgb(0, 194, 146)',
     iconBg: 'rgb(235, 250, 242)',
     pcColor: 'red-600',
   },
   {
-    icon: <FiCreditCard />,
-    amount: '+$350',
-    title: 'Credit Card',
-    desc: 'Money reversed',
+    icon: <FaPython />,
+    amount: '06/15',
+    title: 'Python 大作业',
+    desc: '个人项目',
     iconColor: 'rgb(255, 244, 229)',
     iconBg: 'rgb(254, 201, 15)',
 
     pcColor: 'green-600',
   },
   {
-    icon: <TiTick />,
-    amount: '+$350',
-    title: 'Bank Transfer',
-    desc: 'Money Added',
-
+    icon: <IoIosPaper />,
+    amount: '06/06',
+    title: '法律与城乡治理论文',
+    desc: '论文',
     iconColor: 'rgb(228, 106, 118)',
     iconBg: 'rgb(255, 244, 229)',
     pcColor: 'green-600',
   },
   {
-    icon: <BsCurrencyDollar />,
-    amount: '-$50',
-    percentage: '+38%',
-    title: 'Refund',
-    desc: 'Payment Sent',
+    icon: <FaProjectDiagram />,
+    amount: '06/01',
+    title: '外包小程序项目',
+    desc: '协作项目',
     iconColor: '#03C9D7',
     iconBg: '#E5FAFB',
     pcColor: 'red-600',
@@ -857,25 +839,25 @@ export const productsPerformance = [
 export const medicalproBranding = {
   data: [
     {
-      title: 'Due Date',
-      desc: 'Oct 23, 2021',
+      title: '报名截止时间',
+      desc: '2024年6月8日',
     },
     {
-      title: 'Budget',
-      desc: '$98,500',
+      title: '报名费用',
+      desc: '$50',
     },
     {
-      title: 'Expense',
-      desc: '$63,000',
+      title: '累积报名人数',
+      desc: '46 人',
     },
   ],
   teams: [
     {
-      name: 'Bootstrap',
+      name: 'NoSQL',
       color: 'orange',
     },
     {
-      name: 'Angular',
+      name: 'MongoDB',
       color: '#FB9678',
     },
   ],
@@ -2773,88 +2755,12 @@ export const ordersData = [
   },
 ];
 
-export const lineChartData = [
-  [
-    { x: new Date(2005, 0, 1), y: 21 },
-    { x: new Date(2006, 0, 1), y: 24 },
-    { x: new Date(2007, 0, 1), y: 36 },
-    { x: new Date(2008, 0, 1), y: 38 },
-    { x: new Date(2009, 0, 1), y: 54 },
-    { x: new Date(2010, 0, 1), y: 57 },
-    { x: new Date(2011, 0, 1), y: 70 },
-  ],
-  [
-    { x: new Date(2005, 0, 1), y: 28 },
-    { x: new Date(2006, 0, 1), y: 44 },
-    { x: new Date(2007, 0, 1), y: 48 },
-    { x: new Date(2008, 0, 1), y: 50 },
-    { x: new Date(2009, 0, 1), y: 66 },
-    { x: new Date(2010, 0, 1), y: 78 },
-    { x: new Date(2011, 0, 1), y: 84 },
-  ],
-
-  [
-    { x: new Date(2005, 0, 1), y: 10 },
-    { x: new Date(2006, 0, 1), y: 20 },
-    { x: new Date(2007, 0, 1), y: 30 },
-    { x: new Date(2008, 0, 1), y: 39 },
-    { x: new Date(2009, 0, 1), y: 50 },
-    { x: new Date(2010, 0, 1), y: 70 },
-    { x: new Date(2011, 0, 1), y: 100 },
-  ],
-];
-export const dropdownData = [
-  {
-    Id: '1',
-    Time: 'March 2021',
-  },
-  {
-    Id: '2',
-    Time: 'April 2021',
-  },
-  {
-    Id: '3',
-    Time: 'May 2021',
-  },
-];
 export const SparklineAreaData = [
   { x: 1, yval: 2 },
   { x: 2, yval: 6 },
   { x: 3, yval: 8 },
   { x: 4, yval: 5 },
   { x: 5, yval: 10 },
-];
-
-export const lineCustomSeries = [
-  {
-    dataSource: lineChartData[0],
-    xName: 'x',
-    yName: 'y',
-    name: 'Germany',
-    width: '2',
-    marker: { visible: true, width: 10, height: 10 },
-    type: 'Line',
-  },
-
-  {
-    dataSource: lineChartData[1],
-    xName: 'x',
-    yName: 'y',
-    name: 'England',
-    width: '2',
-    marker: { visible: true, width: 10, height: 10 },
-    type: 'Line',
-  },
-
-  {
-    dataSource: lineChartData[2],
-    xName: 'x',
-    yName: 'y',
-    name: 'India',
-    width: '2',
-    marker: { visible: true, width: 10, height: 10 },
-    type: 'Line',
-  },
 ];
 
 export const pieChartData = [

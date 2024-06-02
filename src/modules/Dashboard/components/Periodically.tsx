@@ -1,6 +1,7 @@
 'use client';
 
 import Image from 'next/image';
+import { useRouter } from 'next/navigation';
 import { IoIosMore } from 'react-icons/io';
 
 import { Button, SparkLine } from '@/common/components/elements';
@@ -12,8 +13,9 @@ import {
 import useStore from '@/common/hooks/useStore';
 
 const Periodically: React.FC = () => {
+  const router = useRouter();
   const { currentColor } = useStore();
-  const product9 = './assets/product9.jpg';
+  const product9 = './assets/product9.png';
 
   return (
     <div className="flex flex-wrap justify-center">
@@ -59,13 +61,13 @@ const Periodically: React.FC = () => {
       </div>
       <div className="m-3 w-400 rounded-2xl bg-white p-6 dark:bg-secondary-dark-bg dark:text-gray-200">
         <div className="flex justify-between">
-          <p className="text-xl font-semibold">MedicalPro Branding</p>
+          <p className="text-xl font-semibold">课程讲座</p>
           <button type="button" className="text-xl font-semibold text-gray-400">
             <IoIosMore />
           </button>
         </div>
-        <p className="mt-10 w-24 cursor-pointer rounded-lg bg-orange-400 px-2 py-0.5 text-xs font-semibold text-gray-200 hover:drop-shadow-xl">
-          16 APR, 2021
+        <p className="mt-10 w-32 cursor-pointer rounded-lg bg-orange-400 px-2 py-0.5 text-xs font-semibold text-gray-200 hover:drop-shadow-xl text-nowrap">
+          2024 年 6 月 10 日
         </p>
 
         <div className="mt-6 flex gap-4 border-b-1 border-color">
@@ -77,8 +79,8 @@ const Periodically: React.FC = () => {
           ))}
         </div>
         <div className="mt-2 border-b-1 border-color pb-4">
-          <p className="text-md mb-2 font-semibold">Teams</p>
-
+          <p className="text-md mb-2 font-semibold">主题</p>
+          <p className="text-sm mb-2">非关系型数据库的设计与实现</p>
           <div className="flex gap-4">
             {medicalproBranding.teams.map((item) => (
               <p
@@ -92,7 +94,7 @@ const Periodically: React.FC = () => {
           </div>
         </div>
         <div className="mt-2">
-          <p className="text-md mb-2 font-semibold">Leaders</p>
+          <p className="text-md mb-2 font-semibold">讲师</p>
           <div className="flex gap-4">
             {medicalproBranding.leaders.map((item, index) => (
               <Image
@@ -112,16 +114,16 @@ const Periodically: React.FC = () => {
             <Button
               color="white"
               bgColor={currentColor}
-              text="Add"
+              text="报名参加"
               borderRadius="10px"
             />
           </div>
-          <p className="text-sm text-gray-400">36 Recent Transactions</p>
+          <p className="text-sm text-gray-400">5 场关联活动</p>
         </div>
       </div>
       <div className="m-3 w-400 rounded-2xl bg-white p-6 dark:bg-secondary-dark-bg dark:text-gray-200">
         <div className="flex justify-between">
-          <p className="text-xl font-semibold">Daily Activities</p>
+          <p className="text-xl font-semibold">每日知识点</p>
           <button type="button" className="text-xl font-semibold text-gray-500">
             <IoIosMore />
           </button>
@@ -136,18 +138,24 @@ const Periodically: React.FC = () => {
             height={200}
           />
           <div className="mt-8">
-            <p className="text-lg font-semibold">React 18 coming soon!</p>
-            <p className="text-gray-400 ">By Johnathan Doe</p>
+            <p className="text-lg font-semibold">
+              死锁面试题（什么是死锁，产生死锁的原因及必要条件）
+            </p>
+            <p className="text-gray-400 ">作者：AddoilDan</p>
             <p className="mt-8 text-sm text-gray-400">
-              This will be the small description for the news you have shown
-              here. There could be some great info.
+              所谓死锁，是指多个进程在运行过程中因争夺资源而造成的一种僵局，当进程处于这种僵持状态时，若无外力作用，它们都将无法再向前推进。
             </p>
             <div className="mt-3">
               <Button
                 color="white"
                 bgColor={currentColor}
-                text="Read More"
+                text="阅读更多"
                 borderRadius="10px"
+                onClick={() =>
+                  router.push(
+                    'https://blog.csdn.net/hd12370/article/details/82814348'
+                  )
+                }
               />
             </div>
           </div>

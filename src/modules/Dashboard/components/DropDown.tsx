@@ -1,7 +1,7 @@
 import { DropDownListComponent } from '@syncfusion/ej2-react-dropdowns';
 import React from 'react';
 
-import { dropdownData } from '@/common/dummy/dummy';
+import { DropdownData } from '@/common/dummy';
 
 interface DropDownProps {
   theme: string;
@@ -15,7 +15,7 @@ const DropDown: React.FC<DropDownProps> = React.memo(({ theme }) => (
       fields={{ text: 'Time', value: 'Id' }}
       style={{ border: 'none', color: theme === 'dark' && 'white' }}
       value="1"
-      dataSource={dropdownData}
+      dataSource={DropdownData}
       popupHeight="220px"
       popupWidth="120px"
     />

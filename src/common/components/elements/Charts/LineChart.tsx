@@ -14,10 +14,10 @@ import { useTheme } from 'next-themes';
 import React from 'react';
 
 import {
-  lineCustomSeries,
+  LineCustomSeries,
   LinePrimaryXAxis,
   LinePrimaryYAxis,
-} from '@/common/dummy/dummy';
+} from '@/common/dummy';
 
 const LineChart: React.FC = React.memo(() => {
   const { theme } = useTheme();
@@ -38,7 +38,7 @@ const LineChart: React.FC = React.memo(() => {
       <Inject services={[LineSeries, DateTime, Legend, Tooltip]} />
       <SeriesCollectionDirective>
         {/* eslint-disable-next-line react/jsx-props-no-spreading */}
-        {lineCustomSeries.map((item, index) => (
+        {LineCustomSeries.map((item, index) => (
           <SeriesDirective key={index} {...item} />
         ))}
       </SeriesCollectionDirective>

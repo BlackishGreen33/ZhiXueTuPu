@@ -1,3 +1,9 @@
+export { DropdownData } from './DropdownData';
+export {
+  LineCustomSeries,
+  LinePrimaryXAxis,
+  LinePrimaryYAxis,
+} from './LineChartData';
 export { MCQQuestions } from './MCQQuestions';
 export { NoteItems } from './NotesItems';
 export { OpenEndedQuestions } from './OpenEndedQuestions';
@@ -6,7 +12,6 @@ export { PyramidData } from './PyramidData';
 export { ScheduleData } from './ScheduleData';
 export { SourceItems } from './SourceItems';
 export {
-  StackedChartData,
   StackedCustomSeries,
   StackedPrimaryXAxis,
   StackedPrimaryYAxis,
