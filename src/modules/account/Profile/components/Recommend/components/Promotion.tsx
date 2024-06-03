@@ -10,13 +10,13 @@ const Promotion: React.FC = React.memo(() => {
         width={1000}
         height={1000}
         className="h-32 w-56 rounded-lg object-cover"
-        src="./assets/game.jpg"
+        src="https://raw.githubusercontent.com/BlackishGreen33/ZhiXueTuPu/main/public/assets/game.jpg"
         alt="note cover"
         loading="lazy"
       />
-      <p className="my-3 text-sm">3D Games in Reactjs</p>
+      <p className="my-3 text-sm">加速你的编程技巧</p>
       <button className="h-7 w-full rounded-md bg-[#696969] p-1 text-xs text-neutral-50">
-        Get Now @20% OFF
+        查看更多
       </button>
     </Card>
   );

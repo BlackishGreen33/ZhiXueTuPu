@@ -4,15 +4,15 @@ const Download: React.FC = React.memo(() => {
   return (
     <>
       <h2 className="text-sm font-bold text-neutral-800 dark:text-neutral-200">
-        90+ Framer Shadows
+        智学图谱
       </h2>
       <p className="font-RubikRegular my-3 text-xs text-neutral-600 dark:text-neutral-400">
-        Stop worrying about perfecting <br />
-        the shadows, just Copy & Paste <br />
-        from the 80+ Shadows collection
+        厌倦使用浏览器进行学习了吗？ <br />
+        智学图谱推出了移动端 APP <br />
+        快来下载试试吧！
       </p>
       <button className="font-RubikMedium h-7 w-full rounded-md bg-[#696969] p-1 text-xs text-neutral-50">
-        Download
+        点击前往下载
       </button>
     </>
   );

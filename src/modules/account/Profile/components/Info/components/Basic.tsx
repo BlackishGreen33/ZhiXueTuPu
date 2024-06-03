@@ -8,6 +8,8 @@ const Basic: React.FC = React.memo(() => {
   const [open, setOpen] = useState(false);
   const { data: session } = useSession();
 
+  const ut = '学生';
+
   return (
     <div className="relative w-full">
       <Image
@@ -33,25 +35,22 @@ const Basic: React.FC = React.memo(() => {
       <p className="font-RubikMedium mt-2 text-xs text-neutral-700 dark:text-neutral-300">
         {session?.user ? session.user.email : '114514@email.com'} 📧
       </p>
-      <p className="font-RubikMedium mt-1 text-xs text-neutral-700 dark:text-neutral-300">
+      <p className="font-RubikMedium mt-1 text-nowrap text-xs text-neutral-700 dark:text-neutral-300">
         {session?.expires
           ? (session.expires as string)
-          : '1970-01-01T00:00:00.000Z '}{' '}
+          : '1970-01-01T00:00:00.000Z '}
         🌍
       </p>
       <div className="flex w-full   ">
         <div className="my-4 flex  gap-x-1 text-xs">
-          <p className="flex h-5 items-center justify-center rounded-md bg-gray-200 px-2 text-[11px] text-neutral-700 dark:bg-gray-800 dark:text-neutral-300">
-            ReactJS
+          <p className="flex h-5 items-center justify-center text-nowrap rounded-md bg-green-200 px-2 text-[11px] text-neutral-700 dark:text-neutral-300">
+            {ut}
           </p>
-          <p className="flex h-5 items-center justify-center rounded-md bg-gray-200 px-2 text-[11px] text-neutral-700 dark:bg-gray-800 dark:text-neutral-300">
-            Git
+          <p className="flex h-5 items-center justify-center text-nowrap rounded-md bg-gray-200 px-2 text-[11px] text-neutral-700 dark:bg-gray-800 dark:text-neutral-300">
+            计算机
           </p>
-          <p className="flex h-5 items-center justify-center rounded-md bg-gray-200 px-2 text-[11px] text-neutral-700 dark:bg-gray-800 dark:text-neutral-300">
-            NodeJS
-          </p>
-          <p className="flex h-5 shrink-0 items-center justify-center rounded-md bg-gray-200 px-2 text-[11px] text-neutral-700 dark:bg-gray-800 dark:text-neutral-300 ">
-            Framer Motion
+          <p className="flex h-5 items-center justify-center text-nowrap rounded-md bg-gray-200 px-2 text-[11px] text-neutral-700 dark:bg-gray-800 dark:text-neutral-300">
+            软件工程
           </p>
         </div>
       </div>
