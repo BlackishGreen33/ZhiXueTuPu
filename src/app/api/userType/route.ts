@@ -4,12 +4,53 @@ import { ZodError } from 'zod';
 import { userTypeSchema } from '@/common/schemas/userType';
 import { prisma } from '@/common/utils/db';
 
+export async function GET(req: Request, res: Response) {
+  try {
+    const { searchParams } = new URL(req.url);
+    const id = searchParams.get('id') as string;
+    const user = await prisma.user.findUnique({
+      where: { id: id },
+    });
+    if (!user) {
+      return NextResponse.json(
+        {
+          message: 'User not found',
+        },
+        {
+          status: 404,
+        }
+      );
+    }
+    const userType = user.type;
+    return NextResponse.json(
+      {
+        userType: userType,
+      },
+      {
+        status: 200,
+      }
+    );
+  } catch (error) {
+    if (error instanceof ZodError) {
+      return NextResponse.json(
+        {
+          message: error.issues,
+        },
+        {
+          status: 400,
+        }
+      );
+    }
+  }
+}
+
 export async function POST(req: Request, res: Response) {
   try {
     const body = await req.json();
-    const { userType, email } = userTypeSchema.parse(body);
+    const { userType, id } = userTypeSchema.parse(body);
+    console.log(userType , id)
     const user = await prisma.user.findUnique({
-      where: { email: email },
+      where: { email: id },
     });
     if (!user) {
       return NextResponse.json(
@@ -22,7 +63,7 @@ export async function POST(req: Request, res: Response) {
       );
     }
     await prisma.user.update({
-      where: { email: email },
+      where: { id: id },
       data: { type: userType },
     });
     return NextResponse.json(

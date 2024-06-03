@@ -1,5 +1,3 @@
-import { getServerSession } from 'next-auth';
-import { redirect } from 'next/navigation';
 import React from 'react';
 
 import SignInButton from '@/common/components/navbar/SignInButton';
@@ -11,12 +9,7 @@ import {
   CardTitle,
 } from '@/common/components/ui/card';
 
-const Quiz: React.FC = React.memo(async () => {
-  const session = await getServerSession();
-  if (session?.user) {
-    redirect('/quiz/dashboard');
-  }
-
+const Quiz: React.FC = React.memo(() => {
   return (
     <div className="m-2 mt-24 flex h-[70vh] items-center justify-center rounded-xl bg-white p-2 md:m-10 md:p-10">
       <Card className="w-[300px]">

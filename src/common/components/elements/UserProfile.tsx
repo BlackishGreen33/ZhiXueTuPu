@@ -1,17 +1,29 @@
 'use client';
 
+import axios from 'axios';
 import { signOut, useSession } from 'next-auth/react';
 import Image from 'next/image';
+import Link from 'next/link';
 import React from 'react';
 import { MdOutlineCancel } from 'react-icons/md';
 
 import { userProfileData } from '@/common/dummy/dummy';
+import useStore from '@/common/hooks/useStore';
 
-import Link from 'next/link';
 import { Button } from '.';
 
 const UserProfile: React.FC = React.memo(() => {
+  const { userType, setUserType } = useStore();
   const { data: session } = useSession();
+
+  const params = {
+    id: session?.user.id,
+  };
+  axios.get('/api/userType', { params }).then((type) => {
+    setUserType(type.data);
+  });
+  const ut =
+    userType === 'admin' ? '管理员' : userType === 'student' ? '学生' : '教师';
 
   return (
     <div className="nav-item absolute right-1 top-16 w-96 rounded-lg bg-white p-8 dark:bg-[#42464D]">
@@ -40,7 +52,7 @@ const UserProfile: React.FC = React.memo(() => {
             {' '}
             {session?.user.name}{' '}
           </p>
-          <p className="text-sm text-gray-500 dark:text-gray-400"> 管理员 </p>
+          <p className="text-sm text-gray-500 dark:text-gray-400"> {ut} </p>
           <p className="text-sm font-semibold text-gray-500 dark:text-gray-400">
             {' '}
             {session?.user.email}{' '}

@@ -12,7 +12,7 @@ interface State {
     notification: boolean;
   };
   isVisible: boolean;
-  userType: string;
+  userType: 'admin' | 'student' | 'teacher';
   setScreenSize: (size: undefined | number) => void;
   setCurrentColor: (color: string) => void;
   setActiveMenu: (active: boolean) => void;
@@ -25,7 +25,7 @@ interface State {
   setThemeSettings: (settings: boolean) => void;
   handleClick: (clicked: keyof State['isClicked']) => void;
   setIsVisible: (isVisible: boolean) => void;
-  setUserType: (userType: string) => void;
+  setUserType: (userType: 'admin' | 'student' | 'teacher') => void;
 }
 
 export const initialState = {
@@ -42,7 +42,7 @@ const useStore = create<State>((set) => ({
   activeMenu: true,
   isClicked: initialState,
   isVisible: false,
-  userType: '',
+  userType: 'admin',
 
   setScreenSize: (size) => set({ screenSize: size }),
   setCurrentColor: (color) => {

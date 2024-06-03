@@ -1,4 +1,4 @@
-import { getServerSession } from 'next-auth';
+import { getAuthSession } from '@/common/utils/nextauth';
 import React from 'react';
 
 import SignInButton from '@/common/components/navbar/SignInButton';
@@ -16,9 +16,7 @@ import Revenue from './Revenue';
 import Transactions from './Transactions';
 
 const Dashboard: React.FC = React.memo(async () => {
-  const session = await getServerSession();
-  if (session?.user) {
-  }
+  const session = await getAuthSession();
 
   return (
     <>

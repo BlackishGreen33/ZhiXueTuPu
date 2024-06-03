@@ -1,11 +1,11 @@
 import { NextPage } from 'next';
 
-import Calendar from '@/modules/apps/Calendar';
+import Schedule from '@/modules/apps/Schedule';
 
 const Page: NextPage = () => {
   return (
     <>
-      <Calendar />
+      <Schedule />
     </>
   );
 };

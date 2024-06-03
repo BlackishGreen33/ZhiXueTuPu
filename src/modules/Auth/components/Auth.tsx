@@ -3,6 +3,7 @@
 import axios from 'axios';
 import { motion } from 'framer-motion';
 import { signIn, useSession } from 'next-auth/react';
+import { useRouter } from 'next/navigation';
 import React from 'react';
 import { FaChalkboardTeacher } from 'react-icons/fa';
 import { PiStudentBold } from 'react-icons/pi';
@@ -12,16 +13,19 @@ import { Card } from '@/common/components/ui/card';
 import useStore from '@/common/hooks/useStore';
 
 const Auth: React.FC = React.memo(() => {
+  const router = useRouter();
   const { setUserType, userType } = useStore();
   const { data: session } = useSession();
 
   const handleClick = async () => {
-    const res = await signIn('github');
-    if (res?.status === 200) {
-      axios.post('/api/userType', {
+    if (session?.user) {
+      const res = await axios.post('/api/userType', {
         userType: userType,
-        email: session?.user.email,
+        id: session?.user.id,
       });
+      if (res.status === 200) router.push('/');
+    } else {
+      signIn('github');
     }
   };
 
