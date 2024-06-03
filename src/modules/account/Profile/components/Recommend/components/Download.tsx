@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react';
 
 const Download: React.FC = React.memo(() => {
@@ -11,9 +12,11 @@ const Download: React.FC = React.memo(() => {
         智学图谱推出了移动端 APP <br />
         快来下载试试吧！
       </p>
-      <button className="font-RubikMedium h-7 w-full rounded-md bg-[#696969] p-1 text-xs text-neutral-50">
-        点击前往下载
-      </button>
+      <Link href="https://github.com/BlackishGreen33/ZhiXueTuPu/releases/tag/v1.0.0">
+        <button className="font-RubikMedium h-7 w-full rounded-md bg-[#696969] p-1 text-xs text-neutral-50">
+          点击前往下载
+        </button>
+      </Link>
     </>
   );
 });

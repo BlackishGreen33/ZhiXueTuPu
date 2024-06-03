@@ -1,6 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import Link from 'next/link';
 import { FaDownload } from 'react-icons/fa';
 
 import { Button } from '@/common/components/elements';
@@ -35,14 +36,17 @@ const Enter: React.FC = () => {
               <FaDownload />
             </button>
           </div>
-          <div className="mt-6">
+          <Link
+            href="https://github.com/BlackishGreen33/ZhiXueTuPu/releases/tag/v1.0.0"
+            className="mt-6"
+          >
             <Button
               color="white"
               bgColor={currentColor}
               text="下载移动端 APP"
               borderRadius="10px"
             />
-          </div>
+          </Link>
         </Card>
       </motion.div>
       <div className="m-3 flex flex-wrap items-center justify-center gap-1">
