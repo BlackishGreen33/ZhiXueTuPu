@@ -25,7 +25,7 @@ const ThemeSettings = React.memo(() => {
   const [apiKey, setapiKey] = useState('');
 
   const handleClick = async () => {
-    const res = await axios.post('/api/apiKey', {
+    const res = await axios.post('https://zhixuetupu.vercel.app/api/apiKey', {
       apiKey: apiKey,
       email: session?.user.email,
     });

@@ -47,7 +47,7 @@ const QuizCreation = ({ topic: topicParam }: Props) => {
   // @ts-ignore
   const { mutate: getQuestions, isLoading } = useMutation({
     mutationFn: async ({ amount, topic, type }: Input) => {
-      const response = await axios.post('/api/game', { amount, topic, type });
+      const response = await axios.post('https://zhixuetupu.vercel.app/api/game', { amount, topic, type });
       return response.data;
     },
   });

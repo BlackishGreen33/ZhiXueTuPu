@@ -21,7 +21,7 @@ const UserProfile: React.FC = React.memo(() => {
   };
   useEffect(() => {
     const getUserType = async () => {
-      const type = await axios.get('/api/userType', { params });
+      const type = await axios.get('https://zhixuetupu.vercel.app/api/userType', { params });
       setUserType(type.data.userType);
     };
     getUserType();

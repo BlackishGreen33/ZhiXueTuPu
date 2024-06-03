@@ -19,7 +19,7 @@ const Auth: React.FC = React.memo(() => {
 
   const handleClick = async () => {
     if (session?.user) {
-      const res = await axios.post('/api/userType', {
+      const res = await axios.post('https://zhixuetupu.vercel.app/api/userType', {
         userType: userType,
         id: session?.user.id,
       });

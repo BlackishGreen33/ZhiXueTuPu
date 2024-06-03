@@ -54,7 +54,7 @@ const MCQModule: React.FC<MCQModuleProps> = React.memo(({ game }) => {
         questionId: currentQuestion.id,
         userInput: options[selectedChoice],
       };
-      const response = await axios.post(`/api/checkAnswer`, payload);
+      const response = await axios.post(`https://zhixuetupu.vercel.app/api/checkAnswer`, payload);
       return response.data;
     },
   });
@@ -64,7 +64,7 @@ const MCQModule: React.FC<MCQModuleProps> = React.memo(({ game }) => {
       const payload: z.infer<typeof endGameSchema> = {
         gameId: game.id,
       };
-      const response = await axios.post(`/api/endGame`, payload);
+      const response = await axios.post(`https://zhixuetupu.vercel.app/api/endGame`, payload);
       return response.data;
     },
   });
