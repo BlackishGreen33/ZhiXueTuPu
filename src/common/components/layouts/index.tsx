@@ -24,13 +24,13 @@ const Layout: React.FC<LayoutProps> = React.memo(({ children }) => {
   const chatbotScript = `
   <script>
 window.embeddedChatbotConfig = {
-chatbotId: "WWELx6VqHYeHPfUGO8a2J",
+chatbotId: "yywnk94ZYc4X6DzPiNKFv",
 domain: "www.chatbase.co"
 }
 </script>
 <script
 src="https://www.chatbase.co/embed.min.js"
-chatbotId="WWELx6VqHYeHPfUGO8a2J"
+chatbotId="yywnk94ZYc4X6DzPiNKFv"
 domain="www.chatbase.co"
 defer>
 </script>
