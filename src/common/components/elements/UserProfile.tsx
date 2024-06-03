@@ -4,7 +4,7 @@ import axios from 'axios';
 import { signOut, useSession } from 'next-auth/react';
 import Image from 'next/image';
 import Link from 'next/link';
-import React from 'react';
+import React, { useEffect } from 'react';
 import { MdOutlineCancel } from 'react-icons/md';
 
 import { userProfileData } from '@/common/dummy/dummy';
@@ -19,9 +19,13 @@ const UserProfile: React.FC = React.memo(() => {
   const params = {
     id: session?.user.id,
   };
-  axios.get('/api/userType', { params }).then((type) => {
-    setUserType(type.data);
-  });
+  useEffect(() => {
+    const getUserType = async () => {
+      const type = await axios.get('/api/userType', { params });
+      setUserType(type.data.userType);
+    };
+    getUserType();
+  }, [userType]);
   const ut =
     userType === 'admin' ? '管理员' : userType === 'student' ? '学生' : '教师';
 

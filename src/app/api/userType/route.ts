@@ -48,9 +48,8 @@ export async function POST(req: Request, res: Response) {
   try {
     const body = await req.json();
     const { userType, id } = userTypeSchema.parse(body);
-    console.log(userType , id)
     const user = await prisma.user.findUnique({
-      where: { email: id },
+      where: { id: id },
     });
     if (!user) {
       return NextResponse.json(
