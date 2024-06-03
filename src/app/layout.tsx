@@ -1,12 +1,9 @@
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 
-import '@/common/styles/globals.scss';
-
-import Providers from '@/common/components/providers/Providers';
-import { getAuthSession } from '@/common/utils/nextauth';
-
 const inter = Inter({ subsets: ['latin'] });
+
+import '@/app/globals.scss'
 
 export const metadata: Metadata = {
   title: '智学图谱',
@@ -18,13 +15,9 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const session = getAuthSession();
-
   return (
     <html lang="zh-CN">
-      <body className={inter.className}>
-        <Providers session={session}>{children}</Providers>
-      </body>
+      <body className={inter.className}>{children}</body>
     </html>
   );
 }

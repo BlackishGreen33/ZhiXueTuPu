@@ -1,12 +1,14 @@
 import { NextPage } from 'next';
 
-import Dashboard from '@/modules/Dashboard';
-
 const HomePage: NextPage = () => {
   return (
-    <>
-      <Dashboard />
-    </>
+    <iframe
+      className="w-full"
+      src="https://zhixuetupu.vercel.app/"
+      style={{ height: '100vh' }}
+    >
+      123
+    </iframe>
   );
 };
 
