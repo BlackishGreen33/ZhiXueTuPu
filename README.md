@@ -37,6 +37,24 @@
 
 ### 💻 本地调试
 
+记得先配置环境变量：
+```env
+DATABASE_URL=
+
+NEXTAUTH_SECRET=
+NEXTAUTH_URL=
+
+GOOGLE_CLIENT_ID='281000452383-hqebq76f18ebgu350mo4v7dhneka20b2.apps.googleusercontent.com'
+GOOGLE_CLIENT_SECRET=
+GITHUB_CLIENT_ID=
+GITHUB_CLIENT_SECRET=
+OPENAI_API_KEY=
+
+API_URL=
+SYNCFUSION_LICENSE=
+```
+
+接着拉取代码和安装依赖：
 ```bash
 $ git clone https://github.com/BlackishGreen33/ZhiXueTuPu.git
 $ cd ZhiXueTuPu
