@@ -506,7 +506,7 @@ export const links = [
     links: [
       {
         name: '能力测验',
-        nav: 'quiz',
+        nav: 'quiz/dashboard',
         icon: <MdQuiz />,
       },
       {
