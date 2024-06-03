@@ -282,3 +282,43 @@ h6 {
 #treeview.e-treeview .e-list-icon.exe {
   background-position: -10px -412px;
 }
+
+.c-my-rg-node {
+  height: 80px;
+  line-height: 80px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  place-items: center;
+  justify-content: center;
+}
+.c-node-menu-item {
+  line-height: 30px;
+  padding-left: 10px;
+  cursor: pointer;
+  color: #444444;
+  font-size: 14px;
+  border-top: #efefef solid 1px;
+}
+.c-node-menu-item:hover {
+  background-color: rgba(66, 187, 66, 0.2);
+}
+
+.c-my-panel {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  border-radius: 10px;
+  z-index: 800;
+  background-color: #efefef;
+  border: #eeeeee solid 1px;
+  padding: 20px;
+
+  .c-option-name {
+    color: #666666;
+    font-size: 14px;
+    line-height: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}

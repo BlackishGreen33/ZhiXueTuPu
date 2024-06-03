@@ -1,5 +1,8 @@
+'use client';
+
 import React from 'react';
 
+import { Button } from '@/common/components/ui/button';
 import {
   Select,
   SelectContent,
@@ -8,6 +11,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from '@/common/components/ui/select';
+import useStore from '@/common/hooks/useStore';
 
 const coureses = [
   {
@@ -33,21 +37,26 @@ const coureses = [
 ];
 
 const Selecter: React.FC = React.memo(() => {
+  const { setIsViewer, isViewer } = useStore();
+
   return (
-    <Select defaultValue="计算机组成原理">
-      <SelectTrigger className="w-[180px]">
-        <SelectValue placeholder="选择你的课程" />
-      </SelectTrigger>
-      <SelectContent>
-        <SelectGroup>
-          {coureses.map((coures) => (
-            <SelectItem key={coures.label} value={coures.value}>
-              {coures.label}
-            </SelectItem>
-          ))}
-        </SelectGroup>
-      </SelectContent>
-    </Select>
+    <>
+      <Select defaultValue="计算机组成原理">
+        <SelectTrigger className="w-[180px]">
+          <SelectValue placeholder="选择你的课程" />
+        </SelectTrigger>
+        <SelectContent>
+          <SelectGroup>
+            {coureses.map((coures) => (
+              <SelectItem key={coures.label} value={coures.value}>
+                {coures.label}
+              </SelectItem>
+            ))}
+          </SelectGroup>
+        </SelectContent>
+      </Select>
+      <Button onClick={() => setIsViewer(!isViewer)}>切换视图</Button>
+    </>
   );
 });
 
