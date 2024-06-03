@@ -1,4 +1,5 @@
 <div align="center">
+  <img width="130" src="https://github.com/BlackishGreen33/ZhiXueTuPu/blob/main/public/logo.png?raw=true" alt="智学图谱 Logo">
   <h1 align="center">智学图谱</h1>
   <h3>学习分析系统</h3>
   <a href="https://github.com/BlackishGreen33/ZhiXueTuPu"><strong>探索项目文档 »</strong></a>
