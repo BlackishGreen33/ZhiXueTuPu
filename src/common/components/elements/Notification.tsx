@@ -16,9 +16,7 @@ const Notification: React.FC = React.memo(() => {
     <div className="nav-item absolute right-5 top-16 w-96 rounded-lg bg-white p-8 dark:bg-[#42464D] md:right-40">
       <div className="flex items-center justify-between">
         <div className="flex gap-3">
-          <p className="text-lg font-semibold dark:text-gray-200">
-            通知
-          </p>
+          <p className="text-lg font-semibold dark:text-gray-200">通知</p>
           <button
             type="button"
             className="bg-orange-theme rounded p-1 px-2 text-xs text-black "
