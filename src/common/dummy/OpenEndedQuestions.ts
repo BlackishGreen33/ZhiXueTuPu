@@ -1,28 +1,34 @@
-export const OpenEndedQuestions = {
+export const ComputerOrganizationOpenEndedQuestions = {
   questions: [
     {
       question:
-        'What are some advanced techniques front-end developers can use to optimize website performance?',
+        'What are the different types of cache memories and how do they improve system performance?',
       answer:
-        'Minify code, lazy loading, optimize images, reduce HTTP requests.',
+        'Cache memories include L1, L2, and sometimes L3 caches. They improve system performance by storing frequently used data closer to the processor to reduce access time.'
     },
     {
       question:
-        'How can front-end developers ensure a responsive design that works well across devices?',
+        'Explain the role of the CPU in a computer system and its major components.',
       answer:
-        'Use media queries, flexible grids, viewport meta tag, test on various devices.',
+        'The CPU, or central processing unit, is the brain of the computer. Its major components include the control unit, arithmetic logic unit (ALU), and registers. The CPU fetches, decodes, and executes instructions, performing the core processing tasks.'
     },
     {
       question:
-        'What are some key skills or tools front-end developers should master to stay current in the field?',
+        'How does pipelining in processor design help to increase the execution speed?',
       answer:
-        'HTML, CSS, JavaScript, responsive design, version control (Git), front-end frameworks.',
+        'Pipelining allows multiple instructions to be processed simultaneously at different stages of the pipeline. This overlapping of instructions increases the throughput and execution speed of the processor.'
     },
     {
       question:
-        'How can front-end developers improve accessibility on websites for users with disabilities?',
+        'Discuss the significance of instruction set architecture (ISA) in computer systems.',
       answer:
-        'Use semantic HTML, ARIA attributes, provide text alternatives, test with screen readers.',
+        'The ISA defines the set of basic instructions that a processor can execute. It is significant as it determines the capabilities of the processor, affects the design of both hardware and software, and is crucial for compatibility and performance.'
+    },
+    {
+      question:
+        'Why is virtual memory important in modern computer systems and how does it work?',
+      answer:
+        'Virtual memory allows systems to use more memory than is physically available by using disk space as an extension of RAM. It works by swapping out less frequently used pages of memory to disk, thus allowing more programs to run concurrently.'
     },
   ],
 };

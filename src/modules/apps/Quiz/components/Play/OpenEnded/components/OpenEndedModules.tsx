@@ -78,7 +78,7 @@ const OpenEndedModules: React.FC<OpenEndedModulesProps> = React.memo(
       checkAnswer(undefined, {
         onSuccess: ({ percentageSimilar }) => {
           toast({
-            title: `Your answer is ${percentageSimilar}% similar to the correct answer`,
+            title: `你的回答和正确答案相似度是 ${percentageSimilar}% `,
           });
           setAveragePercentage((prev) => {
             return (prev + percentageSimilar) / (questionIndex + 1);
@@ -93,7 +93,7 @@ const OpenEndedModules: React.FC<OpenEndedModulesProps> = React.memo(
         onError: (error) => {
           console.error(error);
           toast({
-            title: 'Something went wrong',
+            title: '发生了一些错误',
             variant: 'destructive',
           });
         },

@@ -75,7 +75,6 @@ const RelationChart: React.FC = () => {
     const graphInstance = graphRef.current?.getInstance();
     if (graphInstance) {
       graphInstance.setJsonData(__graph_json_data).then(() => {
-        // These are the codes that need to be executed after the graph is initialized
 
         graphInstance.moveToCenter();
         graphInstance.zoomToFit();
@@ -112,6 +111,7 @@ const RelationChart: React.FC = () => {
       onMouseLeave={(e) => hideNodeTips(node, e)}
     >
       <div className="c-my-rg-node">
+        {/* @ts-ignore */}
         <CircumIcon style={{ fontSize: '30px' }} name={node.data?.myicon} />
       </div>
       <div

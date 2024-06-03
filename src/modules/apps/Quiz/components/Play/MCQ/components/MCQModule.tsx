@@ -87,8 +87,8 @@ const MCQModule: React.FC<MCQModuleProps> = React.memo(({ game }) => {
             correct_answers: stats.correct_answers + 1,
           }));
           toast({
-            title: 'Correct',
-            description: 'You got it right!',
+            title: '正确',
+            description: '你答对了!',
             // @ts-ignore
             variant: 'success',
           });
@@ -98,8 +98,8 @@ const MCQModule: React.FC<MCQModuleProps> = React.memo(({ game }) => {
             wrong_answers: stats.wrong_answers + 1,
           }));
           toast({
-            title: 'Incorrect',
-            description: 'You got it wrong!',
+            title: '错误',
+            description: '你答错了!',
             variant: 'destructive',
           });
         }
