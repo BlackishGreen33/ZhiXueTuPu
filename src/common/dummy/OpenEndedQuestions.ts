@@ -1,4 +1,4 @@
-export const ComputerOrganizationOpenEndedQuestions = {
+export const OpenEndedQuestions = {
   questions: [
     {
       question:
