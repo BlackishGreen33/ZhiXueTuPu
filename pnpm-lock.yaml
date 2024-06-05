@@ -138,7 +138,7 @@ dependencies:
     specifier: ^0.3.0
     version: 0.3.0(react-dom@18.3.1)(react@18.3.1)
   openai:
-    specifier: ^4.47.2
+    specifier: ^4.48.1
     version: 4.48.1
   react:
     specifier: ^18.3.1
