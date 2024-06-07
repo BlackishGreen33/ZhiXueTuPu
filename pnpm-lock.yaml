@@ -57,7 +57,7 @@ dependencies:
     specifier: ^1.1.1
     version: 1.1.1(react@18.3.1)
   '@syncfusion/ej2':
-    specifier: ^25.2.6
+    specifier: ^25.2.7
     version: 25.2.7
   '@syncfusion/ej2-base':
     specifier: ^25.2.5
