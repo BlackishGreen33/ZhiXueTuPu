@@ -87,7 +87,7 @@ dependencies:
     specifier: ^25.2.6
     version: 25.2.6
   '@syncfusion/ej2-react-pdfviewer':
-    specifier: ^25.2.6
+    specifier: ^25.2.7
     version: 25.2.7
   '@syncfusion/ej2-react-popups':
     specifier: ^25.2.6
