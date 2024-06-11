@@ -60,8 +60,8 @@ dependencies:
     specifier: ^25.2.7
     version: 25.2.7
   '@syncfusion/ej2-base':
-    specifier: ^25.2.5
-    version: 25.2.7
+    specifier: ^26.1.35
+    version: 26.1.35
   '@syncfusion/ej2-react-buttons':
     specifier: ^25.2.7
     version: 25.2.7
@@ -1588,6 +1588,13 @@ packages:
       '@syncfusion/ej2-icons': 25.2.3
     dev: false
 
+  /@syncfusion/ej2-base@26.1.35:
+    resolution: {integrity: sha512-h+qm8JmP6mCA2S/fe7h5l/fqy37mwvqjeQJyL2sZtLGBVKkg3rlQZmTjASPnzVIeMfLrwkyOid+VIAwZgINS3g==}
+    hasBin: true
+    dependencies:
+      '@syncfusion/ej2-icons': 26.1.35
+    dev: false
+
   /@syncfusion/ej2-buttons@25.2.7:
     resolution: {integrity: sha512-Jn+YN83XKH+sEWy1s8FVKVaiQZxwDf+Rwf2JxCNzIEz1cZA9HV8NT/W0YuxwFIoXBaz11OOiqG4ETqLE8JtX0Q==}
     dependencies:
@@ -1762,6 +1769,10 @@ packages:
 
   /@syncfusion/ej2-icons@25.2.3:
     resolution: {integrity: sha512-WptrAR3YShA8S+mushGCojRmBgLUCYpsYq1Nw1S1ynWNRcijlZgdil5L7LjaGA8H6CA/mFG5BMBDCmZ76hYX1A==}
+    dev: false
+
+  /@syncfusion/ej2-icons@26.1.35:
+    resolution: {integrity: sha512-rhaJDhN+vDBai+7xSw+xMnzAvLtG75vYoWvVA7wgUawA4boA4ODtkEgNYbMPJOEbtYaEQO7s3b7nzzWbXI3v+Q==}
     dev: false
 
   /@syncfusion/ej2-image-editor@25.2.4:
