@@ -99,8 +99,8 @@ dependencies:
     specifier: ^25.2.7
     version: 25.2.7
   '@syncfusion/ej2-react-schedule':
-    specifier: ^25.2.7
-    version: 25.2.7
+    specifier: ^26.1.35
+    version: 26.1.35
   '@tanstack/react-query':
     specifier: ^5.40.1
     version: 5.40.1(react@18.3.1)
@@ -2295,12 +2295,12 @@ packages:
       '@syncfusion/ej2-richtexteditor': 25.2.7
     dev: false
 
-  /@syncfusion/ej2-react-schedule@25.2.7:
-    resolution: {integrity: sha512-jEXDbBWfp/+V10i/AJQ6DrUknYgsSI2AaauSwFPLtI6S8ICLz+P+EtF59OIOO5Rgku+YrcLXyD0Xw2q/Ez/foA==}
+  /@syncfusion/ej2-react-schedule@26.1.35:
+    resolution: {integrity: sha512-V5h8jAQPzkdiz4S9yYEB3ZslhXLzA/dUBj06apO0xuHthQdmyLSftrRTPd5YYAR4UAsKYqHn0FTwjnu3g8dbOw==}
     dependencies:
-      '@syncfusion/ej2-base': 25.2.7
-      '@syncfusion/ej2-react-base': 25.2.6
-      '@syncfusion/ej2-schedule': 25.2.7
+      '@syncfusion/ej2-base': 26.1.35
+      '@syncfusion/ej2-react-base': 26.1.35
+      '@syncfusion/ej2-schedule': 26.1.35
     dev: false
 
   /@syncfusion/ej2-ribbon@26.1.35:
@@ -2337,21 +2337,6 @@ packages:
       '@syncfusion/ej2-navigations': 26.1.35
       '@syncfusion/ej2-popups': 26.1.35
       '@syncfusion/ej2-splitbuttons': 26.1.35
-    dev: false
-
-  /@syncfusion/ej2-schedule@25.2.7:
-    resolution: {integrity: sha512-qXil++k14+JN3ZWDqrStfrEIxutEGf+oegW/OoTvkRvDWz3GOFbo5/diCjp0Yof5u2CQSwX+cr/KjlwXzkH3hA==}
-    dependencies:
-      '@syncfusion/ej2-base': 25.2.7
-      '@syncfusion/ej2-buttons': 25.2.7
-      '@syncfusion/ej2-calendars': 25.2.7
-      '@syncfusion/ej2-data': 25.2.3
-      '@syncfusion/ej2-dropdowns': 25.2.7
-      '@syncfusion/ej2-excel-export': 25.2.3
-      '@syncfusion/ej2-inputs': 25.2.6
-      '@syncfusion/ej2-lists': 25.2.3
-      '@syncfusion/ej2-navigations': 25.2.6
-      '@syncfusion/ej2-popups': 25.2.7
     dev: false
 
   /@syncfusion/ej2-schedule@26.1.35:
