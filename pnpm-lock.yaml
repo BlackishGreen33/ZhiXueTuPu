@@ -84,8 +84,8 @@ dependencies:
     specifier: ^25.2.6
     version: 25.2.6
   '@syncfusion/ej2-react-navigations':
-    specifier: ^25.2.6
-    version: 25.2.6
+    specifier: ^26.1.35
+    version: 26.1.35
   '@syncfusion/ej2-react-pdfviewer':
     specifier: ^25.2.7
     version: 25.2.7
@@ -2255,12 +2255,12 @@ packages:
       '@syncfusion/ej2-react-base': 25.2.6
     dev: false
 
-  /@syncfusion/ej2-react-navigations@25.2.6:
-    resolution: {integrity: sha512-BJxEwEBUkJdWRvQYVCZT8K4emTNDW0lPDRgPLXxNKMx4cccIDO0CStmfgozS2lg2GuBS59ut+VlR0vwRZnADvg==}
+  /@syncfusion/ej2-react-navigations@26.1.35:
+    resolution: {integrity: sha512-JYNQg9TE8xP47JUmp1PpWxqOc0Bdhna4W8ZcbHEi0aGG/vz+NmnrfDdQXlf3xG8WGuTvsn/axTKcyz1smxTByg==}
     dependencies:
-      '@syncfusion/ej2-base': 25.2.7
-      '@syncfusion/ej2-navigations': 25.2.6
-      '@syncfusion/ej2-react-base': 25.2.6
+      '@syncfusion/ej2-base': 26.1.35
+      '@syncfusion/ej2-navigations': 26.1.35
+      '@syncfusion/ej2-react-base': 26.1.35
     dev: false
 
   /@syncfusion/ej2-react-pdfviewer@25.2.7:
