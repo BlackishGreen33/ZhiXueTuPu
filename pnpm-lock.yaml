@@ -93,8 +93,8 @@ dependencies:
     specifier: ^26.1.35
     version: 26.1.35
   '@syncfusion/ej2-react-progressbar':
-    specifier: ^25.2.3
-    version: 25.2.3
+    specifier: ^26.1.35
+    version: 26.1.35
   '@syncfusion/ej2-react-richtexteditor':
     specifier: ^25.2.7
     version: 25.2.7
@@ -2097,14 +2097,6 @@ packages:
       '@syncfusion/ej2-buttons': 26.1.35
     dev: false
 
-  /@syncfusion/ej2-progressbar@25.2.3:
-    resolution: {integrity: sha512-qmkUbtmSbyXHgHMlTvmcV9EE2DhZWUa+PVQzPgV8slskcCgPrJACQqN0BDtpsfYL/BfVkNgX5RDIy00yWnV7Dw==}
-    dependencies:
-      '@syncfusion/ej2-base': 25.2.7
-      '@syncfusion/ej2-data': 25.2.3
-      '@syncfusion/ej2-svg-base': 25.2.5
-    dev: false
-
   /@syncfusion/ej2-progressbar@26.1.35:
     resolution: {integrity: sha512-DTYtOV8EwyHoR7vbCw/yvvzE6WZiX81RWeaFVNcJnczd2r3tpa8QZIkuiAMN3aiobNmfnfOK5dad2MjTOGQdmQ==}
     dependencies:
@@ -2217,12 +2209,12 @@ packages:
       '@syncfusion/ej2-react-base': 26.1.35
     dev: false
 
-  /@syncfusion/ej2-react-progressbar@25.2.3:
-    resolution: {integrity: sha512-HQgIjZaUZ9hycnS8P0KWu5mjSg4L6LDb3sU0Dqdq5Smkz8m2yvhFMtzgzHKckOPSewimlKjr9mAhtucy54mibA==}
+  /@syncfusion/ej2-react-progressbar@26.1.35:
+    resolution: {integrity: sha512-nIBx7lSkxnq+zQj0UQh3ddPJkwlwFi64gU1+0CAr4zBRaiIsEmpNnVCk2ZAjOg7Tc8vb2ktB2D8Jc8jWhqoQ8w==}
     dependencies:
-      '@syncfusion/ej2-base': 25.2.7
-      '@syncfusion/ej2-progressbar': 25.2.3
-      '@syncfusion/ej2-react-base': 25.2.6
+      '@syncfusion/ej2-base': 26.1.35
+      '@syncfusion/ej2-progressbar': 26.1.35
+      '@syncfusion/ej2-react-base': 26.1.35
     dev: false
 
   /@syncfusion/ej2-react-richtexteditor@25.2.7:
@@ -2315,12 +2307,6 @@ packages:
       '@syncfusion/ej2-dropdowns': 26.1.35
       '@syncfusion/ej2-grids': 26.1.35
       '@syncfusion/ej2-navigations': 26.1.35
-    dev: false
-
-  /@syncfusion/ej2-svg-base@25.2.5:
-    resolution: {integrity: sha512-EPsZ1cuCqnYaAKL7gE1OoKDzJ1PWSTXF7Dzgnx8aR8sJ7frIiBDE5/Qau+H/mWDHs4hmU5dWAGU2QaedgWkyRg==}
-    dependencies:
-      '@syncfusion/ej2-base': 25.2.7
     dev: false
 
   /@syncfusion/ej2-svg-base@26.1.35:
