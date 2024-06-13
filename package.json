@@ -44,7 +44,7 @@
     "@syncfusion/ej2-react-buttons": "^25.2.7",
     "@syncfusion/ej2-react-calendars": "^25.2.7",
     "@syncfusion/ej2-react-charts": "^26.1.35",
-    "@syncfusion/ej2-react-dropdowns": "^25.2.7",
+    "@syncfusion/ej2-react-dropdowns": "^26.1.35",
     "@syncfusion/ej2-react-grids": "^26.1.35",
     "@syncfusion/ej2-react-inputs": "^26.1.35",
     "@syncfusion/ej2-react-kanban": "^25.2.6",
