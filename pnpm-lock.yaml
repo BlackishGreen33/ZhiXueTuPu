@@ -87,8 +87,8 @@ dependencies:
     specifier: ^26.1.35
     version: 26.1.35
   '@syncfusion/ej2-react-pdfviewer':
-    specifier: ^25.2.7
-    version: 25.2.7
+    specifier: ^26.1.35
+    version: 26.1.35
   '@syncfusion/ej2-react-popups':
     specifier: ^26.1.35
     version: 26.1.35
@@ -1699,13 +1699,6 @@ packages:
       '@syncfusion/ej2-splitbuttons': 26.1.35
     dev: false
 
-  /@syncfusion/ej2-drawings@25.2.7:
-    resolution: {integrity: sha512-QbG6MyJE50mAvjpWepT47ny5dNoWB/lD9dOiJ7j5poI5n38/5kqkwB5JliDsOCfoQxnC7R6jfhYHMvITAj73VA==}
-    dependencies:
-      '@syncfusion/ej2-base': 25.2.7
-      '@syncfusion/ej2-data': 25.2.3
-    dev: false
-
   /@syncfusion/ej2-drawings@26.1.35:
     resolution: {integrity: sha512-e8Qbejk3H8JH4ZZk1mAlP+pnlqt2Ln65lNpkpwiZD6JyqFEU4URO3LKvo8+Yl1QC9a8bLiWDb37N91MWS1qhHA==}
     dependencies:
@@ -1878,23 +1871,6 @@ packages:
       '@syncfusion/ej2-navigations': 26.1.35
       '@syncfusion/ej2-popups': 26.1.35
       '@syncfusion/ej2-splitbuttons': 26.1.35
-    dev: false
-
-  /@syncfusion/ej2-inplace-editor@25.2.3:
-    resolution: {integrity: sha512-9sAOVaOz7kNLsiEfIRwHad+mxNAFppwTiHsmLLoPtfsjsR3xLgnDl/+ZIXAI51joZwpQdymUT7+36zm7SZcEMA==}
-    dependencies:
-      '@syncfusion/ej2-base': 25.2.7
-      '@syncfusion/ej2-buttons': 25.2.7
-      '@syncfusion/ej2-calendars': 25.2.7
-      '@syncfusion/ej2-data': 25.2.3
-      '@syncfusion/ej2-dropdowns': 25.2.7
-      '@syncfusion/ej2-inputs': 25.2.6
-      '@syncfusion/ej2-lists': 25.2.3
-      '@syncfusion/ej2-navigations': 25.2.6
-      '@syncfusion/ej2-notifications': 25.2.3
-      '@syncfusion/ej2-popups': 25.2.7
-      '@syncfusion/ej2-richtexteditor': 25.2.7
-      '@syncfusion/ej2-splitbuttons': 25.2.4
     dev: false
 
   /@syncfusion/ej2-inplace-editor@26.1.35:
@@ -2074,36 +2050,12 @@ packages:
       '@syncfusion/ej2-compression': 26.1.35
     dev: false
 
-  /@syncfusion/ej2-pdf@25.2.6:
-    resolution: {integrity: sha512-9nH6bSbRST+QogTsxdsC8qpa7ANoQLVg3Cbt2GQNRvrBPEXrDkI/0cDOt8mTc2VWcoJzx+xmM85CjEggjz7sBA==}
-    dependencies:
-      '@syncfusion/ej2-base': 25.2.7
-      '@syncfusion/ej2-compression': 25.2.3
-    dev: false
-
   /@syncfusion/ej2-pdf@26.1.35:
     resolution: {integrity: sha512-344HlHPGmOYcvuEAQy89ZpSYCcyU3SxHCV0wOSTPHaGoIPxtTxaFLIyDU9J/LUOPc187kOYzOH/mRhBKwabkwg==}
     dependencies:
       '@syncfusion/ej2-base': 26.1.35
       '@syncfusion/ej2-compression': 26.1.35
       '@types/node': 20.14.2
-    dev: false
-
-  /@syncfusion/ej2-pdfviewer@25.2.7:
-    resolution: {integrity: sha512-w3MYbRHYoEGwkvovp2gC9Zd/lU3xYlIsBaZ7Qd83/RJ2QuJsgQ+IJww8jtDYBNK4UhASuMxwQmUaA/RMIRtIww==}
-    dependencies:
-      '@syncfusion/ej2-base': 25.2.7
-      '@syncfusion/ej2-buttons': 25.2.7
-      '@syncfusion/ej2-data': 25.2.3
-      '@syncfusion/ej2-drawings': 25.2.7
-      '@syncfusion/ej2-dropdowns': 25.2.7
-      '@syncfusion/ej2-inplace-editor': 25.2.3
-      '@syncfusion/ej2-inputs': 25.2.6
-      '@syncfusion/ej2-lists': 25.2.3
-      '@syncfusion/ej2-navigations': 25.2.6
-      '@syncfusion/ej2-notifications': 25.2.3
-      '@syncfusion/ej2-pdf': 25.2.6
-      '@syncfusion/ej2-popups': 25.2.7
     dev: false
 
   /@syncfusion/ej2-pdfviewer@26.1.35:
@@ -2263,12 +2215,12 @@ packages:
       '@syncfusion/ej2-react-base': 26.1.35
     dev: false
 
-  /@syncfusion/ej2-react-pdfviewer@25.2.7:
-    resolution: {integrity: sha512-a5xu2bjyQX2Cz971TPtiANkB+XBlm0sZHtQuexciyGSYCnBj7J97ozmsC5tsttU2iFf3vutxYYGnEQD1HLbNiw==}
+  /@syncfusion/ej2-react-pdfviewer@26.1.35:
+    resolution: {integrity: sha512-baqbgfvLhpxSBHwCwAYkMjk5HnDvY6GTJ/VV22fPxsyZADUWOZZGI0MSDuYDYcXZrINB+LUjJzxJ4U2i1zgJ6g==}
     dependencies:
-      '@syncfusion/ej2-base': 25.2.7
-      '@syncfusion/ej2-pdfviewer': 25.2.7
-      '@syncfusion/ej2-react-base': 25.2.6
+      '@syncfusion/ej2-base': 26.1.35
+      '@syncfusion/ej2-pdfviewer': 26.1.35
+      '@syncfusion/ej2-react-base': 26.1.35
     dev: false
 
   /@syncfusion/ej2-react-popups@26.1.35:
