@@ -130,7 +130,7 @@ dependencies:
     version: 0.0.28
   next:
     specifier: 14.2.3
-    version: 14.2.3(react-dom@18.3.1)(react@18.3.1)(sass@1.77.4)
+    version: 14.2.3(react-dom@18.3.1)(react@18.3.1)(sass@1.77.5)
   next-auth:
     specifier: ^4.24.7
     version: 4.24.7(next@14.2.3)(react-dom@18.3.1)(react@18.3.1)
@@ -159,8 +159,8 @@ dependencies:
     specifier: ^2.2.1
     version: 2.2.1
   sass:
-    specifier: ^1.77.4
-    version: 1.77.4
+    specifier: ^1.77.5
+    version: 1.77.5
   string-similarity:
     specifier: ^4.0.4
     version: 4.0.4
@@ -4998,7 +4998,7 @@ packages:
       '@panva/hkdf': 1.1.1
       cookie: 0.5.0
       jose: 4.15.5
-      next: 14.2.3(react-dom@18.3.1)(react@18.3.1)(sass@1.77.4)
+      next: 14.2.3(react-dom@18.3.1)(react@18.3.1)(sass@1.77.5)
       oauth: 0.9.15
       openid-client: 5.6.5
       preact: 10.22.0
@@ -5018,7 +5018,7 @@ packages:
       react-dom: 18.3.1(react@18.3.1)
     dev: false
 
-  /next@14.2.3(react-dom@18.3.1)(react@18.3.1)(sass@1.77.4):
+  /next@14.2.3(react-dom@18.3.1)(react@18.3.1)(sass@1.77.5):
     resolution: {integrity: sha512-dowFkFTR8v79NPJO4QsBUtxv0g9BrS/phluVpMAt2ku7H+cbcBJlopXjkWlwxrk/xGqMemr7JkGPGemPrLLX7A==}
     engines: {node: '>=18.17.0'}
     hasBin: true
@@ -5044,7 +5044,7 @@ packages:
       postcss: 8.4.31
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
-      sass: 1.77.4
+      sass: 1.77.5
       styled-jsx: 5.1.1(react@18.3.1)
     optionalDependencies:
       '@next/swc-darwin-arm64': 14.2.3
@@ -5798,8 +5798,8 @@ packages:
       is-regex: 1.1.4
     dev: true
 
-  /sass@1.77.4:
-    resolution: {integrity: sha512-vcF3Ckow6g939GMA4PeU7b2K/9FALXk2KF9J87txdHzXbUF9XRQRwSxcAs/fGaTnJeBFd7UoV22j3lzMLdM0Pw==}
+  /sass@1.77.5:
+    resolution: {integrity: sha512-oDfX1mukIlxacPdQqNb6mV2tVCrnE+P3nVYioy72V5tlk56CPNcO4TCuFcaCRKKfJ1M3lH95CleRS+dVKL2qMg==}
     engines: {node: '>=14.0.0'}
     hasBin: true
     dependencies:
