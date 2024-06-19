@@ -84,8 +84,8 @@ dependencies:
     specifier: ^26.1.35
     version: 26.1.35
   '@syncfusion/ej2-react-navigations':
-    specifier: ^26.1.35
-    version: 26.1.35
+    specifier: ^26.1.38
+    version: 26.1.38
   '@syncfusion/ej2-react-pdfviewer':
     specifier: ^26.1.35
     version: 26.1.35
@@ -1897,17 +1897,6 @@ packages:
       '@syncfusion/ej2-grids': 26.1.38
     dev: false
 
-  /@syncfusion/ej2-navigations@26.1.35:
-    resolution: {integrity: sha512-Of8XARkcCydkiJXNEwEffUW7eSlxf782w845hQ0H+v+XyDBXM4YOn8buQ555yH8AJVNow6sZTocBMLIfikqn9g==}
-    dependencies:
-      '@syncfusion/ej2-base': 26.1.37
-      '@syncfusion/ej2-buttons': 26.1.35
-      '@syncfusion/ej2-data': 26.1.35
-      '@syncfusion/ej2-inputs': 26.1.38
-      '@syncfusion/ej2-lists': 26.1.35
-      '@syncfusion/ej2-popups': 26.1.38
-    dev: false
-
   /@syncfusion/ej2-navigations@26.1.38:
     resolution: {integrity: sha512-fuXsUaEb8fhL/qKIMRSzS16iP3XTeTjFtkdXER4oynMr+AKzllzEJhXj6ZEpL+mObRRBX2Zdd1nsgDmvqnLG7g==}
     dependencies:
@@ -2100,11 +2089,11 @@ packages:
       '@syncfusion/ej2-react-base': 26.1.35
     dev: false
 
-  /@syncfusion/ej2-react-navigations@26.1.35:
-    resolution: {integrity: sha512-JYNQg9TE8xP47JUmp1PpWxqOc0Bdhna4W8ZcbHEi0aGG/vz+NmnrfDdQXlf3xG8WGuTvsn/axTKcyz1smxTByg==}
+  /@syncfusion/ej2-react-navigations@26.1.38:
+    resolution: {integrity: sha512-W43ZA3Ee7cbQvrDhAf9UivCeWwl/QAwVtU+xN9XyOZ7QWVG1qMIwpglRas1aulx+/FKBUrFPOviV0lTGeTnotg==}
     dependencies:
       '@syncfusion/ej2-base': 26.1.37
-      '@syncfusion/ej2-navigations': 26.1.35
+      '@syncfusion/ej2-navigations': 26.1.38
       '@syncfusion/ej2-react-base': 26.1.35
     dev: false
 
