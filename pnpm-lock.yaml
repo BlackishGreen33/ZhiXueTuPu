@@ -90,8 +90,8 @@ dependencies:
     specifier: ^26.1.35
     version: 26.1.35
   '@syncfusion/ej2-react-popups':
-    specifier: ^26.1.35
-    version: 26.1.35
+    specifier: ^26.1.38
+    version: 26.1.38
   '@syncfusion/ej2-react-progressbar':
     specifier: ^26.1.35
     version: 26.1.35
@@ -1944,6 +1944,13 @@ packages:
       '@syncfusion/ej2-buttons': 26.1.35
     dev: false
 
+  /@syncfusion/ej2-popups@26.1.38:
+    resolution: {integrity: sha512-XwXrB9EKZghX6xJNel5bDbeB6y/SdBonvLwGVxp2b+CYymdc+T03lQaDYO7FAtU2JlnaICsmx7OvoIIoYY+e3Q==}
+    dependencies:
+      '@syncfusion/ej2-base': 26.1.37
+      '@syncfusion/ej2-buttons': 26.1.35
+    dev: false
+
   /@syncfusion/ej2-progressbar@26.1.35:
     resolution: {integrity: sha512-DTYtOV8EwyHoR7vbCw/yvvzE6WZiX81RWeaFVNcJnczd2r3tpa8QZIkuiAMN3aiobNmfnfOK5dad2MjTOGQdmQ==}
     dependencies:
@@ -2042,11 +2049,11 @@ packages:
       '@syncfusion/ej2-react-base': 26.1.35
     dev: false
 
-  /@syncfusion/ej2-react-popups@26.1.35:
-    resolution: {integrity: sha512-CcrSrqqZKnBAcL/6g2ZQCZ0zzznnW8OvQJhV734sEAJ0iavrX0+8CTO7Coj6GVB9T46dW3HNAx6DzVFQFvafvQ==}
+  /@syncfusion/ej2-react-popups@26.1.38:
+    resolution: {integrity: sha512-YUzlbpWCVTTh6elQbghQQUM8EREwneLZHcyyhOj7AnXa5CAo4oxqtgG9XtPGZFSJeTIlx/5Fzeq4MI9v5nnGww==}
     dependencies:
       '@syncfusion/ej2-base': 26.1.37
-      '@syncfusion/ej2-popups': 26.1.35
+      '@syncfusion/ej2-popups': 26.1.38
       '@syncfusion/ej2-react-base': 26.1.35
     dev: false
 
