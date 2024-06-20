@@ -66,8 +66,8 @@ dependencies:
     specifier: ^26.1.35
     version: 26.1.35
   '@syncfusion/ej2-react-calendars':
-    specifier: ^26.1.35
-    version: 26.1.35
+    specifier: ^26.1.38
+    version: 26.1.38
   '@syncfusion/ej2-react-charts':
     specifier: ^26.1.38
     version: 26.1.38
@@ -1594,16 +1594,6 @@ packages:
       '@syncfusion/ej2-base': 26.1.37
     dev: false
 
-  /@syncfusion/ej2-calendars@26.1.35:
-    resolution: {integrity: sha512-gViPsHPC+Y81yLVtoMlSHH1AhIHWxGnjF9YGR5SaQnq7hJBF6MiAC38cH4oDMkOfJ1K+tgCPTTNqNLBEFpSEsw==}
-    dependencies:
-      '@syncfusion/ej2-base': 26.1.37
-      '@syncfusion/ej2-buttons': 26.1.35
-      '@syncfusion/ej2-inputs': 26.1.38
-      '@syncfusion/ej2-lists': 26.1.35
-      '@syncfusion/ej2-popups': 26.1.38
-    dev: false
-
   /@syncfusion/ej2-calendars@26.1.38:
     resolution: {integrity: sha512-cRcbf1Fvrcc5d1MdTxvlO527mftmc+Oussn0e79khNwNC9LZTlHN1rThq+GOXqXkwXqb37rGUiZSAmO5QvRl3g==}
     dependencies:
@@ -2041,11 +2031,11 @@ packages:
       '@syncfusion/ej2-react-base': 26.1.35
     dev: false
 
-  /@syncfusion/ej2-react-calendars@26.1.35:
-    resolution: {integrity: sha512-ARrLtxdJAnhq3vijSKPnBgNKXLflpB+wY6AZlmgV0cMW705qrQm8YDf6x93AvpeUvVwnuwLS1EJd4+LXCdQ97w==}
+  /@syncfusion/ej2-react-calendars@26.1.38:
+    resolution: {integrity: sha512-v6+NyRwtBWEVKBW7JAWdXi4cSlWfws0Rhhc/PNxTm/bXdXcAjwvUUSmqzTPmhrgE6XcFroBToPLDnQ/vZJ4uyw==}
     dependencies:
       '@syncfusion/ej2-base': 26.1.37
-      '@syncfusion/ej2-calendars': 26.1.35
+      '@syncfusion/ej2-calendars': 26.1.38
       '@syncfusion/ej2-react-base': 26.1.35
     dev: false
 
