@@ -96,8 +96,8 @@ dependencies:
     specifier: ^26.1.35
     version: 26.1.35
   '@syncfusion/ej2-react-richtexteditor':
-    specifier: ^26.1.35
-    version: 26.1.35
+    specifier: ^26.1.38
+    version: 26.1.38
   '@syncfusion/ej2-react-schedule':
     specifier: ^26.1.38
     version: 26.1.38
@@ -2111,12 +2111,12 @@ packages:
       '@syncfusion/ej2-react-base': 26.1.35
     dev: false
 
-  /@syncfusion/ej2-react-richtexteditor@26.1.35:
-    resolution: {integrity: sha512-G7AkJSmCvLyl3nsn9nPH3B0pr9rTSZIcaY6tkcY2Mrh2q8+8ZevulkB7bO5eWG8jvLjQ5tQjbz8ngJOXzeDonA==}
+  /@syncfusion/ej2-react-richtexteditor@26.1.38:
+    resolution: {integrity: sha512-ZswAwkqA+1clX5+WS3k8ZwQNUAGA0Vg1xQy4WSrdTjL6K4Ar3Mg9O5gMz4muAJNHGfhhn7951hzcQ77o/QNWGw==}
     dependencies:
       '@syncfusion/ej2-base': 26.1.37
       '@syncfusion/ej2-react-base': 26.1.35
-      '@syncfusion/ej2-richtexteditor': 26.1.35
+      '@syncfusion/ej2-richtexteditor': 26.1.38
     dev: false
 
   /@syncfusion/ej2-react-schedule@26.1.38:
@@ -2134,18 +2134,6 @@ packages:
       '@syncfusion/ej2-buttons': 26.1.35
       '@syncfusion/ej2-dropdowns': 26.1.38
       '@syncfusion/ej2-lists': 26.1.35
-      '@syncfusion/ej2-navigations': 26.1.38
-      '@syncfusion/ej2-popups': 26.1.38
-      '@syncfusion/ej2-splitbuttons': 26.1.35
-    dev: false
-
-  /@syncfusion/ej2-richtexteditor@26.1.35:
-    resolution: {integrity: sha512-swbmkfyJs8JGLSfymsAmMfWOqwrQYNt94BYPSAmhhlEcSHm3/Xx2ygtzsBmg24ActvJzalD4FZaswpYGplJB3A==}
-    dependencies:
-      '@syncfusion/ej2-base': 26.1.37
-      '@syncfusion/ej2-buttons': 26.1.35
-      '@syncfusion/ej2-filemanager': 26.1.35
-      '@syncfusion/ej2-inputs': 26.1.38
       '@syncfusion/ej2-navigations': 26.1.38
       '@syncfusion/ej2-popups': 26.1.38
       '@syncfusion/ej2-splitbuttons': 26.1.35
