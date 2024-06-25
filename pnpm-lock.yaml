@@ -123,8 +123,8 @@ dependencies:
     specifier: ^5.5.0
     version: 5.5.0
   framer-motion:
-    specifier: ^11.2.11
-    version: 11.2.11(react-dom@18.3.1)(react@18.3.1)
+    specifier: ^11.2.12
+    version: 11.2.12(react-dom@18.3.1)(react@18.3.1)
   keyword-extractor:
     specifier: ^0.0.28
     version: 0.0.28
@@ -4144,8 +4144,8 @@ packages:
       web-streams-polyfill: 4.0.0-beta.3
     dev: false
 
-  /framer-motion@11.2.11(react-dom@18.3.1)(react@18.3.1):
-    resolution: {integrity: sha512-n+ozoEzgJu/2h9NoQMokF+CwNqIRVyuRC4RwMPwklfrrTjbVV32k9uBIgqYAwn7Jfpt5LuDVCtT57MWz1FbaLw==}
+  /framer-motion@11.2.12(react-dom@18.3.1)(react@18.3.1):
+    resolution: {integrity: sha512-lCjkV4nA9rWOy2bhR4RZzkp2xpB++kFmUZ6D44V9VQaxk+JDmbDd5lq+u58DjJIIllE8AZEXp9OG/TyDN4FB/w==}
     peerDependencies:
       '@emotion/is-prop-valid': '*'
       react: ^18.0.0
