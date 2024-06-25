@@ -39,7 +39,7 @@
     "@radix-ui/react-slot": "^1.1.0",
     "@radix-ui/react-toast": "^1.2.1",
     "@react-hook/media-query": "^1.1.1",
-    "@syncfusion/ej2": "^26.1.38",
+    "@syncfusion/ej2": "^26.1.39",
     "@syncfusion/ej2-base": "^26.1.37",
     "@syncfusion/ej2-react-buttons": "^26.1.35",
     "@syncfusion/ej2-react-calendars": "^26.1.38",
