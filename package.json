@@ -54,7 +54,7 @@
     "@syncfusion/ej2-react-progressbar": "^26.1.35",
     "@syncfusion/ej2-react-richtexteditor": "^26.1.38",
     "@syncfusion/ej2-react-schedule": "^26.1.38",
-    "@tanstack/react-query": "^5.45.1",
+    "@tanstack/react-query": "^5.48.0",
     "axios": "^1.7.2",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
