@@ -72,8 +72,8 @@ dependencies:
     specifier: ^26.1.38
     version: 26.1.38
   '@syncfusion/ej2-react-dropdowns':
-    specifier: ^26.1.38
-    version: 26.1.38
+    specifier: ^26.1.39
+    version: 26.1.39
   '@syncfusion/ej2-react-grids':
     specifier: ^26.1.38
     version: 26.1.38
@@ -2338,11 +2338,11 @@ packages:
       '@syncfusion/ej2-react-base': 26.1.35
     dev: false
 
-  /@syncfusion/ej2-react-dropdowns@26.1.38:
-    resolution: {integrity: sha512-0B01xxyAgbtjiK/foaxtwWWQdjR/Pl9rkKSbiZbyu9dhk0SbIvOgpx7C/bZgQ1TA+KNg4ElBw9A6s+dlY8IhGA==}
+  /@syncfusion/ej2-react-dropdowns@26.1.39:
+    resolution: {integrity: sha512-d4BXggsqi4rkUM2xm8RcANi/+p+usXMU6fqqftFHZHWkGwzMACaDEpc8u7wBqRzx9lvoz35ARed9SrrYrM0YOw==}
     dependencies:
       '@syncfusion/ej2-base': 26.1.37
-      '@syncfusion/ej2-dropdowns': 26.1.38
+      '@syncfusion/ej2-dropdowns': 26.1.39
       '@syncfusion/ej2-react-base': 26.1.35
     dev: false
 
