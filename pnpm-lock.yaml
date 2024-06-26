@@ -75,8 +75,8 @@ dependencies:
     specifier: ^26.1.39
     version: 26.1.39
   '@syncfusion/ej2-react-grids':
-    specifier: ^26.1.38
-    version: 26.1.38
+    specifier: ^26.1.39
+    version: 26.1.39
   '@syncfusion/ej2-react-inputs':
     specifier: ^26.1.38
     version: 26.1.38
@@ -1996,26 +1996,6 @@ packages:
       '@syncfusion/ej2-treegrid': 26.1.39
     dev: false
 
-  /@syncfusion/ej2-grids@26.1.38:
-    resolution: {integrity: sha512-iHcmsF/PdUKjSo1Ub/nEUcP7s/3wXnw1AILnox57g4vMP7VLP3bA47aBTEgzMJ992O5f799wl+2ZAjJnVIIu8w==}
-    dependencies:
-      '@syncfusion/ej2-base': 26.1.37
-      '@syncfusion/ej2-buttons': 26.1.35
-      '@syncfusion/ej2-calendars': 26.1.38
-      '@syncfusion/ej2-compression': 26.1.35
-      '@syncfusion/ej2-data': 26.1.35
-      '@syncfusion/ej2-dropdowns': 26.1.39
-      '@syncfusion/ej2-excel-export': 26.1.35
-      '@syncfusion/ej2-file-utils': 26.1.35
-      '@syncfusion/ej2-inputs': 26.1.39
-      '@syncfusion/ej2-lists': 26.1.35
-      '@syncfusion/ej2-navigations': 26.1.39
-      '@syncfusion/ej2-notifications': 26.1.35
-      '@syncfusion/ej2-pdf-export': 26.1.35
-      '@syncfusion/ej2-popups': 26.1.38
-      '@syncfusion/ej2-splitbuttons': 26.1.35
-    dev: false
-
   /@syncfusion/ej2-grids@26.1.39:
     resolution: {integrity: sha512-ymSOGOMIxA2CVtpZedb2O7Hkf+PtQtxL+wQyXRd5pbM+bYTYqJfK8f/jCLbIPxsYJ4qzCih6pH0PKMLRWaNjOg==}
     dependencies:
@@ -2334,11 +2314,11 @@ packages:
       '@syncfusion/ej2-react-base': 26.1.35
     dev: false
 
-  /@syncfusion/ej2-react-grids@26.1.38:
-    resolution: {integrity: sha512-r1a+qdRKx3aYvglseEP4LlyWiN8vfaidkMnv8F00JK4+L614sB4NPAZ0uKvcT0Dpwj7MY22mJXvrvvVWt5Odxw==}
+  /@syncfusion/ej2-react-grids@26.1.39:
+    resolution: {integrity: sha512-UgAIXoJ58d8ouAg3ZIW7XTCN6NpcfgAqrq176G8COkyOdpTR0tiXarre4bwLy4auD4Xf+1xMmm2jGflEVPyVOw==}
     dependencies:
       '@syncfusion/ej2-base': 26.1.37
-      '@syncfusion/ej2-grids': 26.1.38
+      '@syncfusion/ej2-grids': 26.1.39
       '@syncfusion/ej2-react-base': 26.1.35
     dev: false
 
