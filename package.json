@@ -60,7 +60,7 @@
     "clsx": "^2.1.1",
     "cmdk": "^1.0.0",
     "date-fns": "^3.6.0",
-    "echarts": "^5.5.0",
+    "echarts": "^5.5.1",
     "framer-motion": "^11.2.12",
     "keyword-extractor": "^0.0.28",
     "next": "14.2.4",
