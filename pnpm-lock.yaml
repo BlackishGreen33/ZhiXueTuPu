@@ -75,8 +75,8 @@ importers:
         specifier: ^26.1.39
         version: 26.1.39
       '@syncfusion/ej2-react-dropdowns':
-        specifier: ^26.1.39
-        version: 26.1.39
+        specifier: ^26.1.40
+        version: 26.1.40
       '@syncfusion/ej2-react-grids':
         specifier: ^26.1.39
         version: 26.1.39
@@ -1255,8 +1255,8 @@ packages:
   '@syncfusion/ej2-react-charts@26.1.39':
     resolution: {integrity: sha512-PXnOFlEtRyLZ3YrFlIUtl9xWrkE/mw5jpCA1GhGEjNKhnlq+JPcBvk3MPRpNG1i1gI3AwFWCbU2RzyyhxIKDng==}
 
-  '@syncfusion/ej2-react-dropdowns@26.1.39':
-    resolution: {integrity: sha512-d4BXggsqi4rkUM2xm8RcANi/+p+usXMU6fqqftFHZHWkGwzMACaDEpc8u7wBqRzx9lvoz35ARed9SrrYrM0YOw==}
+  '@syncfusion/ej2-react-dropdowns@26.1.40':
+    resolution: {integrity: sha512-xPDJXMJKy0REi4VMYSgA4+iZgkX5olsqffjMSdHG94fzuVGUs6FggAAuM/Iqgz07ac/+wm1P6AFdq2/d8CInMw==}
 
   '@syncfusion/ej2-react-grids@26.1.39':
     resolution: {integrity: sha512-UgAIXoJ58d8ouAg3ZIW7XTCN6NpcfgAqrq176G8COkyOdpTR0tiXarre4bwLy4auD4Xf+1xMmm2jGflEVPyVOw==}
@@ -4994,10 +4994,10 @@ snapshots:
       '@syncfusion/ej2-charts': 26.1.39
       '@syncfusion/ej2-react-base': 26.1.35
 
-  '@syncfusion/ej2-react-dropdowns@26.1.39':
+  '@syncfusion/ej2-react-dropdowns@26.1.40':
     dependencies:
       '@syncfusion/ej2-base': 26.1.37
-      '@syncfusion/ej2-dropdowns': 26.1.39
+      '@syncfusion/ej2-dropdowns': 26.1.40
       '@syncfusion/ej2-react-base': 26.1.35
 
   '@syncfusion/ej2-react-grids@26.1.39':
