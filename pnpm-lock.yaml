@@ -69,8 +69,8 @@ importers:
         specifier: ^26.1.40
         version: 26.1.40
       '@syncfusion/ej2-react-calendars':
-        specifier: ^26.1.38
-        version: 26.1.38
+        specifier: ^26.1.40
+        version: 26.1.40
       '@syncfusion/ej2-react-charts':
         specifier: ^26.1.39
         version: 26.1.39
@@ -1111,9 +1111,6 @@ packages:
   '@syncfusion/ej2-buttons@26.1.40':
     resolution: {integrity: sha512-ki4EOqm9A8FY6JMrEivdUz2etTNYoryfCUagVwRpArJtRcRK1VH83UGZuOrQD2osSo2BwD2TgIqmCp8d51iYKQ==}
 
-  '@syncfusion/ej2-calendars@26.1.38':
-    resolution: {integrity: sha512-cRcbf1Fvrcc5d1MdTxvlO527mftmc+Oussn0e79khNwNC9LZTlHN1rThq+GOXqXkwXqb37rGUiZSAmO5QvRl3g==}
-
   '@syncfusion/ej2-calendars@26.1.40':
     resolution: {integrity: sha512-uMecNlKpvBSi7vP18f15bbvyhGiWlQr+Fx4C5FwJkg8i3Mkxvg7XIN+H9egoV57gvsnPzsrsU+OjbLnFHvHbZg==}
 
@@ -1243,8 +1240,8 @@ packages:
   '@syncfusion/ej2-react-buttons@26.1.40':
     resolution: {integrity: sha512-WLFKz9IWkJLRsew+vKFvOUqxWBvkkuGWWBTS+Mc1ixa2UK5cs4X8SWC/t0ZjANjwi7iZQQ8Xb/zbVu0RHbno8g==}
 
-  '@syncfusion/ej2-react-calendars@26.1.38':
-    resolution: {integrity: sha512-v6+NyRwtBWEVKBW7JAWdXi4cSlWfws0Rhhc/PNxTm/bXdXcAjwvUUSmqzTPmhrgE6XcFroBToPLDnQ/vZJ4uyw==}
+  '@syncfusion/ej2-react-calendars@26.1.40':
+    resolution: {integrity: sha512-pTCmMcqtNZGH0tJmqoiPzpcxVuQKMQAGx8kd0Vg7WEYZbU9vhRPtPa/0P1t+YjYCVc6GX+7liHyG+7tfKdFIuQ==}
 
   '@syncfusion/ej2-react-charts@26.1.39':
     resolution: {integrity: sha512-PXnOFlEtRyLZ3YrFlIUtl9xWrkE/mw5jpCA1GhGEjNKhnlq+JPcBvk3MPRpNG1i1gI3AwFWCbU2RzyyhxIKDng==}
@@ -4580,14 +4577,6 @@ snapshots:
     dependencies:
       '@syncfusion/ej2-base': 26.1.37
 
-  '@syncfusion/ej2-calendars@26.1.38':
-    dependencies:
-      '@syncfusion/ej2-base': 26.1.37
-      '@syncfusion/ej2-buttons': 26.1.40
-      '@syncfusion/ej2-inputs': 26.1.40
-      '@syncfusion/ej2-lists': 26.1.35
-      '@syncfusion/ej2-popups': 26.1.38
-
   '@syncfusion/ej2-calendars@26.1.40':
     dependencies:
       '@syncfusion/ej2-base': 26.1.37
@@ -4961,10 +4950,10 @@ snapshots:
       '@syncfusion/ej2-buttons': 26.1.40
       '@syncfusion/ej2-react-base': 26.1.35
 
-  '@syncfusion/ej2-react-calendars@26.1.38':
+  '@syncfusion/ej2-react-calendars@26.1.40':
     dependencies:
       '@syncfusion/ej2-base': 26.1.37
-      '@syncfusion/ej2-calendars': 26.1.38
+      '@syncfusion/ej2-calendars': 26.1.40
       '@syncfusion/ej2-react-base': 26.1.35
 
   '@syncfusion/ej2-react-charts@26.1.39':
