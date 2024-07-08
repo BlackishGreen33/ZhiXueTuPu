@@ -190,8 +190,8 @@ importers:
         specifier: ^6.1.0
         version: 6.1.0
       '@types/node':
-        specifier: ^20.14.9
-        version: 20.14.9
+        specifier: ^20.14.10
+        version: 20.14.10
       '@types/react':
         specifier: ^18.3.3
         version: 18.3.3
@@ -1305,8 +1305,8 @@ packages:
   '@types/node@18.19.34':
     resolution: {integrity: sha512-eXF4pfBNV5DAMKGbI02NnDtWrQ40hAN558/2vvS4gMpMIxaf6JmD7YjnZbq0Q9TDSSkKBamime8ewRoomHdt4g==}
 
-  '@types/node@20.14.9':
-    resolution: {integrity: sha512-06OCtnTXtWOZBJlRApleWndH4JsRVs1pDCc8dLSQp+7PpUpX3ePdHyeNSFTeSe7FtKyQkrlPvHwJOW3SLd8Oyg==}
+  '@types/node@20.14.10':
+    resolution: {integrity: sha512-MdiXf+nDuMvY0gJKxyfZ7/6UFsETO7mGKF54MVD/ekJS6HdFtpZFBgrh6Pseu64XTb2MLyFPlbW6hj8HYRQNOQ==}
 
   '@types/parse-json@4.0.2':
     resolution: {integrity: sha512-dISoDXWWQwUquiKsyZ4Ng+HX2KsPL7LyHKHQwgGFEA3IaKac4Obd+h2a/a6waisAoepJlBcx9paWqjA8/HVjCw==}
@@ -4798,7 +4798,7 @@ snapshots:
     dependencies:
       '@syncfusion/ej2-base': 26.1.37
       '@syncfusion/ej2-compression': 26.1.35
-      '@types/node': 20.14.9
+      '@types/node': 20.14.10
 
   '@syncfusion/ej2-pdfviewer@26.1.40':
     dependencies:
@@ -5063,20 +5063,20 @@ snapshots:
 
   '@types/fs-extra@8.1.5':
     dependencies:
-      '@types/node': 20.14.9
+      '@types/node': 20.14.10
 
   '@types/json5@0.0.29': {}
 
   '@types/node-fetch@2.6.11':
     dependencies:
-      '@types/node': 20.14.9
+      '@types/node': 20.14.10
       form-data: 4.0.0
 
   '@types/node@18.19.34':
     dependencies:
       undici-types: 5.26.5
 
-  '@types/node@20.14.9':
+  '@types/node@20.14.10':
     dependencies:
       undici-types: 5.26.5
 
