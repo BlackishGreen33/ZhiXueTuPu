@@ -90,8 +90,8 @@ importers:
         specifier: ^26.1.41
         version: 26.1.41
       '@syncfusion/ej2-react-pdfviewer':
-        specifier: ^26.1.40
-        version: 26.1.40
+        specifier: ^26.1.41
+        version: 26.1.41
       '@syncfusion/ej2-react-popups':
         specifier: ^26.1.38
         version: 26.1.38
@@ -1141,6 +1141,9 @@ packages:
   '@syncfusion/ej2-drawings@26.1.40':
     resolution: {integrity: sha512-12mMIed01D8oT3okBgZe7AlbeupzRndHE6SRkeBQ9KXmCMP0pUn+++UTSGYzR42Xb7cz1vRuFR/pCRVAjMlNXg==}
 
+  '@syncfusion/ej2-drawings@26.1.41':
+    resolution: {integrity: sha512-UXDwRw2hqjlwHnc2AOLBtQkqIftZ4ojQKroxv7V2P4E4QOmD02AxK08DYcSijBRzTPKc77lcW+5CY9ASiWpsRA==}
+
   '@syncfusion/ej2-dropdowns@26.1.40':
     resolution: {integrity: sha512-UNhEvTo1GqgJZ6xG5419vBcq7Q1GGGHnUpP4u65H5UlWSNi2h1IRNTdYiUj5s/XLYM3Q7P9SJM4xoLoy/qgkAw==}
 
@@ -1216,8 +1219,14 @@ packages:
   '@syncfusion/ej2-pdf@26.1.40':
     resolution: {integrity: sha512-bdgZROXLGLxGu+NfIdjFHOmpYEnO+s1sUWjADetpErS0hVztcdKSkHfLUYriA5IkyxQJiSHAfhkfYkjDhaM+Mg==}
 
+  '@syncfusion/ej2-pdf@26.1.41':
+    resolution: {integrity: sha512-krEfu1jRAGpikVzZMszON1tNKKsLe2i+S8nteb18SOTrVlKDZbOfasvnEv3NswF++iog7ON4BH+O9zOxwvZjCg==}
+
   '@syncfusion/ej2-pdfviewer@26.1.40':
     resolution: {integrity: sha512-Rh8Ez7Cbw5qS72pzGusIzBvO4EyyyKxiZNavolvPLzmiCJbizyIyyXoXTe237tQtJQxqwhQtQkrs2rp2UPIvgQ==}
+
+  '@syncfusion/ej2-pdfviewer@26.1.41':
+    resolution: {integrity: sha512-q4pI3s9p8i6+nljdnNHCImUhQROrftWd/2sosssBcyBujXUuwB5pUdcTLCAfkurqajr9iIVYyhw9g+kmsCudJw==}
 
   '@syncfusion/ej2-pivotview@26.1.40':
     resolution: {integrity: sha512-10X2Mcaj+m+nbsL6IwATxWjluqRLHs4RqIYc3GQYhO69/QrUFJ0EY9uXOroimi9kYJDh2TCtTtx2gMuCNaSm8A==}
@@ -1261,8 +1270,8 @@ packages:
   '@syncfusion/ej2-react-navigations@26.1.41':
     resolution: {integrity: sha512-Sxjh2PbtZ7/1ZfnADsMDGAL0YvD8/KzjiS4trPoBG5dqvJBvkeyn1jotJj+xQcDa/2UI4VZPPxNrnBx+HvSkCQ==}
 
-  '@syncfusion/ej2-react-pdfviewer@26.1.40':
-    resolution: {integrity: sha512-+h/3sYC52M2FvPI7k+mVTKGt/xzvUG71XWfDu22kxrX7Ddx0Cy03JwgQvufl72S74JIKhgpwRRtGfkusQibL3w==}
+  '@syncfusion/ej2-react-pdfviewer@26.1.41':
+    resolution: {integrity: sha512-7JcDsLGVE0yGnjhN3L0jq3CEbVq1LuqFJWt2yupTW+iaiTEKme2LAGcCqNy+tBxBEhaRhZacYigSnOBOp1pWgg==}
 
   '@syncfusion/ej2-react-popups@26.1.38':
     resolution: {integrity: sha512-YUzlbpWCVTTh6elQbghQQUM8EREwneLZHcyyhOj7AnXa5CAo4oxqtgG9XtPGZFSJeTIlx/5Fzeq4MI9v5nnGww==}
@@ -4647,6 +4656,11 @@ snapshots:
       '@syncfusion/ej2-base': 26.1.37
       '@syncfusion/ej2-data': 26.1.40
 
+  '@syncfusion/ej2-drawings@26.1.41':
+    dependencies:
+      '@syncfusion/ej2-base': 26.1.37
+      '@syncfusion/ej2-data': 26.1.41
+
   '@syncfusion/ej2-dropdowns@26.1.40':
     dependencies:
       '@syncfusion/ej2-base': 26.1.37
@@ -4856,6 +4870,12 @@ snapshots:
       '@syncfusion/ej2-compression': 26.1.35
       '@types/node': 20.14.10
 
+  '@syncfusion/ej2-pdf@26.1.41':
+    dependencies:
+      '@syncfusion/ej2-base': 26.1.37
+      '@syncfusion/ej2-compression': 26.1.35
+      '@types/node': 20.14.10
+
   '@syncfusion/ej2-pdfviewer@26.1.40':
     dependencies:
       '@syncfusion/ej2-base': 26.1.37
@@ -4870,6 +4890,21 @@ snapshots:
       '@syncfusion/ej2-notifications': 26.1.35
       '@syncfusion/ej2-pdf': 26.1.40
       '@syncfusion/ej2-popups': 26.1.38
+
+  '@syncfusion/ej2-pdfviewer@26.1.41':
+    dependencies:
+      '@syncfusion/ej2-base': 26.1.37
+      '@syncfusion/ej2-buttons': 26.1.40
+      '@syncfusion/ej2-data': 26.1.41
+      '@syncfusion/ej2-drawings': 26.1.41
+      '@syncfusion/ej2-dropdowns': 26.1.41
+      '@syncfusion/ej2-inplace-editor': 26.1.35
+      '@syncfusion/ej2-inputs': 26.1.41
+      '@syncfusion/ej2-lists': 26.1.35
+      '@syncfusion/ej2-navigations': 26.1.41
+      '@syncfusion/ej2-notifications': 26.1.35
+      '@syncfusion/ej2-pdf': 26.1.41
+      '@syncfusion/ej2-popups': 26.1.41
 
   '@syncfusion/ej2-pivotview@26.1.40':
     dependencies:
@@ -4969,10 +5004,10 @@ snapshots:
       '@syncfusion/ej2-navigations': 26.1.41
       '@syncfusion/ej2-react-base': 26.1.35
 
-  '@syncfusion/ej2-react-pdfviewer@26.1.40':
+  '@syncfusion/ej2-react-pdfviewer@26.1.41':
     dependencies:
       '@syncfusion/ej2-base': 26.1.37
-      '@syncfusion/ej2-pdfviewer': 26.1.40
+      '@syncfusion/ej2-pdfviewer': 26.1.41
       '@syncfusion/ej2-react-base': 26.1.35
 
   '@syncfusion/ej2-react-popups@26.1.38':
