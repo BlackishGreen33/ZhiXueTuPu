@@ -75,8 +75,8 @@ importers:
         specifier: ^26.1.40
         version: 26.1.40
       '@syncfusion/ej2-react-dropdowns':
-        specifier: ^26.1.40
-        version: 26.1.40
+        specifier: ^26.1.41
+        version: 26.1.41
       '@syncfusion/ej2-react-grids':
         specifier: ^26.1.40
         version: 26.1.40
@@ -1144,6 +1144,9 @@ packages:
   '@syncfusion/ej2-dropdowns@26.1.40':
     resolution: {integrity: sha512-UNhEvTo1GqgJZ6xG5419vBcq7Q1GGGHnUpP4u65H5UlWSNi2h1IRNTdYiUj5s/XLYM3Q7P9SJM4xoLoy/qgkAw==}
 
+  '@syncfusion/ej2-dropdowns@26.1.41':
+    resolution: {integrity: sha512-+jdkodDlYGGFjdY93DkFFdL2K3GN6/5uAgKM7CNb+EC8MkQ9wx50IAi5tXIGWqPVu56Qvpf5ByUcR7dXviV6MA==}
+
   '@syncfusion/ej2-excel-export@26.1.35':
     resolution: {integrity: sha512-AlFYEBI97I0zjzGrVlqu18mux7TH6l7bSXNdWbjMf961tMSh/TkqjxkbsIWdUjqKz5M/6Vy7ElsnkjDGN1emIA==}
 
@@ -1243,8 +1246,8 @@ packages:
   '@syncfusion/ej2-react-charts@26.1.40':
     resolution: {integrity: sha512-1NbXVjXTMK41a2UOoWdTyAKn5in4FYPCtFZUWBbcHYA/edtt0bT1puliDYaPyEvaJTYdY5BEVIlliESWUtn+Tw==}
 
-  '@syncfusion/ej2-react-dropdowns@26.1.40':
-    resolution: {integrity: sha512-xPDJXMJKy0REi4VMYSgA4+iZgkX5olsqffjMSdHG94fzuVGUs6FggAAuM/Iqgz07ac/+wm1P6AFdq2/d8CInMw==}
+  '@syncfusion/ej2-react-dropdowns@26.1.41':
+    resolution: {integrity: sha512-iehX4yExW6CzSZM5nSvMcsWQ2Ms/tSRmd2WP+1wvVZOB5JUgkGWh2K7BMPVAc6JS5w3LmbG+TrbvlxOsXYcCXg==}
 
   '@syncfusion/ej2-react-grids@26.1.40':
     resolution: {integrity: sha512-1MG2aWvXDx/EMzUXMp83RuWoOtwmWLysbG+eRVrsgRxunH2gcMgwlHg8tn4lY5yhNJbmCbMPGQ1NKn4uNl9Rbg==}
@@ -4654,6 +4657,16 @@ snapshots:
       '@syncfusion/ej2-notifications': 26.1.35
       '@syncfusion/ej2-popups': 26.1.38
 
+  '@syncfusion/ej2-dropdowns@26.1.41':
+    dependencies:
+      '@syncfusion/ej2-base': 26.1.37
+      '@syncfusion/ej2-data': 26.1.41
+      '@syncfusion/ej2-inputs': 26.1.41
+      '@syncfusion/ej2-lists': 26.1.35
+      '@syncfusion/ej2-navigations': 26.1.41
+      '@syncfusion/ej2-notifications': 26.1.35
+      '@syncfusion/ej2-popups': 26.1.41
+
   '@syncfusion/ej2-excel-export@26.1.35':
     dependencies:
       '@syncfusion/ej2-base': 26.1.37
@@ -4926,10 +4939,10 @@ snapshots:
       '@syncfusion/ej2-charts': 26.1.40
       '@syncfusion/ej2-react-base': 26.1.35
 
-  '@syncfusion/ej2-react-dropdowns@26.1.40':
+  '@syncfusion/ej2-react-dropdowns@26.1.41':
     dependencies:
       '@syncfusion/ej2-base': 26.1.37
-      '@syncfusion/ej2-dropdowns': 26.1.40
+      '@syncfusion/ej2-dropdowns': 26.1.41
       '@syncfusion/ej2-react-base': 26.1.35
 
   '@syncfusion/ej2-react-grids@26.1.40':
