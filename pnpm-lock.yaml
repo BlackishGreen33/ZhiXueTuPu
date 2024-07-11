@@ -102,8 +102,8 @@ importers:
         specifier: ^26.1.40
         version: 26.1.40
       '@syncfusion/ej2-react-schedule':
-        specifier: ^26.1.40
-        version: 26.1.40
+        specifier: ^26.1.41
+        version: 26.1.41
       '@tanstack/react-query':
         specifier: ^5.50.1
         version: 5.50.1(react@18.3.1)
@@ -1261,8 +1261,8 @@ packages:
   '@syncfusion/ej2-react-richtexteditor@26.1.40':
     resolution: {integrity: sha512-xtI/nTdaCLoStpoLmEClRv/Eb7P7ZQH9yLpUkR/CBa5aj6iYbIViurDA7gk/L52U1QJTrCCV5zcUssy8EF7HwQ==}
 
-  '@syncfusion/ej2-react-schedule@26.1.40':
-    resolution: {integrity: sha512-hzDHnGvRKmqxj2ADx2NkJvo/0rISDAd52szYGwLIBSCX9NJEJ3mXoK0LBWKeO4VFiDcUUx38+yUZmUOXHw/8jw==}
+  '@syncfusion/ej2-react-schedule@26.1.41':
+    resolution: {integrity: sha512-/GoKDAY0BJdymvJeJ5LEMb/iE3JcSjZduVNHNg4hmQl5brkKeTJ7jueTQZ+ze1R1dLhUQnJS+Bdnodd7riaoHA==}
 
   '@syncfusion/ej2-ribbon@26.1.41':
     resolution: {integrity: sha512-7voQ4d6klB7HIqH7+7nbGWmCoYddFG4p2Hvgn3MR2J3sSvZsMYN2SPrcz0g8TMV7xziEoxt/t0QmLmFwy1nvWQ==}
@@ -4993,11 +4993,11 @@ snapshots:
       '@syncfusion/ej2-react-base': 26.1.35
       '@syncfusion/ej2-richtexteditor': 26.1.40
 
-  '@syncfusion/ej2-react-schedule@26.1.40':
+  '@syncfusion/ej2-react-schedule@26.1.41':
     dependencies:
       '@syncfusion/ej2-base': 26.1.37
       '@syncfusion/ej2-react-base': 26.1.35
-      '@syncfusion/ej2-schedule': 26.1.40
+      '@syncfusion/ej2-schedule': 26.1.41
 
   '@syncfusion/ej2-ribbon@26.1.41':
     dependencies:
@@ -5030,6 +5030,20 @@ snapshots:
       '@syncfusion/ej2-splitbuttons': 26.1.35
 
   '@syncfusion/ej2-schedule@26.1.40':
+    dependencies:
+      '@syncfusion/ej2-base': 26.1.37
+      '@syncfusion/ej2-buttons': 26.1.40
+      '@syncfusion/ej2-calendars': 26.1.41
+      '@syncfusion/ej2-data': 26.1.41
+      '@syncfusion/ej2-dropdowns': 26.1.41
+      '@syncfusion/ej2-excel-export': 26.1.35
+      '@syncfusion/ej2-inputs': 26.1.41
+      '@syncfusion/ej2-lists': 26.1.35
+      '@syncfusion/ej2-navigations': 26.1.41
+      '@syncfusion/ej2-popups': 26.1.41
+      '@types/requirejs': 2.1.37
+
+  '@syncfusion/ej2-schedule@26.1.41':
     dependencies:
       '@syncfusion/ej2-base': 26.1.37
       '@syncfusion/ej2-buttons': 26.1.40
