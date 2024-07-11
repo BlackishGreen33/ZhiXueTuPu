@@ -99,8 +99,8 @@ importers:
         specifier: ^26.1.35
         version: 26.1.35
       '@syncfusion/ej2-react-richtexteditor':
-        specifier: ^26.1.40
-        version: 26.1.40
+        specifier: ^26.1.41
+        version: 26.1.41
       '@syncfusion/ej2-react-schedule':
         specifier: ^26.1.41
         version: 26.1.41
@@ -1258,8 +1258,8 @@ packages:
   '@syncfusion/ej2-react-progressbar@26.1.35':
     resolution: {integrity: sha512-nIBx7lSkxnq+zQj0UQh3ddPJkwlwFi64gU1+0CAr4zBRaiIsEmpNnVCk2ZAjOg7Tc8vb2ktB2D8Jc8jWhqoQ8w==}
 
-  '@syncfusion/ej2-react-richtexteditor@26.1.40':
-    resolution: {integrity: sha512-xtI/nTdaCLoStpoLmEClRv/Eb7P7ZQH9yLpUkR/CBa5aj6iYbIViurDA7gk/L52U1QJTrCCV5zcUssy8EF7HwQ==}
+  '@syncfusion/ej2-react-richtexteditor@26.1.41':
+    resolution: {integrity: sha512-HPvwhZ9egpCXFP8fL22EUi9/+5dQETg5+ffR24zlQMcHyTAWS3bN4gTvTBZ6leX+b3PUc4XEEDsJGEbsmA+3Wg==}
 
   '@syncfusion/ej2-react-schedule@26.1.41':
     resolution: {integrity: sha512-/GoKDAY0BJdymvJeJ5LEMb/iE3JcSjZduVNHNg4hmQl5brkKeTJ7jueTQZ+ze1R1dLhUQnJS+Bdnodd7riaoHA==}
@@ -4672,6 +4672,19 @@ snapshots:
       '@syncfusion/ej2-popups': 26.1.41
       '@syncfusion/ej2-splitbuttons': 26.1.35
 
+  '@syncfusion/ej2-gantt@26.1.40':
+    dependencies:
+      '@syncfusion/ej2-base': 26.1.37
+      '@syncfusion/ej2-buttons': 26.1.40
+      '@syncfusion/ej2-data': 26.1.41
+      '@syncfusion/ej2-grids': 26.1.41
+      '@syncfusion/ej2-inputs': 26.1.41
+      '@syncfusion/ej2-layouts': 26.1.38
+      '@syncfusion/ej2-lists': 26.1.35
+      '@syncfusion/ej2-navigations': 26.1.41
+      '@syncfusion/ej2-popups': 26.1.41
+      '@syncfusion/ej2-splitbuttons': 26.1.35
+
   '@syncfusion/ej2-gantt@26.1.41':
     dependencies:
       '@syncfusion/ej2-base': 26.1.37
@@ -4691,6 +4704,24 @@ snapshots:
       '@syncfusion/ej2-treegrid': 26.1.41
 
   '@syncfusion/ej2-grids@26.1.40':
+    dependencies:
+      '@syncfusion/ej2-base': 26.1.37
+      '@syncfusion/ej2-buttons': 26.1.40
+      '@syncfusion/ej2-calendars': 26.1.41
+      '@syncfusion/ej2-compression': 26.1.35
+      '@syncfusion/ej2-data': 26.1.41
+      '@syncfusion/ej2-dropdowns': 26.1.41
+      '@syncfusion/ej2-excel-export': 26.1.35
+      '@syncfusion/ej2-file-utils': 26.1.35
+      '@syncfusion/ej2-inputs': 26.1.41
+      '@syncfusion/ej2-lists': 26.1.35
+      '@syncfusion/ej2-navigations': 26.1.41
+      '@syncfusion/ej2-notifications': 26.1.35
+      '@syncfusion/ej2-pdf-export': 26.1.35
+      '@syncfusion/ej2-popups': 26.1.41
+      '@syncfusion/ej2-splitbuttons': 26.1.35
+
+  '@syncfusion/ej2-grids@26.1.41':
     dependencies:
       '@syncfusion/ej2-base': 26.1.37
       '@syncfusion/ej2-buttons': 26.1.40
@@ -4987,11 +5018,11 @@ snapshots:
       '@syncfusion/ej2-progressbar': 26.1.35
       '@syncfusion/ej2-react-base': 26.1.35
 
-  '@syncfusion/ej2-react-richtexteditor@26.1.40':
+  '@syncfusion/ej2-react-richtexteditor@26.1.41':
     dependencies:
       '@syncfusion/ej2-base': 26.1.37
       '@syncfusion/ej2-react-base': 26.1.35
-      '@syncfusion/ej2-richtexteditor': 26.1.40
+      '@syncfusion/ej2-richtexteditor': 26.1.41
 
   '@syncfusion/ej2-react-schedule@26.1.41':
     dependencies:
@@ -5014,6 +5045,16 @@ snapshots:
       '@syncfusion/ej2-base': 26.1.37
       '@syncfusion/ej2-buttons': 26.1.40
       '@syncfusion/ej2-filemanager': 26.1.40
+      '@syncfusion/ej2-inputs': 26.1.41
+      '@syncfusion/ej2-navigations': 26.1.41
+      '@syncfusion/ej2-popups': 26.1.41
+      '@syncfusion/ej2-splitbuttons': 26.1.35
+
+  '@syncfusion/ej2-richtexteditor@26.1.41':
+    dependencies:
+      '@syncfusion/ej2-base': 26.1.37
+      '@syncfusion/ej2-buttons': 26.1.40
+      '@syncfusion/ej2-filemanager': 26.1.41
       '@syncfusion/ej2-inputs': 26.1.41
       '@syncfusion/ej2-navigations': 26.1.41
       '@syncfusion/ej2-popups': 26.1.41
