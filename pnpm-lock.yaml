@@ -27,7 +27,7 @@ importers:
         specifier: ^1.0.7
         version: 1.0.7(@prisma/client@5.19.1(prisma@5.19.1))(next-auth@4.24.7(next@14.2.13(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.79.3))(react-dom@18.3.1(react@18.3.1))(react@18.3.1))
       '@prisma/client':
-        specifier: ^5.16.2
+        specifier: ^5.19.1
         version: 5.19.1(prisma@5.19.1)
       '@radix-ui/react-dialog':
         specifier: ^1.1.1
