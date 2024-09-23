@@ -226,7 +226,7 @@ importers:
         specifier: ^15.2.7
         version: 15.2.10
       postcss:
-        specifier: ^8.4.39
+        specifier: ^8.4.47
         version: 8.4.47
       prettier:
         specifier: ^3.3.3
