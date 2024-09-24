@@ -59,7 +59,7 @@
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
     "cmdk": "^1.0.0",
-    "date-fns": "^3.6.0",
+    "date-fns": "^4.1.0",
     "echarts": "^5.5.1",
     "framer-motion": "^11.3.0",
     "keyword-extractor": "^0.0.28",
