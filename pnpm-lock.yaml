@@ -15,7 +15,7 @@ importers:
         specifier: ^6.1.0
         version: 6.1.2
       '@capacitor/ios':
-        specifier: ^6.1.0
+        specifier: ^6.1.2
         version: 6.1.2(@capacitor/core@6.1.2)
       '@emotion/styled':
         specifier: ^11.11.5
