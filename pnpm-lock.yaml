@@ -66,8 +66,8 @@ importers:
         specifier: ^27.1.50
         version: 27.1.50
       '@syncfusion/ej2-react-buttons':
-        specifier: ^26.1.40
-        version: 26.2.10
+        specifier: ^27.1.50
+        version: 27.1.50
       '@syncfusion/ej2-react-calendars':
         specifier: ^27.1.48
         version: 27.1.48(sinon@1.17.7)
@@ -1368,8 +1368,8 @@ packages:
   '@syncfusion/ej2-react-base@27.1.50':
     resolution: {integrity: sha512-mmU99YM+oHbSYVjH0zo8THxyCYc63WRks9JSMFlfF+Bq1uNxJ5a5Cwovhyl12uffrdZDmIxpH35yXy0T9ueCEQ==}
 
-  '@syncfusion/ej2-react-buttons@26.2.10':
-    resolution: {integrity: sha512-mgR2KM1jqYg+BqzZZ8pwyqiAgsHvYcv71GGoLc2KQlzIknJMCP0aZMWkqGD3efDq8iZqGmAOQj9X22YPp5Hngg==}
+  '@syncfusion/ej2-react-buttons@27.1.50':
+    resolution: {integrity: sha512-W8ogB/aMalpZiSXjzEfGIHe8mBXjH6+4JbY5LN7a0YRrqAfe0gALyEtmU0944ZShToP2S0Qa0qCUTran4P8kpQ==}
 
   '@syncfusion/ej2-react-calendars@27.1.48':
     resolution: {integrity: sha512-k/5izBWD3RguSD+LD8Hz2Xx2XK3Ay2Yvzp8h7ZlAW9xYsX7RAXpJBGxBIejIuyKubRIQ0fbGrS2bVsZddsxNKA==}
@@ -5654,11 +5654,11 @@ snapshots:
     dependencies:
       '@syncfusion/ej2-base': 27.1.50
 
-  '@syncfusion/ej2-react-buttons@26.2.10':
+  '@syncfusion/ej2-react-buttons@27.1.50':
     dependencies:
-      '@syncfusion/ej2-base': 26.2.10
-      '@syncfusion/ej2-buttons': 26.2.10
-      '@syncfusion/ej2-react-base': 26.2.10
+      '@syncfusion/ej2-base': 27.1.50
+      '@syncfusion/ej2-buttons': 27.1.50
+      '@syncfusion/ej2-react-base': 27.1.50
 
   '@syncfusion/ej2-react-calendars@27.1.48(sinon@1.17.7)':
     dependencies:
