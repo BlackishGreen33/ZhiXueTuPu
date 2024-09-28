@@ -9,7 +9,7 @@ importers:
   .:
     dependencies:
       '@capacitor/android':
-        specifier: ^6.1.0
+        specifier: ^6.1.2
         version: 6.1.2(@capacitor/core@6.1.2)
       '@capacitor/core':
         specifier: ^6.1.0

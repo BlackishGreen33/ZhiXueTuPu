@@ -22,7 +22,7 @@
     "prepare": "husky install"
   },
   "dependencies": {
-    "@capacitor/android": "^6.1.0",
+    "@capacitor/android": "^6.1.2",
     "@capacitor/core": "^6.1.0",
     "@capacitor/ios": "^6.1.2",
     "@emotion/styled": "^11.13.0",
