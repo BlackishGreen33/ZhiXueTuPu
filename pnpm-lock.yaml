@@ -171,7 +171,7 @@ importers:
         specifier: ^6.1.11
         version: 6.1.13(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       tailwind-merge:
-        specifier: ^2.4.0
+        specifier: ^2.5.2
         version: 2.5.2
       tailwind-scrollbar-hide:
         specifier: ^1.1.7
