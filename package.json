@@ -52,7 +52,7 @@
     "@syncfusion/ej2-react-pdfviewer": "^27.1.48",
     "@syncfusion/ej2-react-popups": "^26.1.41",
     "@syncfusion/ej2-react-progressbar": "^27.1.50",
-    "@syncfusion/ej2-react-richtexteditor": "^26.1.41",
+    "@syncfusion/ej2-react-richtexteditor": "^27.1.51",
     "@syncfusion/ej2-react-schedule": "^27.1.50",
     "@tanstack/react-query": "^5.50.1",
     "axios": "^1.7.7",
