@@ -61,7 +61,7 @@
     "cmdk": "^1.0.0",
     "date-fns": "^4.1.0",
     "echarts": "^5.5.1",
-    "framer-motion": "^11.5.6",
+    "framer-motion": "^11.11.7",
     "keyword-extractor": "^0.0.28",
     "next": "14.2.13",
     "next-auth": "^4.24.8",
