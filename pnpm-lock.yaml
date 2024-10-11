@@ -141,7 +141,7 @@ importers:
         specifier: ^0.3.0
         version: 0.3.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       openai:
-        specifier: ^4.66.1
+        specifier: ^4.67.3
         version: 4.67.3(zod@3.23.8)
       react:
         specifier: ^18.3.1
