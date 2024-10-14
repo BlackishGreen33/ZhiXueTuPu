@@ -190,7 +190,7 @@ importers:
         specifier: ^6.1.2
         version: 6.1.2
       '@types/node':
-        specifier: ^22.7.4
+        specifier: ^22.7.5
         version: 22.7.5
       '@types/react':
         specifier: ^18.3.10
