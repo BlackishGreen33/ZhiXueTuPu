@@ -87,7 +87,7 @@ importers:
         specifier: ^27.1.50
         version: 27.1.52
       '@syncfusion/ej2-react-navigations':
-        specifier: ^27.1.51
+        specifier: ^27.1.52
         version: 27.1.52
       '@syncfusion/ej2-react-pdfviewer':
         specifier: ^27.1.48
