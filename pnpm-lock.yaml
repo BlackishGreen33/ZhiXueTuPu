@@ -72,8 +72,8 @@ importers:
         specifier: ^27.1.48
         version: 27.1.48(sinon@1.17.7)
       '@syncfusion/ej2-react-charts':
-        specifier: ^27.1.52
-        version: 27.1.52
+        specifier: ^27.1.53
+        version: 27.1.53
       '@syncfusion/ej2-react-dropdowns':
         specifier: ^26.1.41
         version: 26.2.13
@@ -1230,8 +1230,8 @@ packages:
   '@syncfusion/ej2-charts@26.2.14':
     resolution: {integrity: sha512-l6B8sJj/TtbnFqilEU4DEtjusTgQVGny+n+1oGodp5KvngE/qL5rSFaSxyW/ht8Xd5d3hQg/Vkcfv3uGhEowow==}
 
-  '@syncfusion/ej2-charts@27.1.52':
-    resolution: {integrity: sha512-yF41snD0VXSrO3snoA+RGT/YalR29oU/nkjZMpUO6ZhY0WCYjoBKVRAEpQXBaC7KEIWx0KcRjMWejjV8ZnbHsw==}
+  '@syncfusion/ej2-charts@27.1.53':
+    resolution: {integrity: sha512-ABj6xYU2fHKP33pL8oXLRuomb40CMb711xheujGwmEBy1qUN0day8uLyJ/B7oTMApMhvCAE3Arel0EHQwIJCsQ==}
 
   '@syncfusion/ej2-circulargauge@26.2.10':
     resolution: {integrity: sha512-H8yFAmwgzB/YEufwhCUBw/TrPW23ZJbKX/U60d8tvTSKyTxSYUjyjxEo8KsHZtOKpmGQhZTXdcsEGZckSJ8IcA==}
@@ -1425,8 +1425,8 @@ packages:
   '@syncfusion/ej2-react-calendars@27.1.48':
     resolution: {integrity: sha512-k/5izBWD3RguSD+LD8Hz2Xx2XK3Ay2Yvzp8h7ZlAW9xYsX7RAXpJBGxBIejIuyKubRIQ0fbGrS2bVsZddsxNKA==}
 
-  '@syncfusion/ej2-react-charts@27.1.52':
-    resolution: {integrity: sha512-aCi8ATxwmigsY1PyyL94LaK9NmdN9PjOenLh2LlSv7+5NqKf+GWNjDb1imgRr4PQbKnuwGdIqhC1uFdm6pyq/w==}
+  '@syncfusion/ej2-react-charts@27.1.53':
+    resolution: {integrity: sha512-Cp35m7jTedfFMyBsu/CyPEUBbsHLbHiMkbcwjpCn/y9XfZUqbYVZztQaHk1NFNCWK3v5LRzNgbs1xxEXTFL1ow==}
 
   '@syncfusion/ej2-react-dropdowns@26.2.13':
     resolution: {integrity: sha512-kq4tgErPrmb8P7dXTwU9ItO3yEnmEUPT4+WgEUfTHR5CFEfTqqqOpDiA3W3TbwK0tbZqT0M5wOn739FusrwMhA==}
@@ -5205,10 +5205,10 @@ snapshots:
   '@syncfusion/ej2-calendars@27.1.52':
     dependencies:
       '@syncfusion/ej2-base': 27.1.53
-      '@syncfusion/ej2-buttons': 27.1.51
+      '@syncfusion/ej2-buttons': 27.1.53
       '@syncfusion/ej2-inputs': 27.1.50
       '@syncfusion/ej2-lists': 27.1.50
-      '@syncfusion/ej2-popups': 27.1.50
+      '@syncfusion/ej2-popups': 27.1.53
 
   '@syncfusion/ej2-charts@26.2.14':
     dependencies:
@@ -5220,13 +5220,13 @@ snapshots:
       '@syncfusion/ej2-pdf-export': 26.2.14
       '@syncfusion/ej2-svg-base': 26.2.10
 
-  '@syncfusion/ej2-charts@27.1.52':
+  '@syncfusion/ej2-charts@27.1.53':
     dependencies:
       '@syncfusion/ej2-base': 27.1.53
       '@syncfusion/ej2-calendars': 27.1.52
       '@syncfusion/ej2-data': 27.1.52
       '@syncfusion/ej2-excel-export': 27.1.50
-      '@syncfusion/ej2-navigations': 27.1.52
+      '@syncfusion/ej2-navigations': 27.1.53
       '@syncfusion/ej2-pdf-export': 27.1.51
       '@syncfusion/ej2-svg-base': 27.1.50
 
@@ -5302,7 +5302,7 @@ snapshots:
       '@syncfusion/ej2-data': 27.1.52
       '@syncfusion/ej2-inputs': 27.1.50
       '@syncfusion/ej2-lists': 27.1.50
-      '@syncfusion/ej2-navigations': 27.1.52
+      '@syncfusion/ej2-navigations': 27.1.53
       '@syncfusion/ej2-notifications': 27.1.50
       '@syncfusion/ej2-popups': 27.1.50
 
@@ -5352,7 +5352,7 @@ snapshots:
       '@syncfusion/ej2-inputs': 27.1.50
       '@syncfusion/ej2-layouts': 27.1.51
       '@syncfusion/ej2-lists': 27.1.50
-      '@syncfusion/ej2-navigations': 27.1.52
+      '@syncfusion/ej2-navigations': 27.1.53
       '@syncfusion/ej2-popups': 27.1.50
       '@syncfusion/ej2-splitbuttons': 27.1.50
 
@@ -5743,10 +5743,10 @@ snapshots:
     transitivePeerDependencies:
       - sinon
 
-  '@syncfusion/ej2-react-charts@27.1.52':
+  '@syncfusion/ej2-react-charts@27.1.53':
     dependencies:
       '@syncfusion/ej2-base': 27.1.53
-      '@syncfusion/ej2-charts': 27.1.52
+      '@syncfusion/ej2-charts': 27.1.53
       '@syncfusion/ej2-react-base': 27.1.50
 
   '@syncfusion/ej2-react-dropdowns@26.2.13':
@@ -5875,7 +5875,7 @@ snapshots:
   '@syncfusion/ej2-splitbuttons@27.1.48(sinon@1.17.7)':
     dependencies:
       '@syncfusion/ej2-base': 27.1.53
-      '@syncfusion/ej2-popups': 27.1.50
+      '@syncfusion/ej2-popups': 27.1.53
       markdown-spellcheck: 1.3.1(sinon@1.17.7)
     transitivePeerDependencies:
       - sinon
