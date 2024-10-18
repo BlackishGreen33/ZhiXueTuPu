@@ -75,7 +75,7 @@
     "relation-graph-react": "^2.2.7",
     "sass": "^1.79.4",
     "string-similarity": "^4.0.4",
-    "styled-components": "^6.1.11",
+    "styled-components": "^6.1.13",
     "tailwind-merge": "^2.5.4",
     "tailwind-scrollbar-hide": "^1.1.7",
     "tailwindcss-animate": "^1.0.7",
