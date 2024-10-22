@@ -87,8 +87,8 @@ importers:
         specifier: ^27.1.53
         version: 27.1.53
       '@syncfusion/ej2-react-navigations':
-        specifier: ^27.1.52
-        version: 27.1.52
+        specifier: ^27.1.55
+        version: 27.1.55
       '@syncfusion/ej2-react-pdfviewer':
         specifier: ^27.1.53
         version: 27.1.53
@@ -1278,6 +1278,10 @@ packages:
     resolution: {integrity: sha512-yjZV4MM0bJ8YzLdR7jRrfhTtzbV5TKhVEQ9L/s4OCJDZUK99l14AJOEI6Bvs39nrLNt6ih1TACkK7qlskI10ew==}
     hasBin: true
 
+  '@syncfusion/ej2-base@27.1.55':
+    resolution: {integrity: sha512-ZHtP1SGPfGrMtweYyvJk80piLcoFJCkmEQ/jg82NEldYeVfwYrw9W9OrPphkrzELu1WysrviwccUngWxAhykLA==}
+    hasBin: true
+
   '@syncfusion/ej2-buttons@27.1.53':
     resolution: {integrity: sha512-iB1XTkTocC4HX7Gzokp/SdqI451Iav1uBz/Jt+Ygmwci3mKw/JiqblUx4jgd2EYyRPY+/IIspz5FUeqxbWnG5A==}
 
@@ -1341,6 +1345,9 @@ packages:
   '@syncfusion/ej2-inputs@27.1.50':
     resolution: {integrity: sha512-JO+J5hl62YGWddsHyZBfwQ2K1iCLHlut6rhHvyCgcOIV+0yXi1j6ZwW2ouc0+0aLeXHm7hLpdMhVX8zGMzRb6A==}
 
+  '@syncfusion/ej2-inputs@27.1.55':
+    resolution: {integrity: sha512-RtzRE0RV57EYNG8YUEOXqvb7KBXGqoFGevTI9J01daZrVF5Z5/pphcDOby0ej3YPc1khdSHDbFW1lMd5SdQ/Wg==}
+
   '@syncfusion/ej2-interactive-chat@27.1.53':
     resolution: {integrity: sha512-HtXb78xkDUCVNpflJWwjMTRlqTSiR1aq6VQpaNm4SsD9JWZ3j4N2WeHZjeTAI2AqJ3O8DdY4xYyII79cy9RP/g==}
 
@@ -1362,11 +1369,11 @@ packages:
   '@syncfusion/ej2-multicolumn-combobox@27.1.50':
     resolution: {integrity: sha512-LAPJMZmG3e4jYsGSYfYZb61amWYT+9zga1eOx6cb3cxESXFRvrSSgQKPvjEGGz1xS5gzsgJjwsByGf+n2ZWwvQ==}
 
-  '@syncfusion/ej2-navigations@27.1.52':
-    resolution: {integrity: sha512-1odXihqgRMCmd0xsfGEAJlIifQthzlLlhzrq2/vxpu5Ffsu4eq/jKsRmy6XTF8kgp9b0LeXrRZWAZsyuGPWknQ==}
-
   '@syncfusion/ej2-navigations@27.1.53':
     resolution: {integrity: sha512-JY/RTSno6dIh+7vaB0nSSLqIx+jaabRylEafyGGHYK9nWK68lGWP8krTuS/LbzRKfQPgYmBhBx0jrxNir95EjQ==}
+
+  '@syncfusion/ej2-navigations@27.1.55':
+    resolution: {integrity: sha512-fUqCBQrt230PvC2P3vngpBt3vjOOaABgDzuS2CCZ5Anee4759uwnLJaEa/7GwBy0WkyQ6dc09HgpC5MAqTyRZw==}
 
   '@syncfusion/ej2-notifications@27.1.50':
     resolution: {integrity: sha512-rRo8QCjo6KKLlg7MTEYRY5IJL85028yyOKhakhz9GWQGMJ4z8ippd4QHW8e3Q2GL9W3Ux9koo8gGg02OqIiJgA==}
@@ -1388,6 +1395,9 @@ packages:
 
   '@syncfusion/ej2-popups@27.1.53':
     resolution: {integrity: sha512-oETnIHplzjW58+Y2Kux+IJstYan/sqXfT6M0bkZ3DZCBWVv+dhrtgYHh+y3buE+fOivk6cw2AEww2PHSPySEyA==}
+
+  '@syncfusion/ej2-popups@27.1.55':
+    resolution: {integrity: sha512-ZJN3mdxhp3cBuo0NdqkGCsM3fr8GeJDirY28t/gcPAFy8d82DCA91J0qU6lix4peo0264UaPGTREFSeY5Jzapg==}
 
   '@syncfusion/ej2-progressbar@27.1.50':
     resolution: {integrity: sha512-kQVtF6i+NTmSBkHdTjBw+YwgDE74TlfhaDueJq5JT3ZgsGPA4hjPtxStEm1Pjz5at4VzN+CCxpvswQM5p34tEg==}
@@ -1419,8 +1429,8 @@ packages:
   '@syncfusion/ej2-react-kanban@27.1.53':
     resolution: {integrity: sha512-mmqVZftyMq74udeoD20OHuO1zeIfeHkF+kXBAC9UkrntGclXNuMofJcqLzd+/taEwLGcqGoy/kYEYYEQ84981g==}
 
-  '@syncfusion/ej2-react-navigations@27.1.52':
-    resolution: {integrity: sha512-XBz6IDqFgKaGWA1L74ZboHs8YiExaG+7jGPaaHEBnL/zTjM1FK+pgCOIOfnx214t/6J4fMYJ1+G6k07hk2CSPg==}
+  '@syncfusion/ej2-react-navigations@27.1.55':
+    resolution: {integrity: sha512-XdMWVJY22Cz9K6mokUjMQ0C6Ug38LCi4NjIW2wCq22m6benOkiM85J+lWaB6cKNwPqvBm/iBqYJoE5lF7QNseA==}
 
   '@syncfusion/ej2-react-pdfviewer@27.1.53':
     resolution: {integrity: sha512-SYPl0wYkMGMY1QzxQzKpxxhPdLMK+zSN4GTYzF/Rbbq95WIcU2RHNvWs3UsS2ypSJhVTl5uXKFjfxd9D/yy9iw==}
@@ -4924,6 +4934,10 @@ snapshots:
     dependencies:
       '@syncfusion/ej2-icons': 27.1.50
 
+  '@syncfusion/ej2-base@27.1.55':
+    dependencies:
+      '@syncfusion/ej2-icons': 27.1.50
+
   '@syncfusion/ej2-buttons@27.1.53':
     dependencies:
       '@syncfusion/ej2-base': 27.1.54
@@ -5116,6 +5130,13 @@ snapshots:
       '@syncfusion/ej2-popups': 27.1.53
       '@syncfusion/ej2-splitbuttons': 27.1.50
 
+  '@syncfusion/ej2-inputs@27.1.55':
+    dependencies:
+      '@syncfusion/ej2-base': 27.1.55
+      '@syncfusion/ej2-buttons': 27.1.53
+      '@syncfusion/ej2-popups': 27.1.55
+      '@syncfusion/ej2-splitbuttons': 27.1.50
+
   '@syncfusion/ej2-interactive-chat@27.1.53':
     dependencies:
       '@syncfusion/ej2-base': 27.1.54
@@ -5167,15 +5188,6 @@ snapshots:
       '@syncfusion/ej2-base': 27.1.54
       '@syncfusion/ej2-grids': 27.1.53
 
-  '@syncfusion/ej2-navigations@27.1.52':
-    dependencies:
-      '@syncfusion/ej2-base': 27.1.54
-      '@syncfusion/ej2-buttons': 27.1.53
-      '@syncfusion/ej2-data': 27.1.52
-      '@syncfusion/ej2-inputs': 27.1.50
-      '@syncfusion/ej2-lists': 27.1.50
-      '@syncfusion/ej2-popups': 27.1.53
-
   '@syncfusion/ej2-navigations@27.1.53':
     dependencies:
       '@syncfusion/ej2-base': 27.1.54
@@ -5184,6 +5196,15 @@ snapshots:
       '@syncfusion/ej2-inputs': 27.1.50
       '@syncfusion/ej2-lists': 27.1.50
       '@syncfusion/ej2-popups': 27.1.53
+
+  '@syncfusion/ej2-navigations@27.1.55':
+    dependencies:
+      '@syncfusion/ej2-base': 27.1.55
+      '@syncfusion/ej2-buttons': 27.1.53
+      '@syncfusion/ej2-data': 27.1.52
+      '@syncfusion/ej2-inputs': 27.1.55
+      '@syncfusion/ej2-lists': 27.1.50
+      '@syncfusion/ej2-popups': 27.1.55
 
   '@syncfusion/ej2-notifications@27.1.50':
     dependencies:
@@ -5244,6 +5265,11 @@ snapshots:
       '@syncfusion/ej2-base': 27.1.54
       '@syncfusion/ej2-buttons': 27.1.53
 
+  '@syncfusion/ej2-popups@27.1.55':
+    dependencies:
+      '@syncfusion/ej2-base': 27.1.55
+      '@syncfusion/ej2-buttons': 27.1.53
+
   '@syncfusion/ej2-progressbar@27.1.50':
     dependencies:
       '@syncfusion/ej2-base': 27.1.54
@@ -5261,7 +5287,7 @@ snapshots:
 
   '@syncfusion/ej2-react-base@27.1.50':
     dependencies:
-      '@syncfusion/ej2-base': 27.1.54
+      '@syncfusion/ej2-base': 27.1.55
 
   '@syncfusion/ej2-react-buttons@27.1.53':
     dependencies:
@@ -5305,10 +5331,10 @@ snapshots:
       '@syncfusion/ej2-kanban': 27.1.53
       '@syncfusion/ej2-react-base': 27.1.50
 
-  '@syncfusion/ej2-react-navigations@27.1.52':
+  '@syncfusion/ej2-react-navigations@27.1.55':
     dependencies:
-      '@syncfusion/ej2-base': 27.1.54
-      '@syncfusion/ej2-navigations': 27.1.52
+      '@syncfusion/ej2-base': 27.1.55
+      '@syncfusion/ej2-navigations': 27.1.55
       '@syncfusion/ej2-react-base': 27.1.50
 
   '@syncfusion/ej2-react-pdfviewer@27.1.53':
