@@ -69,8 +69,8 @@ importers:
         specifier: ^27.1.53
         version: 27.1.53
       '@syncfusion/ej2-react-calendars':
-        specifier: ^27.1.52
-        version: 27.1.52
+        specifier: ^27.1.55
+        version: 27.1.55
       '@syncfusion/ej2-react-charts':
         specifier: ^27.1.53
         version: 27.1.53
@@ -1288,6 +1288,9 @@ packages:
   '@syncfusion/ej2-calendars@27.1.52':
     resolution: {integrity: sha512-XzblEqwEDAbmLraArkX63wprFDsQei6iD1ThjQ8YhIAbEfrkH2nd56rbnlfUlRjOJ0a9WpEyTve8F8OlNuKSKA==}
 
+  '@syncfusion/ej2-calendars@27.1.55':
+    resolution: {integrity: sha512-9srZUsOwnjipSZQyg+TecwjdmJw8dhMP4/PyOgUk48DpkdcMWrnUBVHeVUtgSRejLlNf05oJi3Fu3mI6jt2REg==}
+
   '@syncfusion/ej2-charts@27.1.53':
     resolution: {integrity: sha512-ABj6xYU2fHKP33pL8oXLRuomb40CMb711xheujGwmEBy1qUN0day8uLyJ/B7oTMApMhvCAE3Arel0EHQwIJCsQ==}
 
@@ -1411,8 +1414,8 @@ packages:
   '@syncfusion/ej2-react-buttons@27.1.53':
     resolution: {integrity: sha512-mKMzs4TCWsqRlXw0hpvifN0nmu5Q7YDzZZgCP6k9HrUIp7wluW/wKJsoRtBxnL/7VETJimCx64U1xCjkKMAORQ==}
 
-  '@syncfusion/ej2-react-calendars@27.1.52':
-    resolution: {integrity: sha512-0GYMdZtqp91UFbj0QWyMAJS3bowB/08u3Sb6Lmb+PRf0Pw6/j7Rt14m/8QjHeQnyrDyq1J4Y9/hUPw7ff9L13g==}
+  '@syncfusion/ej2-react-calendars@27.1.55':
+    resolution: {integrity: sha512-U55FuTs/5mkv6xjtsSk76s4Zz3mvR49AgiFOw9nUG1TCka4Mut2ZXzQ6OvkdPJsHlMSCttdPsGsU+KDJtcYR0A==}
 
   '@syncfusion/ej2-react-charts@27.1.53':
     resolution: {integrity: sha512-Cp35m7jTedfFMyBsu/CyPEUBbsHLbHiMkbcwjpCn/y9XfZUqbYVZztQaHk1NFNCWK3v5LRzNgbs1xxEXTFL1ow==}
@@ -4927,7 +4930,7 @@ snapshots:
 
   '@syncfusion/ej2-barcode-generator@27.1.53':
     dependencies:
-      '@syncfusion/ej2-base': 27.1.54
+      '@syncfusion/ej2-base': 27.1.55
       '@syncfusion/ej2-data': 27.1.52
 
   '@syncfusion/ej2-base@27.1.54':
@@ -4940,19 +4943,27 @@ snapshots:
 
   '@syncfusion/ej2-buttons@27.1.53':
     dependencies:
-      '@syncfusion/ej2-base': 27.1.54
+      '@syncfusion/ej2-base': 27.1.55
 
   '@syncfusion/ej2-calendars@27.1.52':
     dependencies:
-      '@syncfusion/ej2-base': 27.1.54
+      '@syncfusion/ej2-base': 27.1.55
       '@syncfusion/ej2-buttons': 27.1.53
       '@syncfusion/ej2-inputs': 27.1.50
       '@syncfusion/ej2-lists': 27.1.50
       '@syncfusion/ej2-popups': 27.1.53
 
+  '@syncfusion/ej2-calendars@27.1.55':
+    dependencies:
+      '@syncfusion/ej2-base': 27.1.55
+      '@syncfusion/ej2-buttons': 27.1.53
+      '@syncfusion/ej2-inputs': 27.1.55
+      '@syncfusion/ej2-lists': 27.1.50
+      '@syncfusion/ej2-popups': 27.1.55
+
   '@syncfusion/ej2-charts@27.1.53':
     dependencies:
-      '@syncfusion/ej2-base': 27.1.54
+      '@syncfusion/ej2-base': 27.1.55
       '@syncfusion/ej2-calendars': 27.1.52
       '@syncfusion/ej2-data': 27.1.52
       '@syncfusion/ej2-excel-export': 27.1.50
@@ -4962,7 +4973,7 @@ snapshots:
 
   '@syncfusion/ej2-circulargauge@27.1.50':
     dependencies:
-      '@syncfusion/ej2-base': 27.1.54
+      '@syncfusion/ej2-base': 27.1.55
       '@syncfusion/ej2-pdf-export': 27.1.51
       '@syncfusion/ej2-svg-base': 27.1.50
 
@@ -4972,11 +4983,11 @@ snapshots:
 
   '@syncfusion/ej2-data@27.1.52':
     dependencies:
-      '@syncfusion/ej2-base': 27.1.54
+      '@syncfusion/ej2-base': 27.1.55
 
   '@syncfusion/ej2-diagrams@27.1.53':
     dependencies:
-      '@syncfusion/ej2-base': 27.1.54
+      '@syncfusion/ej2-base': 27.1.55
       '@syncfusion/ej2-buttons': 27.1.53
       '@syncfusion/ej2-data': 27.1.52
       '@syncfusion/ej2-inputs': 27.1.50
@@ -4986,7 +4997,7 @@ snapshots:
 
   '@syncfusion/ej2-documenteditor@27.1.53':
     dependencies:
-      '@syncfusion/ej2-base': 27.1.54
+      '@syncfusion/ej2-base': 27.1.55
       '@syncfusion/ej2-buttons': 27.1.53
       '@syncfusion/ej2-calendars': 27.1.52
       '@syncfusion/ej2-compression': 27.1.50
@@ -5000,12 +5011,12 @@ snapshots:
 
   '@syncfusion/ej2-drawings@27.1.53':
     dependencies:
-      '@syncfusion/ej2-base': 27.1.54
+      '@syncfusion/ej2-base': 27.1.55
       '@syncfusion/ej2-data': 27.1.52
 
   '@syncfusion/ej2-dropdowns@27.1.53':
     dependencies:
-      '@syncfusion/ej2-base': 27.1.54
+      '@syncfusion/ej2-base': 27.1.55
       '@syncfusion/ej2-data': 27.1.52
       '@syncfusion/ej2-inputs': 27.1.50
       '@syncfusion/ej2-lists': 27.1.50
@@ -5015,14 +5026,14 @@ snapshots:
 
   '@syncfusion/ej2-excel-export@27.1.50':
     dependencies:
-      '@syncfusion/ej2-base': 27.1.54
+      '@syncfusion/ej2-base': 27.1.55
       '@syncfusion/ej2-compression': 27.1.50
 
   '@syncfusion/ej2-file-utils@27.1.50': {}
 
   '@syncfusion/ej2-filemanager@27.1.53':
     dependencies:
-      '@syncfusion/ej2-base': 27.1.54
+      '@syncfusion/ej2-base': 27.1.55
       '@syncfusion/ej2-buttons': 27.1.53
       '@syncfusion/ej2-data': 27.1.52
       '@syncfusion/ej2-grids': 27.1.53
@@ -5035,7 +5046,7 @@ snapshots:
 
   '@syncfusion/ej2-gantt@27.1.53':
     dependencies:
-      '@syncfusion/ej2-base': 27.1.54
+      '@syncfusion/ej2-base': 27.1.55
       '@syncfusion/ej2-buttons': 27.1.53
       '@syncfusion/ej2-calendars': 27.1.52
       '@syncfusion/ej2-data': 27.1.52
@@ -5053,7 +5064,7 @@ snapshots:
 
   '@syncfusion/ej2-grids@27.1.52':
     dependencies:
-      '@syncfusion/ej2-base': 27.1.54
+      '@syncfusion/ej2-base': 27.1.55
       '@syncfusion/ej2-buttons': 27.1.53
       '@syncfusion/ej2-calendars': 27.1.52
       '@syncfusion/ej2-compression': 27.1.50
@@ -5071,7 +5082,7 @@ snapshots:
 
   '@syncfusion/ej2-grids@27.1.53':
     dependencies:
-      '@syncfusion/ej2-base': 27.1.54
+      '@syncfusion/ej2-base': 27.1.55
       '@syncfusion/ej2-buttons': 27.1.53
       '@syncfusion/ej2-calendars': 27.1.52
       '@syncfusion/ej2-compression': 27.1.50
@@ -5089,7 +5100,7 @@ snapshots:
 
   '@syncfusion/ej2-heatmap@27.1.50':
     dependencies:
-      '@syncfusion/ej2-base': 27.1.54
+      '@syncfusion/ej2-base': 27.1.55
       '@syncfusion/ej2-compression': 27.1.50
       '@syncfusion/ej2-data': 27.1.52
       '@syncfusion/ej2-file-utils': 27.1.50
@@ -5100,7 +5111,7 @@ snapshots:
 
   '@syncfusion/ej2-image-editor@27.1.53':
     dependencies:
-      '@syncfusion/ej2-base': 27.1.54
+      '@syncfusion/ej2-base': 27.1.55
       '@syncfusion/ej2-buttons': 27.1.53
       '@syncfusion/ej2-dropdowns': 27.1.53
       '@syncfusion/ej2-inputs': 27.1.50
@@ -5110,7 +5121,7 @@ snapshots:
 
   '@syncfusion/ej2-inplace-editor@27.1.50':
     dependencies:
-      '@syncfusion/ej2-base': 27.1.54
+      '@syncfusion/ej2-base': 27.1.55
       '@syncfusion/ej2-buttons': 27.1.53
       '@syncfusion/ej2-calendars': 27.1.52
       '@syncfusion/ej2-data': 27.1.52
@@ -5125,7 +5136,7 @@ snapshots:
 
   '@syncfusion/ej2-inputs@27.1.50':
     dependencies:
-      '@syncfusion/ej2-base': 27.1.54
+      '@syncfusion/ej2-base': 27.1.55
       '@syncfusion/ej2-buttons': 27.1.53
       '@syncfusion/ej2-popups': 27.1.53
       '@syncfusion/ej2-splitbuttons': 27.1.50
@@ -5139,14 +5150,14 @@ snapshots:
 
   '@syncfusion/ej2-interactive-chat@27.1.53':
     dependencies:
-      '@syncfusion/ej2-base': 27.1.54
+      '@syncfusion/ej2-base': 27.1.55
       '@syncfusion/ej2-inputs': 27.1.50
       '@syncfusion/ej2-navigations': 27.1.53
       '@syncfusion/ej2-notifications': 27.1.50
 
   '@syncfusion/ej2-kanban@27.1.53':
     dependencies:
-      '@syncfusion/ej2-base': 27.1.54
+      '@syncfusion/ej2-base': 27.1.55
       '@syncfusion/ej2-buttons': 27.1.53
       '@syncfusion/ej2-data': 27.1.52
       '@syncfusion/ej2-dropdowns': 27.1.53
@@ -5158,24 +5169,24 @@ snapshots:
 
   '@syncfusion/ej2-layouts@27.1.53':
     dependencies:
-      '@syncfusion/ej2-base': 27.1.54
+      '@syncfusion/ej2-base': 27.1.55
 
   '@syncfusion/ej2-lineargauge@27.1.50':
     dependencies:
-      '@syncfusion/ej2-base': 27.1.54
+      '@syncfusion/ej2-base': 27.1.55
       '@syncfusion/ej2-pdf-export': 27.1.51
       '@syncfusion/ej2-svg-base': 27.1.50
 
   '@syncfusion/ej2-lists@27.1.50':
     dependencies:
-      '@syncfusion/ej2-base': 27.1.54
+      '@syncfusion/ej2-base': 27.1.55
       '@syncfusion/ej2-buttons': 27.1.53
       '@syncfusion/ej2-data': 27.1.52
       '@syncfusion/ej2-popups': 27.1.53
 
   '@syncfusion/ej2-maps@27.1.50':
     dependencies:
-      '@syncfusion/ej2-base': 27.1.54
+      '@syncfusion/ej2-base': 27.1.55
       '@syncfusion/ej2-buttons': 27.1.53
       '@syncfusion/ej2-compression': 27.1.50
       '@syncfusion/ej2-data': 27.1.52
@@ -5185,12 +5196,12 @@ snapshots:
 
   '@syncfusion/ej2-multicolumn-combobox@27.1.50':
     dependencies:
-      '@syncfusion/ej2-base': 27.1.54
+      '@syncfusion/ej2-base': 27.1.55
       '@syncfusion/ej2-grids': 27.1.53
 
   '@syncfusion/ej2-navigations@27.1.53':
     dependencies:
-      '@syncfusion/ej2-base': 27.1.54
+      '@syncfusion/ej2-base': 27.1.55
       '@syncfusion/ej2-buttons': 27.1.53
       '@syncfusion/ej2-data': 27.1.52
       '@syncfusion/ej2-inputs': 27.1.50
@@ -5208,7 +5219,7 @@ snapshots:
 
   '@syncfusion/ej2-notifications@27.1.50':
     dependencies:
-      '@syncfusion/ej2-base': 27.1.54
+      '@syncfusion/ej2-base': 27.1.55
       '@syncfusion/ej2-buttons': 27.1.53
       '@syncfusion/ej2-popups': 27.1.53
 
@@ -5222,12 +5233,12 @@ snapshots:
 
   '@syncfusion/ej2-pdf@27.1.53':
     dependencies:
-      '@syncfusion/ej2-base': 27.1.54
+      '@syncfusion/ej2-base': 27.1.55
       '@syncfusion/ej2-compression': 27.1.50
 
   '@syncfusion/ej2-pdfviewer@27.1.53':
     dependencies:
-      '@syncfusion/ej2-base': 27.1.54
+      '@syncfusion/ej2-base': 27.1.55
       '@syncfusion/ej2-buttons': 27.1.53
       '@syncfusion/ej2-data': 27.1.52
       '@syncfusion/ej2-drawings': 27.1.53
@@ -5242,7 +5253,7 @@ snapshots:
 
   '@syncfusion/ej2-pivotview@27.1.53':
     dependencies:
-      '@syncfusion/ej2-base': 27.1.54
+      '@syncfusion/ej2-base': 27.1.55
       '@syncfusion/ej2-buttons': 27.1.53
       '@syncfusion/ej2-calendars': 27.1.52
       '@syncfusion/ej2-charts': 27.1.53
@@ -5262,7 +5273,7 @@ snapshots:
 
   '@syncfusion/ej2-popups@27.1.53':
     dependencies:
-      '@syncfusion/ej2-base': 27.1.54
+      '@syncfusion/ej2-base': 27.1.55
       '@syncfusion/ej2-buttons': 27.1.53
 
   '@syncfusion/ej2-popups@27.1.55':
@@ -5272,13 +5283,13 @@ snapshots:
 
   '@syncfusion/ej2-progressbar@27.1.50':
     dependencies:
-      '@syncfusion/ej2-base': 27.1.54
+      '@syncfusion/ej2-base': 27.1.55
       '@syncfusion/ej2-data': 27.1.52
       '@syncfusion/ej2-svg-base': 27.1.50
 
   '@syncfusion/ej2-querybuilder@27.1.53':
     dependencies:
-      '@syncfusion/ej2-base': 27.1.54
+      '@syncfusion/ej2-base': 27.1.55
       '@syncfusion/ej2-buttons': 27.1.53
       '@syncfusion/ej2-calendars': 27.1.52
       '@syncfusion/ej2-dropdowns': 27.1.53
@@ -5295,10 +5306,10 @@ snapshots:
       '@syncfusion/ej2-buttons': 27.1.53
       '@syncfusion/ej2-react-base': 27.1.50
 
-  '@syncfusion/ej2-react-calendars@27.1.52':
+  '@syncfusion/ej2-react-calendars@27.1.55':
     dependencies:
-      '@syncfusion/ej2-base': 27.1.54
-      '@syncfusion/ej2-calendars': 27.1.52
+      '@syncfusion/ej2-base': 27.1.55
+      '@syncfusion/ej2-calendars': 27.1.55
       '@syncfusion/ej2-react-base': 27.1.50
 
   '@syncfusion/ej2-react-charts@27.1.53':
@@ -5369,7 +5380,7 @@ snapshots:
 
   '@syncfusion/ej2-ribbon@27.1.50':
     dependencies:
-      '@syncfusion/ej2-base': 27.1.54
+      '@syncfusion/ej2-base': 27.1.55
       '@syncfusion/ej2-buttons': 27.1.53
       '@syncfusion/ej2-dropdowns': 27.1.53
       '@syncfusion/ej2-lists': 27.1.50
@@ -5379,7 +5390,7 @@ snapshots:
 
   '@syncfusion/ej2-richtexteditor@27.1.52':
     dependencies:
-      '@syncfusion/ej2-base': 27.1.54
+      '@syncfusion/ej2-base': 27.1.55
       '@syncfusion/ej2-buttons': 27.1.53
       '@syncfusion/ej2-dropdowns': 27.1.53
       '@syncfusion/ej2-filemanager': 27.1.53
@@ -5390,7 +5401,7 @@ snapshots:
 
   '@syncfusion/ej2-schedule@27.1.53':
     dependencies:
-      '@syncfusion/ej2-base': 27.1.54
+      '@syncfusion/ej2-base': 27.1.55
       '@syncfusion/ej2-buttons': 27.1.53
       '@syncfusion/ej2-calendars': 27.1.52
       '@syncfusion/ej2-data': 27.1.52
@@ -5403,12 +5414,12 @@ snapshots:
 
   '@syncfusion/ej2-splitbuttons@27.1.50':
     dependencies:
-      '@syncfusion/ej2-base': 27.1.54
+      '@syncfusion/ej2-base': 27.1.55
       '@syncfusion/ej2-popups': 27.1.53
 
   '@syncfusion/ej2-spreadsheet@27.1.53':
     dependencies:
-      '@syncfusion/ej2-base': 27.1.54
+      '@syncfusion/ej2-base': 27.1.55
       '@syncfusion/ej2-charts': 27.1.53
       '@syncfusion/ej2-dropdowns': 27.1.53
       '@syncfusion/ej2-grids': 27.1.53
@@ -5416,18 +5427,18 @@ snapshots:
 
   '@syncfusion/ej2-svg-base@27.1.50':
     dependencies:
-      '@syncfusion/ej2-base': 27.1.54
+      '@syncfusion/ej2-base': 27.1.55
 
   '@syncfusion/ej2-treegrid@27.1.53':
     dependencies:
-      '@syncfusion/ej2-base': 27.1.54
+      '@syncfusion/ej2-base': 27.1.55
       '@syncfusion/ej2-data': 27.1.52
       '@syncfusion/ej2-grids': 27.1.53
       '@syncfusion/ej2-popups': 27.1.53
 
   '@syncfusion/ej2-treemap@27.1.53':
     dependencies:
-      '@syncfusion/ej2-base': 27.1.54
+      '@syncfusion/ej2-base': 27.1.55
       '@syncfusion/ej2-compression': 27.1.50
       '@syncfusion/ej2-data': 27.1.52
       '@syncfusion/ej2-file-utils': 27.1.50
