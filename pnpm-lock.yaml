@@ -81,8 +81,8 @@ importers:
         specifier: ^27.1.55
         version: 27.1.55
       '@syncfusion/ej2-react-inputs':
-        specifier: ^27.1.50
-        version: 27.1.50
+        specifier: ^27.1.55
+        version: 27.1.55
       '@syncfusion/ej2-react-kanban':
         specifier: ^27.1.53
         version: 27.1.53
@@ -536,28 +536,24 @@ packages:
     engines: {node: '>= 10'}
     cpu: [arm64]
     os: [linux]
-    libc: [glibc]
 
   '@next/swc-linux-arm64-musl@14.2.13':
     resolution: {integrity: sha512-v5jZ/FV/eHGoWhMKYrsAweQ7CWb8xsWGM/8m1mwwZQ/sutJjoFaXchwK4pX8NqwImILEvQmZWyb8pPTcP7htWg==}
     engines: {node: '>= 10'}
     cpu: [arm64]
     os: [linux]
-    libc: [musl]
 
   '@next/swc-linux-x64-gnu@14.2.13':
     resolution: {integrity: sha512-aVc7m4YL7ViiRv7SOXK3RplXzOEe/qQzRA5R2vpXboHABs3w8vtFslGTz+5tKiQzWUmTmBNVW0UQdhkKRORmGA==}
     engines: {node: '>= 10'}
     cpu: [x64]
     os: [linux]
-    libc: [glibc]
 
   '@next/swc-linux-x64-musl@14.2.13':
     resolution: {integrity: sha512-4wWY7/OsSaJOOKvMsu1Teylku7vKyTuocvDLTZQq0TYv9OjiYYWt63PiE1nTuZnqQ4RPvME7Xai+9enoiN0Wrg==}
     engines: {node: '>= 10'}
     cpu: [x64]
     os: [linux]
-    libc: [musl]
 
   '@next/swc-win32-arm64-msvc@14.2.13':
     resolution: {integrity: sha512-uP1XkqCqV2NVH9+g2sC7qIw+w2tRbcMiXFEbMihkQ8B1+V6m28sshBwAB0SDmOe0u44ne1vFU66+gx/28RsBVQ==}
@@ -625,35 +621,30 @@ packages:
     engines: {node: '>= 10.0.0'}
     cpu: [arm]
     os: [linux]
-    libc: [glibc]
 
   '@parcel/watcher-linux-arm64-glibc@2.4.1':
     resolution: {integrity: sha512-BJ7mH985OADVLpbrzCLgrJ3TOpiZggE9FMblfO65PlOCdG++xJpKUJ0Aol74ZUIYfb8WsRlUdgrZxKkz3zXWYA==}
     engines: {node: '>= 10.0.0'}
     cpu: [arm64]
     os: [linux]
-    libc: [glibc]
 
   '@parcel/watcher-linux-arm64-musl@2.4.1':
     resolution: {integrity: sha512-p4Xb7JGq3MLgAfYhslU2SjoV9G0kI0Xry0kuxeG/41UfpjHGOhv7UoUDAz/jb1u2elbhazy4rRBL8PegPJFBhA==}
     engines: {node: '>= 10.0.0'}
     cpu: [arm64]
     os: [linux]
-    libc: [musl]
 
   '@parcel/watcher-linux-x64-glibc@2.4.1':
     resolution: {integrity: sha512-s9O3fByZ/2pyYDPoLM6zt92yu6P4E39a03zvO0qCHOTjxmt3GHRMLuRZEWhWLASTMSrrnVNWdVI/+pUElJBBBg==}
     engines: {node: '>= 10.0.0'}
     cpu: [x64]
     os: [linux]
-    libc: [glibc]
 
   '@parcel/watcher-linux-x64-musl@2.4.1':
     resolution: {integrity: sha512-L2nZTYR1myLNST0O632g0Dx9LyMNHrn6TOt76sYxWLdff3cB22/GZX2UPtJnaqQPdCRoszoY5rcOj4oMTtp5fQ==}
     engines: {node: '>= 10.0.0'}
     cpu: [x64]
     os: [linux]
-    libc: [musl]
 
   '@parcel/watcher-win32-arm64@2.4.1':
     resolution: {integrity: sha512-Uq2BPp5GWhrq/lcuItCHoqxjULU1QYEcyjSO5jqqOK8RNFDBQnenMMx4gAl3v8GiWa59E9+uDM7yZ6LxwUIfRg==}
@@ -1443,8 +1434,8 @@ packages:
   '@syncfusion/ej2-react-grids@27.1.55':
     resolution: {integrity: sha512-v0e1VlEMr8jHINW0GFRE/F/qysBF/CuidxhBghTUV7LlzZcCXjn3+g2BSCaBNKizF8WMeLVxJQqXfhwXsPGdEA==}
 
-  '@syncfusion/ej2-react-inputs@27.1.50':
-    resolution: {integrity: sha512-982Qu25YO60TWPU1ljSaawte9ffeUFig4U9fVYA7u393qnCrhuWMrUzbU8CyCvQGFEBN2SvSknN+T8JbCK8rag==}
+  '@syncfusion/ej2-react-inputs@27.1.55':
+    resolution: {integrity: sha512-mNNpYxZDLKuc3Z5Td7drAB0UbuQ5JWL+qeCFypnPKtXten77hiF1DYDxi5P/XZXmZrFMNULLXOq5XC4DGSWwMw==}
 
   '@syncfusion/ej2-react-kanban@27.1.53':
     resolution: {integrity: sha512-mmqVZftyMq74udeoD20OHuO1zeIfeHkF+kXBAC9UkrntGclXNuMofJcqLzd+/taEwLGcqGoy/kYEYYEQ84981g==}
@@ -4981,7 +4972,7 @@ snapshots:
     dependencies:
       '@syncfusion/ej2-base': 27.1.55
       '@syncfusion/ej2-buttons': 27.1.53
-      '@syncfusion/ej2-inputs': 27.1.50
+      '@syncfusion/ej2-inputs': 27.1.55
       '@syncfusion/ej2-lists': 27.1.50
       '@syncfusion/ej2-popups': 27.1.53
 
@@ -5026,7 +5017,7 @@ snapshots:
       '@syncfusion/ej2-base': 27.1.55
       '@syncfusion/ej2-buttons': 27.1.53
       '@syncfusion/ej2-data': 27.1.52
-      '@syncfusion/ej2-inputs': 27.1.50
+      '@syncfusion/ej2-inputs': 27.1.55
       '@syncfusion/ej2-lists': 27.1.50
       '@syncfusion/ej2-navigations': 27.1.53
       '@syncfusion/ej2-popups': 27.1.53
@@ -5039,7 +5030,7 @@ snapshots:
       '@syncfusion/ej2-compression': 27.1.50
       '@syncfusion/ej2-dropdowns': 27.1.53
       '@syncfusion/ej2-file-utils': 27.1.50
-      '@syncfusion/ej2-inputs': 27.1.50
+      '@syncfusion/ej2-inputs': 27.1.55
       '@syncfusion/ej2-navigations': 27.1.53
       '@syncfusion/ej2-office-chart': 27.1.51
       '@syncfusion/ej2-popups': 27.1.53
@@ -5054,7 +5045,7 @@ snapshots:
     dependencies:
       '@syncfusion/ej2-base': 27.1.55
       '@syncfusion/ej2-data': 27.1.52
-      '@syncfusion/ej2-inputs': 27.1.50
+      '@syncfusion/ej2-inputs': 27.1.55
       '@syncfusion/ej2-lists': 27.1.50
       '@syncfusion/ej2-navigations': 27.1.53
       '@syncfusion/ej2-notifications': 27.1.50
@@ -5085,7 +5076,7 @@ snapshots:
       '@syncfusion/ej2-buttons': 27.1.53
       '@syncfusion/ej2-data': 27.1.52
       '@syncfusion/ej2-grids': 27.1.53
-      '@syncfusion/ej2-inputs': 27.1.50
+      '@syncfusion/ej2-inputs': 27.1.55
       '@syncfusion/ej2-layouts': 27.1.53
       '@syncfusion/ej2-lists': 27.1.50
       '@syncfusion/ej2-navigations': 27.1.53
@@ -5113,7 +5104,7 @@ snapshots:
       '@syncfusion/ej2-data': 27.1.52
       '@syncfusion/ej2-dropdowns': 27.1.53
       '@syncfusion/ej2-grids': 27.1.53
-      '@syncfusion/ej2-inputs': 27.1.50
+      '@syncfusion/ej2-inputs': 27.1.55
       '@syncfusion/ej2-layouts': 27.1.53
       '@syncfusion/ej2-lists': 27.1.50
       '@syncfusion/ej2-navigations': 27.1.53
@@ -5133,7 +5124,7 @@ snapshots:
       '@syncfusion/ej2-dropdowns': 27.1.53
       '@syncfusion/ej2-excel-export': 27.1.50
       '@syncfusion/ej2-file-utils': 27.1.50
-      '@syncfusion/ej2-inputs': 27.1.50
+      '@syncfusion/ej2-inputs': 27.1.55
       '@syncfusion/ej2-lists': 27.1.50
       '@syncfusion/ej2-navigations': 27.1.53
       '@syncfusion/ej2-notifications': 27.1.50
@@ -5175,7 +5166,7 @@ snapshots:
       '@syncfusion/ej2-base': 27.1.55
       '@syncfusion/ej2-buttons': 27.1.53
       '@syncfusion/ej2-dropdowns': 27.1.53
-      '@syncfusion/ej2-inputs': 27.1.50
+      '@syncfusion/ej2-inputs': 27.1.55
       '@syncfusion/ej2-navigations': 27.1.53
       '@syncfusion/ej2-popups': 27.1.53
       '@syncfusion/ej2-splitbuttons': 27.1.50
@@ -5187,7 +5178,7 @@ snapshots:
       '@syncfusion/ej2-calendars': 27.1.52
       '@syncfusion/ej2-data': 27.1.52
       '@syncfusion/ej2-dropdowns': 27.1.53
-      '@syncfusion/ej2-inputs': 27.1.50
+      '@syncfusion/ej2-inputs': 27.1.55
       '@syncfusion/ej2-lists': 27.1.50
       '@syncfusion/ej2-navigations': 27.1.53
       '@syncfusion/ej2-notifications': 27.1.50
@@ -5212,7 +5203,7 @@ snapshots:
   '@syncfusion/ej2-interactive-chat@27.1.53':
     dependencies:
       '@syncfusion/ej2-base': 27.1.55
-      '@syncfusion/ej2-inputs': 27.1.50
+      '@syncfusion/ej2-inputs': 27.1.55
       '@syncfusion/ej2-navigations': 27.1.53
       '@syncfusion/ej2-notifications': 27.1.50
 
@@ -5222,7 +5213,7 @@ snapshots:
       '@syncfusion/ej2-buttons': 27.1.53
       '@syncfusion/ej2-data': 27.1.52
       '@syncfusion/ej2-dropdowns': 27.1.53
-      '@syncfusion/ej2-inputs': 27.1.50
+      '@syncfusion/ej2-inputs': 27.1.55
       '@syncfusion/ej2-layouts': 27.1.53
       '@syncfusion/ej2-navigations': 27.1.53
       '@syncfusion/ej2-notifications': 27.1.50
@@ -5265,7 +5256,7 @@ snapshots:
       '@syncfusion/ej2-base': 27.1.55
       '@syncfusion/ej2-buttons': 27.1.53
       '@syncfusion/ej2-data': 27.1.52
-      '@syncfusion/ej2-inputs': 27.1.50
+      '@syncfusion/ej2-inputs': 27.1.55
       '@syncfusion/ej2-lists': 27.1.50
       '@syncfusion/ej2-popups': 27.1.53
 
@@ -5305,7 +5296,7 @@ snapshots:
       '@syncfusion/ej2-drawings': 27.1.53
       '@syncfusion/ej2-dropdowns': 27.1.53
       '@syncfusion/ej2-inplace-editor': 27.1.50
-      '@syncfusion/ej2-inputs': 27.1.50
+      '@syncfusion/ej2-inputs': 27.1.55
       '@syncfusion/ej2-lists': 27.1.50
       '@syncfusion/ej2-navigations': 27.1.53
       '@syncfusion/ej2-notifications': 27.1.50
@@ -5324,7 +5315,7 @@ snapshots:
       '@syncfusion/ej2-excel-export': 27.1.50
       '@syncfusion/ej2-file-utils': 27.1.50
       '@syncfusion/ej2-grids': 27.1.53
-      '@syncfusion/ej2-inputs': 27.1.50
+      '@syncfusion/ej2-inputs': 27.1.55
       '@syncfusion/ej2-lists': 27.1.50
       '@syncfusion/ej2-navigations': 27.1.53
       '@syncfusion/ej2-pdf-export': 27.1.51
@@ -5354,7 +5345,7 @@ snapshots:
       '@syncfusion/ej2-buttons': 27.1.53
       '@syncfusion/ej2-calendars': 27.1.52
       '@syncfusion/ej2-dropdowns': 27.1.53
-      '@syncfusion/ej2-inputs': 27.1.50
+      '@syncfusion/ej2-inputs': 27.1.55
       '@syncfusion/ej2-splitbuttons': 27.1.50
 
   '@syncfusion/ej2-react-base@27.1.50':
@@ -5391,10 +5382,10 @@ snapshots:
       '@syncfusion/ej2-grids': 27.1.55
       '@syncfusion/ej2-react-base': 27.1.50
 
-  '@syncfusion/ej2-react-inputs@27.1.50':
+  '@syncfusion/ej2-react-inputs@27.1.55':
     dependencies:
       '@syncfusion/ej2-base': 27.1.55
-      '@syncfusion/ej2-inputs': 27.1.50
+      '@syncfusion/ej2-inputs': 27.1.55
       '@syncfusion/ej2-react-base': 27.1.50
 
   '@syncfusion/ej2-react-kanban@27.1.53':
@@ -5455,7 +5446,7 @@ snapshots:
       '@syncfusion/ej2-buttons': 27.1.53
       '@syncfusion/ej2-dropdowns': 27.1.53
       '@syncfusion/ej2-filemanager': 27.1.53
-      '@syncfusion/ej2-inputs': 27.1.50
+      '@syncfusion/ej2-inputs': 27.1.55
       '@syncfusion/ej2-navigations': 27.1.53
       '@syncfusion/ej2-popups': 27.1.53
       '@syncfusion/ej2-splitbuttons': 27.1.50
@@ -5479,7 +5470,7 @@ snapshots:
       '@syncfusion/ej2-data': 27.1.52
       '@syncfusion/ej2-dropdowns': 27.1.53
       '@syncfusion/ej2-excel-export': 27.1.50
-      '@syncfusion/ej2-inputs': 27.1.50
+      '@syncfusion/ej2-inputs': 27.1.55
       '@syncfusion/ej2-lists': 27.1.50
       '@syncfusion/ej2-navigations': 27.1.53
       '@syncfusion/ej2-popups': 27.1.53
@@ -6353,7 +6344,7 @@ snapshots:
       debug: 4.3.7
       enhanced-resolve: 5.17.1
       eslint: 9.11.0(jiti@1.21.6)
-      eslint-module-utils: 2.11.0(@typescript-eslint/parser@7.2.0(eslint@9.11.0(jiti@1.21.6))(typescript@5.6.3))(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.6.3)(eslint@9.11.0(jiti@1.21.6))
+      eslint-module-utils: 2.11.0(@typescript-eslint/parser@7.2.0(eslint@9.11.0(jiti@1.21.6))(typescript@5.6.3))(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.6.3(@typescript-eslint/parser@7.2.0(eslint@9.11.0(jiti@1.21.6))(typescript@5.6.3))(eslint-import-resolver-node@0.3.9)(eslint-plugin-import@2.31.0)(eslint@9.11.0(jiti@1.21.6)))(eslint@9.11.0(jiti@1.21.6))
       fast-glob: 3.3.2
       get-tsconfig: 4.8.1
       is-bun-module: 1.2.1
@@ -6366,7 +6357,7 @@ snapshots:
       - eslint-import-resolver-webpack
       - supports-color
 
-  eslint-module-utils@2.11.0(@typescript-eslint/parser@7.2.0(eslint@9.11.0(jiti@1.21.6))(typescript@5.6.3))(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.6.3)(eslint@9.11.0(jiti@1.21.6)):
+  eslint-module-utils@2.11.0(@typescript-eslint/parser@7.2.0(eslint@9.11.0(jiti@1.21.6))(typescript@5.6.3))(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.6.3(@typescript-eslint/parser@7.2.0(eslint@9.11.0(jiti@1.21.6))(typescript@5.6.3))(eslint-import-resolver-node@0.3.9)(eslint-plugin-import@2.31.0)(eslint@9.11.0(jiti@1.21.6)))(eslint@9.11.0(jiti@1.21.6)):
     dependencies:
       debug: 3.2.7
     optionalDependencies:
@@ -6377,7 +6368,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  eslint-module-utils@2.12.0(@typescript-eslint/parser@7.2.0(eslint@9.11.0(jiti@1.21.6))(typescript@5.6.3))(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.6.3)(eslint@9.11.0(jiti@1.21.6)):
+  eslint-module-utils@2.12.0(@typescript-eslint/parser@7.2.0(eslint@9.11.0(jiti@1.21.6))(typescript@5.6.3))(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.6.3(@typescript-eslint/parser@7.2.0(eslint@9.11.0(jiti@1.21.6))(typescript@5.6.3))(eslint-import-resolver-node@0.3.9)(eslint-plugin-import@2.31.0)(eslint@9.11.0(jiti@1.21.6)))(eslint@9.11.0(jiti@1.21.6)):
     dependencies:
       debug: 3.2.7
     optionalDependencies:
@@ -6399,7 +6390,7 @@ snapshots:
       doctrine: 2.1.0
       eslint: 9.11.0(jiti@1.21.6)
       eslint-import-resolver-node: 0.3.9
-      eslint-module-utils: 2.12.0(@typescript-eslint/parser@7.2.0(eslint@9.11.0(jiti@1.21.6))(typescript@5.6.3))(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.6.3)(eslint@9.11.0(jiti@1.21.6))
+      eslint-module-utils: 2.12.0(@typescript-eslint/parser@7.2.0(eslint@9.11.0(jiti@1.21.6))(typescript@5.6.3))(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.6.3(@typescript-eslint/parser@7.2.0(eslint@9.11.0(jiti@1.21.6))(typescript@5.6.3))(eslint-import-resolver-node@0.3.9)(eslint-plugin-import@2.31.0)(eslint@9.11.0(jiti@1.21.6)))(eslint@9.11.0(jiti@1.21.6))
       hasown: 2.0.2
       is-core-module: 2.15.1
       is-glob: 4.0.3
