@@ -25,7 +25,7 @@ importers:
         version: 3.9.0(react-hook-form@7.53.1(react@18.3.1))
       '@next-auth/prisma-adapter':
         specifier: ^1.0.7
-        version: 1.0.7(@prisma/client@5.21.1(prisma@5.21.1))(next-auth@4.24.8(next@14.2.13(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.80.3))(react-dom@18.3.1(react@18.3.1))(react@18.3.1))
+        version: 1.0.7(@prisma/client@5.21.1(prisma@5.21.1))(next-auth@4.24.8(next@14.2.13(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.80.4))(react-dom@18.3.1(react@18.3.1))(react@18.3.1))
       '@prisma/client':
         specifier: ^5.21.1
         version: 5.21.1(prisma@5.21.1)
@@ -64,7 +64,7 @@ importers:
         version: 27.1.53
       '@syncfusion/ej2-base':
         specifier: ^27.1.54
-        version: 27.1.54
+        version: 27.1.55
       '@syncfusion/ej2-react-buttons':
         specifier: ^27.1.53
         version: 27.1.53
@@ -88,7 +88,7 @@ importers:
         version: 27.1.53
       '@syncfusion/ej2-react-navigations':
         specifier: ^27.1.55
-        version: 27.1.55
+        version: 27.1.56
       '@syncfusion/ej2-react-pdfviewer':
         specifier: ^27.1.53
         version: 27.1.53
@@ -133,16 +133,16 @@ importers:
         version: 0.0.28
       next:
         specifier: 14.2.13
-        version: 14.2.13(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.80.3)
+        version: 14.2.13(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.80.4)
       next-auth:
         specifier: ^4.24.8
-        version: 4.24.8(next@14.2.13(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.80.3))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+        version: 4.24.8(next@14.2.13(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.80.4))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       next-themes:
         specifier: ^0.3.0
         version: 0.3.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       openai:
         specifier: ^4.68.3
-        version: 4.68.3(zod@3.23.8)
+        version: 4.68.4(zod@3.23.8)
       react:
         specifier: ^18.3.1
         version: 18.3.1
@@ -163,7 +163,7 @@ importers:
         version: 2.2.7
       sass:
         specifier: ^1.80.3
-        version: 1.80.3
+        version: 1.80.4
       string-similarity:
         specifier: ^4.0.4
         version: 4.0.4
@@ -536,24 +536,28 @@ packages:
     engines: {node: '>= 10'}
     cpu: [arm64]
     os: [linux]
+    libc: [glibc]
 
   '@next/swc-linux-arm64-musl@14.2.13':
     resolution: {integrity: sha512-v5jZ/FV/eHGoWhMKYrsAweQ7CWb8xsWGM/8m1mwwZQ/sutJjoFaXchwK4pX8NqwImILEvQmZWyb8pPTcP7htWg==}
     engines: {node: '>= 10'}
     cpu: [arm64]
     os: [linux]
+    libc: [musl]
 
   '@next/swc-linux-x64-gnu@14.2.13':
     resolution: {integrity: sha512-aVc7m4YL7ViiRv7SOXK3RplXzOEe/qQzRA5R2vpXboHABs3w8vtFslGTz+5tKiQzWUmTmBNVW0UQdhkKRORmGA==}
     engines: {node: '>= 10'}
     cpu: [x64]
     os: [linux]
+    libc: [glibc]
 
   '@next/swc-linux-x64-musl@14.2.13':
     resolution: {integrity: sha512-4wWY7/OsSaJOOKvMsu1Teylku7vKyTuocvDLTZQq0TYv9OjiYYWt63PiE1nTuZnqQ4RPvME7Xai+9enoiN0Wrg==}
     engines: {node: '>= 10'}
     cpu: [x64]
     os: [linux]
+    libc: [musl]
 
   '@next/swc-win32-arm64-msvc@14.2.13':
     resolution: {integrity: sha512-uP1XkqCqV2NVH9+g2sC7qIw+w2tRbcMiXFEbMihkQ8B1+V6m28sshBwAB0SDmOe0u44ne1vFU66+gx/28RsBVQ==}
@@ -621,30 +625,35 @@ packages:
     engines: {node: '>= 10.0.0'}
     cpu: [arm]
     os: [linux]
+    libc: [glibc]
 
   '@parcel/watcher-linux-arm64-glibc@2.4.1':
     resolution: {integrity: sha512-BJ7mH985OADVLpbrzCLgrJ3TOpiZggE9FMblfO65PlOCdG++xJpKUJ0Aol74ZUIYfb8WsRlUdgrZxKkz3zXWYA==}
     engines: {node: '>= 10.0.0'}
     cpu: [arm64]
     os: [linux]
+    libc: [glibc]
 
   '@parcel/watcher-linux-arm64-musl@2.4.1':
     resolution: {integrity: sha512-p4Xb7JGq3MLgAfYhslU2SjoV9G0kI0Xry0kuxeG/41UfpjHGOhv7UoUDAz/jb1u2elbhazy4rRBL8PegPJFBhA==}
     engines: {node: '>= 10.0.0'}
     cpu: [arm64]
     os: [linux]
+    libc: [musl]
 
   '@parcel/watcher-linux-x64-glibc@2.4.1':
     resolution: {integrity: sha512-s9O3fByZ/2pyYDPoLM6zt92yu6P4E39a03zvO0qCHOTjxmt3GHRMLuRZEWhWLASTMSrrnVNWdVI/+pUElJBBBg==}
     engines: {node: '>= 10.0.0'}
     cpu: [x64]
     os: [linux]
+    libc: [glibc]
 
   '@parcel/watcher-linux-x64-musl@2.4.1':
     resolution: {integrity: sha512-L2nZTYR1myLNST0O632g0Dx9LyMNHrn6TOt76sYxWLdff3cB22/GZX2UPtJnaqQPdCRoszoY5rcOj4oMTtp5fQ==}
     engines: {node: '>= 10.0.0'}
     cpu: [x64]
     os: [linux]
+    libc: [musl]
 
   '@parcel/watcher-win32-arm64@2.4.1':
     resolution: {integrity: sha512-Uq2BPp5GWhrq/lcuItCHoqxjULU1QYEcyjSO5jqqOK8RNFDBQnenMMx4gAl3v8GiWa59E9+uDM7yZ6LxwUIfRg==}
@@ -1274,10 +1283,6 @@ packages:
   '@syncfusion/ej2-barcode-generator@27.1.53':
     resolution: {integrity: sha512-CNps8Tv60kL+bzGAeY7VVpv8vG5/Ru5TW5BvlOI8e6tnD7KCk++6N11tc+/Z/LiODWVz+UBDJAtHVbhpi/bmIA==}
 
-  '@syncfusion/ej2-base@27.1.54':
-    resolution: {integrity: sha512-yjZV4MM0bJ8YzLdR7jRrfhTtzbV5TKhVEQ9L/s4OCJDZUK99l14AJOEI6Bvs39nrLNt6ih1TACkK7qlskI10ew==}
-    hasBin: true
-
   '@syncfusion/ej2-base@27.1.55':
     resolution: {integrity: sha512-ZHtP1SGPfGrMtweYyvJk80piLcoFJCkmEQ/jg82NEldYeVfwYrw9W9OrPphkrzELu1WysrviwccUngWxAhykLA==}
     hasBin: true
@@ -1387,8 +1392,8 @@ packages:
   '@syncfusion/ej2-navigations@27.1.53':
     resolution: {integrity: sha512-JY/RTSno6dIh+7vaB0nSSLqIx+jaabRylEafyGGHYK9nWK68lGWP8krTuS/LbzRKfQPgYmBhBx0jrxNir95EjQ==}
 
-  '@syncfusion/ej2-navigations@27.1.55':
-    resolution: {integrity: sha512-fUqCBQrt230PvC2P3vngpBt3vjOOaABgDzuS2CCZ5Anee4759uwnLJaEa/7GwBy0WkyQ6dc09HgpC5MAqTyRZw==}
+  '@syncfusion/ej2-navigations@27.1.56':
+    resolution: {integrity: sha512-tdMijrY0dBV1H2uR/XkFMtNDNR1Cf+c0TI+S2v04mCt4gm/kQxnuNGMcrdXjiPv/3UV+qOstG0RvCqRxgcEk9Q==}
 
   '@syncfusion/ej2-notifications@27.1.50':
     resolution: {integrity: sha512-rRo8QCjo6KKLlg7MTEYRY5IJL85028yyOKhakhz9GWQGMJ4z8ippd4QHW8e3Q2GL9W3Ux9koo8gGg02OqIiJgA==}
@@ -1411,8 +1416,8 @@ packages:
   '@syncfusion/ej2-popups@27.1.53':
     resolution: {integrity: sha512-oETnIHplzjW58+Y2Kux+IJstYan/sqXfT6M0bkZ3DZCBWVv+dhrtgYHh+y3buE+fOivk6cw2AEww2PHSPySEyA==}
 
-  '@syncfusion/ej2-popups@27.1.55':
-    resolution: {integrity: sha512-ZJN3mdxhp3cBuo0NdqkGCsM3fr8GeJDirY28t/gcPAFy8d82DCA91J0qU6lix4peo0264UaPGTREFSeY5Jzapg==}
+  '@syncfusion/ej2-popups@27.1.56':
+    resolution: {integrity: sha512-TUD7lc1rUi8vkdA2+Ir+EM3FVQP+M14S7yZA04iECX186qx70EWX4iqIJkxrxAbf2MmsQHXeH9/C29Et7qd0Dg==}
 
   '@syncfusion/ej2-progressbar@27.1.50':
     resolution: {integrity: sha512-kQVtF6i+NTmSBkHdTjBw+YwgDE74TlfhaDueJq5JT3ZgsGPA4hjPtxStEm1Pjz5at4VzN+CCxpvswQM5p34tEg==}
@@ -1444,8 +1449,8 @@ packages:
   '@syncfusion/ej2-react-kanban@27.1.53':
     resolution: {integrity: sha512-mmqVZftyMq74udeoD20OHuO1zeIfeHkF+kXBAC9UkrntGclXNuMofJcqLzd+/taEwLGcqGoy/kYEYYEQ84981g==}
 
-  '@syncfusion/ej2-react-navigations@27.1.55':
-    resolution: {integrity: sha512-XdMWVJY22Cz9K6mokUjMQ0C6Ug38LCi4NjIW2wCq22m6benOkiM85J+lWaB6cKNwPqvBm/iBqYJoE5lF7QNseA==}
+  '@syncfusion/ej2-react-navigations@27.1.56':
+    resolution: {integrity: sha512-qYiCmeVbEnZwMsjexa8qHz+Mzk39FTohLBYId9V9xeWKUnlc2M+H7O9irnVMxRuhfU0y5a2FzXx4B+a9tZLRAg==}
 
   '@syncfusion/ej2-react-pdfviewer@27.1.53':
     resolution: {integrity: sha512-SYPl0wYkMGMY1QzxQzKpxxhPdLMK+zSN4GTYzF/Rbbq95WIcU2RHNvWs3UsS2ypSJhVTl5uXKFjfxd9D/yy9iw==}
@@ -3023,8 +3028,8 @@ packages:
     resolution: {integrity: sha512-7x81NCL719oNbsq/3mh+hVrAWmFuEYUqrq/Iw3kUzH8ReypT9QQ0BLoJS7/G9k6N81XjW4qHWtjWwe/9eLy1EQ==}
     engines: {node: '>=12'}
 
-  openai@4.68.3:
-    resolution: {integrity: sha512-KfnhZ7mR9rK/f0O1vJGRnB3aYuDGgVkNIegJFxGviV0SGDVGlTha7FR8UV9P0NbO6l/podml0E/rk2R1egY94w==}
+  openai@4.68.4:
+    resolution: {integrity: sha512-LRinV8iU9VQplkr25oZlyrsYGPGasIwYN8KFMAAFTHHLHjHhejtJ5BALuLFrkGzY4wfbKhOhuT+7lcHZ+F3iEA==}
     hasBin: true
     peerDependencies:
       zod: ^3.23.8
@@ -3433,8 +3438,8 @@ packages:
     resolution: {integrity: sha512-CdASjNJPvRa7roO6Ra/gLYBTzYzzPyyBXxIMdGW3USQLyjWEls2RgW5UBTXaQVp+OrpeCK3bLem8smtmheoRuw==}
     engines: {node: '>= 0.4'}
 
-  sass@1.80.3:
-    resolution: {integrity: sha512-ptDWyVmDMVielpz/oWy3YP3nfs7LpJTHIJZboMVs8GEC9eUmtZTZhMHlTW98wY4aEorDfjN38+Wr/XjskFWcfA==}
+  sass@1.80.4:
+    resolution: {integrity: sha512-rhMQ2tSF5CsuuspvC94nPM9rToiAFw2h3JTrLlgmNw1MH79v8Cr3DH6KF6o6r+8oofY3iYVPUf66KzC8yuVN1w==}
     engines: {node: '>=14.0.0'}
     hasBin: true
 
@@ -4293,10 +4298,10 @@ snapshots:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.5.0
 
-  '@next-auth/prisma-adapter@1.0.7(@prisma/client@5.21.1(prisma@5.21.1))(next-auth@4.24.8(next@14.2.13(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.80.3))(react-dom@18.3.1(react@18.3.1))(react@18.3.1))':
+  '@next-auth/prisma-adapter@1.0.7(@prisma/client@5.21.1(prisma@5.21.1))(next-auth@4.24.8(next@14.2.13(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.80.4))(react-dom@18.3.1(react@18.3.1))(react@18.3.1))':
     dependencies:
       '@prisma/client': 5.21.1(prisma@5.21.1)
-      next-auth: 4.24.8(next@14.2.13(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.80.3))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      next-auth: 4.24.8(next@14.2.13(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.80.4))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
 
   '@next/env@14.2.13': {}
 
@@ -4964,10 +4969,6 @@ snapshots:
       '@syncfusion/ej2-base': 27.1.55
       '@syncfusion/ej2-data': 27.1.52
 
-  '@syncfusion/ej2-base@27.1.54':
-    dependencies:
-      '@syncfusion/ej2-icons': 27.1.50
-
   '@syncfusion/ej2-base@27.1.55':
     dependencies:
       '@syncfusion/ej2-icons': 27.1.50
@@ -4990,7 +4991,7 @@ snapshots:
       '@syncfusion/ej2-buttons': 27.1.53
       '@syncfusion/ej2-inputs': 27.1.55
       '@syncfusion/ej2-lists': 27.1.50
-      '@syncfusion/ej2-popups': 27.1.55
+      '@syncfusion/ej2-popups': 27.1.56
 
   '@syncfusion/ej2-charts@27.1.53':
     dependencies:
@@ -5065,9 +5066,9 @@ snapshots:
       '@syncfusion/ej2-data': 27.1.52
       '@syncfusion/ej2-inputs': 27.1.55
       '@syncfusion/ej2-lists': 27.1.50
-      '@syncfusion/ej2-navigations': 27.1.55
+      '@syncfusion/ej2-navigations': 27.1.56
       '@syncfusion/ej2-notifications': 27.1.50
-      '@syncfusion/ej2-popups': 27.1.55
+      '@syncfusion/ej2-popups': 27.1.56
 
   '@syncfusion/ej2-excel-export@27.1.50':
     dependencies:
@@ -5100,8 +5101,8 @@ snapshots:
       '@syncfusion/ej2-inputs': 27.1.55
       '@syncfusion/ej2-layouts': 27.1.53
       '@syncfusion/ej2-lists': 27.1.50
-      '@syncfusion/ej2-navigations': 27.1.55
-      '@syncfusion/ej2-popups': 27.1.55
+      '@syncfusion/ej2-navigations': 27.1.56
+      '@syncfusion/ej2-popups': 27.1.56
       '@syncfusion/ej2-splitbuttons': 27.1.50
 
   '@syncfusion/ej2-gantt@27.1.53':
@@ -5152,28 +5153,10 @@ snapshots:
       '@syncfusion/ej2-file-utils': 27.1.53
       '@syncfusion/ej2-inputs': 27.1.55
       '@syncfusion/ej2-lists': 27.1.50
-      '@syncfusion/ej2-navigations': 27.1.55
+      '@syncfusion/ej2-navigations': 27.1.56
       '@syncfusion/ej2-notifications': 27.1.50
       '@syncfusion/ej2-pdf-export': 27.1.51
-      '@syncfusion/ej2-popups': 27.1.55
-      '@syncfusion/ej2-splitbuttons': 27.1.50
-
-  '@syncfusion/ej2-grids@27.1.55':
-    dependencies:
-      '@syncfusion/ej2-base': 27.1.55
-      '@syncfusion/ej2-buttons': 27.1.53
-      '@syncfusion/ej2-calendars': 27.1.55
-      '@syncfusion/ej2-compression': 27.1.53
-      '@syncfusion/ej2-data': 27.1.52
-      '@syncfusion/ej2-dropdowns': 27.1.55
-      '@syncfusion/ej2-excel-export': 27.1.50
-      '@syncfusion/ej2-file-utils': 27.1.53
-      '@syncfusion/ej2-inputs': 27.1.55
-      '@syncfusion/ej2-lists': 27.1.50
-      '@syncfusion/ej2-navigations': 27.1.55
-      '@syncfusion/ej2-notifications': 27.1.50
-      '@syncfusion/ej2-pdf-export': 27.1.51
-      '@syncfusion/ej2-popups': 27.1.55
+      '@syncfusion/ej2-popups': 27.1.56
       '@syncfusion/ej2-splitbuttons': 27.1.50
 
   '@syncfusion/ej2-heatmap@27.1.50':
@@ -5223,7 +5206,7 @@ snapshots:
     dependencies:
       '@syncfusion/ej2-base': 27.1.55
       '@syncfusion/ej2-buttons': 27.1.53
-      '@syncfusion/ej2-popups': 27.1.55
+      '@syncfusion/ej2-popups': 27.1.56
       '@syncfusion/ej2-splitbuttons': 27.1.50
 
   '@syncfusion/ej2-interactive-chat@27.1.53':
@@ -5260,7 +5243,7 @@ snapshots:
       '@syncfusion/ej2-base': 27.1.55
       '@syncfusion/ej2-buttons': 27.1.53
       '@syncfusion/ej2-data': 27.1.52
-      '@syncfusion/ej2-popups': 27.1.53
+      '@syncfusion/ej2-popups': 27.1.56
 
   '@syncfusion/ej2-maps@27.1.50':
     dependencies:
@@ -5286,14 +5269,14 @@ snapshots:
       '@syncfusion/ej2-lists': 27.1.50
       '@syncfusion/ej2-popups': 27.1.53
 
-  '@syncfusion/ej2-navigations@27.1.55':
+  '@syncfusion/ej2-navigations@27.1.56':
     dependencies:
       '@syncfusion/ej2-base': 27.1.55
       '@syncfusion/ej2-buttons': 27.1.53
       '@syncfusion/ej2-data': 27.1.52
       '@syncfusion/ej2-inputs': 27.1.55
       '@syncfusion/ej2-lists': 27.1.50
-      '@syncfusion/ej2-popups': 27.1.55
+      '@syncfusion/ej2-popups': 27.1.56
 
   '@syncfusion/ej2-notifications@27.1.50':
     dependencies:
@@ -5354,7 +5337,7 @@ snapshots:
       '@syncfusion/ej2-base': 27.1.55
       '@syncfusion/ej2-buttons': 27.1.53
 
-  '@syncfusion/ej2-popups@27.1.55':
+  '@syncfusion/ej2-popups@27.1.56':
     dependencies:
       '@syncfusion/ej2-base': 27.1.55
       '@syncfusion/ej2-buttons': 27.1.53
@@ -5380,7 +5363,7 @@ snapshots:
 
   '@syncfusion/ej2-react-buttons@27.1.53':
     dependencies:
-      '@syncfusion/ej2-base': 27.1.54
+      '@syncfusion/ej2-base': 27.1.55
       '@syncfusion/ej2-buttons': 27.1.53
       '@syncfusion/ej2-react-base': 27.1.50
 
@@ -5392,13 +5375,13 @@ snapshots:
 
   '@syncfusion/ej2-react-charts@27.1.53':
     dependencies:
-      '@syncfusion/ej2-base': 27.1.54
+      '@syncfusion/ej2-base': 27.1.55
       '@syncfusion/ej2-charts': 27.1.53
       '@syncfusion/ej2-react-base': 27.1.50
 
   '@syncfusion/ej2-react-dropdowns@27.1.53':
     dependencies:
-      '@syncfusion/ej2-base': 27.1.54
+      '@syncfusion/ej2-base': 27.1.55
       '@syncfusion/ej2-dropdowns': 27.1.53
       '@syncfusion/ej2-react-base': 27.1.50
 
@@ -5410,37 +5393,37 @@ snapshots:
 
   '@syncfusion/ej2-react-inputs@27.1.50':
     dependencies:
-      '@syncfusion/ej2-base': 27.1.54
+      '@syncfusion/ej2-base': 27.1.55
       '@syncfusion/ej2-inputs': 27.1.50
       '@syncfusion/ej2-react-base': 27.1.50
 
   '@syncfusion/ej2-react-kanban@27.1.53':
     dependencies:
-      '@syncfusion/ej2-base': 27.1.54
+      '@syncfusion/ej2-base': 27.1.55
       '@syncfusion/ej2-kanban': 27.1.53
       '@syncfusion/ej2-react-base': 27.1.50
 
-  '@syncfusion/ej2-react-navigations@27.1.55':
+  '@syncfusion/ej2-react-navigations@27.1.56':
     dependencies:
       '@syncfusion/ej2-base': 27.1.55
-      '@syncfusion/ej2-navigations': 27.1.55
+      '@syncfusion/ej2-navigations': 27.1.56
       '@syncfusion/ej2-react-base': 27.1.50
 
   '@syncfusion/ej2-react-pdfviewer@27.1.53':
     dependencies:
-      '@syncfusion/ej2-base': 27.1.54
+      '@syncfusion/ej2-base': 27.1.55
       '@syncfusion/ej2-pdfviewer': 27.1.53
       '@syncfusion/ej2-react-base': 27.1.50
 
   '@syncfusion/ej2-react-popups@27.1.53':
     dependencies:
-      '@syncfusion/ej2-base': 27.1.54
+      '@syncfusion/ej2-base': 27.1.55
       '@syncfusion/ej2-popups': 27.1.53
       '@syncfusion/ej2-react-base': 27.1.50
 
   '@syncfusion/ej2-react-progressbar@27.1.50':
     dependencies:
-      '@syncfusion/ej2-base': 27.1.54
+      '@syncfusion/ej2-base': 27.1.55
       '@syncfusion/ej2-progressbar': 27.1.50
       '@syncfusion/ej2-react-base': 27.1.50
 
@@ -5452,7 +5435,7 @@ snapshots:
 
   '@syncfusion/ej2-react-schedule@27.1.53':
     dependencies:
-      '@syncfusion/ej2-base': 27.1.54
+      '@syncfusion/ej2-base': 27.1.55
       '@syncfusion/ej2-react-base': 27.1.50
       '@syncfusion/ej2-schedule': 27.1.53
 
@@ -5484,8 +5467,8 @@ snapshots:
       '@syncfusion/ej2-dropdowns': 27.1.55
       '@syncfusion/ej2-filemanager': 27.1.55
       '@syncfusion/ej2-inputs': 27.1.55
-      '@syncfusion/ej2-navigations': 27.1.55
-      '@syncfusion/ej2-popups': 27.1.55
+      '@syncfusion/ej2-navigations': 27.1.56
+      '@syncfusion/ej2-popups': 27.1.56
       '@syncfusion/ej2-splitbuttons': 27.1.50
 
   '@syncfusion/ej2-schedule@27.1.53':
@@ -5537,7 +5520,7 @@ snapshots:
   '@syncfusion/ej2@27.1.53':
     dependencies:
       '@syncfusion/ej2-barcode-generator': 27.1.53
-      '@syncfusion/ej2-base': 27.1.54
+      '@syncfusion/ej2-base': 27.1.55
       '@syncfusion/ej2-buttons': 27.1.53
       '@syncfusion/ej2-calendars': 27.1.52
       '@syncfusion/ej2-charts': 27.1.53
@@ -6370,7 +6353,7 @@ snapshots:
       debug: 4.3.7
       enhanced-resolve: 5.17.1
       eslint: 9.11.0(jiti@1.21.6)
-      eslint-module-utils: 2.11.0(@typescript-eslint/parser@7.2.0(eslint@9.11.0(jiti@1.21.6))(typescript@5.6.3))(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.6.3(@typescript-eslint/parser@7.2.0(eslint@9.11.0(jiti@1.21.6))(typescript@5.6.3))(eslint-import-resolver-node@0.3.9)(eslint-plugin-import@2.31.0)(eslint@9.11.0(jiti@1.21.6)))(eslint@9.11.0(jiti@1.21.6))
+      eslint-module-utils: 2.11.0(@typescript-eslint/parser@7.2.0(eslint@9.11.0(jiti@1.21.6))(typescript@5.6.3))(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.6.3)(eslint@9.11.0(jiti@1.21.6))
       fast-glob: 3.3.2
       get-tsconfig: 4.8.1
       is-bun-module: 1.2.1
@@ -6383,7 +6366,7 @@ snapshots:
       - eslint-import-resolver-webpack
       - supports-color
 
-  eslint-module-utils@2.11.0(@typescript-eslint/parser@7.2.0(eslint@9.11.0(jiti@1.21.6))(typescript@5.6.3))(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.6.3(@typescript-eslint/parser@7.2.0(eslint@9.11.0(jiti@1.21.6))(typescript@5.6.3))(eslint-import-resolver-node@0.3.9)(eslint-plugin-import@2.31.0)(eslint@9.11.0(jiti@1.21.6)))(eslint@9.11.0(jiti@1.21.6)):
+  eslint-module-utils@2.11.0(@typescript-eslint/parser@7.2.0(eslint@9.11.0(jiti@1.21.6))(typescript@5.6.3))(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.6.3)(eslint@9.11.0(jiti@1.21.6)):
     dependencies:
       debug: 3.2.7
     optionalDependencies:
@@ -6394,7 +6377,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  eslint-module-utils@2.12.0(@typescript-eslint/parser@7.2.0(eslint@9.11.0(jiti@1.21.6))(typescript@5.6.3))(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.6.3(@typescript-eslint/parser@7.2.0(eslint@9.11.0(jiti@1.21.6))(typescript@5.6.3))(eslint-import-resolver-node@0.3.9)(eslint-plugin-import@2.31.0)(eslint@9.11.0(jiti@1.21.6)))(eslint@9.11.0(jiti@1.21.6)):
+  eslint-module-utils@2.12.0(@typescript-eslint/parser@7.2.0(eslint@9.11.0(jiti@1.21.6))(typescript@5.6.3))(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.6.3)(eslint@9.11.0(jiti@1.21.6)):
     dependencies:
       debug: 3.2.7
     optionalDependencies:
@@ -6416,7 +6399,7 @@ snapshots:
       doctrine: 2.1.0
       eslint: 9.11.0(jiti@1.21.6)
       eslint-import-resolver-node: 0.3.9
-      eslint-module-utils: 2.12.0(@typescript-eslint/parser@7.2.0(eslint@9.11.0(jiti@1.21.6))(typescript@5.6.3))(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.6.3(@typescript-eslint/parser@7.2.0(eslint@9.11.0(jiti@1.21.6))(typescript@5.6.3))(eslint-import-resolver-node@0.3.9)(eslint-plugin-import@2.31.0)(eslint@9.11.0(jiti@1.21.6)))(eslint@9.11.0(jiti@1.21.6))
+      eslint-module-utils: 2.12.0(@typescript-eslint/parser@7.2.0(eslint@9.11.0(jiti@1.21.6))(typescript@5.6.3))(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.6.3)(eslint@9.11.0(jiti@1.21.6))
       hasown: 2.0.2
       is-core-module: 2.15.1
       is-glob: 4.0.3
@@ -7160,13 +7143,13 @@ snapshots:
 
   natural-compare@1.4.0: {}
 
-  next-auth@4.24.8(next@14.2.13(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.80.3))(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
+  next-auth@4.24.8(next@14.2.13(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.80.4))(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
     dependencies:
       '@babel/runtime': 7.25.6
       '@panva/hkdf': 1.2.1
       cookie: 0.5.0
       jose: 4.15.9
-      next: 14.2.13(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.80.3)
+      next: 14.2.13(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.80.4)
       oauth: 0.9.15
       openid-client: 5.7.0
       preact: 10.24.0
@@ -7180,7 +7163,7 @@ snapshots:
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
 
-  next@14.2.13(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.80.3):
+  next@14.2.13(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.80.4):
     dependencies:
       '@next/env': 14.2.13
       '@swc/helpers': 0.5.5
@@ -7201,7 +7184,7 @@ snapshots:
       '@next/swc-win32-arm64-msvc': 14.2.13
       '@next/swc-win32-ia32-msvc': 14.2.13
       '@next/swc-win32-x64-msvc': 14.2.13
-      sass: 1.80.3
+      sass: 1.80.4
     transitivePeerDependencies:
       - '@babel/core'
       - babel-plugin-macros
@@ -7285,7 +7268,7 @@ snapshots:
       is-docker: 2.2.1
       is-wsl: 2.2.0
 
-  openai@4.68.3(zod@3.23.8):
+  openai@4.68.4(zod@3.23.8):
     dependencies:
       '@types/node': 18.19.50
       '@types/node-fetch': 2.6.11
@@ -7649,7 +7632,7 @@ snapshots:
       es-errors: 1.3.0
       is-regex: 1.1.4
 
-  sass@1.80.3:
+  sass@1.80.4:
     dependencies:
       '@parcel/watcher': 2.4.1
       chokidar: 4.0.0
