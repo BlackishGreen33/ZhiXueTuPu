@@ -69,8 +69,8 @@ importers:
         specifier: ^27.1.53
         version: 27.1.53
       '@syncfusion/ej2-react-calendars':
-        specifier: ^27.1.55
-        version: 27.1.55
+        specifier: ^27.1.57
+        version: 27.1.57
       '@syncfusion/ej2-react-charts':
         specifier: ^27.1.55
         version: 27.1.55
@@ -1401,8 +1401,8 @@ packages:
   '@syncfusion/ej2-react-buttons@27.1.53':
     resolution: {integrity: sha512-mKMzs4TCWsqRlXw0hpvifN0nmu5Q7YDzZZgCP6k9HrUIp7wluW/wKJsoRtBxnL/7VETJimCx64U1xCjkKMAORQ==}
 
-  '@syncfusion/ej2-react-calendars@27.1.55':
-    resolution: {integrity: sha512-U55FuTs/5mkv6xjtsSk76s4Zz3mvR49AgiFOw9nUG1TCka4Mut2ZXzQ6OvkdPJsHlMSCttdPsGsU+KDJtcYR0A==}
+  '@syncfusion/ej2-react-calendars@27.1.57':
+    resolution: {integrity: sha512-ucVYdy82dDQ+vHx9oBWXfjeeEyC5E9dYqvFEJYA2poKik9oNusdgEkGYXhEQB+zN99w2Q5MyoBoNpag/pL8Q9w==}
 
   '@syncfusion/ej2-react-charts@27.1.55':
     resolution: {integrity: sha512-27IQ0HB5iFllZ43Q1b5OAKySTgDfCW1pb8o+KsfT8VXXNWySq1ti+H+70h9x1k3YpE1vlCX/hg4OKHnmmRLf3w==}
@@ -4931,7 +4931,7 @@ snapshots:
   '@syncfusion/ej2-charts@27.1.53':
     dependencies:
       '@syncfusion/ej2-base': 27.1.55
-      '@syncfusion/ej2-calendars': 27.1.52
+      '@syncfusion/ej2-calendars': 27.1.55
       '@syncfusion/ej2-data': 27.1.52
       '@syncfusion/ej2-excel-export': 27.1.50
       '@syncfusion/ej2-navigations': 27.1.53
@@ -4980,7 +4980,7 @@ snapshots:
     dependencies:
       '@syncfusion/ej2-base': 27.1.55
       '@syncfusion/ej2-buttons': 27.1.53
-      '@syncfusion/ej2-calendars': 27.1.52
+      '@syncfusion/ej2-calendars': 27.1.55
       '@syncfusion/ej2-compression': 27.1.50
       '@syncfusion/ej2-dropdowns': 27.1.55
       '@syncfusion/ej2-file-utils': 27.1.50
@@ -5069,7 +5069,7 @@ snapshots:
     dependencies:
       '@syncfusion/ej2-base': 27.1.55
       '@syncfusion/ej2-buttons': 27.1.53
-      '@syncfusion/ej2-calendars': 27.1.52
+      '@syncfusion/ej2-calendars': 27.1.55
       '@syncfusion/ej2-data': 27.1.52
       '@syncfusion/ej2-dropdowns': 27.1.55
       '@syncfusion/ej2-grids': 27.1.55
@@ -5087,7 +5087,7 @@ snapshots:
     dependencies:
       '@syncfusion/ej2-base': 27.1.55
       '@syncfusion/ej2-buttons': 27.1.53
-      '@syncfusion/ej2-calendars': 27.1.52
+      '@syncfusion/ej2-calendars': 27.1.55
       '@syncfusion/ej2-compression': 27.1.50
       '@syncfusion/ej2-data': 27.1.52
       '@syncfusion/ej2-dropdowns': 27.1.55
@@ -5162,7 +5162,7 @@ snapshots:
     dependencies:
       '@syncfusion/ej2-base': 27.1.55
       '@syncfusion/ej2-buttons': 27.1.53
-      '@syncfusion/ej2-calendars': 27.1.52
+      '@syncfusion/ej2-calendars': 27.1.55
       '@syncfusion/ej2-data': 27.1.52
       '@syncfusion/ej2-dropdowns': 27.1.55
       '@syncfusion/ej2-inputs': 27.1.55
@@ -5323,7 +5323,7 @@ snapshots:
     dependencies:
       '@syncfusion/ej2-base': 27.1.55
       '@syncfusion/ej2-buttons': 27.1.53
-      '@syncfusion/ej2-calendars': 27.1.52
+      '@syncfusion/ej2-calendars': 27.1.55
       '@syncfusion/ej2-charts': 27.1.53
       '@syncfusion/ej2-compression': 27.1.50
       '@syncfusion/ej2-data': 27.1.52
@@ -5364,7 +5364,7 @@ snapshots:
     dependencies:
       '@syncfusion/ej2-base': 27.1.55
       '@syncfusion/ej2-buttons': 27.1.53
-      '@syncfusion/ej2-calendars': 27.1.52
+      '@syncfusion/ej2-calendars': 27.1.55
       '@syncfusion/ej2-dropdowns': 27.1.55
       '@syncfusion/ej2-inputs': 27.1.55
       '@syncfusion/ej2-splitbuttons': 27.1.50
@@ -5379,10 +5379,10 @@ snapshots:
       '@syncfusion/ej2-buttons': 27.1.53
       '@syncfusion/ej2-react-base': 27.1.50
 
-  '@syncfusion/ej2-react-calendars@27.1.55':
+  '@syncfusion/ej2-react-calendars@27.1.57':
     dependencies:
       '@syncfusion/ej2-base': 27.1.55
-      '@syncfusion/ej2-calendars': 27.1.55
+      '@syncfusion/ej2-calendars': 27.1.57
       '@syncfusion/ej2-react-base': 27.1.50
 
   '@syncfusion/ej2-react-charts@27.1.55':
@@ -5487,7 +5487,7 @@ snapshots:
     dependencies:
       '@syncfusion/ej2-base': 27.1.55
       '@syncfusion/ej2-buttons': 27.1.53
-      '@syncfusion/ej2-calendars': 27.1.52
+      '@syncfusion/ej2-calendars': 27.1.55
       '@syncfusion/ej2-data': 27.1.52
       '@syncfusion/ej2-dropdowns': 27.1.55
       '@syncfusion/ej2-excel-export': 27.1.50
