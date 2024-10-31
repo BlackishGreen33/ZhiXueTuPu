@@ -99,8 +99,8 @@ importers:
         specifier: ^27.1.50
         version: 27.1.50
       '@syncfusion/ej2-react-richtexteditor':
-        specifier: ^27.1.55
-        version: 27.1.55
+        specifier: ^27.1.57
+        version: 27.1.57
       '@syncfusion/ej2-react-schedule':
         specifier: ^27.1.57
         version: 27.1.57
@@ -1527,8 +1527,8 @@ packages:
   '@syncfusion/ej2-react-progressbar@27.1.50':
     resolution: {integrity: sha512-hr52XGz3lLW/fftiZ6XtM9t76AMVsxO7lZn/3Y0T0Tq1DZgIPBKEvyGOIu75ala8mNqNQS6eu2VWHuFDgiSPOA==}
 
-  '@syncfusion/ej2-react-richtexteditor@27.1.55':
-    resolution: {integrity: sha512-S0sb8N+C/Y7czXc/Kn6qNSyP8msSEvmzRtdcHPstjHqc8WXOW+g3t8IUgj4uVp+HWzCIgTOvjb3bLUvtn6jydQ==}
+  '@syncfusion/ej2-react-richtexteditor@27.1.57':
+    resolution: {integrity: sha512-k75Si+G8ahlmdegcQ+rKr/Qn902jQ506gqevoo0gGKnju+JB+Iqpe2lZXg3BMNNhmQLvGW+A+9pIYluHRjy8FA==}
 
   '@syncfusion/ej2-react-schedule@27.1.57':
     resolution: {integrity: sha512-J/gyI5UVQDXszYlzM5Ui6blYPT+Dg4Iuxd9/rCvHJMOD3Vl9NJb/m6stAn/HuekWDqa8N06n4PT8qmspeI/vGQ==}
@@ -1541,6 +1541,9 @@ packages:
 
   '@syncfusion/ej2-richtexteditor@27.1.55':
     resolution: {integrity: sha512-KDDiVkGULfVQQfwoY95cAUsUqxv5K/CmdFSr95Ew8WTxqiSsNglXNYhEMyE9XKowqrAVGPjByzL1/DCbWcjaUA==}
+
+  '@syncfusion/ej2-richtexteditor@27.1.57':
+    resolution: {integrity: sha512-hZG0eEkU1B1lIlox66sioxzThb1/nNYO1d6+mjDC82XDAjufqEBbkaCYUeIwe8TxhbiUCtL40KmDkW0fF6OdQw==}
 
   '@syncfusion/ej2-schedule@27.1.53':
     resolution: {integrity: sha512-6Jygd7mn6cw673yerT7/kpAeQunRhpKzDQWWrTteuDuFdAcAoBqzivXDfn8qYbPyAXBTcUGGXGjSqzWlsovdHg==}
@@ -5243,13 +5246,13 @@ snapshots:
       '@syncfusion/ej2-base': 27.1.55
       '@syncfusion/ej2-buttons': 27.1.53
       '@syncfusion/ej2-data': 27.1.52
-      '@syncfusion/ej2-grids': 27.1.55
+      '@syncfusion/ej2-grids': 27.1.57
       '@syncfusion/ej2-inputs': 27.1.55
       '@syncfusion/ej2-layouts': 27.1.53
       '@syncfusion/ej2-lists': 27.1.50
       '@syncfusion/ej2-navigations': 27.1.57
       '@syncfusion/ej2-popups': 27.1.57
-      '@syncfusion/ej2-splitbuttons': 27.1.50
+      '@syncfusion/ej2-splitbuttons': 27.1.56
 
   '@syncfusion/ej2-gantt@27.1.53':
     dependencies:
@@ -5265,7 +5268,7 @@ snapshots:
       '@syncfusion/ej2-navigations': 27.1.53
       '@syncfusion/ej2-notifications': 27.1.50
       '@syncfusion/ej2-popups': 27.1.57
-      '@syncfusion/ej2-richtexteditor': 27.1.52
+      '@syncfusion/ej2-richtexteditor': 27.1.55
       '@syncfusion/ej2-svg-base': 27.1.50
       '@syncfusion/ej2-treegrid': 27.1.53
 
@@ -5303,7 +5306,7 @@ snapshots:
       '@syncfusion/ej2-notifications': 27.1.50
       '@syncfusion/ej2-pdf-export': 27.1.51
       '@syncfusion/ej2-popups': 27.1.57
-      '@syncfusion/ej2-splitbuttons': 27.1.50
+      '@syncfusion/ej2-splitbuttons': 27.1.56
 
   '@syncfusion/ej2-grids@27.1.57':
     dependencies:
@@ -5356,7 +5359,7 @@ snapshots:
       '@syncfusion/ej2-navigations': 27.1.53
       '@syncfusion/ej2-notifications': 27.1.50
       '@syncfusion/ej2-popups': 27.1.57
-      '@syncfusion/ej2-richtexteditor': 27.1.52
+      '@syncfusion/ej2-richtexteditor': 27.1.55
       '@syncfusion/ej2-splitbuttons': 27.1.50
 
   '@syncfusion/ej2-inputs@27.1.50':
@@ -5620,11 +5623,11 @@ snapshots:
       '@syncfusion/ej2-progressbar': 27.1.50
       '@syncfusion/ej2-react-base': 27.1.50
 
-  '@syncfusion/ej2-react-richtexteditor@27.1.55':
+  '@syncfusion/ej2-react-richtexteditor@27.1.57':
     dependencies:
       '@syncfusion/ej2-base': 27.1.55
       '@syncfusion/ej2-react-base': 27.1.50
-      '@syncfusion/ej2-richtexteditor': 27.1.55
+      '@syncfusion/ej2-richtexteditor': 27.1.57
 
   '@syncfusion/ej2-react-schedule@27.1.57':
     dependencies:
@@ -5660,9 +5663,20 @@ snapshots:
       '@syncfusion/ej2-dropdowns': 27.1.57
       '@syncfusion/ej2-filemanager': 27.1.55
       '@syncfusion/ej2-inputs': 27.1.55
-      '@syncfusion/ej2-navigations': 27.1.56
+      '@syncfusion/ej2-navigations': 27.1.57
       '@syncfusion/ej2-popups': 27.1.57
-      '@syncfusion/ej2-splitbuttons': 27.1.50
+      '@syncfusion/ej2-splitbuttons': 27.1.56
+
+  '@syncfusion/ej2-richtexteditor@27.1.57':
+    dependencies:
+      '@syncfusion/ej2-base': 27.1.55
+      '@syncfusion/ej2-buttons': 27.1.53
+      '@syncfusion/ej2-dropdowns': 27.1.57
+      '@syncfusion/ej2-filemanager': 27.1.55
+      '@syncfusion/ej2-inputs': 27.1.55
+      '@syncfusion/ej2-navigations': 27.1.57
+      '@syncfusion/ej2-popups': 27.1.57
+      '@syncfusion/ej2-splitbuttons': 27.1.56
 
   '@syncfusion/ej2-schedule@27.1.53':
     dependencies:
