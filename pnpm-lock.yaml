@@ -87,8 +87,8 @@ importers:
         specifier: ^27.1.53
         version: 27.1.53
       '@syncfusion/ej2-react-navigations':
-        specifier: ^27.1.56
-        version: 27.1.56
+        specifier: ^27.1.57
+        version: 27.1.57
       '@syncfusion/ej2-react-pdfviewer':
         specifier: ^27.1.57
         version: 27.1.57
@@ -1416,9 +1416,6 @@ packages:
   '@syncfusion/ej2-multicolumn-combobox@27.1.50':
     resolution: {integrity: sha512-LAPJMZmG3e4jYsGSYfYZb61amWYT+9zga1eOx6cb3cxESXFRvrSSgQKPvjEGGz1xS5gzsgJjwsByGf+n2ZWwvQ==}
 
-  '@syncfusion/ej2-navigations@27.1.56':
-    resolution: {integrity: sha512-tdMijrY0dBV1H2uR/XkFMtNDNR1Cf+c0TI+S2v04mCt4gm/kQxnuNGMcrdXjiPv/3UV+qOstG0RvCqRxgcEk9Q==}
-
   '@syncfusion/ej2-navigations@27.1.57':
     resolution: {integrity: sha512-OUg2VrJ8GqOws1bbT2gpC/6+6m5rXH54/tDI9IaSdD6B+zxkNw+eclRWOMVfNbepV2Qbp4ckLbqkGO1M8409Iw==}
 
@@ -1473,8 +1470,8 @@ packages:
   '@syncfusion/ej2-react-kanban@27.1.53':
     resolution: {integrity: sha512-mmqVZftyMq74udeoD20OHuO1zeIfeHkF+kXBAC9UkrntGclXNuMofJcqLzd+/taEwLGcqGoy/kYEYYEQ84981g==}
 
-  '@syncfusion/ej2-react-navigations@27.1.56':
-    resolution: {integrity: sha512-qYiCmeVbEnZwMsjexa8qHz+Mzk39FTohLBYId9V9xeWKUnlc2M+H7O9irnVMxRuhfU0y5a2FzXx4B+a9tZLRAg==}
+  '@syncfusion/ej2-react-navigations@27.1.57':
+    resolution: {integrity: sha512-PLLwZeP99Di9/gW9FKPJ/My1+VK6prj8KlddqXMkDaAi8dEKkFKPPk8suytA8qnVPr0HbGsApvDqC8BS2AzrNQ==}
 
   '@syncfusion/ej2-react-pdfviewer@27.1.57':
     resolution: {integrity: sha512-Y2M2e/N7edJ/tHUSSfw81ahIHjRxKr+J4n250JP4BDA0Wtrzy8h5MBUz/b2PQHFna7Y+58l2UtW1889yK3Lrtg==}
@@ -5280,15 +5277,6 @@ snapshots:
       '@syncfusion/ej2-base': 27.1.55
       '@syncfusion/ej2-grids': 27.1.57
 
-  '@syncfusion/ej2-navigations@27.1.56':
-    dependencies:
-      '@syncfusion/ej2-base': 27.1.55
-      '@syncfusion/ej2-buttons': 27.1.53
-      '@syncfusion/ej2-data': 27.1.52
-      '@syncfusion/ej2-inputs': 27.1.55
-      '@syncfusion/ej2-lists': 27.1.50
-      '@syncfusion/ej2-popups': 27.1.57
-
   '@syncfusion/ej2-navigations@27.1.57':
     dependencies:
       '@syncfusion/ej2-base': 27.1.55
@@ -5418,10 +5406,10 @@ snapshots:
       '@syncfusion/ej2-kanban': 27.1.53
       '@syncfusion/ej2-react-base': 27.1.50
 
-  '@syncfusion/ej2-react-navigations@27.1.56':
+  '@syncfusion/ej2-react-navigations@27.1.57':
     dependencies:
       '@syncfusion/ej2-base': 27.1.55
-      '@syncfusion/ej2-navigations': 27.1.56
+      '@syncfusion/ej2-navigations': 27.1.57
       '@syncfusion/ej2-react-base': 27.1.50
 
   '@syncfusion/ej2-react-pdfviewer@27.1.57':
