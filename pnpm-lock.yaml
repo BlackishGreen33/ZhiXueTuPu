@@ -75,8 +75,8 @@ importers:
         specifier: ^27.1.58
         version: 27.1.58
       '@syncfusion/ej2-react-dropdowns':
-        specifier: ^27.1.57
-        version: 27.1.57
+        specifier: ^27.1.58
+        version: 27.1.58
       '@syncfusion/ej2-react-grids':
         specifier: ^27.1.57
         version: 27.1.57
@@ -1203,9 +1203,6 @@ packages:
   '@syncfusion/ej2-drawings@27.1.58':
     resolution: {integrity: sha512-S7tTTq+EwooW3OmEJTv0k2QPmOjb9SCDunec27MQ8QOEYTxFPmGZyP2w5ntaD5xzIVzAdl4rH6/ESDBsGv8GlA==}
 
-  '@syncfusion/ej2-dropdowns@27.1.57':
-    resolution: {integrity: sha512-xvzirgD6c92GqTqYiFeerujfu7WUWMFhG50fOc+NwZqKjYiIyt9HxbsxUL7vUGxQ4lQHpg0iEHJYnlc4HY5dSQ==}
-
   '@syncfusion/ej2-dropdowns@27.1.58':
     resolution: {integrity: sha512-b7iiElk77csZb0oN9x6R+a+14410V/KLDWObdKBvvFj9Dpla3zCc9NLlPwrTJP+y7S5nWnZe7TkUkbODWCGplg==}
 
@@ -1317,8 +1314,8 @@ packages:
   '@syncfusion/ej2-react-charts@27.1.58':
     resolution: {integrity: sha512-EEOHIlnYuDXTwwlg/373zCVeJXk5Th3ChUznqGpDsBAr+1yeYyKCeskQT7e79fWFDLphor46yBVw/TEwRSGKyA==}
 
-  '@syncfusion/ej2-react-dropdowns@27.1.57':
-    resolution: {integrity: sha512-KmNEGNynewe/6BfnNa3Qze0HLIdepBJJU4Za1RsKRBKrD1Xazx6MjoAIEzmQ0YLkMLlSyWScMN3RZP6JQ3WWSw==}
+  '@syncfusion/ej2-react-dropdowns@27.1.58':
+    resolution: {integrity: sha512-EPbDiKi9lLlTYVKQ6d5YMLo299sheGE8OTR0j5ZsUOVsROlqnEDOtHgf2sQr6Y0z/vEH2uqVqjgtubWA+ENMBg==}
 
   '@syncfusion/ej2-react-grids@27.1.57':
     resolution: {integrity: sha512-58zH9Uqkzb21UJM0z8Ag/YZc0yajm/bHYKocC7Q/0sEmFdU7FTllY8Qa4dLh5yXqp3cTbC9k3rLRsMMd22GmDA==}
@@ -4794,16 +4791,6 @@ snapshots:
       '@syncfusion/ej2-base': 27.1.55
       '@syncfusion/ej2-data': 27.1.52
 
-  '@syncfusion/ej2-dropdowns@27.1.57':
-    dependencies:
-      '@syncfusion/ej2-base': 27.1.55
-      '@syncfusion/ej2-data': 27.1.52
-      '@syncfusion/ej2-inputs': 27.1.55
-      '@syncfusion/ej2-lists': 27.1.50
-      '@syncfusion/ej2-navigations': 27.1.58
-      '@syncfusion/ej2-notifications': 27.1.50
-      '@syncfusion/ej2-popups': 27.1.57
-
   '@syncfusion/ej2-dropdowns@27.1.58':
     dependencies:
       '@syncfusion/ej2-base': 27.1.55
@@ -4859,7 +4846,7 @@ snapshots:
       '@syncfusion/ej2-calendars': 27.1.57
       '@syncfusion/ej2-compression': 27.1.53
       '@syncfusion/ej2-data': 27.1.52
-      '@syncfusion/ej2-dropdowns': 27.1.57
+      '@syncfusion/ej2-dropdowns': 27.1.58
       '@syncfusion/ej2-excel-export': 27.1.50
       '@syncfusion/ej2-file-utils': 27.1.53
       '@syncfusion/ej2-inputs': 27.1.55
@@ -5028,7 +5015,7 @@ snapshots:
       '@syncfusion/ej2-buttons': 27.1.53
       '@syncfusion/ej2-data': 27.1.52
       '@syncfusion/ej2-drawings': 27.1.57
-      '@syncfusion/ej2-dropdowns': 27.1.57
+      '@syncfusion/ej2-dropdowns': 27.1.58
       '@syncfusion/ej2-inplace-editor': 27.1.50
       '@syncfusion/ej2-inputs': 27.1.55
       '@syncfusion/ej2-lists': 27.1.50
@@ -5119,10 +5106,10 @@ snapshots:
       '@syncfusion/ej2-charts': 27.1.58
       '@syncfusion/ej2-react-base': 27.1.50
 
-  '@syncfusion/ej2-react-dropdowns@27.1.57':
+  '@syncfusion/ej2-react-dropdowns@27.1.58':
     dependencies:
       '@syncfusion/ej2-base': 27.1.55
-      '@syncfusion/ej2-dropdowns': 27.1.57
+      '@syncfusion/ej2-dropdowns': 27.1.58
       '@syncfusion/ej2-react-base': 27.1.50
 
   '@syncfusion/ej2-react-grids@27.1.57':
