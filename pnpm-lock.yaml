@@ -93,8 +93,8 @@ importers:
         specifier: ^27.1.57
         version: 27.1.57
       '@syncfusion/ej2-react-popups':
-        specifier: ^27.1.57
-        version: 27.1.57
+        specifier: ^27.1.58
+        version: 27.1.58
       '@syncfusion/ej2-react-progressbar':
         specifier: ^27.1.50
         version: 27.1.50
@@ -1290,9 +1290,6 @@ packages:
   '@syncfusion/ej2-pivotview@27.1.58':
     resolution: {integrity: sha512-WlsNurxmsYy1uh9rvbWXSnl4TcctWtEmjeCMZDHxhSZGSaWkr3iZooSQv8aY8yfb5FXjNOLEPCADibgdVLLFcg==}
 
-  '@syncfusion/ej2-popups@27.1.57':
-    resolution: {integrity: sha512-ex38vFalT1G0b/GDc8FOHKnJ4kAht3CBipRT8DQxOJZv07a/L6xH21cX2NQTolhsk+wMeiCCF5q14zq9U3f+YQ==}
-
   '@syncfusion/ej2-popups@27.1.58':
     resolution: {integrity: sha512-FSjbUnjel61setyWOOWKkgw2B/B7zJKIXpMx1TNtt2rF8HJyByM2BOpk2Rweuym8Q1yWrrAnWAvUJY6824SlkA==}
 
@@ -1332,8 +1329,8 @@ packages:
   '@syncfusion/ej2-react-pdfviewer@27.1.57':
     resolution: {integrity: sha512-Y2M2e/N7edJ/tHUSSfw81ahIHjRxKr+J4n250JP4BDA0Wtrzy8h5MBUz/b2PQHFna7Y+58l2UtW1889yK3Lrtg==}
 
-  '@syncfusion/ej2-react-popups@27.1.57':
-    resolution: {integrity: sha512-MNtJ43LWv147JDjr3VwPsCKFHwWwCyFsmqbJBCyMlM3C0ZjVN+P56Jswq4m9TA3zLbDJ3Ya0XaPvG3y910rfiQ==}
+  '@syncfusion/ej2-react-popups@27.1.58':
+    resolution: {integrity: sha512-fpzAkv9E0mYM0hXcmZhk2LMFg5u8Hw6XBGPsNIIEr+Ygs9/fm+nNoy5GKFUL4+GGpSxksmwzjM7gZ8QzDwBeDw==}
 
   '@syncfusion/ej2-react-progressbar@27.1.50':
     resolution: {integrity: sha512-hr52XGz3lLW/fftiZ6XtM9t76AMVsxO7lZn/3Y0T0Tq1DZgIPBKEvyGOIu75ala8mNqNQS6eu2VWHuFDgiSPOA==}
@@ -4854,7 +4851,7 @@ snapshots:
       '@syncfusion/ej2-navigations': 27.1.58
       '@syncfusion/ej2-notifications': 27.1.50
       '@syncfusion/ej2-pdf-export': 27.1.51
-      '@syncfusion/ej2-popups': 27.1.57
+      '@syncfusion/ej2-popups': 27.1.58
       '@syncfusion/ej2-splitbuttons': 27.1.56
 
   '@syncfusion/ej2-grids@27.1.58':
@@ -5022,7 +5019,7 @@ snapshots:
       '@syncfusion/ej2-navigations': 27.1.58
       '@syncfusion/ej2-notifications': 27.1.50
       '@syncfusion/ej2-pdf': 27.1.56
-      '@syncfusion/ej2-popups': 27.1.57
+      '@syncfusion/ej2-popups': 27.1.58
 
   '@syncfusion/ej2-pdfviewer@27.1.58':
     dependencies:
@@ -5058,11 +5055,6 @@ snapshots:
       '@syncfusion/ej2-popups': 27.1.58
       '@syncfusion/ej2-splitbuttons': 27.1.56
       '@syncfusion/ej2-svg-base': 27.1.50
-
-  '@syncfusion/ej2-popups@27.1.57':
-    dependencies:
-      '@syncfusion/ej2-base': 27.1.55
-      '@syncfusion/ej2-buttons': 27.1.53
 
   '@syncfusion/ej2-popups@27.1.58':
     dependencies:
@@ -5142,10 +5134,10 @@ snapshots:
       '@syncfusion/ej2-pdfviewer': 27.1.57
       '@syncfusion/ej2-react-base': 27.1.50
 
-  '@syncfusion/ej2-react-popups@27.1.57':
+  '@syncfusion/ej2-react-popups@27.1.58':
     dependencies:
       '@syncfusion/ej2-base': 27.1.55
-      '@syncfusion/ej2-popups': 27.1.57
+      '@syncfusion/ej2-popups': 27.1.58
       '@syncfusion/ej2-react-base': 27.1.50
 
   '@syncfusion/ej2-react-progressbar@27.1.50':
