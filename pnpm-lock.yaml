@@ -96,8 +96,8 @@ importers:
         specifier: ^27.1.58
         version: 27.1.58
       '@syncfusion/ej2-react-progressbar':
-        specifier: ^27.1.50
-        version: 27.1.50
+        specifier: ^27.2.2
+        version: 27.2.2
       '@syncfusion/ej2-react-richtexteditor':
         specifier: ^27.1.58
         version: 27.1.58
@@ -1170,6 +1170,10 @@ packages:
     resolution: {integrity: sha512-ZHtP1SGPfGrMtweYyvJk80piLcoFJCkmEQ/jg82NEldYeVfwYrw9W9OrPphkrzELu1WysrviwccUngWxAhykLA==}
     hasBin: true
 
+  '@syncfusion/ej2-base@27.2.2':
+    resolution: {integrity: sha512-bc/CTAC4BYenD2aw60h2A5wqM5Bzne2QGtAUHR25cSNMtPApAkQ67/unChlE28ZV5eSW3tVfw94bLH2q2tnmRA==}
+    hasBin: true
+
   '@syncfusion/ej2-buttons@27.1.58':
     resolution: {integrity: sha512-C5J4lz6y4XtHaEU0iVsB20FKhVsEkdnuEhDt/B5v0Hd1q1AiyLe5L4AQUSfuJ9glZlFv+0gSuDc0b8F76f3m2w==}
 
@@ -1187,6 +1191,9 @@ packages:
 
   '@syncfusion/ej2-data@27.1.52':
     resolution: {integrity: sha512-ELtIAXoGd28sVreoxdul2GFPQh/Kf46wUA8JsHZlNHGyekSolRf2vhTofkDMaF0E7GIV6yUpFS7gd3aiRtkKSg==}
+
+  '@syncfusion/ej2-data@27.2.2':
+    resolution: {integrity: sha512-RN0dJLRQ+lTrbPL7lu5xh4z4bIp4ff+8m53wSPmQFdDeSdbPkFkp3QEZmYP9H/3QqX0R7+tsjU52i5lBIPEgqQ==}
 
   '@syncfusion/ej2-diagrams@27.1.58':
     resolution: {integrity: sha512-I7udldFhr25omPxOy1ccEwoP8oGsB8Nsz8nG8fjkTeyk3IX1BMt/6dyG5/JwHU5qT30SsgQ1NlGcnSlthDXUDg==}
@@ -1220,6 +1227,9 @@ packages:
 
   '@syncfusion/ej2-icons@27.1.50':
     resolution: {integrity: sha512-LisXluEss0VnFuSh+pNSgHqT/Cg1FKTvkxdKWoSvqAma3dpcuCfrWP4svyMKPAsCi/hxAGdyy3ShKHu0PUP9iA==}
+
+  '@syncfusion/ej2-icons@27.2.2':
+    resolution: {integrity: sha512-Jl4Dvu+rocNDmY2wEwcwyYlGWJ2xRf8izdnARffR5Lu41OjZIh8fgo4fU2lXHdbqNXApm7DeItDY4soBtjgDCQ==}
 
   '@syncfusion/ej2-image-editor@27.1.58':
     resolution: {integrity: sha512-37FK5+iUwbxhb68xPNNh+LR6qXd053a7YgH90oXm2PHGegpOIc1wAhgy5j9xeKzssjIPIS0nxdr3IAJJfL0lyg==}
@@ -1278,11 +1288,17 @@ packages:
   '@syncfusion/ej2-progressbar@27.1.50':
     resolution: {integrity: sha512-kQVtF6i+NTmSBkHdTjBw+YwgDE74TlfhaDueJq5JT3ZgsGPA4hjPtxStEm1Pjz5at4VzN+CCxpvswQM5p34tEg==}
 
+  '@syncfusion/ej2-progressbar@27.2.2':
+    resolution: {integrity: sha512-W/ea2ea+oh1aNihUDHiyvcyGH1S8wAeezEN1Dnrf1MEMAXSXPBvI5kwtzCrVaYatiliwBfEbZa6nizXbZv2uGA==}
+
   '@syncfusion/ej2-querybuilder@27.1.58':
     resolution: {integrity: sha512-K122CpqG4rGr8wbU3+Nhyeet9zvmFqkbHidMAmnbjI/acfgmkm2RKrtTb3Ct3y02zGbTLFa/ulkA8p3OHxSfEw==}
 
   '@syncfusion/ej2-react-base@27.1.50':
     resolution: {integrity: sha512-mmU99YM+oHbSYVjH0zo8THxyCYc63WRks9JSMFlfF+Bq1uNxJ5a5Cwovhyl12uffrdZDmIxpH35yXy0T9ueCEQ==}
+
+  '@syncfusion/ej2-react-base@27.2.2':
+    resolution: {integrity: sha512-zlrfeSBOb7abH3rII28usyMVsuml5VHEANJtY0ijwLAd0ildmeUPBl86r576iUK8yWMPgTKHCL9XDtONewYUBA==}
 
   '@syncfusion/ej2-react-buttons@27.1.58':
     resolution: {integrity: sha512-9WodF6Ggt5h2FGVZvBNurd6q+xGTA7V9tLwAboeO9N6ZZurRzt/tfLQUleTbSv/D5wFD6c5mEu9B8eTEGzBCiQ==}
@@ -1314,8 +1330,8 @@ packages:
   '@syncfusion/ej2-react-popups@27.1.58':
     resolution: {integrity: sha512-fpzAkv9E0mYM0hXcmZhk2LMFg5u8Hw6XBGPsNIIEr+Ygs9/fm+nNoy5GKFUL4+GGpSxksmwzjM7gZ8QzDwBeDw==}
 
-  '@syncfusion/ej2-react-progressbar@27.1.50':
-    resolution: {integrity: sha512-hr52XGz3lLW/fftiZ6XtM9t76AMVsxO7lZn/3Y0T0Tq1DZgIPBKEvyGOIu75ala8mNqNQS6eu2VWHuFDgiSPOA==}
+  '@syncfusion/ej2-react-progressbar@27.2.2':
+    resolution: {integrity: sha512-vLnRN+vU2xWedhppQIVeIuG0R4zCR8SDZMDOWW3ab1ZidNvIfxOAUW9OnY3bW7jP27vi7YXT710Eag7xTE4I9Q==}
 
   '@syncfusion/ej2-react-richtexteditor@27.1.58':
     resolution: {integrity: sha512-Zxt3WkkwCgaVhKZD5gAGf294fZt0yovnGqWPhMAXa/Y+2ChkhPkVi7EUnQDaavyLL7HnDoBaOdntciBdp+MqhQ==}
@@ -1340,6 +1356,9 @@ packages:
 
   '@syncfusion/ej2-svg-base@27.1.50':
     resolution: {integrity: sha512-SCX38cHp1aHdZoTQbFBotbBpZfYW8Qs9tm15j8ylNXVJ/w+kkjy4JjrZUIkjImDmfxVL5BP9dw/INMRaRaRLBQ==}
+
+  '@syncfusion/ej2-svg-base@27.2.2':
+    resolution: {integrity: sha512-BMKow6dg121FnRe2JlypxYOuq/mu9PyJgu2AVv+Qzpd9Lr/+G7HFQ4VowAHCqJ1ZKw/I9SJQPtCD2rgSOk+GmQ==}
 
   '@syncfusion/ej2-treegrid@27.1.57':
     resolution: {integrity: sha512-RtYH73jXCYkFCC/tnl3RCg3ShkHu89JSwoSw7YHuCGkeBLRcg1iqhLiHUySGGpKeZdjAXnk18EXo/KuXA/UB9g==}
@@ -4699,6 +4718,10 @@ snapshots:
     dependencies:
       '@syncfusion/ej2-icons': 27.1.50
 
+  '@syncfusion/ej2-base@27.2.2':
+    dependencies:
+      '@syncfusion/ej2-icons': 27.2.2
+
   '@syncfusion/ej2-buttons@27.1.58':
     dependencies:
       '@syncfusion/ej2-base': 27.1.55
@@ -4734,6 +4757,10 @@ snapshots:
   '@syncfusion/ej2-data@27.1.52':
     dependencies:
       '@syncfusion/ej2-base': 27.1.55
+
+  '@syncfusion/ej2-data@27.2.2':
+    dependencies:
+      '@syncfusion/ej2-base': 27.2.2
 
   '@syncfusion/ej2-diagrams@27.1.58':
     dependencies:
@@ -4840,6 +4867,8 @@ snapshots:
       '@syncfusion/ej2-svg-base': 27.1.50
 
   '@syncfusion/ej2-icons@27.1.50': {}
+
+  '@syncfusion/ej2-icons@27.2.2': {}
 
   '@syncfusion/ej2-image-editor@27.1.58':
     dependencies:
@@ -4998,6 +5027,12 @@ snapshots:
       '@syncfusion/ej2-data': 27.1.52
       '@syncfusion/ej2-svg-base': 27.1.50
 
+  '@syncfusion/ej2-progressbar@27.2.2':
+    dependencies:
+      '@syncfusion/ej2-base': 27.2.2
+      '@syncfusion/ej2-data': 27.2.2
+      '@syncfusion/ej2-svg-base': 27.2.2
+
   '@syncfusion/ej2-querybuilder@27.1.58':
     dependencies:
       '@syncfusion/ej2-base': 27.1.55
@@ -5010,6 +5045,10 @@ snapshots:
   '@syncfusion/ej2-react-base@27.1.50':
     dependencies:
       '@syncfusion/ej2-base': 27.1.55
+
+  '@syncfusion/ej2-react-base@27.2.2':
+    dependencies:
+      '@syncfusion/ej2-base': 27.2.2
 
   '@syncfusion/ej2-react-buttons@27.1.58':
     dependencies:
@@ -5071,11 +5110,11 @@ snapshots:
       '@syncfusion/ej2-popups': 27.1.58
       '@syncfusion/ej2-react-base': 27.1.50
 
-  '@syncfusion/ej2-react-progressbar@27.1.50':
+  '@syncfusion/ej2-react-progressbar@27.2.2':
     dependencies:
-      '@syncfusion/ej2-base': 27.1.55
-      '@syncfusion/ej2-progressbar': 27.1.50
-      '@syncfusion/ej2-react-base': 27.1.50
+      '@syncfusion/ej2-base': 27.2.2
+      '@syncfusion/ej2-progressbar': 27.2.2
+      '@syncfusion/ej2-react-base': 27.2.2
 
   '@syncfusion/ej2-react-richtexteditor@27.1.58':
     dependencies:
@@ -5139,6 +5178,10 @@ snapshots:
   '@syncfusion/ej2-svg-base@27.1.50':
     dependencies:
       '@syncfusion/ej2-base': 27.1.55
+
+  '@syncfusion/ej2-svg-base@27.2.2':
+    dependencies:
+      '@syncfusion/ej2-base': 27.2.2
 
   '@syncfusion/ej2-treegrid@27.1.57':
     dependencies:
