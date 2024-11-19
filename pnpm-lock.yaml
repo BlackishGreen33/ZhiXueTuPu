@@ -90,8 +90,8 @@ importers:
         specifier: ^27.2.2
         version: 27.2.2
       '@syncfusion/ej2-react-pdfviewer':
-        specifier: ^27.1.58
-        version: 27.1.58
+        specifier: ^27.2.2
+        version: 27.2.2
       '@syncfusion/ej2-react-popups':
         specifier: ^27.2.2
         version: 27.2.2
@@ -1213,6 +1213,9 @@ packages:
   '@syncfusion/ej2-drawings@27.1.58':
     resolution: {integrity: sha512-S7tTTq+EwooW3OmEJTv0k2QPmOjb9SCDunec27MQ8QOEYTxFPmGZyP2w5ntaD5xzIVzAdl4rH6/ESDBsGv8GlA==}
 
+  '@syncfusion/ej2-drawings@27.2.2':
+    resolution: {integrity: sha512-73FAAQPqlqSXA5PJLJtXL76f52ZLX4VE5bDer93JUUVoLtQ2PbCvfxQUv3GChMbcCIV+sz3BkamtFcNU+Mr5gg==}
+
   '@syncfusion/ej2-dropdowns@27.1.58':
     resolution: {integrity: sha512-b7iiElk77csZb0oN9x6R+a+14410V/KLDWObdKBvvFj9Dpla3zCc9NLlPwrTJP+y7S5nWnZe7TkUkbODWCGplg==}
 
@@ -1260,6 +1263,9 @@ packages:
 
   '@syncfusion/ej2-inplace-editor@27.1.50':
     resolution: {integrity: sha512-lZN+kepu5exOIb4joouQcSuW9ojKpgx1Bq8KLd0zvx8+R8+MFGzKzCxFKdJ2jCMoCamXGAEsbi4tYIUuA9Oiyw==}
+
+  '@syncfusion/ej2-inplace-editor@27.2.2':
+    resolution: {integrity: sha512-CHEk97ioTH5s0oqoCaCz37ghCynQvuGDTCKKLthHXSaq/S6BLIhwZRxBUz3z0NvUo3+ssk1F0Z2sjcItUF2Jbw==}
 
   '@syncfusion/ej2-inputs@27.1.58':
     resolution: {integrity: sha512-jHQ1bM1JKKuTcb0Eeh5mZeI/DqASZF0KOY3nY0T8EnodInBuSwAIAJ2IzAQnN4vot9OOr68DR0xsvhTb4/I0+g==}
@@ -1318,8 +1324,14 @@ packages:
   '@syncfusion/ej2-pdf@27.1.58':
     resolution: {integrity: sha512-r2M01MlHdznV1FykDuRwT1aRQeRtkTfQJo1gTAWbtGi+nXyi17cGMeYPsrTT5Kxzcz5BUAFUAyN5PX5klbl7kw==}
 
+  '@syncfusion/ej2-pdf@27.2.2':
+    resolution: {integrity: sha512-+18loklfdovwJlEd4SAqd8vGgwlx/uh41inLyNBOunLrrFiCDe3ZIWR9VVvCsk/ExrIUTDGiHCupDXkhCBZc1A==}
+
   '@syncfusion/ej2-pdfviewer@27.1.58':
     resolution: {integrity: sha512-X4VtAmBXi1jb1XZwzZMzGDxeyf3YtUugOJ7WSpO7He90Rg9x0M3wkbKY4FhGizsJ7vM41PWFmDsNb90b5IzrPw==}
+
+  '@syncfusion/ej2-pdfviewer@27.2.2':
+    resolution: {integrity: sha512-JMtkacW/8MxT23YzSnws77sGzXwNioNWEuEA9hqkrgtvxtHzcyenE9Ql2DfwufuxVmF/n73+XHap8Des80akLg==}
 
   '@syncfusion/ej2-pivotview@27.1.58':
     resolution: {integrity: sha512-WlsNurxmsYy1uh9rvbWXSnl4TcctWtEmjeCMZDHxhSZGSaWkr3iZooSQv8aY8yfb5FXjNOLEPCADibgdVLLFcg==}
@@ -1369,8 +1381,8 @@ packages:
   '@syncfusion/ej2-react-navigations@27.2.2':
     resolution: {integrity: sha512-p2GwqDmr8eqN9nKV5+rDHJpIfeYTWe1HtPJZfQRPq9BsiJHADu1aB86KdnQBYiTu782RBx2uwu3pFheGHuILOA==}
 
-  '@syncfusion/ej2-react-pdfviewer@27.1.58':
-    resolution: {integrity: sha512-U7H/uHAKKu7OEwoNUppUmISVaPFtlE3Kf4v9k9FnYOxUJM1dEJEsZg5wKgtFhr8tnginZuFIokEC+HLsTR3o3A==}
+  '@syncfusion/ej2-react-pdfviewer@27.2.2':
+    resolution: {integrity: sha512-c74oQIFAXDKnVg822i7KIw+XNTRsp98s3p95BsMRqJaRWDsewT52EVTJtBfMFdgFKhymvLn8+22LdFeW/yJzxw==}
 
   '@syncfusion/ej2-react-popups@27.2.2':
     resolution: {integrity: sha512-mJzEktf+nly1gVt729xk31F6yJlbbOjqWaLnY9Aej6afinSCZC7HoixT7p2NBCXKGy6X8haDiK4DJZDPysbgAg==}
@@ -4855,6 +4867,11 @@ snapshots:
       '@syncfusion/ej2-base': 27.1.55
       '@syncfusion/ej2-data': 27.1.52
 
+  '@syncfusion/ej2-drawings@27.2.2':
+    dependencies:
+      '@syncfusion/ej2-base': 27.2.2
+      '@syncfusion/ej2-data': 27.2.2
+
   '@syncfusion/ej2-dropdowns@27.1.58':
     dependencies:
       '@syncfusion/ej2-base': 27.1.55
@@ -5007,6 +5024,21 @@ snapshots:
       '@syncfusion/ej2-richtexteditor': 27.1.58
       '@syncfusion/ej2-splitbuttons': 27.1.56
 
+  '@syncfusion/ej2-inplace-editor@27.2.2':
+    dependencies:
+      '@syncfusion/ej2-base': 27.2.2
+      '@syncfusion/ej2-buttons': 27.2.2
+      '@syncfusion/ej2-calendars': 27.2.2
+      '@syncfusion/ej2-data': 27.2.2
+      '@syncfusion/ej2-dropdowns': 27.2.2
+      '@syncfusion/ej2-inputs': 27.2.2
+      '@syncfusion/ej2-lists': 27.2.2
+      '@syncfusion/ej2-navigations': 27.2.2
+      '@syncfusion/ej2-notifications': 27.2.2
+      '@syncfusion/ej2-popups': 27.2.2
+      '@syncfusion/ej2-richtexteditor': 27.2.2
+      '@syncfusion/ej2-splitbuttons': 27.2.2
+
   '@syncfusion/ej2-inputs@27.1.58':
     dependencies:
       '@syncfusion/ej2-base': 27.1.55
@@ -5130,6 +5162,11 @@ snapshots:
       '@syncfusion/ej2-base': 27.1.55
       '@syncfusion/ej2-compression': 27.1.53
 
+  '@syncfusion/ej2-pdf@27.2.2':
+    dependencies:
+      '@syncfusion/ej2-base': 27.2.2
+      '@syncfusion/ej2-compression': 27.2.2
+
   '@syncfusion/ej2-pdfviewer@27.1.58':
     dependencies:
       '@syncfusion/ej2-base': 27.1.55
@@ -5144,6 +5181,21 @@ snapshots:
       '@syncfusion/ej2-notifications': 27.1.50
       '@syncfusion/ej2-pdf': 27.1.58
       '@syncfusion/ej2-popups': 27.1.58
+
+  '@syncfusion/ej2-pdfviewer@27.2.2':
+    dependencies:
+      '@syncfusion/ej2-base': 27.2.2
+      '@syncfusion/ej2-buttons': 27.2.2
+      '@syncfusion/ej2-data': 27.2.2
+      '@syncfusion/ej2-drawings': 27.2.2
+      '@syncfusion/ej2-dropdowns': 27.2.2
+      '@syncfusion/ej2-inplace-editor': 27.2.2
+      '@syncfusion/ej2-inputs': 27.2.2
+      '@syncfusion/ej2-lists': 27.2.2
+      '@syncfusion/ej2-navigations': 27.2.2
+      '@syncfusion/ej2-notifications': 27.2.2
+      '@syncfusion/ej2-pdf': 27.2.2
+      '@syncfusion/ej2-popups': 27.2.2
 
   '@syncfusion/ej2-pivotview@27.1.58':
     dependencies:
@@ -5252,11 +5304,11 @@ snapshots:
       '@syncfusion/ej2-navigations': 27.2.2
       '@syncfusion/ej2-react-base': 27.2.2
 
-  '@syncfusion/ej2-react-pdfviewer@27.1.58':
+  '@syncfusion/ej2-react-pdfviewer@27.2.2':
     dependencies:
-      '@syncfusion/ej2-base': 27.1.55
-      '@syncfusion/ej2-pdfviewer': 27.1.58
-      '@syncfusion/ej2-react-base': 27.1.50
+      '@syncfusion/ej2-base': 27.2.2
+      '@syncfusion/ej2-pdfviewer': 27.2.2
+      '@syncfusion/ej2-react-base': 27.2.2
 
   '@syncfusion/ej2-react-popups@27.2.2':
     dependencies:
@@ -6223,7 +6275,7 @@ snapshots:
       debug: 4.3.7
       enhanced-resolve: 5.17.1
       eslint: 9.11.0(jiti@1.21.6)
-      eslint-module-utils: 2.12.0(@typescript-eslint/parser@7.2.0(eslint@9.11.0(jiti@1.21.6))(typescript@5.6.3))(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.6.3(@typescript-eslint/parser@7.2.0(eslint@9.11.0(jiti@1.21.6))(typescript@5.6.3))(eslint-import-resolver-node@0.3.9)(eslint-plugin-import@2.31.0)(eslint@9.11.0(jiti@1.21.6)))(eslint@9.11.0(jiti@1.21.6))
+      eslint-module-utils: 2.12.0(@typescript-eslint/parser@7.2.0(eslint@9.11.0(jiti@1.21.6))(typescript@5.6.3))(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.6.3)(eslint@9.11.0(jiti@1.21.6))
       fast-glob: 3.3.2
       get-tsconfig: 4.8.1
       is-bun-module: 1.2.1
@@ -6236,7 +6288,7 @@ snapshots:
       - eslint-import-resolver-webpack
       - supports-color
 
-  eslint-module-utils@2.12.0(@typescript-eslint/parser@7.2.0(eslint@9.11.0(jiti@1.21.6))(typescript@5.6.3))(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.6.3(@typescript-eslint/parser@7.2.0(eslint@9.11.0(jiti@1.21.6))(typescript@5.6.3))(eslint-import-resolver-node@0.3.9)(eslint-plugin-import@2.31.0)(eslint@9.11.0(jiti@1.21.6)))(eslint@9.11.0(jiti@1.21.6)):
+  eslint-module-utils@2.12.0(@typescript-eslint/parser@7.2.0(eslint@9.11.0(jiti@1.21.6))(typescript@5.6.3))(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.6.3)(eslint@9.11.0(jiti@1.21.6)):
     dependencies:
       debug: 3.2.7
     optionalDependencies:
@@ -6258,7 +6310,7 @@ snapshots:
       doctrine: 2.1.0
       eslint: 9.11.0(jiti@1.21.6)
       eslint-import-resolver-node: 0.3.9
-      eslint-module-utils: 2.12.0(@typescript-eslint/parser@7.2.0(eslint@9.11.0(jiti@1.21.6))(typescript@5.6.3))(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.6.3(@typescript-eslint/parser@7.2.0(eslint@9.11.0(jiti@1.21.6))(typescript@5.6.3))(eslint-import-resolver-node@0.3.9)(eslint-plugin-import@2.31.0)(eslint@9.11.0(jiti@1.21.6)))(eslint@9.11.0(jiti@1.21.6))
+      eslint-module-utils: 2.12.0(@typescript-eslint/parser@7.2.0(eslint@9.11.0(jiti@1.21.6))(typescript@5.6.3))(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.6.3)(eslint@9.11.0(jiti@1.21.6))
       hasown: 2.0.2
       is-core-module: 2.15.1
       is-glob: 4.0.3
