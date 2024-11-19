@@ -63,8 +63,8 @@ importers:
         specifier: ^27.1.58
         version: 27.1.58
       '@syncfusion/ej2-base':
-        specifier: ^27.1.54
-        version: 27.1.55
+        specifier: ^27.2.2
+        version: 27.2.2
       '@syncfusion/ej2-react-buttons':
         specifier: ^27.1.58
         version: 27.1.58
