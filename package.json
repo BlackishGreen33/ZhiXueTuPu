@@ -23,7 +23,7 @@
   },
   "dependencies": {
     "@capacitor/android": "^6.1.2",
-    "@capacitor/core": "^6.1.2",
+    "@capacitor/core": "^6.2.0",
     "@capacitor/ios": "^6.1.2",
     "@emotion/styled": "^11.13.5",
     "@hookform/resolvers": "^3.9.1",
