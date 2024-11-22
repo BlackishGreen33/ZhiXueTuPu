@@ -69,8 +69,8 @@ importers:
         specifier: ^27.2.2
         version: 27.2.2
       '@syncfusion/ej2-react-calendars':
-        specifier: ^27.2.2
-        version: 27.2.2
+        specifier: ^27.2.3
+        version: 27.2.3
       '@syncfusion/ej2-react-charts':
         specifier: ^27.1.58
         version: 27.1.58
@@ -1178,6 +1178,9 @@ packages:
   '@syncfusion/ej2-calendars@27.2.2':
     resolution: {integrity: sha512-dv5MGB2ZPoCfnSc57cNQ3wIBECyZZ39T1ilfvLdAam1RQYaU+FISRkDGBS7zfy0242SeGDAGAD8esE4mNn4mjw==}
 
+  '@syncfusion/ej2-calendars@27.2.3':
+    resolution: {integrity: sha512-YaAFJRXl7X/a9WFDNkrws4DDwhOc7guMQVZjTK5mNOuuhJFbb0hZCNMCSQHQcQ9AdrSo1IY2aXT3ZGgln+r2Ag==}
+
   '@syncfusion/ej2-charts@27.1.58':
     resolution: {integrity: sha512-12j5u4UHIqVIhwgc0vWw18EIH+Tsap5tb8DwqXE6sWWcScBjtgwLv7f+xLBPm73dZRO2LnmDGMnYoGfhlIx6Ow==}
 
@@ -1271,6 +1274,9 @@ packages:
   '@syncfusion/ej2-lists@27.2.2':
     resolution: {integrity: sha512-BZid7fPAccd0lB4xVIDQQ4Eo+gMZ9tExiMUz/D8GxTDuCHR6TAULLY55Ur/mKiY+8p+96BCmlpP8StyToS+77A==}
 
+  '@syncfusion/ej2-lists@27.2.3':
+    resolution: {integrity: sha512-YDm8eerIIOyoBXfTGSVzyKFNqpNQeeeuevxGjoVolM+eXJ7E8UC6y5aPV43QYg+WRVvieenT7rd1VcAZ1sdiTg==}
+
   '@syncfusion/ej2-maps@27.2.2':
     resolution: {integrity: sha512-bZQS/gGUxgtrvRyD8/mIeTcS16BVhEsHwDecRQWrxsYAoJVxPYE8sWd1lg4fFuc/2GjW0BbCWQfwXo/4fMqGbA==}
 
@@ -1325,8 +1331,8 @@ packages:
   '@syncfusion/ej2-react-buttons@27.2.2':
     resolution: {integrity: sha512-S7bQopz1gjTgrEjAgbsEU/SP8ZtgMMUaNyji5dXhNM3UGDlh4Q7faRXCjIeZOgmxGfG/nwnMqSdGqykpyx03fQ==}
 
-  '@syncfusion/ej2-react-calendars@27.2.2':
-    resolution: {integrity: sha512-tq99QleaZNenmuPj2E457SpVSkUwWTG/yKIDjN132LloAcqIMPM8HpcZOEncIkSjg+kUs5fYB0nnJKifeusHbA==}
+  '@syncfusion/ej2-react-calendars@27.2.3':
+    resolution: {integrity: sha512-Gic9zajfOiyK0XK/BffSGmL+Dr6AH5/Od4JWxF47KboxprN+oz7e/AwbkYT9U3zQbab/rN24QVN08CKFUdHOiA==}
 
   '@syncfusion/ej2-react-charts@27.1.58':
     resolution: {integrity: sha512-EEOHIlnYuDXTwwlg/373zCVeJXk5Th3ChUznqGpDsBAr+1yeYyKCeskQT7e79fWFDLphor46yBVw/TEwRSGKyA==}
@@ -4749,6 +4755,14 @@ snapshots:
       '@syncfusion/ej2-lists': 27.2.2
       '@syncfusion/ej2-popups': 27.2.2
 
+  '@syncfusion/ej2-calendars@27.2.3':
+    dependencies:
+      '@syncfusion/ej2-base': 27.2.2
+      '@syncfusion/ej2-buttons': 27.2.2
+      '@syncfusion/ej2-inputs': 27.2.2
+      '@syncfusion/ej2-lists': 27.2.3
+      '@syncfusion/ej2-popups': 27.2.2
+
   '@syncfusion/ej2-charts@27.1.58':
     dependencies:
       '@syncfusion/ej2-base': 27.1.55
@@ -4988,6 +5002,13 @@ snapshots:
       '@syncfusion/ej2-data': 27.2.2
       '@syncfusion/ej2-popups': 27.2.2
 
+  '@syncfusion/ej2-lists@27.2.3':
+    dependencies:
+      '@syncfusion/ej2-base': 27.2.2
+      '@syncfusion/ej2-buttons': 27.2.2
+      '@syncfusion/ej2-data': 27.2.2
+      '@syncfusion/ej2-popups': 27.2.2
+
   '@syncfusion/ej2-maps@27.2.2':
     dependencies:
       '@syncfusion/ej2-base': 27.2.2
@@ -5118,10 +5139,10 @@ snapshots:
       '@syncfusion/ej2-buttons': 27.2.2
       '@syncfusion/ej2-react-base': 27.2.2
 
-  '@syncfusion/ej2-react-calendars@27.2.2':
+  '@syncfusion/ej2-react-calendars@27.2.3':
     dependencies:
       '@syncfusion/ej2-base': 27.2.2
-      '@syncfusion/ej2-calendars': 27.2.2
+      '@syncfusion/ej2-calendars': 27.2.3
       '@syncfusion/ej2-react-base': 27.2.2
 
   '@syncfusion/ej2-react-charts@27.1.58':
@@ -6120,7 +6141,7 @@ snapshots:
       debug: 4.3.7
       enhanced-resolve: 5.17.1
       eslint: 9.11.0(jiti@1.21.6)
-      eslint-module-utils: 2.12.0(@typescript-eslint/parser@7.2.0(eslint@9.11.0(jiti@1.21.6))(typescript@5.6.3))(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.6.3)(eslint@9.11.0(jiti@1.21.6))
+      eslint-module-utils: 2.12.0(@typescript-eslint/parser@7.2.0(eslint@9.11.0(jiti@1.21.6))(typescript@5.6.3))(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.6.3(@typescript-eslint/parser@7.2.0(eslint@9.11.0(jiti@1.21.6))(typescript@5.6.3))(eslint-import-resolver-node@0.3.9)(eslint-plugin-import@2.31.0)(eslint@9.11.0(jiti@1.21.6)))(eslint@9.11.0(jiti@1.21.6))
       fast-glob: 3.3.2
       get-tsconfig: 4.8.1
       is-bun-module: 1.2.1
@@ -6133,7 +6154,7 @@ snapshots:
       - eslint-import-resolver-webpack
       - supports-color
 
-  eslint-module-utils@2.12.0(@typescript-eslint/parser@7.2.0(eslint@9.11.0(jiti@1.21.6))(typescript@5.6.3))(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.6.3)(eslint@9.11.0(jiti@1.21.6)):
+  eslint-module-utils@2.12.0(@typescript-eslint/parser@7.2.0(eslint@9.11.0(jiti@1.21.6))(typescript@5.6.3))(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.6.3(@typescript-eslint/parser@7.2.0(eslint@9.11.0(jiti@1.21.6))(typescript@5.6.3))(eslint-import-resolver-node@0.3.9)(eslint-plugin-import@2.31.0)(eslint@9.11.0(jiti@1.21.6)))(eslint@9.11.0(jiti@1.21.6)):
     dependencies:
       debug: 3.2.7
     optionalDependencies:
@@ -6155,7 +6176,7 @@ snapshots:
       doctrine: 2.1.0
       eslint: 9.11.0(jiti@1.21.6)
       eslint-import-resolver-node: 0.3.9
-      eslint-module-utils: 2.12.0(@typescript-eslint/parser@7.2.0(eslint@9.11.0(jiti@1.21.6))(typescript@5.6.3))(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.6.3)(eslint@9.11.0(jiti@1.21.6))
+      eslint-module-utils: 2.12.0(@typescript-eslint/parser@7.2.0(eslint@9.11.0(jiti@1.21.6))(typescript@5.6.3))(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.6.3(@typescript-eslint/parser@7.2.0(eslint@9.11.0(jiti@1.21.6))(typescript@5.6.3))(eslint-import-resolver-node@0.3.9)(eslint-plugin-import@2.31.0)(eslint@9.11.0(jiti@1.21.6)))(eslint@9.11.0(jiti@1.21.6))
       hasown: 2.0.2
       is-core-module: 2.15.1
       is-glob: 4.0.3
