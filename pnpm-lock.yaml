@@ -105,8 +105,8 @@ importers:
         specifier: ^27.2.5
         version: 27.2.5
       '@tanstack/react-query':
-        specifier: ^5.62.0
-        version: 5.62.0(react@18.3.1)
+        specifier: ^5.62.3
+        version: 5.62.3(react@18.3.1)
       axios:
         specifier: ^1.7.9
         version: 1.7.9
@@ -1394,11 +1394,11 @@ packages:
   '@syncfusion/ej2@27.2.3':
     resolution: {integrity: sha512-Yy92BBp46LHouN2hauKMoPHFQT/+eBx8CDDixiJb5jeBSAcwaJ+hx3vV9li9cQtR6baBEOcYtkL8YQuE51Q1Hg==}
 
-  '@tanstack/query-core@5.62.0':
-    resolution: {integrity: sha512-sx38bGrqF9bop92AXOvzDr0L9fWDas5zXdPglxa9cuqeVSWS7lY6OnVyl/oodfXjgOGRk79IfCpgVmxrbHuFHg==}
+  '@tanstack/query-core@5.62.3':
+    resolution: {integrity: sha512-Jp/nYoz8cnO7kqhOlSv8ke/0MJRJVGuZ0P/JO9KQ+f45mpN90hrerzavyTKeSoT/pOzeoOUkv1Xd0wPsxAWXfg==}
 
-  '@tanstack/react-query@5.62.0':
-    resolution: {integrity: sha512-tj2ltjAn2a3fs+Dqonlvs6GyLQ/LKVJE2DVSYW+8pJ3P6/VCVGrfqv5UEchmlP7tLOvvtZcOuSyI2ooVlR5Yqw==}
+  '@tanstack/react-query@5.62.3':
+    resolution: {integrity: sha512-y2zDNKuhgiuMgsKkqd4AcsLIBiCfEO8U11AdrtAUihmLbRNztPrlcZqx2lH1GacZsx+y1qRRbCcJLYTtF1vKsw==}
     peerDependencies:
       react: ^18 || ^19
 
@@ -5388,11 +5388,11 @@ snapshots:
       '@syncfusion/ej2-treegrid': 27.2.3
       '@syncfusion/ej2-treemap': 27.2.2
 
-  '@tanstack/query-core@5.62.0': {}
+  '@tanstack/query-core@5.62.3': {}
 
-  '@tanstack/react-query@5.62.0(react@18.3.1)':
+  '@tanstack/react-query@5.62.3(react@18.3.1)':
     dependencies:
-      '@tanstack/query-core': 5.62.0
+      '@tanstack/query-core': 5.62.3
       react: 18.3.1
 
   '@types/fs-extra@8.1.5':
