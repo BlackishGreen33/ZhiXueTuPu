@@ -93,8 +93,8 @@ importers:
         specifier: ^27.2.5
         version: 27.2.5
       '@syncfusion/ej2-react-popups':
-        specifier: ^27.2.2
-        version: 27.2.2
+        specifier: ^28.1.33
+        version: 28.1.33
       '@syncfusion/ej2-react-progressbar':
         specifier: ^27.2.2
         version: 27.2.2
@@ -1326,8 +1326,8 @@ packages:
   '@syncfusion/ej2-react-pdfviewer@27.2.5':
     resolution: {integrity: sha512-7X+R5tLDyqZG4+XOutJQl+ABWD15YrAimz4tlpoAiU4FvFVDJqn6T/+ESh/ry770yP52FX2W05ux2ytSz6W6tw==}
 
-  '@syncfusion/ej2-react-popups@27.2.2':
-    resolution: {integrity: sha512-mJzEktf+nly1gVt729xk31F6yJlbbOjqWaLnY9Aej6afinSCZC7HoixT7p2NBCXKGy6X8haDiK4DJZDPysbgAg==}
+  '@syncfusion/ej2-react-popups@28.1.33':
+    resolution: {integrity: sha512-W2wbsPRsfWWNj8S3hMOqumfZpoGERbBIG7ACsOJ6QXyWv4xaoJb/niDPW/rczmHvL25itWEADscoNb4PVG7/2Q==}
 
   '@syncfusion/ej2-react-progressbar@27.2.2':
     resolution: {integrity: sha512-vLnRN+vU2xWedhppQIVeIuG0R4zCR8SDZMDOWW3ab1ZidNvIfxOAUW9OnY3bW7jP27vi7YXT710Eag7xTE4I9Q==}
@@ -5093,11 +5093,11 @@ snapshots:
       '@syncfusion/ej2-pdfviewer': 27.2.5
       '@syncfusion/ej2-react-base': 27.2.2
 
-  '@syncfusion/ej2-react-popups@27.2.2':
+  '@syncfusion/ej2-react-popups@28.1.33':
     dependencies:
-      '@syncfusion/ej2-base': 27.2.2
-      '@syncfusion/ej2-popups': 27.2.2
-      '@syncfusion/ej2-react-base': 27.2.2
+      '@syncfusion/ej2-base': 28.1.33
+      '@syncfusion/ej2-popups': 28.1.33
+      '@syncfusion/ej2-react-base': 28.1.33
 
   '@syncfusion/ej2-react-progressbar@27.2.2':
     dependencies:
