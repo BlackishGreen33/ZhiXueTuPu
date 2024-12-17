@@ -96,8 +96,8 @@ importers:
         specifier: ^28.1.33
         version: 28.1.33
       '@syncfusion/ej2-react-progressbar':
-        specifier: ^27.2.2
-        version: 27.2.2
+        specifier: ^28.1.33
+        version: 28.1.33
       '@syncfusion/ej2-react-richtexteditor':
         specifier: ^27.2.5
         version: 27.2.5
@@ -1299,6 +1299,9 @@ packages:
   '@syncfusion/ej2-progressbar@27.2.2':
     resolution: {integrity: sha512-W/ea2ea+oh1aNihUDHiyvcyGH1S8wAeezEN1Dnrf1MEMAXSXPBvI5kwtzCrVaYatiliwBfEbZa6nizXbZv2uGA==}
 
+  '@syncfusion/ej2-progressbar@28.1.33':
+    resolution: {integrity: sha512-LHNMUngyQQ95wUORY/tq6VMyoHCpkrz9FJShhuZIGPNK7rJ/8T9sn5F0O7cqqqqSbH2SIGotgx5CaiRmEFByEA==}
+
   '@syncfusion/ej2-querybuilder@27.2.5':
     resolution: {integrity: sha512-/n+Vo94ISIxnwUEw4TQyMRZX8aiqJw3/cn4X54R/RbHk/CZM7eiBj6JzPK3tE7L8J1NbXDYSArFCEnSUqiwImA==}
 
@@ -1338,8 +1341,8 @@ packages:
   '@syncfusion/ej2-react-popups@28.1.33':
     resolution: {integrity: sha512-W2wbsPRsfWWNj8S3hMOqumfZpoGERbBIG7ACsOJ6QXyWv4xaoJb/niDPW/rczmHvL25itWEADscoNb4PVG7/2Q==}
 
-  '@syncfusion/ej2-react-progressbar@27.2.2':
-    resolution: {integrity: sha512-vLnRN+vU2xWedhppQIVeIuG0R4zCR8SDZMDOWW3ab1ZidNvIfxOAUW9OnY3bW7jP27vi7YXT710Eag7xTE4I9Q==}
+  '@syncfusion/ej2-react-progressbar@28.1.33':
+    resolution: {integrity: sha512-Y2ThQG8jYKipYinuC9GQLINAsL0bO5XNp04ALzrvPJZqMeCnaamfTxAi8C2ZEGiOjRyGf6u42liLxGYSsp3Qcg==}
 
   '@syncfusion/ej2-react-richtexteditor@27.2.5':
     resolution: {integrity: sha512-9uQhhqxwN+vBXw0h9jg8wQuwBo9hMLT1TU2I6F3NBf8wusi15Jj/MgH/8oDPfQLox5kNu0pOy6bSwZoZdZ+56A==}
@@ -1367,6 +1370,9 @@ packages:
 
   '@syncfusion/ej2-svg-base@27.2.2':
     resolution: {integrity: sha512-BMKow6dg121FnRe2JlypxYOuq/mu9PyJgu2AVv+Qzpd9Lr/+G7HFQ4VowAHCqJ1ZKw/I9SJQPtCD2rgSOk+GmQ==}
+
+  '@syncfusion/ej2-svg-base@28.1.33':
+    resolution: {integrity: sha512-AHRvJp8PWjyd8jXvmd/6h9a+fHNcyBXTtnMZ9zabSU6ugdIxraXQ1WPy0gAaA63OGoJOn4vemi+KxvImYVj6nQ==}
 
   '@syncfusion/ej2-treegrid@27.2.3':
     resolution: {integrity: sha512-+HSqAG/dTvm7tcu4lv7JIx91WnxH2xpQXktdaP3739y516SsQuxcxp683DvP8MzMFo7A2jP78waizSHQJPM35Q==}
@@ -5117,6 +5123,12 @@ snapshots:
       '@syncfusion/ej2-data': 27.2.2
       '@syncfusion/ej2-svg-base': 27.2.2
 
+  '@syncfusion/ej2-progressbar@28.1.33':
+    dependencies:
+      '@syncfusion/ej2-base': 28.1.33
+      '@syncfusion/ej2-data': 28.1.33
+      '@syncfusion/ej2-svg-base': 28.1.33
+
   '@syncfusion/ej2-querybuilder@27.2.5':
     dependencies:
       '@syncfusion/ej2-base': 27.2.5
@@ -5194,11 +5206,11 @@ snapshots:
       '@syncfusion/ej2-popups': 28.1.33
       '@syncfusion/ej2-react-base': 28.1.33
 
-  '@syncfusion/ej2-react-progressbar@27.2.2':
+  '@syncfusion/ej2-react-progressbar@28.1.33':
     dependencies:
-      '@syncfusion/ej2-base': 27.2.2
-      '@syncfusion/ej2-progressbar': 27.2.2
-      '@syncfusion/ej2-react-base': 27.2.2
+      '@syncfusion/ej2-base': 28.1.33
+      '@syncfusion/ej2-progressbar': 28.1.33
+      '@syncfusion/ej2-react-base': 28.1.33
 
   '@syncfusion/ej2-react-richtexteditor@27.2.5':
     dependencies:
@@ -5267,6 +5279,10 @@ snapshots:
   '@syncfusion/ej2-svg-base@27.2.2':
     dependencies:
       '@syncfusion/ej2-base': 27.2.5
+
+  '@syncfusion/ej2-svg-base@28.1.33':
+    dependencies:
+      '@syncfusion/ej2-base': 28.1.33
 
   '@syncfusion/ej2-treegrid@27.2.3':
     dependencies:
@@ -6223,7 +6239,7 @@ snapshots:
       debug: 4.3.7
       enhanced-resolve: 5.17.1
       eslint: 9.11.0(jiti@1.21.6)
-      eslint-module-utils: 2.12.0(@typescript-eslint/parser@7.2.0(eslint@9.11.0(jiti@1.21.6))(typescript@5.7.2))(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.6.3(@typescript-eslint/parser@7.2.0(eslint@9.11.0(jiti@1.21.6))(typescript@5.7.2))(eslint-import-resolver-node@0.3.9)(eslint-plugin-import@2.31.0)(eslint@9.11.0(jiti@1.21.6)))(eslint@9.11.0(jiti@1.21.6))
+      eslint-module-utils: 2.12.0(@typescript-eslint/parser@7.2.0(eslint@9.11.0(jiti@1.21.6))(typescript@5.7.2))(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.6.3)(eslint@9.11.0(jiti@1.21.6))
       fast-glob: 3.3.2
       get-tsconfig: 4.8.1
       is-bun-module: 1.2.1
@@ -6236,7 +6252,7 @@ snapshots:
       - eslint-import-resolver-webpack
       - supports-color
 
-  eslint-module-utils@2.12.0(@typescript-eslint/parser@7.2.0(eslint@9.11.0(jiti@1.21.6))(typescript@5.7.2))(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.6.3(@typescript-eslint/parser@7.2.0(eslint@9.11.0(jiti@1.21.6))(typescript@5.7.2))(eslint-import-resolver-node@0.3.9)(eslint-plugin-import@2.31.0)(eslint@9.11.0(jiti@1.21.6)))(eslint@9.11.0(jiti@1.21.6)):
+  eslint-module-utils@2.12.0(@typescript-eslint/parser@7.2.0(eslint@9.11.0(jiti@1.21.6))(typescript@5.7.2))(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.6.3)(eslint@9.11.0(jiti@1.21.6)):
     dependencies:
       debug: 3.2.7
     optionalDependencies:
@@ -6258,7 +6274,7 @@ snapshots:
       doctrine: 2.1.0
       eslint: 9.11.0(jiti@1.21.6)
       eslint-import-resolver-node: 0.3.9
-      eslint-module-utils: 2.12.0(@typescript-eslint/parser@7.2.0(eslint@9.11.0(jiti@1.21.6))(typescript@5.7.2))(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.6.3(@typescript-eslint/parser@7.2.0(eslint@9.11.0(jiti@1.21.6))(typescript@5.7.2))(eslint-import-resolver-node@0.3.9)(eslint-plugin-import@2.31.0)(eslint@9.11.0(jiti@1.21.6)))(eslint@9.11.0(jiti@1.21.6))
+      eslint-module-utils: 2.12.0(@typescript-eslint/parser@7.2.0(eslint@9.11.0(jiti@1.21.6))(typescript@5.7.2))(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.6.3)(eslint@9.11.0(jiti@1.21.6))
       hasown: 2.0.2
       is-core-module: 2.15.1
       is-glob: 4.0.3
