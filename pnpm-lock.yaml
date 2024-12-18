@@ -87,8 +87,8 @@ importers:
         specifier: ^28.1.33
         version: 28.1.33
       '@syncfusion/ej2-react-navigations':
-        specifier: ^27.2.5
-        version: 27.2.5
+        specifier: ^28.1.33
+        version: 28.1.33
       '@syncfusion/ej2-react-pdfviewer':
         specifier: ^27.2.5
         version: 27.2.5
@@ -1347,8 +1347,8 @@ packages:
   '@syncfusion/ej2-react-kanban@28.1.33':
     resolution: {integrity: sha512-XkcwBIcs45ezeP5aGVutpgqQ/1g6/MyNC4knn0PXCxKg6X9drR3NgJ5AjnIpkhWzqhuYmGRraXWqLJSFfhKzaA==}
 
-  '@syncfusion/ej2-react-navigations@27.2.5':
-    resolution: {integrity: sha512-AOthWqydfn10/hWNt7ciIGpkYvChkJMnsePXX9gVaA+TVvFlotYyrJLWm/nAneoTmP28MgCngu3sgKIV+i88lg==}
+  '@syncfusion/ej2-react-navigations@28.1.33':
+    resolution: {integrity: sha512-/hlm0oynG9VOrpl5niHz9iRma10/WNJGnxMA+ODoOrZnvLflIajAa8gEn8LbJl3CIU0T15GSWCZRFqAnatbRjg==}
 
   '@syncfusion/ej2-react-pdfviewer@27.2.5':
     resolution: {integrity: sha512-7X+R5tLDyqZG4+XOutJQl+ABWD15YrAimz4tlpoAiU4FvFVDJqn6T/+ESh/ry770yP52FX2W05ux2ytSz6W6tw==}
@@ -5244,11 +5244,11 @@ snapshots:
       '@syncfusion/ej2-kanban': 28.1.33
       '@syncfusion/ej2-react-base': 28.1.33
 
-  '@syncfusion/ej2-react-navigations@27.2.5':
+  '@syncfusion/ej2-react-navigations@28.1.33':
     dependencies:
-      '@syncfusion/ej2-base': 27.2.5
-      '@syncfusion/ej2-navigations': 27.2.5
-      '@syncfusion/ej2-react-base': 27.2.2
+      '@syncfusion/ej2-base': 28.1.33
+      '@syncfusion/ej2-navigations': 28.1.33
+      '@syncfusion/ej2-react-base': 28.1.33
 
   '@syncfusion/ej2-react-pdfviewer@27.2.5':
     dependencies:
