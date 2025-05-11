@@ -28,6 +28,7 @@ const Viewer: React.FC<ViewerProps> = React.memo(({ url }) => {
     <div>
       <div className="control-section">
         <PdfViewerComponent
+          // @ts-ignore
           ref={(scope) => {
             // @ts-ignore
             viewer = scope;
