@@ -18,6 +18,7 @@ import { HiOutlineRefresh } from 'react-icons/hi';
 import { IoIosPaper } from 'react-icons/io';
 import {
   MdDashboardCustomize,
+  MdInterpreterMode,
   MdOutlineSupervisorAccount,
   MdQuiz,
   MdSource,
@@ -508,6 +509,11 @@ export const links = [
         name: '能力测验',
         nav: 'quiz/dashboard',
         icon: <MdQuiz />,
+      },
+      {
+        name: '智能教学',
+        nav: 'test',
+        icon: <MdInterpreterMode />,
       },
       {
         name: '资源管理',
