@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import React from 'react';
+import * as React from 'react';
 
 import Border from '@/common/components/elements/Border';
 import { Card } from '@/common/components/ui/card';

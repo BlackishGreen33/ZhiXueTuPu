@@ -10,7 +10,7 @@ import {
   SplineAreaSeries,
 } from '@syncfusion/ej2-react-charts';
 import { useTheme } from 'next-themes';
-import React from 'react';
+import * as React from 'react';
 
 import { ChartsHeader } from '@/common/components/elements';
 import {

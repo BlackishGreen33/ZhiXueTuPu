@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { redirect } from 'next/navigation';
-import React from 'react';
+import * as React from 'react';
 import { LuLayoutDashboard } from 'react-icons/lu';
 
 import HistoryComponent from '@/common/components/elements/HistoryComponent';

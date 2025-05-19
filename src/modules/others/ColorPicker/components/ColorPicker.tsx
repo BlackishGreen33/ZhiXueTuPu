@@ -4,7 +4,7 @@ import {
   ColorPickerComponent,
   ColorPickerMode,
 } from '@syncfusion/ej2-react-inputs';
-import React from 'react';
+import * as React from 'react';
 
 import Header from '@/common/components/elements/Header';
 

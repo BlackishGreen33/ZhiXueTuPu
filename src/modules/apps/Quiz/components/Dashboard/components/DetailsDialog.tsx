@@ -2,7 +2,7 @@
 
 import Image from 'next/image';
 import Link from 'next/link';
-import React from 'react';
+import * as React from 'react';
 import { LuGithub, LuHelpCircle } from 'react-icons/lu';
 
 import {
@@ -40,7 +40,7 @@ const DetailsDialog: React.FC = React.memo(() => {
                 </Link>
               </p>
             </div>
-            <p className="my-2 mt-4 ">
+            <p className="my-2 mt-4">
               你是否厌倦了平凡的测验，想要享受独特的、非凡的测验体验？那么，智学图谱测验系统将会是你最好的选择。智学图谱测验系统通过人工智能技术，将考试变成一种全新的、前所未有的体验。
             </p>
             <hr />

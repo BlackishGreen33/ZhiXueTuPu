@@ -1,4 +1,4 @@
-import React from 'react';
+import * as React from 'react';
 import { PiMagicWandThin, PiShapesThin } from 'react-icons/pi';
 
 const Introduction: React.FC = React.memo(() => {

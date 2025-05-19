@@ -1,5 +1,5 @@
 import { useSession } from 'next-auth/react';
-import React from 'react';
+import * as React from 'react';
 
 import SignInButton from './SignInButton';
 import UserAccountNav from './UserAccountNav';

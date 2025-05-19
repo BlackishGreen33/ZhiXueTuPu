@@ -1,4 +1,4 @@
-import React from 'react';
+import * as React from 'react';
 
 import { Card } from '@/common/components/ui/card';
 import { LuPercent, LuTarget } from 'react-icons/lu';

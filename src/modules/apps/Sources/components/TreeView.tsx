@@ -2,7 +2,7 @@
 
 import { TreeViewComponent } from '@syncfusion/ej2-react-navigations';
 import { motion } from 'framer-motion';
-import React from 'react';
+import * as React from 'react';
 
 import { Card } from '@/common/components/ui/card';
 import { SourceData } from '@/common/dummy/SourceData';

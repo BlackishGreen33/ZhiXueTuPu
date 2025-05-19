@@ -1,7 +1,7 @@
 'use client';
 
 import Image from 'next/image';
-import React from 'react';
+import * as React from 'react';
 import { MdOutlineCancel } from 'react-icons/md';
 
 import { chatData } from '@/common/dummy/dummy';
@@ -19,7 +19,7 @@ const Notification: React.FC = React.memo(() => {
           <p className="text-lg font-semibold dark:text-gray-200">通知</p>
           <button
             type="button"
-            className="bg-orange-theme rounded p-1 px-2 text-xs text-black "
+            className="bg-orange-theme rounded p-1 px-2 text-xs text-black"
           >
             {' '}
             4 则新通知
@@ -33,7 +33,7 @@ const Notification: React.FC = React.memo(() => {
           borderRadius="50%"
         />
       </div>
-      <div className="mt-5 ">
+      <div className="mt-5">
         {chatData?.map((item, index) => (
           <div
             key={index}

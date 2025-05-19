@@ -1,4 +1,4 @@
-import React from 'react';
+import * as React from 'react';
 
 import { getAuthSession } from '@/common/utils/nextauth';
 import { redirect } from 'next/navigation';

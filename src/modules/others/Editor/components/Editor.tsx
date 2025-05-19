@@ -9,7 +9,7 @@ import {
   RichTextEditorComponent,
   Toolbar,
 } from '@syncfusion/ej2-react-richtexteditor';
-import React from 'react';
+import * as React from 'react';
 
 import Header from '@/common/components/elements/Header';
 import { EditorData } from '@/common/dummy/dummy';

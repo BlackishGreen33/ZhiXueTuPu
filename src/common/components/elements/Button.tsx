@@ -1,8 +1,9 @@
 'use client';
 
-import useStore, { initialState } from '@/common/hooks/useStore';
 import { motion } from 'framer-motion';
-import React from 'react';
+import * as React from 'react';
+
+import useStore, { initialState } from '@/common/hooks/useStore';
 
 interface ButtonProps {
   icon?: React.ReactNode;

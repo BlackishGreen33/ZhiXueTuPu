@@ -1,5 +1,5 @@
 import { redirect } from 'next/navigation';
-import React from 'react';
+import * as React from 'react';
 
 import { prisma } from '@/common/utils/db';
 import { getAuthSession } from '@/common/utils/nextauth';

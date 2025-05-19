@@ -5,7 +5,7 @@ import {
   SparklineComponent,
   SparklineTooltip,
 } from '@syncfusion/ej2-react-charts';
-import React from 'react';
+import * as React from 'react';
 
 interface SparkLineProps {
   id: string;

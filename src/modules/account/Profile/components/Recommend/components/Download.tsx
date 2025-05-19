@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import React from 'react';
+import * as React from 'react';
 
 const Download: React.FC = React.memo(() => {
   return (

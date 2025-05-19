@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import React from 'react';
+import * as React from 'react';
 import { LuClipboardEdit, LuClock, LuCopyCheck } from 'react-icons/lu';
 
 import { prisma } from '@/common/utils/db';

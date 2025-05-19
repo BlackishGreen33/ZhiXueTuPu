@@ -1,6 +1,6 @@
 import { getServerSession } from 'next-auth';
 import { redirect } from 'next/navigation';
-import React from 'react';
+import * as React from 'react';
 
 import DetailsDialog from './DetailsDialog';
 import HistoryCard from './HistoryCard';

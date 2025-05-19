@@ -2,7 +2,7 @@
 
 import { SessionProvider } from 'next-auth/react';
 import { ThemeProvider as NextThemesProvider } from 'next-themes';
-import React from 'react';
+import * as React from 'react';
 
 // import ProgressBar from '@/common/components/elements/ProgressBar';
 import Layout from '@/common/components/layouts';

@@ -4,7 +4,7 @@ import { TooltipComponent } from '@syncfusion/ej2-react-popups';
 import { motion } from 'framer-motion';
 import type { User } from 'next-auth';
 import Image from 'next/image';
-import React from 'react';
+import * as React from 'react';
 import { MdKeyboardArrowDown } from 'react-icons/md';
 
 import useStore from '@/common/hooks/useStore';

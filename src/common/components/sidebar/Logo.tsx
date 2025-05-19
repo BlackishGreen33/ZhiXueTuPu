@@ -1,7 +1,7 @@
 'use client';
 
 import Link from 'next/link';
-import React from 'react';
+import * as React from 'react';
 import { SiShopware } from 'react-icons/si';
 
 import useStore from '@/common/hooks/useStore';

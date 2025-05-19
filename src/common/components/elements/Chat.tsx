@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import React from 'react';
+import * as React from 'react';
 import { MdOutlineCancel } from 'react-icons/md';
 
 import { chatData } from '@/common/dummy/dummy';
@@ -17,7 +17,7 @@ const Chat: React.FC = React.memo(() => {
           <p className="text-lg font-semibold dark:text-gray-200">Messages</p>
           <button
             type="button"
-            className="bg-orange  rounded p-1 px-2 text-xs text-white"
+            className="bg-orange rounded p-1 px-2 text-xs text-white"
           >
             5 New
           </button>
@@ -30,7 +30,7 @@ const Chat: React.FC = React.memo(() => {
           borderRadius="50%"
         />
       </div>
-      <div className="mt-5 ">
+      <div className="mt-5">
         {chatData?.map((item, index) => (
           <div
             key={index}
@@ -52,9 +52,7 @@ const Chat: React.FC = React.memo(() => {
               />
             </div>
             <div>
-              <p className="font-semibold dark:text-gray-200 ">
-                {item.message}
-              </p>
+              <p className="font-semibold dark:text-gray-200">{item.message}</p>
               <p className="text-sm text-gray-500 dark:text-gray-400">
                 {item.desc}
               </p>

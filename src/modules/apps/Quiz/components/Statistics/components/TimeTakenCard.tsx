@@ -1,5 +1,5 @@
 import { differenceInSeconds } from 'date-fns';
-import React from 'react';
+import * as React from 'react';
 import { LuHourglass } from 'react-icons/lu';
 
 import {

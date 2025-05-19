@@ -2,7 +2,7 @@
 
 import { TooltipComponent } from '@syncfusion/ej2-react-popups';
 import { motion } from 'framer-motion';
-import React from 'react';
+import * as React from 'react';
 import { MdOutlineCancel } from 'react-icons/md';
 
 import useStore from '@/common/hooks/useStore';

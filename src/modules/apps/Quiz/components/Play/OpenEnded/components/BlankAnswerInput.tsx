@@ -1,5 +1,5 @@
 import keyword_extractor from 'keyword-extractor';
-import React from 'react';
+import * as React from 'react';
 
 interface BlankAnswerInputProps {
   answer: string;

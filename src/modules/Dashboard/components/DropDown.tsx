@@ -1,5 +1,5 @@
 import { DropDownListComponent } from '@syncfusion/ej2-react-dropdowns';
-import React from 'react';
+import * as React from 'react';
 
 import { DropdownData } from '@/common/dummy';
 

@@ -1,4 +1,4 @@
-import React from 'react';
+import * as React from 'react';
 import { FaPaperPlane } from 'react-icons/fa';
 
 const More: React.FC = React.memo(() => {

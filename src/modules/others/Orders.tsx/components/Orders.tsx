@@ -14,7 +14,7 @@ import {
   Resize,
   Sort,
 } from '@syncfusion/ej2-react-grids';
-import React from 'react';
+import * as React from 'react';
 
 import Header from '@/common/components/elements/Header';
 import { contextMenuItems, ordersData, ordersGrid } from '@/common/dummy/dummy';

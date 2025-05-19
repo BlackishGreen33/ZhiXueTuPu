@@ -1,5 +1,5 @@
 import { Separator } from '@radix-ui/react-separator';
-import React from 'react';
+import * as React from 'react';
 import { LuCheckCircle2, LuXCircle } from 'react-icons/lu';
 
 import { Card } from '@/common/components/ui/card';

@@ -5,7 +5,7 @@ import { useMutation } from '@tanstack/react-query';
 import axios from 'axios';
 import { differenceInSeconds } from 'date-fns';
 import Link from 'next/link';
-import React from 'react';
+import * as React from 'react';
 import { LuBarChart, LuChevronRight, LuLoader2, LuTimer } from 'react-icons/lu';
 import { z } from 'zod';
 

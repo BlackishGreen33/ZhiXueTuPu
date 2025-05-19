@@ -12,7 +12,7 @@ import {
   Tooltip,
 } from '@syncfusion/ej2-react-charts';
 import { useTheme } from 'next-themes';
-import React from 'react';
+import * as React from 'react';
 
 import { ChartsHeader } from '@/common/components/elements';
 import {
@@ -27,7 +27,7 @@ const Bar: React.FC = React.memo(() => {
   return (
     <div className="m-4 mt-24 rounded-3xl bg-white p-10 dark:bg-secondary-dark-bg md:m-10">
       <ChartsHeader category="Bar" title="Olympic Medal Counts - RIO" />
-      <div className=" w-full">
+      <div className="w-full">
         <ChartComponent
           id="charts"
           // @ts-ignore

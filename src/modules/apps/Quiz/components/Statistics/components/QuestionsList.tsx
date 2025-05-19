@@ -1,7 +1,7 @@
 'use client';
 
 import { Question } from '@prisma/client';
-import React from 'react';
+import * as React from 'react';
 
 import {
   Table,

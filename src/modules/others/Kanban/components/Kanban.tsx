@@ -5,7 +5,7 @@ import {
   ColumnsDirective,
   KanbanComponent,
 } from '@syncfusion/ej2-react-kanban';
-import React from 'react';
+import * as React from 'react';
 
 import Header from '@/common/components/elements/Header';
 import { kanbanData } from '@/common/dummy';

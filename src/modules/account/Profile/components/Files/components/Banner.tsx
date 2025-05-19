@@ -1,5 +1,5 @@
 import { Card } from '@/common/components/ui/card';
-import React from 'react';
+import * as React from 'react';
 
 interface BannerProps {
   className?: string;

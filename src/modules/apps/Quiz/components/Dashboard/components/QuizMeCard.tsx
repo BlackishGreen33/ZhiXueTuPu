@@ -2,7 +2,7 @@
 
 import { motion } from 'framer-motion';
 import { useRouter } from 'next/navigation';
-import React from 'react';
+import * as React from 'react';
 import { LuBrainCircuit } from 'react-icons/lu';
 
 import {

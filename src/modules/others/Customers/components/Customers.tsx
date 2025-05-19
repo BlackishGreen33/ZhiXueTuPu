@@ -12,7 +12,7 @@ import {
   Sort,
   Toolbar,
 } from '@syncfusion/ej2-react-grids';
-import React from 'react';
+import * as React from 'react';
 
 import Header from '@/common/components/elements/Header';
 import { customersData, customersGrid } from '@/common/dummy/dummy';

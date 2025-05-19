@@ -9,7 +9,7 @@ import {
   Search,
   Toolbar,
 } from '@syncfusion/ej2-react-grids';
-import React from 'react';
+import * as React from 'react';
 
 import Header from '@/common/components/elements/Header';
 import { employeesData, employeesGrid } from '@/common/dummy/dummy';

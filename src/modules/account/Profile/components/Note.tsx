@@ -3,7 +3,7 @@
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 import Link from 'next/link';
-import React from 'react';
+import * as React from 'react';
 import { PiArrowLeftThin } from 'react-icons/pi';
 
 interface NoteProps {
@@ -13,7 +13,7 @@ interface NoteProps {
 const Note: React.FC<NoteProps> = React.memo(({ noteId }) => {
   return (
     <motion.div
-      className="text-neutral-950 dark:text-neutral-50 "
+      className="text-neutral-950 dark:text-neutral-50"
       initial={{ y: 100, opacity: 0 }}
       animate={{
         y: 0,
@@ -29,7 +29,7 @@ const Note: React.FC<NoteProps> = React.memo(({ noteId }) => {
       <div className="sticky top-5">
         <div className=" ">
           <div className="-mt-6">
-            <div className="flex h-10 w-full items-center gap-x-7 rounded-xl bg-neutral-700/25 backdrop-blur-md ">
+            <div className="flex h-10 w-full items-center gap-x-7 rounded-xl bg-neutral-700/25 backdrop-blur-md">
               <Link href="/profile">
                 <div className="ml-3 flex h-8 w-8 items-center justify-center rounded-full bg-neutral-700/50">
                   <div className="flex h-5 w-5 items-center justify-center rounded-full bg-neutral-300">
@@ -46,7 +46,7 @@ const Note: React.FC<NoteProps> = React.memo(({ noteId }) => {
           </div>
         </div>
       </div>
-      <div className="mt-9 h-full w-full rounded-2xl border border-neutral-300 bg-white p-5 dark:border-neutral-700 dark:bg-[#1C1C1C] ">
+      <div className="mt-9 h-full w-full rounded-2xl border border-neutral-300 bg-white p-5 dark:border-neutral-700 dark:bg-[#1C1C1C]">
         <motion.h1
           initial={{ x: 100, opacity: 0, filter: 'blur(4px)' }}
           animate={{
@@ -61,12 +61,12 @@ const Note: React.FC<NoteProps> = React.memo(({ noteId }) => {
             },
           }}
           transition={{ delay: 0.4 }}
-          className="text-center text-3xl font-bold "
+          className="text-center text-3xl font-bold"
         >
           如何编写类型安全的 CSS 模块
         </motion.h1>
         <div className="my-4 flex items-center justify-center gap-x-2">
-          <p className="flex h-5 w-fit items-center justify-center rounded-md bg-[#282828] px-2 text-[10px] text-neutral-300 ">
+          <p className="flex h-5 w-fit items-center justify-center rounded-md bg-[#282828] px-2 text-[10px] text-neutral-300">
             TypeScript
           </p>
           <div className="h-1 w-1 rounded-full bg-neutral-600 dark:bg-neutral-400" />

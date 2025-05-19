@@ -4,7 +4,7 @@ import axios from 'axios';
 import { motion } from 'framer-motion';
 import { signIn, useSession } from 'next-auth/react';
 import { useRouter } from 'next/navigation';
-import React from 'react';
+import * as React from 'react';
 import { FaChalkboardTeacher } from 'react-icons/fa';
 import { PiStudentBold } from 'react-icons/pi';
 import { RiAdminFill } from 'react-icons/ri';

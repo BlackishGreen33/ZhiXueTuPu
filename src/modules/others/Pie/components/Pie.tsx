@@ -1,4 +1,4 @@
-import React from 'react';
+import * as React from 'react';
 
 import { ChartsHeader, Pie as PieChart } from '@/common/components/elements';
 import { pieChartData } from '@/common/dummy/dummy';

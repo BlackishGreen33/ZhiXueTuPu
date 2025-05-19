@@ -11,7 +11,7 @@ import {
   Tooltip,
 } from '@syncfusion/ej2-react-charts';
 import { useTheme } from 'next-themes';
-import React from 'react';
+import * as React from 'react';
 
 import {
   StackedCustomSeries,

@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import React from 'react';
+import * as React from 'react';
 
 import { Card } from '@/common/components/ui/card';
 

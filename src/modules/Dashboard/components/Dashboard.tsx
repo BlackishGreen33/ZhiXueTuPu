@@ -1,5 +1,5 @@
 import { getAuthSession } from '@/common/utils/nextauth';
-import React from 'react';
+import * as React from 'react';
 
 import SignInButton from '@/common/components/navbar/SignInButton';
 import {

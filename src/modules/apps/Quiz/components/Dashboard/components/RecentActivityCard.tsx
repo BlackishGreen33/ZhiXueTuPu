@@ -1,7 +1,8 @@
 import Link from 'next/link';
 import { redirect } from 'next/navigation';
-import React from 'react';
+import * as React from 'react';
 
+import HistoryComponent from '@/common/components/elements/HistoryComponent';
 import {
   Card,
   CardContent,
@@ -11,7 +12,6 @@ import {
 } from '@/common/components/ui/card';
 import { prisma } from '@/common/utils/db';
 import { getAuthSession } from '@/common/utils/nextauth';
-import HistoryComponent from '@/common/components/elements/HistoryComponent';
 
 const RecentActivityCard: React.FC = React.memo(async () => {
   const session = await getAuthSession();

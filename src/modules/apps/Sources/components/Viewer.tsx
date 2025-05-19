@@ -15,7 +15,7 @@ import {
   ThumbnailView,
   Toolbar,
 } from '@syncfusion/ej2-react-pdfviewer';
-import React from 'react';
+import * as React from 'react';
 
 interface ViewerProps {
   url?: string;

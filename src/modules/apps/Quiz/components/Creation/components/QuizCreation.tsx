@@ -4,7 +4,7 @@ import { zodResolver } from '@hookform/resolvers/zod';
 import { useMutation } from '@tanstack/react-query';
 import axios, { AxiosError } from 'axios';
 import { useRouter } from 'next/navigation';
-import React from 'react';
+import * as React from 'react';
 import { useForm } from 'react-hook-form';
 import { LuBookOpen, LuCopyCheck } from 'react-icons/lu';
 import { z } from 'zod';
