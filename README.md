@@ -34,10 +34,17 @@
 ### 🎯 相容环境
 
 - 现代浏览器（Chrome >= 64, Edge >= 79, Firefox >= 78, Safari >= 12）
+- node >= 20.18.0
 
 ### 💻 本地调试
 
-记得先配置环境变量：
+拉取代码并切换到项目目录下：
+```bash
+$ git clone https://github.com/BlackishGreen33/ZhiXueTuPu.git
+$ cd ZhiXueTuPu
+```
+
+配置环境变量：
 ```env
 DATABASE_URL=
 
@@ -54,11 +61,23 @@ API_URL=
 SYNCFUSION_LICENSE=
 ```
 
-接着拉取代码和安装依赖：
+安装依赖：
 ```bash
-$ git clone https://github.com/BlackishGreen33/ZhiXueTuPu.git
-$ cd ZhiXueTuPu
 $ pnpm install
+```
+
+生成 Prisma 客户端：
+```bash
+$ npx prisma generate
+```
+
+激活图表库：
+```bash
+$ npx syncfusion-license activate
+```
+
+开始调试你的调试之旅！
+```bash
 $ pnpm run dev
 ```
 
