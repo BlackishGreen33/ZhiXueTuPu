@@ -7,7 +7,7 @@ import useStore from '@/common/hooks/useStore';
 import Navigation from './Navigation';
 import TopArea from './TopArea';
 
-const Sidebar: React.FC = React.memo(() => {
+const Sidebar: React.FC = () => {
   const { activeMenu } = useStore();
 
   return (
@@ -20,6 +20,6 @@ const Sidebar: React.FC = React.memo(() => {
       )}
     </div>
   );
-});
+};
 
 export default Sidebar;

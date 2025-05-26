@@ -30,7 +30,7 @@ const CustomColorPicker = ({
   />
 );
 
-const ColorPicker: React.FC = React.memo(() => (
+const ColorPicker: React.FC = () => (
   <div className="m-2 mt-24 rounded-3xl bg-white p-2 md:m-10 md:p-10">
     <Header category="App" title="Color Picker" />
     <div className="text-center">
@@ -47,6 +47,6 @@ const ColorPicker: React.FC = React.memo(() => (
       </div>
     </div>
   </div>
-));
+);
 
 export default ColorPicker;

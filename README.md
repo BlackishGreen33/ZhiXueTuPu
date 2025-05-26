@@ -39,12 +39,14 @@
 ### 💻 本地调试
 
 拉取代码并切换到项目目录下：
+
 ```bash
 $ git clone https://github.com/BlackishGreen33/ZhiXueTuPu.git
 $ cd ZhiXueTuPu
 ```
 
 配置环境变量：
+
 ```env
 DATABASE_URL=
 
@@ -62,21 +64,25 @@ SYNCFUSION_LICENSE=
 ```
 
 安装依赖：
+
 ```bash
 $ pnpm install
 ```
 
 生成 Prisma 客户端：
+
 ```bash
 $ npx prisma generate
 ```
 
 激活图表库：
+
 ```bash
 $ npx syncfusion-license activate
 ```
 
 开始调试你的调试之旅！
+
 ```bash
 $ pnpm run dev
 ```

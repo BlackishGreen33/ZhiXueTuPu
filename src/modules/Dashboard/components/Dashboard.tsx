@@ -1,4 +1,3 @@
-import { getAuthSession } from '@/common/utils/nextauth';
 import * as React from 'react';
 
 import SignInButton from '@/common/components/navbar/SignInButton';
@@ -9,13 +8,14 @@ import {
   CardHeader,
   CardTitle,
 } from '@/common/components/ui/card';
+import { getAuthSession } from '@/common/utils/nextauth';
 
 import Enter from './Enter';
 import Periodically from './Periodically';
 import Revenue from './Revenue';
 import Transactions from './Transactions';
 
-const Dashboard: React.FC = React.memo(async () => {
+const Dashboard: React.FC = async () => {
   const session = await getAuthSession();
 
   return (
@@ -44,6 +44,6 @@ const Dashboard: React.FC = React.memo(async () => {
       )}
     </>
   );
-});
+};
 
 export default Dashboard;

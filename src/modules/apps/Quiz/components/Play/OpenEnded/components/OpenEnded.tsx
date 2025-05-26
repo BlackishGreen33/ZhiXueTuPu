@@ -10,7 +10,7 @@ interface OpenEndedProps {
   gameId: string;
 }
 
-const OpenEnded: React.FC<OpenEndedProps> = React.memo(async ({ gameId }) => {
+const PureOpenEnded: React.FC<OpenEndedProps> = async ({ gameId }) => {
   const session = await getAuthSession();
   if (!session?.user) {
     return redirect('/');
@@ -39,6 +39,8 @@ const OpenEnded: React.FC<OpenEndedProps> = React.memo(async ({ gameId }) => {
       <OpenEndedModules game={game} />
     </main>
   );
-});
+};
+
+const OpenEnded = React.memo(PureOpenEnded);
 
 export default OpenEnded;

@@ -9,9 +9,7 @@ import useStore from '@/common/hooks/useStore';
 
 import Viewer from './Viewer';
 
-type IndexProps = {};
-
-const Index: React.FC<IndexProps> = React.memo(() => {
+const Index: React.FC = () => {
   const { isViewer } = useStore();
   return (
     <motion.div
@@ -29,15 +27,10 @@ const Index: React.FC<IndexProps> = React.memo(() => {
       className="h-auto w-full"
     >
       <Card className="w-full overflow-hidden bg-white">
-        {/* <EChartComponent
-          className="mx-auto h-[80%] w-full"
-          type={'mind'}
-          data={{ data: { '123': [456] }, title: '123', xNames: ['123'] }}
-        ></EChartComponent> */}
         {isViewer ? <Viewer /> : <RelationChart />}
       </Card>
     </motion.div>
   );
-});
+};
 
 export default Index;

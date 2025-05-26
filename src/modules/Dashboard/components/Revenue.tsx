@@ -1,5 +1,6 @@
 'use client';
 
+import { motion } from 'framer-motion';
 import { useEffect, useRef } from 'react';
 import { GoDotFill } from 'react-icons/go';
 
@@ -8,7 +9,6 @@ import { Card } from '@/common/components/ui/card';
 import { PieChartData } from '@/common/dummy';
 import { SparklineAreaData } from '@/common/dummy/dummy';
 import useStore from '@/common/hooks/useStore';
-import { motion } from 'framer-motion';
 
 const Revenue: React.FC = () => {
   const { currentColor, isVisible, setIsVisible } = useStore();
@@ -49,7 +49,7 @@ const Revenue: React.FC = () => {
           },
         }}
       >
-        <Card className="m-3 rounded-2xl bg-white p-4 dark:bg-secondary-dark-bg dark:text-gray-200 md:w-780  ">
+        <Card className="m-3 rounded-2xl bg-white p-4 dark:bg-secondary-dark-bg dark:text-gray-200 md:w-780">
           <div className="flex justify-between">
             <p className="ml-5 mt-3 text-2xl font-semibold">学习频率分析图</p>
             <div className="flex items-center gap-4">
@@ -68,7 +68,7 @@ const Revenue: React.FC = () => {
             </div>
           </div>
           <div className="mt-10 flex flex-wrap justify-center gap-10">
-            <div className=" m-4 border-r-1 border-color pr-10">
+            <div className="m-4 border-r-1 border-color pr-10">
               <div>
                 <p>
                   <span className="text-3xl font-semibold">25,565 秒</span>
@@ -126,10 +126,10 @@ const Revenue: React.FC = () => {
           }}
         >
           <Card
-            className=" m-3 rounded-2xl p-4 md:w-400"
+            className="m-3 rounded-2xl p-4 md:w-400"
             style={{ backgroundColor: currentColor }}
           >
-            <div className="flex items-center justify-between ">
+            <div className="flex items-center justify-between">
               <p className="text-2xl font-semibold text-white">学习频率分布</p>
 
               <div>

@@ -6,7 +6,7 @@ import { quizCreationSchema } from '@/common/schemas/forms/quiz';
 import { prisma } from '@/common/utils/db';
 import { getAuthSession } from '@/common/utils/nextauth';
 
-export async function POST(req: Request, res: Response) {
+export async function POST(req: Request) {
   try {
     const session = await getAuthSession();
     if (!session?.user) {
@@ -118,7 +118,7 @@ export async function POST(req: Request, res: Response) {
   }
 }
 
-export async function GET(req: Request, res: Response) {
+export async function GET(req: Request) {
   try {
     const session = await getAuthSession();
     if (!session?.user) {

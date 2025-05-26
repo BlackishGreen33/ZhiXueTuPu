@@ -15,22 +15,23 @@ interface TimeTakenCardProps {
   timeStarted: Date;
 }
 
-const TimeTakenCard: React.FC<TimeTakenCardProps> = React.memo(
-  ({ timeEnded, timeStarted }) => {
-    return (
-      <Card className="md:col-span-4">
-        <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-          <CardTitle className="text-2xl font-bold">花费时间</CardTitle>
-          <LuHourglass className="text-3xl" />
-        </CardHeader>
-        <CardContent>
-          <div className="text-sm font-medium">
-            {formatTimeDelta(differenceInSeconds(timeEnded, timeStarted))}
-          </div>
-        </CardContent>
-      </Card>
-    );
-  }
+const PureTimeTakenCard: React.FC<TimeTakenCardProps> = ({
+  timeEnded,
+  timeStarted,
+}) => (
+  <Card className="md:col-span-4">
+    <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
+      <CardTitle className="text-2xl font-bold">花费时间</CardTitle>
+      <LuHourglass className="text-3xl" />
+    </CardHeader>
+    <CardContent>
+      <div className="text-sm font-medium">
+        {formatTimeDelta(differenceInSeconds(timeEnded, timeStarted))}
+      </div>
+    </CardContent>
+  </Card>
 );
+
+const TimeTakenCard = React.memo(PureTimeTakenCard);
 
 export default TimeTakenCard;

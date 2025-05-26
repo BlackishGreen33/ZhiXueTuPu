@@ -1,4 +1,5 @@
 import { HTMLAttributes } from 'react';
+
 import { largeMindConfi, mindMapConfig } from './mindMap.config';
 
 export type chartType = 'line' | 'river' | 'mind';
@@ -180,7 +181,7 @@ export const chartConfig = {
 export const generateLineDataTemplate = (
   props: EchartComponentProps['data']
 ) => {
-  const { xNames, data, title } = props;
+  const { xNames, data } = props;
   const newConfig = chartConfig.line;
   newConfig.legend.data = Object.keys(data);
   newConfig.xAxis.data = xNames;
@@ -195,10 +196,11 @@ export const generateLineDataTemplate = (
 };
 
 export const generateMindMap = (complexity?: 'complex' | 'simple') => {
-  let graph = complexity === 'complex' ? largeMindConfi : mindMapConfig;
+  const graph = complexity === 'complex' ? largeMindConfi : mindMapConfig;
   if (complexity === 'complex') {
     graph.nodes.forEach(function (node) {
-      // @ts-ignore
+      // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+      // @ts-expect-error
       node.label = {
         show: node.symbolSize > 30,
       };

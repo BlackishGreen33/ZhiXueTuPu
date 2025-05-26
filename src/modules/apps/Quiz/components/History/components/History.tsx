@@ -13,7 +13,7 @@ import {
 } from '@/common/components/ui/card';
 import { getAuthSession } from '@/common/utils/nextauth';
 
-const Creation: React.FC = React.memo(async () => {
+const Creation: React.FC = async () => {
   const session = await getAuthSession();
   if (!session?.user) {
     redirect('/quiz');
@@ -39,6 +39,6 @@ const Creation: React.FC = React.memo(async () => {
       </div>
     </main>
   );
-});
+};
 
 export default Creation;

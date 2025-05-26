@@ -7,7 +7,7 @@ import * as React from 'react';
 import { Card } from '@/common/components/ui/card';
 import { SourceData } from '@/common/dummy/SourceData';
 
-const TreeView: React.FC = React.memo(() => {
+const TreeView: React.FC = () => {
   const fields = {
     dataSource: SourceData,
     id: 'nodeId',
@@ -32,7 +32,6 @@ const TreeView: React.FC = React.memo(() => {
             <div className="control_wrapper">
               <TreeViewComponent
                 id="treeview"
-                // @ts-ignore
                 fields={fields}
                 sortOrder="Ascending"
                 className="text-neutral-700 dark:text-neutral-300"
@@ -43,6 +42,6 @@ const TreeView: React.FC = React.memo(() => {
       </Card>
     </motion.div>
   );
-});
+};
 
 export default TreeView;

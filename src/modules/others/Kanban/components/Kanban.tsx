@@ -11,7 +11,7 @@ import Header from '@/common/components/elements/Header';
 import { kanbanData } from '@/common/dummy';
 import { kanbanGrid } from '@/common/dummy/dummy';
 
-const Kanban: React.FC = React.memo(() => (
+const Kanban: React.FC = () => (
   <div className="m-2 mt-24 rounded-3xl bg-white p-2 md:m-10 md:p-10">
     <Header category="App" title="Kanban" />
     <KanbanComponent
@@ -28,6 +28,6 @@ const Kanban: React.FC = React.memo(() => (
       </ColumnsDirective>
     </KanbanComponent>
   </div>
-));
+);
 
 export default Kanban;

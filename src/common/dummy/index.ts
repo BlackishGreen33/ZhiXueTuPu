@@ -1,4 +1,6 @@
 export { DropdownData } from './DropdownData';
+export { financialChartData } from './financialChartData';
+export { kanbanData } from './kanbanData';
 export {
   LineCustomSeries,
   LinePrimaryXAxis,
@@ -16,5 +18,3 @@ export {
   StackedPrimaryXAxis,
   StackedPrimaryYAxis,
 } from './StackedData';
-export { financialChartData } from './financialChartData';
-export { kanbanData } from './kanbanData';

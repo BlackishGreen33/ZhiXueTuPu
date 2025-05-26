@@ -83,6 +83,7 @@ export async function strict_output(
 
     // try-catch block to ensure output format is adhered to
     try {
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
       let output: any = JSON.parse(res);
 
       if (list_input) {

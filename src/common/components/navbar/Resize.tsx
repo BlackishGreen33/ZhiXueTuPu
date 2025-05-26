@@ -10,9 +10,7 @@ import {
 } from '@/common/components/elements';
 import useStore from '@/common/hooks/useStore';
 
-type ResizeProps = {};
-
-const Resize: React.FC<ResizeProps> = () => {
+const Resize: React.FC = () => {
   const { setActiveMenu, isClicked, setScreenSize, screenSize } = useStore();
 
   const handleResize = useCallback(() => {
@@ -42,4 +40,5 @@ const Resize: React.FC<ResizeProps> = () => {
     </>
   );
 };
+
 export default Resize;

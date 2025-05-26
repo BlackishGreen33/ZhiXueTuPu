@@ -3,7 +3,7 @@ import { NextResponse } from 'next/server';
 import { endGameSchema } from '@/common/schemas/questions';
 import { prisma } from '@/common/utils/db';
 
-export async function POST(req: Request, res: Response) {
+export async function POST(req: Request) {
   try {
     const body = await req.json();
     const { gameId } = endGameSchema.parse(body);

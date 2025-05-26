@@ -26,7 +26,7 @@ type MCQModuleProps = {
   game: Game & { questions: Pick<Question, 'id' | 'options' | 'question'>[] };
 };
 
-const MCQModule: React.FC<MCQModuleProps> = React.memo(({ game }) => {
+const PureMCQModule: React.FC<MCQModuleProps> = ({ game }) => {
   const [questionIndex, setQuestionIndex] = React.useState(0);
   const [hasEnded, setHasEnded] = React.useState(false);
   const [stats, setStats] = React.useState({
@@ -47,7 +47,8 @@ const MCQModule: React.FC<MCQModuleProps> = React.memo(({ game }) => {
   }, [currentQuestion]);
 
   const { toast } = useToast();
-  // @ts-ignore
+  // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+  // @ts-expect-error
   const { mutate: checkAnswer, isLoading: isChecking } = useMutation({
     mutationFn: async () => {
       const payload: z.infer<typeof checkAnswerSchema> = {
@@ -89,7 +90,8 @@ const MCQModule: React.FC<MCQModuleProps> = React.memo(({ game }) => {
           toast({
             title: '正确',
             description: '你答对了!',
-            // @ts-ignore
+            // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+            // @ts-expect-error
             variant: 'success',
           });
         } else {
@@ -226,6 +228,8 @@ const MCQModule: React.FC<MCQModuleProps> = React.memo(({ game }) => {
       </div>
     </div>
   );
-});
+};
+
+const MCQModule = React.memo(PureMCQModule);
 
 export default MCQModule;

@@ -16,7 +16,7 @@ interface LayoutProps {
   children: React.ReactNode;
 }
 
-const Layout: React.FC<LayoutProps> = React.memo(({ children }) => {
+const PureLayout: React.FC<LayoutProps> = ({ children }) => {
   const { setCurrentColor, activeMenu } = useStore();
   const { setTheme, theme } = useTheme();
   const isMDScreen = useMediaQuery('(min-width: 768px)');
@@ -80,7 +80,7 @@ defer>
               },
             }}
           >
-            <div className="navbar fixed w-full bg-main-bg dark:bg-main-dark-bg md:static ">
+            <div className="navbar fixed w-full bg-main-bg dark:bg-main-dark-bg md:static">
               <Navbar />
             </div>
             <div>
@@ -98,6 +98,8 @@ defer>
       </div>
     </>
   );
-});
+};
+
+const Layout = React.memo(PureLayout);
 
 export default Layout;

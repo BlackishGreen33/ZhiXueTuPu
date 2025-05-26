@@ -9,7 +9,7 @@ import NavAuth from './NavAuth';
 import NavButton from './NavButton';
 import Resize from './Resize';
 
-const Navbar: React.FC = React.memo(() => {
+const PureNavbar: React.FC = () => {
   const { data: session } = useSession();
 
   return (
@@ -36,6 +36,8 @@ const Navbar: React.FC = React.memo(() => {
       </div>
     </div>
   );
-});
+};
+
+const Navbar = React.memo(PureNavbar);
 
 export default Navbar;

@@ -12,6 +12,7 @@ import {
 
 const EChartComponent: React.FC<EchartComponentProps> = ({
   data,
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   id,
   type,
   complexity,

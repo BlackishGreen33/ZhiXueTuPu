@@ -2718,7 +2718,7 @@ export const icons = [
   },
 ];
 
-const MyDemoIcons: React.FC<{
+const PureMyDemoIcons: React.FC<{
   name: string;
   size: string;
   color: string;
@@ -2733,9 +2733,13 @@ const MyDemoIcons: React.FC<{
       height={_color}
       viewBox="0 0 24 24"
       fill={color}
-      // @ts-ignore
+      // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+      // @ts-expect-error
       dangerouslySetInnerHTML={{ __html: displayIcon.svg }}
     ></svg>
   );
 };
+
+const MyDemoIcons = React.memo(PureMyDemoIcons);
+
 export default MyDemoIcons;

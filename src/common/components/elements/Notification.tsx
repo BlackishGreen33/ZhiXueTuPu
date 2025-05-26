@@ -9,7 +9,7 @@ import useStore from '@/common/hooks/useStore';
 
 import { Button } from '.';
 
-const Notification: React.FC = React.memo(() => {
+const PureNotification: React.FC = () => {
   const { currentColor } = useStore();
 
   return (
@@ -68,6 +68,8 @@ const Notification: React.FC = React.memo(() => {
       </div>
     </div>
   );
-});
+};
+
+const Notification = React.memo(PureNotification);
 
 export default Notification;

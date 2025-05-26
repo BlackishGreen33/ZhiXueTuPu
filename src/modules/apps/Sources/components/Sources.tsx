@@ -14,7 +14,7 @@ import Index from './Index';
 import Selecter from './Selecter';
 import TreeView from './TreeView';
 
-const Quiz: React.FC = React.memo(async () => {
+const Quiz: React.FC = async () => {
   const session = await getAuthSession();
 
   return (
@@ -47,6 +47,6 @@ const Quiz: React.FC = React.memo(async () => {
       )}
     </>
   );
-});
+};
 
 export default Quiz;

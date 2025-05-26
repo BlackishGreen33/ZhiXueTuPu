@@ -10,7 +10,7 @@ import useStore from '@/common/hooks/useStore';
 
 import { Button } from '.';
 
-const Cart: React.FC = React.memo(() => {
+const PureCart: React.FC = () => {
   const { currentColor } = useStore();
 
   return (
@@ -84,6 +84,8 @@ const Cart: React.FC = React.memo(() => {
       </div>
     </div>
   );
-});
+};
+
+const Cart = React.memo(PureCart);
 
 export default Cart;

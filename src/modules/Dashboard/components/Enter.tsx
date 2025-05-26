@@ -31,7 +31,7 @@ const Enter: React.FC = () => {
             <button
               type="button"
               style={{ backgroundColor: currentColor }}
-              className="opacity-0.9 rounded-full p-4 text-2xl text-white  hover:drop-shadow-xl"
+              className="opacity-0.9 rounded-full p-4 text-2xl text-white hover:drop-shadow-xl"
             >
               <FaDownload />
             </button>
@@ -52,6 +52,7 @@ const Enter: React.FC = () => {
       <div className="m-3 flex flex-wrap items-center justify-center gap-1">
         {EnterData.map((item, index) => (
           <motion.div
+            key={item.title}
             initial={{ y: 50, opacity: 0 }}
             animate={{
               y: 0,
@@ -64,14 +65,11 @@ const Enter: React.FC = () => {
               },
             }}
           >
-            <Card
-              key={item.title}
-              className="h-44 rounded-2xl bg-white p-4 pt-9  dark:bg-secondary-dark-bg dark:text-gray-200 md:w-56 "
-            >
+            <Card className="h-44 rounded-2xl bg-white p-4 pt-9 dark:bg-secondary-dark-bg dark:text-gray-200 md:w-56">
               <button
                 type="button"
                 style={{ color: item.iconColor, backgroundColor: item.iconBg }}
-                className="opacity-0.9 rounded-full p-4  text-2xl hover:drop-shadow-xl"
+                className="opacity-0.9 rounded-full p-4 text-2xl hover:drop-shadow-xl"
               >
                 {item.icon}
               </button>
@@ -81,7 +79,7 @@ const Enter: React.FC = () => {
                   {item.percentage}
                 </span>
               </p>
-              <p className="mt-1 text-sm  text-gray-400">{item.title}</p>
+              <p className="mt-1 text-sm text-gray-400">{item.title}</p>
             </Card>
           </motion.div>
         ))}

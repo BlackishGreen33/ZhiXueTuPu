@@ -1,10 +1,10 @@
 'use client';
 
 import { motion, useAnimation } from 'framer-motion';
-import React, { useState } from 'react';
+import * as React from 'react';
 
-const Follow: React.FC = React.memo(() => {
-  const [email, setEmail] = useState('');
+const Follow: React.FC = () => {
+  const [email, setEmail] = React.useState('');
 
   const controls = useAnimation();
 
@@ -52,6 +52,6 @@ const Follow: React.FC = React.memo(() => {
       </motion.button>
     </form>
   );
-});
+};
 
 export default Follow;

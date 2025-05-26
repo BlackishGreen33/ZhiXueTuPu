@@ -17,7 +17,7 @@ import * as React from 'react';
 import { ChartsHeader } from '@/common/components/elements';
 import { PyramidData } from '@/common/dummy';
 
-const Pyramid: React.FC = React.memo(() => {
+const Pyramid: React.FC = () => {
   const { theme } = useTheme();
 
   return (
@@ -63,6 +63,6 @@ const Pyramid: React.FC = React.memo(() => {
       </div>
     </div>
   );
-});
+};
 
 export default Pyramid;

@@ -24,13 +24,14 @@ interface StackedProps {
   height?: string;
 }
 
-const Stacked: React.FC<StackedProps> = React.memo(({ width, height }) => {
+const PureStacked: React.FC<StackedProps> = ({ width, height }) => {
   const { theme } = useTheme();
 
   return (
     <ChartComponent
       id="charts"
-      // @ts-ignore
+      // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+      // @ts-expect-error
       primaryXAxis={StackedPrimaryXAxis}
       primaryYAxis={StackedPrimaryYAxis}
       width={width}
@@ -49,6 +50,8 @@ const Stacked: React.FC<StackedProps> = React.memo(({ width, height }) => {
       </SeriesCollectionDirective>
     </ChartComponent>
   );
-});
+};
+
+const Stacked = React.memo(PureStacked);
 
 export default Stacked;

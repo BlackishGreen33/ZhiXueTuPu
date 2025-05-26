@@ -12,7 +12,7 @@ import { getAuthSession } from '@/common/utils/nextauth';
 
 import Calendar from './Calendar';
 
-const Schedule: React.FC = React.memo(async () => {
+const Schedule: React.FC = async () => {
   const session = await getAuthSession();
 
   return (
@@ -36,6 +36,6 @@ const Schedule: React.FC = React.memo(async () => {
       )}
     </>
   );
-});
+};
 
 export default Schedule;

@@ -17,38 +17,38 @@ interface ButtonProps {
   onClick?: () => void;
 }
 
-const Button: React.FC<ButtonProps> = React.memo(
-  ({
-    icon,
-    bgColor,
-    color,
-    bgHoverColor,
-    size,
-    text,
-    borderRadius,
-    width,
-    onClick,
-  }) => {
-    const { setIsClicked } = useStore();
+const PureButton: React.FC<ButtonProps> = ({
+  icon,
+  bgColor,
+  color,
+  bgHoverColor,
+  size,
+  text,
+  borderRadius,
+  width,
+  onClick,
+}) => {
+  const { setIsClicked } = useStore();
 
-    return (
-      <motion.button
-        whileHover={{ scale: 1.05 }}
-        whileTap={{ scale: 0.9 }}
-        type="button"
-        onClick={() => {
-          setIsClicked(initialState);
-          if (typeof onClick === 'function') {
-            onClick();
-          }
-        }}
-        style={{ backgroundColor: bgColor, color, borderRadius }}
-        className={` text-${size} p-3 w-${width} hover:drop-shadow-xl hover:bg-${bgHoverColor}`}
-      >
-        {icon} {text}
-      </motion.button>
-    );
-  }
-);
+  return (
+    <motion.button
+      whileHover={{ scale: 1.05 }}
+      whileTap={{ scale: 0.9 }}
+      type="button"
+      onClick={() => {
+        setIsClicked(initialState);
+        if (typeof onClick === 'function') {
+          onClick();
+        }
+      }}
+      style={{ backgroundColor: bgColor, color, borderRadius }}
+      className={` text-${size} p-3 w-${width} hover:drop-shadow-xl hover:bg-${bgHoverColor}`}
+    >
+      {icon} {text}
+    </motion.button>
+  );
+};
+
+const Button = React.memo(PureButton);
 
 export default Button;

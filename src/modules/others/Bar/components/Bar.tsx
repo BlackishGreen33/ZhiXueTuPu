@@ -21,7 +21,7 @@ import {
   barPrimaryYAxis,
 } from '@/common/dummy/dummy';
 
-const Bar: React.FC = React.memo(() => {
+const Bar: React.FC = () => {
   const { theme } = useTheme();
 
   return (
@@ -30,7 +30,8 @@ const Bar: React.FC = React.memo(() => {
       <div className="w-full">
         <ChartComponent
           id="charts"
-          // @ts-ignore
+          // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+          // @ts-expect-error
           primaryXAxis={barPrimaryXAxis}
           primaryYAxis={barPrimaryYAxis}
           chartArea={{ border: { width: 0 } }}
@@ -51,6 +52,6 @@ const Bar: React.FC = React.memo(() => {
       </div>
     </div>
   );
-});
+};
 
 export default Bar;

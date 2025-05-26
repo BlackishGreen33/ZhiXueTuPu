@@ -14,7 +14,7 @@ import * as React from 'react';
 import Header from '@/common/components/elements/Header';
 import { EditorData } from '@/common/dummy/dummy';
 
-const Editor: React.FC = React.memo(() => (
+const Editor: React.FC = () => (
   <div className="m-2 mt-24 rounded-3xl bg-white p-2 md:m-10 md:p-10">
     <Header category="App" title="Editor" />
     <RichTextEditorComponent>
@@ -22,6 +22,6 @@ const Editor: React.FC = React.memo(() => (
       <Inject services={[HtmlEditor, Toolbar, Image, Link, QuickToolbar]} />
     </RichTextEditorComponent>
   </div>
-));
+);
 
 export default Editor;

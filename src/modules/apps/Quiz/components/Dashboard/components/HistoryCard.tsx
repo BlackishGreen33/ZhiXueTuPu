@@ -2,7 +2,6 @@
 
 import { motion } from 'framer-motion';
 import { useRouter } from 'next/navigation';
-import * as React from 'react';
 import { LuHistory } from 'react-icons/lu';
 
 import {
@@ -12,7 +11,7 @@ import {
   CardTitle,
 } from '@/common/components/ui/card';
 
-const HistoryCard: React.FC = React.memo(() => {
+const HistoryCard: React.FC = () => {
   const router = useRouter();
 
   return (
@@ -47,6 +46,6 @@ const HistoryCard: React.FC = React.memo(() => {
       </Card>
     </motion.div>
   );
-});
+};
 
 export default HistoryCard;

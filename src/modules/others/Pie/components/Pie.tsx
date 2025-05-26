@@ -3,7 +3,7 @@ import * as React from 'react';
 import { ChartsHeader, Pie as PieChart } from '@/common/components/elements';
 import { pieChartData } from '@/common/dummy/dummy';
 
-const Pie: React.FC = React.memo(() => (
+const Pie: React.FC = () => (
   <div className="m-4 mt-24 rounded-3xl bg-white p-10 dark:bg-secondary-dark-bg md:m-10">
     <ChartsHeader category="Pie" title="Project Cost Breakdown" />
     <div className="w-full">
@@ -15,6 +15,6 @@ const Pie: React.FC = React.memo(() => (
       />
     </div>
   </div>
-));
+);
 
 export default Pie;

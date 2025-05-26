@@ -1,6 +1,6 @@
+// eslint-disable-next-line simple-import-sort/imports
 import { getServerSession } from 'next-auth';
 import { redirect } from 'next/navigation';
-import * as React from 'react';
 
 import DetailsDialog from './DetailsDialog';
 import HistoryCard from './HistoryCard';
@@ -10,7 +10,7 @@ import RecentActivityCard from './RecentActivityCard';
 
 interface DashboardProps {}
 
-const Dashboard: React.FC<DashboardProps> = React.memo(async () => {
+const Dashboard: React.FC<DashboardProps> = async () => {
   const session = await getServerSession();
   if (!session?.user) {
     redirect('/quiz');
@@ -34,6 +34,6 @@ const Dashboard: React.FC<DashboardProps> = React.memo(async () => {
       </div>
     </main>
   );
-});
+};
 
 export default Dashboard;

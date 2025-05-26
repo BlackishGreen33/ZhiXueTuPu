@@ -36,7 +36,7 @@ const coureses = [
   },
 ];
 
-const Selecter: React.FC = React.memo(() => {
+const Selecter: React.FC = () => {
   const { setIsViewer, isViewer } = useStore();
 
   return (
@@ -58,6 +58,6 @@ const Selecter: React.FC = React.memo(() => {
       <Button onClick={() => setIsViewer(!isViewer)}>切换视图</Button>
     </>
   );
-});
+};
 
 export default Selecter;

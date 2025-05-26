@@ -19,7 +19,7 @@ import * as React from 'react';
 import Header from '@/common/components/elements/Header';
 import { contextMenuItems, ordersData, ordersGrid } from '@/common/dummy/dummy';
 
-const Orders: React.FC = React.memo(() => {
+const Orders: React.FC = () => {
   const editing = { allowDeleting: true, allowEditing: true };
 
   return (
@@ -32,7 +32,8 @@ const Orders: React.FC = React.memo(() => {
         allowSorting
         allowExcelExport
         allowPdfExport
-        // @ts-ignore
+        // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+        // @ts-expect-error
         contextMenuItems={contextMenuItems}
         editSettings={editing}
       >
@@ -57,6 +58,6 @@ const Orders: React.FC = React.memo(() => {
       </GridComponent>
     </div>
   );
-});
+};
 
 export default Orders;

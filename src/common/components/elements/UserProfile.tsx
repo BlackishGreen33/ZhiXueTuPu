@@ -1,5 +1,6 @@
 'use client';
 
+// eslint-disable-next-line simple-import-sort/imports
 import axios from 'axios';
 import { signOut, useSession } from 'next-auth/react';
 import Image from 'next/image';
@@ -12,7 +13,7 @@ import useStore from '@/common/hooks/useStore';
 
 import { Button } from '.';
 
-const UserProfile: React.FC = React.memo(() => {
+const PureUserProfile: React.FC = () => {
   const { userType, setUserType } = useStore();
   const { data: session } = useSession();
 
@@ -44,8 +45,7 @@ const UserProfile: React.FC = React.memo(() => {
       <div className="mt-6 flex items-center gap-5 border-b-1 border-color pb-6">
         <Image
           className="h-24 w-24 rounded-full"
-          // @ts-ignore
-          src={session?.user.image as String}
+          src={session?.user.image as string}
           alt="user-profile"
           loading="lazy"
           width={200}
@@ -65,23 +65,18 @@ const UserProfile: React.FC = React.memo(() => {
       </div>
       <div>
         {userProfileData.map((item, index) => (
-          <Link href={item.herf}>
-            <div
-              key={index}
-              className="flex cursor-pointer gap-5 border-b-1 border-color p-4 hover:bg-light-gray  dark:hover:bg-[#42464D]"
-            >
+          <Link key={index} href={item.herf}>
+            <div className="flex cursor-pointer gap-5 border-b-1 border-color p-4 hover:bg-light-gray dark:hover:bg-[#42464D]">
               <button
                 type="button"
                 style={{ color: item.iconColor, backgroundColor: item.iconBg }}
-                className=" rounded-lg p-3 text-xl hover:bg-light-gray"
+                className="rounded-lg p-3 text-xl hover:bg-light-gray"
               >
                 {item.icon}
               </button>
 
               <div>
-                <p className="font-semibold dark:text-gray-200 ">
-                  {item.title}
-                </p>
+                <p className="font-semibold dark:text-gray-200">{item.title}</p>
                 <p className="text-sm text-gray-500 dark:text-gray-400">
                   {' '}
                   {item.desc}{' '}
@@ -94,7 +89,7 @@ const UserProfile: React.FC = React.memo(() => {
       <div className="mt-5">
         <Button
           color="white"
-          bgColor={'#FF0000'}
+          bgColor="#FF0000"
           text="登出"
           borderRadius="10px"
           width="full"
@@ -103,6 +98,8 @@ const UserProfile: React.FC = React.memo(() => {
       </div>
     </div>
   );
-});
+};
+
+const UserProfile = React.memo(PureUserProfile);
 
 export default UserProfile;

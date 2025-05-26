@@ -1,3 +1,4 @@
+export { default as Border } from './Border';
 export { default as Button } from './Button';
 export { default as Cart } from './Cart';
 export { default as LineChart } from './Charts/LineChart';

@@ -1,5 +1,3 @@
-import * as React from 'react';
-
 import SignInButton from '@/common/components/navbar/SignInButton';
 import {
   Card,
@@ -19,7 +17,7 @@ interface ProfileProps {
   noteId?: string;
 }
 
-const Profile: React.FC<ProfileProps> = React.memo(async ({ noteId }) => {
+const Profile: React.FC<ProfileProps> = async ({ noteId }) => {
   const session = await getAuthSession();
 
   return (
@@ -47,6 +45,6 @@ const Profile: React.FC<ProfileProps> = React.memo(async ({ noteId }) => {
       )}
     </>
   );
-});
+};
 
 export default Profile;

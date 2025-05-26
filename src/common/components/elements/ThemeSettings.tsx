@@ -16,7 +16,7 @@ import { Button } from '../ui/button';
 import { Input } from '../ui/input';
 import { useToast } from '../ui/use-toast';
 
-const ThemeSettings = React.memo(() => {
+const PureThemeSettings = () => {
   const { setCurrentColor, currentColor, setThemeSettings, themeSettings } =
     useStore();
   const { setTheme, theme } = useTheme();
@@ -79,7 +79,7 @@ const ThemeSettings = React.memo(() => {
           </button>
         </div>
         <div className="ml-4 flex-col border-t-1 border-color p-4">
-          <p className="text-xl font-semibold ">主题模式</p>
+          <p className="text-xl font-semibold">主题模式</p>
           <div className="mt-4">
             <input
               type="radio"
@@ -114,7 +114,7 @@ const ThemeSettings = React.memo(() => {
           </div>
         </div>
         <div className="ml-4 border-t-1 border-color p-4">
-          <p className="text-xl font-semibold ">主题颜色</p>
+          <p className="text-xl font-semibold">主题颜色</p>
           <div className="flex gap-3">
             {themeColors.map((item, index) => (
               <TooltipComponent
@@ -163,6 +163,8 @@ const ThemeSettings = React.memo(() => {
       </motion.div>
     </motion.div>
   );
-});
+};
+
+const ThemeSettings = React.memo(PureThemeSettings);
 
 export default ThemeSettings;

@@ -1,3 +1,4 @@
+/* eslint-disable react/display-name */
 'use client';
 
 import {
@@ -24,10 +25,10 @@ import {
 
 const date1 = new Date('2017, 1, 1');
 
-// @ts-ignore eslint-disable-next-line consistent-return
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-expect-error
 function filterValue(value) {
   if (value.x >= date1) {
-    // eslint-disable-next-line no-sequences
     return value.x, value.high, value.low;
   }
 }
@@ -42,7 +43,8 @@ const Financial: React.FC = React.memo(() => {
       <div className="w-full">
         <ChartComponent
           id="charts"
-          // @ts-ignore
+          // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+          // @ts-expect-error
           primaryXAxis={FinancialPrimaryXAxis}
           primaryYAxis={FinancialPrimaryYAxis}
           chartArea={{ border: { width: 0 } }}

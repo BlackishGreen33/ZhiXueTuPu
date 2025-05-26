@@ -1,5 +1,3 @@
-import * as React from 'react';
-
 import WordCloud from '@/common/components/elements/Charts/WordCloud';
 import {
   Card,
@@ -10,7 +8,7 @@ import {
 } from '@/common/components/ui/card';
 import { prisma } from '@/common/utils/db';
 
-const HotTopicsCard: React.FC = React.memo(async () => {
+const HotTopicsCard: React.FC = async () => {
   const topics = await prisma.topic_count.findMany({});
   const formattedTopics = topics.map((topic) => {
     return {
@@ -30,6 +28,6 @@ const HotTopicsCard: React.FC = React.memo(async () => {
       </CardContent>
     </Card>
   );
-});
+};
 
 export default HotTopicsCard;

@@ -8,7 +8,7 @@ import useStore from '@/common/hooks/useStore';
 
 import NavLink from '../elements/NavLink';
 
-const Navigation: React.FC = React.memo(() => {
+const Navigation: React.FC = () => {
   const {
     currentColor,
     activeMenu,
@@ -36,9 +36,10 @@ const Navigation: React.FC = React.memo(() => {
           <p className="m-3 mt-4 uppercase text-gray-400 dark:text-gray-400">
             {item.title}
           </p>
-          {item.links.map((link) =>
+          {item.links.map((link, index) =>
             link.nav === 'settings' ? (
               <motion.div
+                key={index}
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.9 }}
                 className={
@@ -68,6 +69,6 @@ const Navigation: React.FC = React.memo(() => {
       ))}
     </div>
   );
-});
+};
 
 export default Navigation;

@@ -18,7 +18,7 @@ const LoadingQuestions = ({ finished }: Props) => {
   const [loadingText, setLoadingText] = React.useState(loadingTexts[0]);
   React.useEffect(() => {
     const interval = setInterval(() => {
-      let randomIndex = Math.floor(Math.random() * loadingTexts.length);
+      const randomIndex = Math.floor(Math.random() * loadingTexts.length);
       setLoadingText(loadingTexts[randomIndex]);
     }, 2000);
     return () => clearInterval(interval);
@@ -42,12 +42,7 @@ const LoadingQuestions = ({ finished }: Props) => {
 
   return (
     <div className="flex flex-col items-center md:w-[60vw]">
-      <Image
-        src={'/assets/loading.gif'}
-        width={400}
-        height={400}
-        alt="loading"
-      />
+      <Image src="/assets/loading.gif" width={400} height={400} alt="loading" />
       <Progress value={progress} className="mt-4 w-full" />
       <h1 className="mt-2 text-xl">{loadingText}</h1>
     </div>

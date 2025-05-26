@@ -4,7 +4,7 @@ import * as React from 'react';
 import SignInButton from './SignInButton';
 import UserAccountNav from './UserAccountNav';
 
-const NavAuth: React.FC = React.memo(() => {
+const PureNavAuth: React.FC = () => {
   const { data: session } = useSession();
 
   return (
@@ -12,10 +12,12 @@ const NavAuth: React.FC = React.memo(() => {
       {session?.user ? (
         <UserAccountNav user={session?.user} />
       ) : (
-        <SignInButton text={'登录'} />
+        <SignInButton text="登录" />
       )}
     </>
   );
-});
+};
+
+const NavAuth = React.memo(PureNavAuth);
 
 export default NavAuth;

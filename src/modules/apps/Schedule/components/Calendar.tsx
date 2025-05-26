@@ -20,20 +20,25 @@ import React, { useState } from 'react';
 import Header from '@/common/components/elements/Header';
 import { ScheduleData } from '@/common/dummy';
 
-// @ts-ignore
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-expect-error
 const PropertyPane = (props) => <div className="mt-5">{props.children}</div>;
 
-const Calendar: React.FC = React.memo(() => {
+const Calendar: React.FC = () => {
   const [scheduleObj, setScheduleObj] = useState();
-  // @ts-ignore
+  // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+  // @ts-expect-error
   const change = (args) => {
-    // @ts-ignore
+    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+    // @ts-expect-error
     scheduleObj.selectedDate = args.value;
-    // @ts-ignore
+    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+    // @ts-expect-error
     scheduleObj.dataBind();
   };
 
-  // @ts-ignore
+  // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+  // @ts-expect-error
   const onDragStart = (arg) => {
     arg.navigation.enable = true;
   };
@@ -51,7 +56,8 @@ const Calendar: React.FC = React.memo(() => {
       <Header category="应用" title="学习日程管理" />
       <ScheduleComponent
         height="650px"
-        // @ts-ignore
+        // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+        // @ts-expect-error
         ref={(schedule) => setScheduleObj(schedule)}
         selectedDate={new Date(2024, 0, 6)}
         eventSettings={{ dataSource: ScheduleData }}
@@ -59,7 +65,8 @@ const Calendar: React.FC = React.memo(() => {
       >
         <ViewsDirective>
           {['Day', 'Week', 'WorkWeek', 'Month', 'Agenda'].map((item) => (
-            // @ts-ignore
+            // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+            // @ts-expect-error
             <ViewDirective key={item} option={item} />
           ))}
         </ViewsDirective>
@@ -86,6 +93,6 @@ const Calendar: React.FC = React.memo(() => {
       </PropertyPane>
     </motion.div>
   );
-});
+};
 
 export default Calendar;

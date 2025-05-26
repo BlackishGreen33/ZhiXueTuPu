@@ -1,6 +1,6 @@
 'use client';
 
-import { Browser, EmitType } from '@syncfusion/ej2-base';
+import { Browser } from '@syncfusion/ej2-base';
 import {
   AreaSeries,
   Category,
@@ -59,15 +59,16 @@ const SAMPLE_CSS = `
     .control-fluid {
         padding: 0px !important;
     }`;
-const Radar: React.FC = React.memo(() => {
-  const [type] = useState<ChartSeriesType>('Polar');
-  let chartInstance = useRef<ChartComponent>(null);
-  let dropElement = useRef<DropDownListComponent>(null);
-  let loaded: EmitType<ILoadedEventArgs>;
 
-  const onChartLoad = (args: ILoadedEventArgs): void => {
+const PureRadar: React.FC = () => {
+  const [type] = useState<ChartSeriesType>('Polar');
+  const chartInstance = useRef<ChartComponent>(null);
+  const dropElement = useRef<DropDownListComponent>(null);
+
+  const onChartLoad = (): void => {
     document.getElementById('charts')!.setAttribute('title', '');
   };
+
   const load = (args: ILoadedEventArgs): void => {
     let selectedTheme: string = location.hash.split('/')[1];
     selectedTheme = selectedTheme ? selectedTheme : 'Material';
@@ -89,7 +90,8 @@ const Radar: React.FC = React.memo(() => {
     chartInstance.current!.series[2].animation!.enable = false;
     chartInstance.current!.refresh();
   };
-  let droplist: { [key: string]: Object }[] = [{ value: 'Radar' }];
+  // eslint-disable-next-line @typescript-eslint/ban-types
+  const droplist: { [key: string]: Object }[] = [{ value: 'Radar' }];
 
   return (
     <div className="control-pane">
@@ -202,6 +204,8 @@ const Radar: React.FC = React.memo(() => {
       </div>
     </div>
   );
-});
+};
+
+const Radar = React.memo(PureRadar);
 
 export default Radar;

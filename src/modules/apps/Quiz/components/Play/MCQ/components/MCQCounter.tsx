@@ -9,20 +9,21 @@ interface MCQCounterProps {
   wrong_answers: number;
 }
 
-const MCQCounter: React.FC<MCQCounterProps> = React.memo(
-  ({ correct_answers, wrong_answers }) => {
-    return (
-      <Card className="flex flex-row items-center justify-center p-2">
-        <LuCheckCircle2 color="green" size={30} />
-        <span className="mx-3 text-2xl text-[green]">{correct_answers}</span>
+const PureMCQCounter: React.FC<MCQCounterProps> = ({
+  correct_answers,
+  wrong_answers,
+}) => (
+  <Card className="flex flex-row items-center justify-center p-2">
+    <LuCheckCircle2 color="green" size={30} />
+    <span className="mx-3 text-2xl text-[green]">{correct_answers}</span>
 
-        <Separator orientation="vertical" />
+    <Separator orientation="vertical" />
 
-        <span className="mx-3 text-2xl text-[red]">{wrong_answers}</span>
-        <LuXCircle color="red" size={30} />
-      </Card>
-    );
-  }
+    <span className="mx-3 text-2xl text-[red]">{wrong_answers}</span>
+    <LuXCircle color="red" size={30} />
+  </Card>
 );
+
+const MCQCounter = React.memo(PureMCQCounter);
 
 export default MCQCounter;

@@ -22,30 +22,36 @@ interface NavLinkProps {
   onClick?: (event: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => void;
 }
 
-const NavLink: React.FC<NavLinkProps> = React.memo(
-  ({ href, exact = false, children, currentColor, ...props }) => {
-    const { themeSettings } = useStore();
-    const pathname = usePathname();
-    const isActive =
-      pathname === '/' && href === '/dashboard'
-        ? true
-        : (exact ? pathname === href : pathname.startsWith(href)) &&
-          !themeSettings;
+const PureNavLink: React.FC<NavLinkProps> = ({
+  href,
+  exact = false,
+  children,
+  currentColor,
+  ...props
+}) => {
+  const { themeSettings } = useStore();
+  const pathname = usePathname();
+  const isActive =
+    pathname === '/' && href === '/dashboard'
+      ? true
+      : (exact ? pathname === href : pathname.startsWith(href)) &&
+        !themeSettings;
 
-    const newProps = {
-      ...props,
-      className: isActive ? `${activeLink} active` : normalLink,
-      style: { backgroundColor: isActive ? currentColor : '' },
-    };
+  const newProps = {
+    ...props,
+    className: isActive ? `${activeLink} active` : normalLink,
+    style: { backgroundColor: isActive ? currentColor : '' },
+  };
 
-    return (
-      <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.9 }}>
-        <Link href={href} {...newProps}>
-          {children}
-        </Link>
-      </motion.div>
-    );
-  }
-);
+  return (
+    <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.9 }}>
+      <Link href={href} {...newProps}>
+        {children}
+      </Link>
+    </motion.div>
+  );
+};
+
+const NavLink = React.memo(PureNavLink);
 
 export default NavLink;

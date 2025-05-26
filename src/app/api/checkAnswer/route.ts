@@ -5,7 +5,7 @@ import { ZodError } from 'zod';
 import { checkAnswerSchema } from '@/common/schemas/questions';
 import { prisma } from '@/common/utils/db';
 
-export async function POST(req: Request, res: Response) {
+export async function POST(req: Request) {
   try {
     const body = await req.json();
     const { questionId, userInput } = checkAnswerSchema.parse(body);

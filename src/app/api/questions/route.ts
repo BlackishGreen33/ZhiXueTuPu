@@ -9,13 +9,14 @@ import { strict_output } from '@/common/utils/gpt';
 export const runtime = 'nodejs';
 export const maxDuration = 60;
 
-export async function POST(req: Request, res: Response) {
+export async function POST(req: Request) {
   try {
     const body = await req.json();
     const { amount, topic, type, email } = getQuestionsSchema.parse(body);
     const user = await prisma.user.findUnique({
       where: { email: email },
     });
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     let questions: any;
     if (type === 'open_ended') {
       if (user?.apiKey !== '' && user?.apiKey) {

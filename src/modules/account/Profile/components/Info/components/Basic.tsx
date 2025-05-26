@@ -1,11 +1,12 @@
 'use client';
 
+// eslint-disable-next-line simple-import-sort/imports
 import { useSession } from 'next-auth/react';
 import Image from 'next/image';
-import React, { useState } from 'react';
+import * as React from 'react';
 
-const Basic: React.FC = React.memo(() => {
-  const [open, setOpen] = useState(false);
+const Basic: React.FC = () => {
+  const [open, setOpen] = React.useState(false);
   const { data: session } = useSession();
 
   const ut = '学生';
@@ -41,8 +42,8 @@ const Basic: React.FC = React.memo(() => {
           : '1970-01-01T00:00:00.000Z '}
         🌍
       </p>
-      <div className="flex w-full   ">
-        <div className="my-4 flex  gap-x-1 text-xs">
+      <div className="flex w-full">
+        <div className="my-4 flex gap-x-1 text-xs">
           <p className="flex h-5 items-center justify-center text-nowrap rounded-md bg-green-200 px-2 text-[11px] text-neutral-700 dark:text-neutral-300">
             {ut}
           </p>
@@ -56,6 +57,6 @@ const Basic: React.FC = React.memo(() => {
       </div>
     </div>
   );
-});
+};
 
 export default Basic;

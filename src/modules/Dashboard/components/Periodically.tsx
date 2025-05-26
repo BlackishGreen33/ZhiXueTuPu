@@ -63,7 +63,7 @@ const Periodically: React.FC = () => {
               <IoIosMore />
             </button>
           </div>
-          <div className="mt-10 ">
+          <div className="mt-10">
             <div className="mt-4" ref={componentRef}>
               {isVisible && <Radar />}
             </div>
@@ -177,7 +177,7 @@ const Periodically: React.FC = () => {
           </div>
           <div className="mt-10">
             <Image
-              className="h-50 md:w-96 "
+              className="h-50 md:w-96"
               src={product9}
               alt=""
               loading="lazy"
@@ -188,7 +188,7 @@ const Periodically: React.FC = () => {
               <p className="text-lg font-semibold">
                 死锁面试题（什么是死锁，产生死锁的原因及必要条件）
               </p>
-              <p className="text-gray-400 ">作者：AddoilDan</p>
+              <p className="text-gray-400">作者：AddoilDan</p>
               <p className="mt-8 text-sm text-gray-400">
                 所谓死锁，是指多个进程在运行过程中因争夺资源而造成的一种僵局，当进程处于这种僵持状态时，若无外力作用，它们都将无法再向前推进。
               </p>

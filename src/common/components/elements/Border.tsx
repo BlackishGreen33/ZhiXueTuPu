@@ -4,8 +4,10 @@ interface BorderProps {
   className?: string;
 }
 
-const Border: React.FC<BorderProps> = React.memo(({ className }) => {
-  return <div className={`border border-[#282828] ${className}`} />;
-});
+const PureBorder: React.FC<BorderProps> = ({ className }) => (
+  <div className={`border border-[#282828] ${className}`} />
+);
+
+const Border = React.memo(PureBorder);
 
 export default Border;

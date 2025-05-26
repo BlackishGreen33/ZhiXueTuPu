@@ -4,7 +4,7 @@ import { ZodError } from 'zod';
 import { userTypeSchema } from '@/common/schemas/userType';
 import { prisma } from '@/common/utils/db';
 
-export async function GET(req: Request, res: Response) {
+export async function GET(req: Request) {
   try {
     const { searchParams } = new URL(req.url);
     const id = searchParams.get('id') as string;
@@ -44,7 +44,7 @@ export async function GET(req: Request, res: Response) {
   }
 }
 
-export async function POST(req: Request, res: Response) {
+export async function POST(req: Request) {
   try {
     const body = await req.json();
     const { userType, id } = userTypeSchema.parse(body);

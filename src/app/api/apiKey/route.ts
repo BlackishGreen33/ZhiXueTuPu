@@ -4,7 +4,7 @@ import { ZodError } from 'zod';
 import { apiKeySchema } from '@/common/schemas/apiKey';
 import { prisma } from '@/common/utils/db';
 
-export async function POST(req: Request, res: Response) {
+export async function POST(req: Request) {
   try {
     const body = await req.json();
     const { apiKey, email } = apiKeySchema.parse(body);

@@ -1,5 +1,6 @@
 'use client';
 
+// eslint-disable-next-line simple-import-sort/imports
 import axios from 'axios';
 import { motion } from 'framer-motion';
 import { signIn, useSession } from 'next-auth/react';
@@ -12,7 +13,7 @@ import { RiAdminFill } from 'react-icons/ri';
 import { Card } from '@/common/components/ui/card';
 import useStore from '@/common/hooks/useStore';
 
-const Auth: React.FC = React.memo(() => {
+const Auth: React.FC = () => {
   const router = useRouter();
   const { setUserType, userType } = useStore();
   const { data: session } = useSession();
@@ -80,6 +81,6 @@ const Auth: React.FC = React.memo(() => {
       </motion.div>
     </motion.div>
   );
-});
+};
 
 export default Auth;

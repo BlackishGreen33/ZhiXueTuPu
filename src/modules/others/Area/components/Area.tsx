@@ -19,7 +19,7 @@ import {
   areaPrimaryYAxis,
 } from '@/common/dummy/dummy';
 
-const Area: React.FC = React.memo(() => {
+const Area: React.FC = () => {
   const { theme } = useTheme();
 
   return (
@@ -28,7 +28,8 @@ const Area: React.FC = React.memo(() => {
       <div className="w-full">
         <ChartComponent
           id="charts"
-          // @ts-ignore
+          // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+          // @ts-expect-error
           primaryXAxis={areaPrimaryXAxis}
           primaryYAxis={areaPrimaryYAxis}
           chartArea={{ border: { width: 0 } }}
@@ -46,6 +47,6 @@ const Area: React.FC = React.memo(() => {
       </div>
     </div>
   );
-});
+};
 
 export default Area;

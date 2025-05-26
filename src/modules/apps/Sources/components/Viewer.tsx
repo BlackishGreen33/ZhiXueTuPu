@@ -21,16 +21,17 @@ interface ViewerProps {
   url?: string;
 }
 
-const Viewer: React.FC<ViewerProps> = React.memo(({ url }) => {
+const PureViewer: React.FC<ViewerProps> = ({ url }) => {
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   let viewer: PdfViewerComponent;
 
   return (
     <div>
       <div className="control-section">
         <PdfViewerComponent
-          // @ts-ignore
+          // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+          // @ts-expect-error
           ref={(scope) => {
-            // @ts-ignore
             viewer = scope;
           }}
           id="container"
@@ -63,6 +64,8 @@ const Viewer: React.FC<ViewerProps> = React.memo(({ url }) => {
       </div>
     </div>
   );
-});
+};
+
+const Viewer = React.memo(PureViewer);
 
 export default Viewer;

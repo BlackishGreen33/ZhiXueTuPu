@@ -17,7 +17,7 @@ import * as React from 'react';
 import Header from '@/common/components/elements/Header';
 import { customersData, customersGrid } from '@/common/dummy/dummy';
 
-const Customers: React.FC = React.memo(() => {
+const Customers: React.FC = () => {
   const selectionsettings = { persistSelection: true };
   const toolbarOptions = ['Delete'];
   const editing = { allowDeleting: true, allowEditing: true };
@@ -45,6 +45,6 @@ const Customers: React.FC = React.memo(() => {
       </GridComponent>
     </div>
   );
-});
+};
 
 export default Customers;

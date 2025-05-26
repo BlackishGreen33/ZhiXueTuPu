@@ -9,7 +9,7 @@ import useStore from '@/common/hooks/useStore';
 
 import Logo from './Logo';
 
-const TopArea: React.FC = React.memo(() => {
+const TopArea: React.FC = () => {
   const { currentColor, activeMenu, setActiveMenu } = useStore();
 
   return (
@@ -31,6 +31,6 @@ const TopArea: React.FC = React.memo(() => {
       </TooltipComponent>
     </motion.div>
   );
-});
+};
 
 export default TopArea;

@@ -13,7 +13,7 @@ type UserAccountNavProps = {
   user: Pick<User, 'name' | 'image' | 'email'>;
 };
 
-const UserAccountNav: React.FC<UserAccountNavProps> = React.memo(({ user }) => {
+const PureUserAccountNav: React.FC<UserAccountNavProps> = ({ user }) => {
   const { handleClick } = useStore();
 
   return (
@@ -26,7 +26,8 @@ const UserAccountNav: React.FC<UserAccountNavProps> = React.memo(({ user }) => {
       >
         <Image
           className="h-8 w-8 rounded-full"
-          // @ts-ignore
+          // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+          // @ts-expect-error
           src={user.image}
           alt="user-profile"
           loading="lazy"
@@ -43,6 +44,8 @@ const UserAccountNav: React.FC<UserAccountNavProps> = React.memo(({ user }) => {
       </motion.div>
     </TooltipComponent>
   );
-});
+};
+
+const UserAccountNav = React.memo(PureUserAccountNav);
 
 export default UserAccountNav;

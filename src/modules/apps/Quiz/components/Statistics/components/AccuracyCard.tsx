@@ -12,7 +12,7 @@ interface AccuracyCardProps {
   accuracy: number;
 }
 
-const AccuracyCard: React.FC<AccuracyCardProps> = React.memo(({ accuracy }) => {
+const PureAccuracyCard: React.FC<AccuracyCardProps> = ({ accuracy }) => {
   accuracy = Math.round(accuracy * 100) / 100;
 
   return (
@@ -26,6 +26,8 @@ const AccuracyCard: React.FC<AccuracyCardProps> = React.memo(({ accuracy }) => {
       </CardContent>
     </Card>
   );
-});
+};
+
+const AccuracyCard = React.memo(PureAccuracyCard);
 
 export default AccuracyCard;

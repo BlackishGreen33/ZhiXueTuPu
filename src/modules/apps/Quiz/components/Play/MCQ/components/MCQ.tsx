@@ -10,7 +10,7 @@ interface MCQProps {
   gameId: string;
 }
 
-const MCQ: React.FC<MCQProps> = React.memo(async ({ gameId }) => {
+const PureMCQ: React.FC<MCQProps> = async ({ gameId }) => {
   const session = await getAuthSession();
   if (!session?.user) {
     return redirect('/');
@@ -39,6 +39,8 @@ const MCQ: React.FC<MCQProps> = React.memo(async ({ gameId }) => {
       <MCQModule game={game} />
     </main>
   );
-});
+};
+
+const MCQ = React.memo(PureMCQ);
 
 export default MCQ;

@@ -7,7 +7,7 @@ import useStore from '@/common/hooks/useStore';
 
 import { Button } from '.';
 
-const Chat: React.FC = React.memo(() => {
+const PureChat: React.FC = () => {
   const { currentColor } = useStore();
 
   return (
@@ -46,7 +46,8 @@ const Chat: React.FC = React.memo(() => {
                 height={200}
               />
               <span
-                // @ts-ignore
+                // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+                // @ts-expect-error
                 style={{ background: item.dotColor }}
                 className="absolute -top-1 right-0 inline-flex h-2 w-2 rounded-full"
               />
@@ -74,6 +75,8 @@ const Chat: React.FC = React.memo(() => {
       </div>
     </div>
   );
-});
+};
+
+const Chat = React.memo(PureChat);
 
 export default Chat;

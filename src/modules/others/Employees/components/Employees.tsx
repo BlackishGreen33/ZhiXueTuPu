@@ -14,7 +14,7 @@ import * as React from 'react';
 import Header from '@/common/components/elements/Header';
 import { employeesData, employeesGrid } from '@/common/dummy/dummy';
 
-const Employees: React.FC = React.memo(() => {
+const Employees: React.FC = () => {
   const toolbarOptions = ['Search'];
 
   const editing = { allowDeleting: true, allowEditing: true };
@@ -41,6 +41,6 @@ const Employees: React.FC = React.memo(() => {
       </GridComponent>
     </div>
   );
-});
+};
 
 export default Employees;

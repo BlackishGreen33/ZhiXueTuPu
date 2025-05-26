@@ -1,15 +1,15 @@
 'use client';
 
+import { useRouter } from 'next/navigation';
 import * as React from 'react';
 
 import useStore from '@/common/hooks/useStore';
 
-import { useRouter } from 'next/navigation';
 import { Button } from '../ui/button';
 
 type SignInButtonProps = { text: string };
 
-const SignInButton: React.FC<SignInButtonProps> = React.memo(({ text }) => {
+const PureSignInButton: React.FC<SignInButtonProps> = ({ text }) => {
   const { currentColor } = useStore();
   const router = useRouter();
 
@@ -23,6 +23,8 @@ const SignInButton: React.FC<SignInButtonProps> = React.memo(({ text }) => {
       {text}
     </Button>
   );
-});
+};
+
+const SignInButton = React.memo(PureSignInButton);
 
 export default SignInButton;

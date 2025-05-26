@@ -19,16 +19,18 @@ import {
   LinePrimaryYAxis,
 } from '@/common/dummy';
 
-const LineChart: React.FC = React.memo(() => {
+const PureLineChart: React.FC = () => {
   const { theme } = useTheme();
 
   return (
     <ChartComponent
       id="line-chart"
       height="420px"
-      // @ts-ignore
+      // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+      // @ts-expect-error
       primaryXAxis={LinePrimaryXAxis}
-      // @ts-ignore
+      // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+      // @ts-expect-error
       primaryYAxis={LinePrimaryYAxis}
       chartArea={{ border: { width: 0 } }}
       tooltip={{ enable: true }}
@@ -44,6 +46,8 @@ const LineChart: React.FC = React.memo(() => {
       </SeriesCollectionDirective>
     </ChartComponent>
   );
-});
+};
+
+const LineChart = React.memo(PureLineChart);
 
 export default LineChart;

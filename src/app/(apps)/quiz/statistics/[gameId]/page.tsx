@@ -2,18 +2,16 @@ import { NextPage } from 'next';
 
 import Statistics from '@/modules/apps/Quiz/components/Statistics';
 
+type Params = Promise<{ gameId: string }>;
 interface PageProps {
-  params: {
-    gameId: string;
-  };
+  params: Params;
 }
 
-const Page: NextPage<PageProps> = async ({ params: { gameId } }) => {
-  return (
-    <>
-      <Statistics gameId={gameId} />
-    </>
-  );
+const Page: NextPage<PageProps> = async (props) => {
+  const params = await props.params;
+  const { gameId } = params;
+
+  return <Statistics gameId={gameId} />;
 };
 
 export default Page;

@@ -23,7 +23,7 @@ import {
   rangeColorMapping,
 } from '@/common/dummy/dummy';
 
-const ColorMapping: React.FC = React.memo(() => {
+const ColorMapping: React.FC = () => {
   const { theme } = useTheme();
 
   return (
@@ -35,7 +35,8 @@ const ColorMapping: React.FC = React.memo(() => {
       <div className="w-full">
         <ChartComponent
           id="charts"
-          // @ts-ignore
+          // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+          // @ts-expect-error
           primaryXAxis={ColorMappingPrimaryXAxis}
           primaryYAxis={ColorMappingPrimaryYAxis}
           chartArea={{ border: { width: 0 } }}
@@ -60,7 +61,8 @@ const ColorMapping: React.FC = React.memo(() => {
           <RangeColorSettingsDirective>
             {/* eslint-disable-next-line react/jsx-props-no-spreading */}
             {rangeColorMapping.map((item, index) => (
-              // @ts-ignore
+              // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+              // @ts-expect-error
               <RangeColorSettingDirective key={index} {...item} />
             ))}
           </RangeColorSettingsDirective>
@@ -68,6 +70,6 @@ const ColorMapping: React.FC = React.memo(() => {
       </div>
     </div>
   );
-});
+};
 
 export default ColorMapping;

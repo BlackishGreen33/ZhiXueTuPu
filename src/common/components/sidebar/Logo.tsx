@@ -6,7 +6,7 @@ import { SiShopware } from 'react-icons/si';
 
 import useStore from '@/common/hooks/useStore';
 
-const Logo: React.FC = React.memo(() => {
+const Logo: React.FC = () => {
   const { activeMenu, setActiveMenu, screenSize, currentColor } = useStore();
 
   const handleCloseSideBar = () => {
@@ -25,6 +25,6 @@ const Logo: React.FC = React.memo(() => {
       <SiShopware /> <span>智学图谱</span>
     </Link>
   );
-});
+};
 
 export default Logo;

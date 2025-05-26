@@ -12,7 +12,7 @@ import {
   CardTitle,
 } from '@/common/components/ui/card';
 
-const QuizMeCard: React.FC = React.memo(() => {
+const QuizMeCard: React.FC = () => {
   const router = useRouter();
 
   return (
@@ -42,6 +42,6 @@ const QuizMeCard: React.FC = React.memo(() => {
       </Card>
     </motion.div>
   );
-});
+};
 
 export default QuizMeCard;

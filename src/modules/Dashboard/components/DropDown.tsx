@@ -7,9 +7,10 @@ interface DropDownProps {
   theme: string;
 }
 
-const DropDown: React.FC<DropDownProps> = React.memo(({ theme }) => (
+const PureDropDown: React.FC<DropDownProps> = ({ theme }) => (
   <div className="w-28 rounded-md border-1 border-color px-2 py-1">
-    {/* @ts-ignore */}
+    {/* eslint-disable-next-line @typescript-eslint/ban-ts-comment */}
+    {/* @ts-expect-error */}
     <DropDownListComponent
       id="time"
       fields={{ text: 'Time', value: 'Id' }}
@@ -20,6 +21,8 @@ const DropDown: React.FC<DropDownProps> = React.memo(({ theme }) => (
       popupWidth="120px"
     />
   </div>
-));
+);
+
+const DropDown = React.memo(PureDropDown);
 
 export default DropDown;
