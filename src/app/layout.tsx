@@ -21,7 +21,7 @@ export default function RootLayout({
   const session = getAuthSession();
 
   return (
-    <html lang="zh-CN">
+    <html lang="zh-CN" suppressHydrationWarning>
       <body className={inter.className}>
         <Providers session={session}>{children}</Providers>
       </body>
