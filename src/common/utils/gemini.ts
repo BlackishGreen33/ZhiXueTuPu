@@ -1,4 +1,5 @@
-import OpenAI from 'openai';
+// import OpenAI from 'openai';
+import { GoogleGenerativeAI } from '@google/generative-ai';
 
 interface OutputFormat {
   [key: string]: string | string[] | OutputFormat;
@@ -11,7 +12,7 @@ export async function strict_output(
   apiKey: string,
   default_category: string = '',
   output_value_only: boolean = false,
-  model: string = 'gpt-3.5-turbo',
+  model: string = 'gemini-2.0-flash',
   temperature: number = 1,
   num_tries: number = 3,
   verbose: boolean = false
@@ -21,9 +22,14 @@ export async function strict_output(
     answer: string;
   }[]
 > {
-  const openai = new OpenAI({
-    apiKey: apiKey,
-  });
+  // const openai = new OpenAI({
+  //   apiKey: apiKey,
+  // });
+  const genAI = new GoogleGenerativeAI(
+    process.env.GOOGLE_GENERATIVE_AI_API_KEY!
+  );
+  const gemeniModel = genAI.getGenerativeModel({ model });
+
   // if the user input is in a list, we also process the output as a list of json
   const list_input: boolean = Array.isArray(user_prompt);
   // if the output format contains dynamic elements of < or >, then add to the prompt to handle dynamic elements
@@ -35,42 +41,79 @@ export async function strict_output(
   let error_msg: string = '';
 
   for (let i = 0; i < num_tries; i++) {
-    let output_format_prompt: string = `\nYou are to output the following in json format: ${JSON.stringify(
-      output_format
-    )}. \nDo not put quotation marks or escape character \\ in the output fields.`;
+    let output_format_prompt: string = `\n你必须输出严格符合规范的JSON格式，遵循以下规则：
+    1. 所有属性名和字符串值必须用双引号括起来
+    2. 严格按照这个格式输出: ${JSON.stringify(output_format)}
+    3. 不要在输出字段中使用引号或转义字符\\`;
 
     if (list_output) {
-      output_format_prompt += `\nIf output field is a list, classify output into the best element of the list.`;
+      output_format_prompt += `\n如果输出字段是列表，请将输出分类到列表中最合适的元素。`;
     }
 
     // if output_format contains dynamic elements, process it accordingly
     if (dynamic_elements) {
-      output_format_prompt += `\nAny text enclosed by < and > indicates you must generate content to replace it. Example input: Go to <location>, Example output: Go to the garden\nAny output key containing < and > indicates you must generate the key name to replace it. Example input: {'<location>': 'description of location'}, Example output: {school: a place for education}`;
+      output_format_prompt += `\n任何被<和>包围的文本表示你必须生成内容来替换它。示例输入: 去<地点>, 示例输出: 去花园\n任何包含<和>的输出键表示你必须生成键名来替换它。示例输入: {'<地点>': '地点描述'}, 示例输出: {学校: 一个教育的地方}`;
     }
 
     // if input is in a list format, ask it to generate json in a list
     if (list_input) {
-      output_format_prompt += `\nGenerate a list of json, one json for each input element.`;
+      output_format_prompt += `\n为每个输入元素生成一个json，组成一个json列表。`;
     }
 
     // Use OpenAI to get a response
-    const response = await openai.chat.completions.create({
-      temperature: temperature,
-      model: model,
-      messages: [
+    // const response = await openai.chat.completions.create({
+    //   temperature: temperature,
+    //   model: model,
+    //   messages: [
+    //     {
+    //       role: 'system',
+    //       content: system_prompt + output_format_prompt + error_msg,
+    //     },
+    //     { role: 'user', content: user_prompt.toString() },
+    //   ],
+    // });
+    const result = await gemeniModel.generateContent({
+      contents: [
         {
-          role: 'system',
-          content: system_prompt + output_format_prompt + error_msg,
+          role: 'user',
+          parts: [
+            {
+              text:
+                system_prompt +
+                output_format_prompt +
+                error_msg +
+                '\n\n' +
+                user_prompt.toString(),
+            },
+          ],
         },
-        { role: 'user', content: user_prompt.toString() },
       ],
+      generationConfig: {
+        temperature: temperature,
+      },
     });
 
-    let res: string =
-      response.choices[0].message?.content?.replace(/'/g, '"') ?? '';
+    let res: string = result.response.text().replace(/'/g, '"') ?? '';
+
+    // Remove Markdown code blocks
+    res = res
+      .replace(/```json/g, '')
+      .replace(/```/g, '')
+      .trim();
+
+    // More strictly fix extra quotes
+    // Fix extra quotes after property names (like "question"")
+    res = res.replace(/"([^"]+)"":/g, '"$1":');
+    // Fix extra quotes before values (like ""value")
+    res = res.replace(/:\s*""([^"]+)"/g, ': "$1"');
+    // Fix extra quotes after values (like "value"")
+    res = res.replace(/"([^"]+)"",/g, '"$1",');
+    res = res.replace(/"([^"]+)"":/g, '"$1":');
+    res = res.replace(/"([^"]+)"}$/g, '"$1"}');
 
     // ensure that we don't replace away apostrophes in text
     res = res.replace(/(\w)"(\w)/g, "$1'$2");
+    console.log('🚀 ~ res:', res);
 
     if (verbose) {
       console.log(

@@ -1,48 +1,48 @@
 'use client';
 
 import { TooltipComponent } from '@syncfusion/ej2-react-popups';
-import axios from 'axios';
+// import axios from 'axios';
 import { motion } from 'framer-motion';
-import { useSession } from 'next-auth/react';
+// import { useSession } from 'next-auth/react';
 import { useTheme } from 'next-themes';
-import React, { useState } from 'react';
+import * as React from 'react';
 import { BsCheck } from 'react-icons/bs';
 import { MdOutlineCancel } from 'react-icons/md';
 
 import { themeColors } from '@/common/dummy/dummy';
 import useStore from '@/common/hooks/useStore';
 
-import { Button } from '../ui/button';
-import { Input } from '../ui/input';
-import { useToast } from '../ui/use-toast';
+// import { Button } from '../ui/button';
+// import { Input } from '../ui/input';
+// import { useToast } from '../ui/use-toast';
 
 const PureThemeSettings = () => {
   const { setCurrentColor, currentColor, setThemeSettings, themeSettings } =
     useStore();
   const { setTheme, theme } = useTheme();
-  const { data: session } = useSession();
-  const { toast } = useToast();
-  const [apiKey, setapiKey] = useState('');
+  // const { data: session } = useSession();
+  // const { toast } = useToast();
+  // const [apiKey, setapiKey] = useState('');
 
-  const handleClick = async () => {
-    const res = await axios.post('/api/apiKey', {
-      apiKey: apiKey,
-      email: session?.user.email,
-    });
-    if (res.status === 200) {
-      toast({
-        title: '成功',
-        description: '您的 API 密钥已保存。',
-        variant: 'default',
-      });
-    } else {
-      toast({
-        title: '错误',
-        description: '发生了一些错误。请稍后再试。',
-        variant: 'destructive',
-      });
-    }
-  };
+  // const handleClick = async () => {
+  //   const res = await axios.post('/api/apiKey', {
+  //     apiKey: apiKey,
+  //     email: session?.user.email,
+  //   });
+  //   if (res.status === 200) {
+  //     toast({
+  //       title: '成功',
+  //       description: '您的 API 密钥已保存。',
+  //       variant: 'default',
+  //     });
+  //   } else {
+  //     toast({
+  //       title: '错误',
+  //       description: '发生了一些错误。请稍后再试。',
+  //       variant: 'destructive',
+  //     });
+  //   }
+  // };
 
   return (
     <motion.div
@@ -141,7 +141,7 @@ const PureThemeSettings = () => {
             ))}
           </div>
         </div>
-        <div className="ml-4 border-t-1 border-color p-4">
+        {/* <div className="ml-4 border-t-1 border-color p-4">
           <p className="text-xl font-semibold">你的 Openai 秘钥</p>
           <p className="text-sm">
             如果您有 Openai 秘钥，可以解锁 AI 出题测验功能。
@@ -159,7 +159,7 @@ const PureThemeSettings = () => {
               提交
             </Button>
           </div>
-        </div>
+        </div> */}
       </motion.div>
     </motion.div>
   );

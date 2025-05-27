@@ -60,14 +60,14 @@ export async function POST(req: Request) {
         option1: string;
         option2: string;
         option3: string;
+        option4: string;
       };
-      const manyData = data.questions.questions.map((question: mcqQuestion) => {
-        // mix up the options lol
+      const manyData = data.questions.map((question: mcqQuestion) => {
         const options = [
           question.option1,
           question.option2,
           question.option3,
-          question.answer,
+          question.option4,
         ].sort(() => Math.random() - 0.5);
         return {
           question: question.question,
@@ -87,7 +87,7 @@ export async function POST(req: Request) {
         answer: string;
       };
       await prisma.question.createMany({
-        data: data.questions.questions.map((question: openQuestion) => {
+        data: data.questions.map((question: openQuestion) => {
           return {
             question: question.question,
             answer: question.answer,

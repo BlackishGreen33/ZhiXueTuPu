@@ -198,7 +198,7 @@ const PureMCQModule: React.FC<MCQModuleProps> = ({ game }) => {
           {options.map((option, index) => {
             return (
               <Button
-                key={option}
+                key={index}
                 variant={selectedChoice === index ? 'default' : 'outline'}
                 className="mb-4 w-full justify-start py-8"
                 onClick={() => setSelectedChoice(index)}
