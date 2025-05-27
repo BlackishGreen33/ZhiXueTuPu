@@ -1,8 +1,8 @@
 <div align="center">
-  <img width="130" src="https://github.com/BlackishGreen33/ZhiXueTuPu/blob/main/public/logo.png?raw=true" alt="智学图谱 Logo">
-  <h1 align="center">智学图谱</h1>
-  <h3>学习分析系统</h3>
-  <a href="https://github.com/BlackishGreen33/ZhiXueTuPu"><strong>探索项目文档 »</strong></a>
+  <img width="130" src="https://github.com/BlackishGreen33/ZhiXueTuPu/blob/main/public/logo.png?raw=true" alt="ZhiXueTuPu Logo">
+  <h1 align="center">ZhiXueTuPu</h1>
+  <h3>Learning Analytics System</h3>
+  <a href="https://github.com/BlackishGreen33/ZhiXueTuPu"><strong>Explore Project Documentation »</strong></a>
   <br />
   <br />
 
@@ -10,85 +10,123 @@
 ![language](https://img.shields.io/github/languages/top/BlackishGreen33/ZhiXueTuPu)
 ![last](https://img.shields.io/github/last-commit/BlackishGreen33/ZhiXueTuPu)
 
-<a href="https://zhixuetupu.vercel.app/" target="_blank">在线体验</a>
+<a href="https://zhixuetupu.vercel.app/" target="_blank">Live Demo</a>
 ·
-<a href="https://github.com/BlackishGreen33/ZhiXueTuPu/issues">报告Bug</a>
+<a href="https://github.com/BlackishGreen33/ZhiXueTuPu/issues">Report Bug</a>
 ·
-<a href="https://github.com/BlackishGreen33/ZhiXueTuPu/issues">提出新特性</a>
+<a href="https://github.com/BlackishGreen33/ZhiXueTuPu/issues">Request Feature</a>
 
 </div>
 
-## 🔖 项目导览
+## 🔖 Project Overview
 
-### ✨ 提交规范
+[中文文檔](./README-zh.md) | [README in English](./README.md)
 
-- 🎉 init：项目初始化
-- ✨ feat：新增功能（feature）
-- 🐞 fix：修复bug
-- 📃 docs：文档修改
-- 🌈 style：代码样式修改，不影响原代码逻辑
-- ✅ test：测试相关的改动
-- 🔨 refactor：代码重构
-- 🔧 chore：建制过程或辅助工具的变动
+Related Project: [The Prologue That Never Fades](https://github.com/BlackishGreen33/SaaS-Edu-Platform)
 
-### 🎯 相容环境
+### ✨ Features
 
-- 现代浏览器（Chrome >= 64, Edge >= 79, Firefox >= 78, Safari >= 12）
+- AI-powered language model for intelligent conversational teaching
+- MCP knowledge base retrieval for learning assistance
+- Intelligent question generation and testing
+- User management and authentication (`Admin`, `Instructor`, `Student`)
+- Course data storage and management (`Instructor materials`, `Student notes`)
+- Data visualization and analytics (`Dashboard`, `Knowledge Graph`)
+- Multi-device responsive design
+- Customizable themes and styles
+
+### ✒️ Technologies
+
+- **Main Framework**: [Next.js](https://nextjs.org/)
+- **Frontend**: [React](https://react.dev/)
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/)
+- **Component Libraries**: [shadcn/ui](https://ui.shadcn.com/) & [assistant-ui](https://www.assistant-ui.com/)
+- **Charting**: [Syncfusion](https://www.syncfusion.com/) & [EChartsJS](https://www.echartsjs.com/)
+- **State Management**: [React Query](https://tanstack.com/query/latest/docs/framework/react/overview) & [zustand](https://zustand-demo.pmnd.rs/)
+- **Backend**: [Hono](https://hono.dev/)
+- **Agent Framework**: [Mastra](https://mastra.ai/)
+- **AI Voice Synthesis**: [Vapi](https://vapi.ai/)
+- **Primary Database**: [MySQL](https://www.mysql.com/)
+- **Secondary Database (Cache)**: [libSQL](https://turso.tech/libsql)
+- **Database Tools**: [Prisma](https://www.prisma.io/)
+
+### ✨ Commit Convention
+
+- 🎉 init: Project initialization
+- ✨ feat: New feature
+- 🐞 fix: Bug fix
+- 📃 docs: Documentation changes
+- 🌈 style: Code style changes (no logic changes)
+- ✅ test: Test related changes
+- 🔨 refactor: Code refactoring
+- 🔧 chore: Build process or tooling changes
+
+### 🎯 Compatibility
+
+- Modern browsers (Chrome >= 64, Edge >= 79, Firefox >= 78, Safari >= 12)
 - node >= 20.18.0
 
-### 💻 本地调试
+### 💻 Local Development
 
-拉取代码并切换到项目目录下：
+Clone the repository and navigate to project directory:
 
 ```bash
 $ git clone https://github.com/BlackishGreen33/ZhiXueTuPu.git
 $ cd ZhiXueTuPu
 ```
 
-配置环境变量：
+Configure environment variables:
 
 ```env
+# Database
 DATABASE_URL=
 
-NEXTAUTH_SECRET=
-NEXTAUTH_URL=
+# API URL
+API_URL=
 
-GOOGLE_CLIENT_ID=
-GOOGLE_CLIENT_SECRET=
+# NextAuth
+NEXTAUTH_URL=
+NEXTAUTH_SECRET=
+
+# Google & GitHub Auth
 GITHUB_CLIENT_ID=
 GITHUB_CLIENT_SECRET=
-OPENAI_API_KEY=
+GOOGLE_CLIENT_ID=
+GOOGLE_CLIENT_SECRET=
 
-API_URL=
+# Syncfusion
 SYNCFUSION_LICENSE=
+
+# Gemini
+GOOGLE_GENERATIVE_AI_API_KEY=
 ```
 
-安装依赖：
+Install dependencies:
 
 ```bash
 $ pnpm install
 ```
 
-生成 Prisma 客户端：
+Generate Prisma client:
 
 ```bash
 $ npx prisma generate
 ```
 
-激活图表库：
+Activate chart library:
 
 ```bash
 $ npx syncfusion-license activate
 ```
 
-开始调试你的调试之旅！
+Start your debugging journey!
 
 ```bash
 $ pnpm run dev
 ```
 
-### 📝 授权
+### 📝 Licensing
 
-上述文件皆以 MIT 许可授权
+All the above files are licensed under the MIT License.
 
-> 详细之授权请参考 [LICENSE](LICENSE) 文件
+> For detailed licensing, please refer to the [LICENSE](LICENSE) file.
