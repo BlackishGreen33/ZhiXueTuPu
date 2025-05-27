@@ -1,5 +1,7 @@
+import Image from 'next/image';
 import { AiOutlineCalendar } from 'react-icons/ai';
 import { BsBoxSeam, BsChatLeft, BsShield } from 'react-icons/bs';
+import { BsRobot } from "react-icons/bs";
 import {
   FaDatabase,
   FaProjectDiagram,
@@ -24,7 +26,6 @@ import {
   MdSource,
 } from 'react-icons/md';
 
-import Image from 'next/image';
 const avatar = './assets/avatar.jpg';
 const avatar2 = './assets/avatar2.jpg';
 const avatar3 = './assets/avatar3.png';
@@ -512,8 +513,13 @@ export const links = [
       },
       {
         name: '智能教学',
-        nav: 'test',
+        nav: 'https://prologue-saas-edu.vercel.app',
         icon: <MdInterpreterMode />,
+      },
+      {
+        name: '学习助手',
+        nav: 'assistant',
+        icon: <BsRobot />,
       },
       {
         name: '资源管理',

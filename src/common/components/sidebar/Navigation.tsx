@@ -55,7 +55,7 @@ const Navigation: React.FC = () => {
               </motion.div>
             ) : (
               <NavLink
-                href={`/${link.nav}`}
+                href={link.name === '智能教学' ? link.nav : `/${link.nav}`}
                 key={link.nav}
                 onClick={handleCloseSideBar}
                 currentColor={currentColor}
