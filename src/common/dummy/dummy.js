@@ -1,7 +1,6 @@
 import Image from 'next/image';
 import { AiOutlineCalendar } from 'react-icons/ai';
-import { BsBoxSeam, BsChatLeft, BsShield } from 'react-icons/bs';
-import { BsRobot } from "react-icons/bs";
+import { BsBoxSeam, BsChatLeft, BsRobot, BsShield } from 'react-icons/bs';
 import {
   FaDatabase,
   FaProjectDiagram,
@@ -709,7 +708,7 @@ export const EnterData = [
   },
   {
     icon: <HiOutlineRefresh />,
-    amount: '2024年5月',
+    amount: '2025年5月',
     percentage: '',
     title: '注册时间',
     iconColor: 'rgb(0, 194, 146)',
@@ -833,7 +832,7 @@ export const medicalproBranding = {
   data: [
     {
       title: '报名截止时间',
-      desc: '2024年6月8日',
+      desc: '2025年6月8日',
     },
     {
       title: '报名费用',

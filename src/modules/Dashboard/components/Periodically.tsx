@@ -94,7 +94,7 @@ const Periodically: React.FC = () => {
             </button>
           </div>
           <p className="mt-10 w-32 cursor-pointer text-nowrap rounded-lg bg-orange-400 px-2 py-0.5 text-xs font-semibold text-gray-200 hover:drop-shadow-xl">
-            2024 年 6 月 10 日
+            2025 年 6 月 10 日
           </p>
 
           <div className="mt-6 flex gap-4 border-b-1 border-color">

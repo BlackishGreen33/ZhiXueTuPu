@@ -59,7 +59,7 @@ const Calendar: React.FC = () => {
         // eslint-disable-next-line @typescript-eslint/ban-ts-comment
         // @ts-expect-error
         ref={(schedule) => setScheduleObj(schedule)}
-        selectedDate={new Date(2024, 0, 6)}
+        selectedDate={new Date(2025, 0, 6)}
         eventSettings={{ dataSource: ScheduleData }}
         dragStart={onDragStart}
       >
@@ -80,7 +80,7 @@ const Calendar: React.FC = () => {
             <tr style={{ height: '50px' }}>
               <td style={{ width: '100%' }}>
                 <DatePickerComponent
-                  value={new Date(2024, 0, 6)}
+                  value={new Date(2025, 0, 6)}
                   showClearButton={false}
                   placeholder="当前时间"
                   floatLabelType="Always"
