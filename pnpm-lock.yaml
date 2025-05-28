@@ -220,8 +220,8 @@ importers:
         specifier: ^5.3.0
         version: 5.3.0(react@19.1.0)
       relation-graph-react:
-        specifier: ^2.2.7
-        version: 2.2.7
+        specifier: ^2.2.11
+        version: 2.2.11
       remark-gfm:
         specifier: ^4.0.1
         version: 4.0.1
@@ -5607,8 +5607,8 @@ packages:
     resolution: {integrity: sha512-NcDiDkTLuPR+++OCKB0nWafEmhg/Da8aUPLPMQbK+bxKKCm1/S5he+AqYa4PlMCVBalb4/yxIRub6qkEx5yJbw==}
     engines: {node: '>= 0.4'}
 
-  relation-graph-react@2.2.7:
-    resolution: {integrity: sha512-E1ClzZoPaHZ7VVJ7Td9uyS7uBArYC05sb3RBOG0r/XgAurJ3c1GRruCgmD6ZgAwNLEw9zG2PvT+PHgQJTm/1uA==}
+  relation-graph-react@2.2.11:
+    resolution: {integrity: sha512-eFukFIpYXBnlUDf6KHERX79idqO5nuaZPMQDnN4dJfzBYmAVZaEdmV4Jdw5ddFXIc9OiNJ7qGve+G+11/EQBFg==}
 
   remark-gfm@4.0.1:
     resolution: {integrity: sha512-1quofZ2RQ9EWdeN34S79+KExV1764+wCUGop5CPL1WGdD0ocPpu91lzPGbwWMECpEpd42kJGQwzRfyov9j4yNg==}
@@ -13063,7 +13063,7 @@ snapshots:
       es-errors: 1.3.0
       set-function-name: 2.0.2
 
-  relation-graph-react@2.2.7:
+  relation-graph-react@2.2.11:
     dependencies:
       html2canvas: 1.4.1
       screenfull: 5.2.0

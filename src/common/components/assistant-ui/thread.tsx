@@ -88,12 +88,12 @@ const ThreadWelcomeSuggestions: React.FC = () => (
     </ThreadPrimitive.Suggestion>
     <ThreadPrimitive.Suggestion
       className="hover:bg-muted/80 flex max-w-sm grow basis-0 flex-col items-center justify-center rounded-lg border p-3 transition-colors ease-in"
-      prompt="什么是 Next.js?"
+      prompt="操作系统课程都在学些什么？"
       method="replace"
       autoSend
     >
       <span className="line-clamp-2 text-sm font-semibold text-ellipsis">
-        什么是 Next.js?
+        操作系统课程都在学些什么？
       </span>
     </ThreadPrimitive.Suggestion>
   </div>

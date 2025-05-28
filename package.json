@@ -1,8 +1,8 @@
 {
   "name": "zhixuetupu",
-  "version": "0.1.0",
+  "version": "1.1.0",
   "private": true,
-  "description": "智学图谱 - 学习分析系统(软工导论)",
+  "description": "ZhiXueTuPu - Learning Analytics System (Introduction to Software Engineering class)",
   "author": "BlackishGreen33 <s5460703@gmail.com>",
   "license": "MIT",
   "repository": {
@@ -91,7 +91,7 @@
     "react-dom": "^19.0.0",
     "react-hook-form": "^7.53.1",
     "react-icons": "^5.3.0",
-    "relation-graph-react": "^2.2.7",
+    "relation-graph-react": "^2.2.11",
     "remark-gfm": "^4.0.1",
     "sass": "^1.80.4",
     "string-similarity": "^4.0.4",
