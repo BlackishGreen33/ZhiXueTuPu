@@ -104,7 +104,7 @@
   },
   "devDependencies": {
     "@capacitor/cli": "^6.1.2",
-    "@eslint/eslintrc": "^3.3.1",
+    "@eslint/eslintrc": "^3.3.5",
     "@eslint/js": "^9.27.0",
     "@types/node": "^22.8.1",
     "@types/react": "^18.3.12",
