@@ -21,7 +21,7 @@ export default function RootLayout({
   const session = getAuthSession();
 
   return (
-    <html lang="zh-CN" suppressHydrationWarning>
+    <html lang="zh-CN" suppressHydrationWarning data-scroll-behavior="smooth">
       <body className={inter.className}>
         <Providers session={session}>{children}</Providers>
       </body>

@@ -1,6 +1,9 @@
 'use client';
 
-import { DatePickerComponent } from '@syncfusion/ej2-react-calendars';
+import {
+  type ChangedEventArgs,
+  DatePickerComponent,
+} from '@syncfusion/ej2-react-calendars';
 import {
   Agenda,
   Day,
@@ -15,7 +18,7 @@ import {
   WorkWeek,
 } from '@syncfusion/ej2-react-schedule';
 import { motion } from 'framer-motion';
-import React, { useState } from 'react';
+import React, { useRef } from 'react';
 
 import Header from '@/common/components/elements/Header';
 import { ScheduleData } from '@/common/dummy';
@@ -25,16 +28,13 @@ import { ScheduleData } from '@/common/dummy';
 const PropertyPane = (props) => <div className="mt-5">{props.children}</div>;
 
 const Calendar: React.FC = () => {
-  const [scheduleObj, setScheduleObj] = useState();
-  // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-  // @ts-expect-error
-  const change = (args) => {
-    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-    // @ts-expect-error
-    scheduleObj.selectedDate = args.value;
-    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-    // @ts-expect-error
-    scheduleObj.dataBind();
+  const scheduleObj = useRef<ScheduleComponent>(null);
+  const change = (args: ChangedEventArgs) => {
+    const schedule = scheduleObj.current;
+    if (!schedule || !args.value) return;
+
+    schedule.selectedDate = args.value;
+    schedule.dataBind();
   };
 
   // eslint-disable-next-line @typescript-eslint/ban-ts-comment
@@ -56,9 +56,7 @@ const Calendar: React.FC = () => {
       <Header category="应用" title="学习日程管理" />
       <ScheduleComponent
         height="650px"
-        // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-        // @ts-expect-error
-        ref={(schedule) => setScheduleObj(schedule)}
+        ref={scheduleObj}
         selectedDate={new Date(2025, 0, 6)}
         eventSettings={{ dataSource: ScheduleData }}
         dragStart={onDragStart}

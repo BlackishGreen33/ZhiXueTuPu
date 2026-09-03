@@ -22,18 +22,10 @@ interface ViewerProps {
 }
 
 const PureViewer: React.FC<ViewerProps> = ({ url }) => {
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  let viewer: PdfViewerComponent;
-
   return (
     <div>
       <div className="control-section">
         <PdfViewerComponent
-          // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-          // @ts-expect-error
-          ref={(scope) => {
-            viewer = scope;
-          }}
           id="container"
           documentPath={
             url

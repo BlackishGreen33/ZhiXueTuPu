@@ -90,8 +90,7 @@ const PureRadar: React.FC = () => {
     chartInstance.current!.series[2].animation!.enable = false;
     chartInstance.current!.refresh();
   };
-  // eslint-disable-next-line @typescript-eslint/ban-types
-  const droplist: { [key: string]: Object }[] = [{ value: 'Radar' }];
+  const droplist: { value: string }[] = [{ value: 'Radar' }];
 
   return (
     <div className="control-pane">
@@ -189,7 +188,7 @@ const PureRadar: React.FC = () => {
                     <DropDownListComponent
                       width={120}
                       id="selmode"
-                      change={change.bind(this)}
+                      change={change}
                       ref={dropElement}
                       dataSource={droplist}
                       fields={{ text: 'value', value: 'value' }}
