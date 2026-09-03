@@ -20,6 +20,7 @@ const PureBlankAnswerInput: React.FC<BlankAnswerInputProps> = ({
       remove_duplicates: false,
     });
     // mix the keywords and pick 2
+    // eslint-disable-next-line react-hooks/purity -- each question intentionally gets random blanks
     const shuffled = words.sort(() => 0.5 - Math.random());
     return shuffled.slice(0, 2);
   }, [answer]);

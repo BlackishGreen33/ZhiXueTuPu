@@ -8,9 +8,7 @@ import HotTopicsCard from './HotTopicsCard';
 import QuizMeCard from './QuizMeCard';
 import RecentActivityCard from './RecentActivityCard';
 
-interface DashboardProps {}
-
-const Dashboard: React.FC<DashboardProps> = async () => {
+const Dashboard = async () => {
   const session = await getServerSession();
   if (!session?.user) {
     redirect('/quiz');

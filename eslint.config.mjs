@@ -1,44 +1,16 @@
-import { FlatCompat } from '@eslint/eslintrc';
-import eslintPluginJs from '@eslint/js';
-import typescriptEslint from '@typescript-eslint/eslint-plugin';
+/* eslint-disable simple-import-sort/imports -- Prettier owns import order in this config */
+import eslintConfigNext from 'eslint-config-next/core-web-vitals';
+import eslintConfigNextTypescript from 'eslint-config-next/typescript';
+import eslintConfigPrettier from 'eslint-config-prettier';
 import eslintPluginSimpleImportSort from 'eslint-plugin-simple-import-sort';
 import unusedImports from 'eslint-plugin-unused-imports';
-import { dirname } from 'path';
-import { fileURLToPath } from 'url';
+import { defineConfig, globalIgnores } from 'eslint/config';
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = dirname(__filename);
-
-const compat = new FlatCompat({
-  baseDirectory: __dirname,
-  recommendedConfig: eslintPluginJs.configs.recommended,
-  allConfig: eslintPluginJs.configs.all,
-});
-
-const eslintConfig = [
+export default defineConfig([
+  ...eslintConfigNext,
+  ...eslintConfigNextTypescript,
   {
-    ignores: ['.next/**'],
-  },
-  ...compat.config({
-    env: {
-      browser: true,
-      es2024: true,
-      node: true,
-    },
-  }),
-  {
-    languageOptions: {
-      globals: {
-        React: 'readonly',
-        JSX: 'readonly',
-      },
-      parserOptions: {
-        ecmaVersion: 'latest',
-        sourceType: 'module',
-      },
-    },
     plugins: {
-      '@typescript-eslint': typescriptEslint,
       'simple-import-sort': eslintPluginSimpleImportSort,
       'unused-imports': unusedImports,
     },
@@ -92,13 +64,6 @@ const eslintConfig = [
       ],
     },
   },
-  ...compat.extends(
-    'next/core-web-vitals',
-    'next/typescript',
-    'eslint:recommended',
-    'plugin:@typescript-eslint/recommended',
-    'prettier'
-  ),
-];
-
-export default eslintConfig;
+  eslintConfigPrettier,
+  globalIgnores(['.next/**', 'out/**', 'build/**', 'next-env.d.ts']),
+]);

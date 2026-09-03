@@ -5,7 +5,6 @@ const nextConfig = {
   compiler: {
     styledComponents: true,
   },
-  swcMinify: true,
   // output: "export",
   images: {
     unoptimized: true,
@@ -25,9 +24,7 @@ const nextConfig = {
     ],
     formats: ['image/avif', 'image/webp'],
   },
-  experimental: {
-    reactCompiler: true,
-  },
+  reactCompiler: true,
 };
 
 export default nextConfig;
