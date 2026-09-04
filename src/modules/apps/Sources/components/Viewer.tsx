@@ -32,7 +32,7 @@ const PureViewer: React.FC<ViewerProps> = ({ url }) => {
               ? url
               : 'https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf'
           }
-          resourceUrl="https://cdn.syncfusion.com/ej2/23.2.6/dist/ej2-pdfviewer-lib"
+          resourceUrl="https://cdn.syncfusion.com/ej2/34.2.6/dist/ej2-pdfviewer-lib"
           style={{ height: '640px' }}
         >
           <Inject
